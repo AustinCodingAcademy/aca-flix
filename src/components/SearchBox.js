@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 
-const apiKey = "87dfa1c669eea853da609d4968d294be";
 class SearchBox extends Component {
   constructor() {
     super();
@@ -13,8 +12,8 @@ class SearchBox extends Component {
           onKeyUp={
             (e) => {
               /* this is so th search will only be done on enter key */
-              if (e.key === "Enter" && this.state.searchTerm) {
-                this.props.setSearchTerm(this.state.searchTerm);
+              if (this.props.loadSearch && e.key === "Enter" && this.state.searchTerm) {
+                this.props.loadSearch(this.state.searchTerm);
               }
             }
           } 

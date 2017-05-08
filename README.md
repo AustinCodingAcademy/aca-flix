@@ -1,17 +1,96 @@
-#### Setup
-Fork, clone, run yarn install, yarn start, pull request
 
-#### Do
- * Create a component folder to hold component files
- * Organize this web page into appropriate components
-   * ProductDetail - find a div with className="col-sm-4 col-lg-4 col-md-4"
-   * Header - find a div with className="navbar-header"
-   * Footer - find a footer element
-   * Carousel - find a div with className="row carousel-holder" 
-* The ProductDetail should repesent only one single product
-* The ProductDetail should take a prop called product with is an object, and use it to populate price, name, description reviews and stars.
-* Make sure each component is in its own file and imported into App.js
-* Use the provided data in state.js to dynamically populate information instead of the hard coded html that is there now.
-* In index.js provide App with a prop called "products" sending in the product array 
-* App should use the product prop and map the array of products into an array of ProductDetail components
-* Make the star images represent the number rating from data
+### Setup
+* Get your api key from the themoviedb.org
+* Fork, Clone, yarn install, yarn start
+
+### Do
+
+### Components
+* Create functional components as defined by comments such as  {/*  <Navigation>   */}
+* Import and use components in App.js
+* Navigation.js
+* UserProfile.js
+
+### State
+* In state.js file
+* Create our state object with properties
+    * searchResults: []
+    * myMovieList: []
+* export state object
+
+### Reducers
+* In reducers/index.js
+* Create reducers functions for all state
+* Parameters - state, action
+* Remember default value
+* Import combineReducers from redux
+* Combine reducers and export
+
+### Create Reducers
+* myMovieList
+    * Look for the action “MY_MOVIE_LIST_LOADED”
+    * return the value
+* searchResults
+    * Look for the action “SEARCH_RESULTS_LOADED”
+    * return the value
+
+### Store
+* Create our standard store.js file
+* Use redux-thunk middleware
+* Import reducers
+* create store and export
+
+### index.js 
+* import Provider and wrap App 
+* import store and assign to store prop
+
+### Actions
+* loadMyMovieList()
+    * type = “LOAD_MY_MOVIE_LIST”
+    * make fetch call to “/movies”
+    * on complete, dispatch to myMovieListLoaded(movies)
+* myMovieListLoaded(movies)
+    * type = “MY_MOVIE_LIST_LOADED”
+    * value = movies 
+* loadSearch(searchTerm)
+    * type = “LOAD_SEARCH”
+    * make fetch call to https://api.themoviedb.org/3/search/multi?query=searchTerm&api_key=yourkey
+    * be sure to put your api key
+    * on complete, dispatch to searchLoaded(movies)
+* searchLoaded(movies)
+    * type = “SEARCH_RESULTS_LOADED”
+    * value = make sure to assign the value of movies.results to get the array of movies from movie db
+* saveMyMovie(movie)
+    * make fetch POST to “/movies”
+    * on complete dispatch to loadMyMovies()
+* removeMyMovie(id)
+    * make a fetch DELETE to “/movies/” + id
+    * on complete dispatch to loadMyMovies()
+
+
+### Create Containers
+* import connect from react-redux
+* mapStateToProps
+* mapDispatchToProps
+* connect and export
+
+### SearchBoxContainer.js
+* import action `loadSearch`
+* mapDispatchToProps for this action
+* Determine which props to map to based on the props that are already coded into the SearchBox component
+
+### AppContainer.js
+* import action `loadMyMovieList`
+* mapStateToProps for props `searchResults` and `myMovieList` to state of the same name
+* mapDisptachToProps for `loadMyMovieList`
+
+### ListToggleContainer
+* import action `saveMyMovie` and `removeMyMovie`
+* mapDisptachToProps for `saveMyMovie` and `removeMyMovie`
+* Change Item.js to use ListToggleContainer instead of ListToggle
+
+#### App.js
+* Switch out use of SearchBox for use of SearchBoxContainer
+
+#### index.js
+* Switch out use of App for AppContainer

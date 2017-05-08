@@ -7,7 +7,7 @@ import Hero from "./components/Hero";
 import SearchBox from "./components/SearchBox";
 
 class App extends Component {
-  onComponentDidMount() {
+  componentDidMount() {
     if (this.props.loadMyMovieList) {
       this.props.loadMyMovieList();
     }
@@ -44,7 +44,7 @@ class App extends Component {
         <Hero />
         <TitleList title="Search Results" movies={this.props.searchResults} />
         <TitleList 
-          title="Top TV picks for Jack" 
+          title="My Movies" 
           movies={this.props.myMovieList} />
       </div>
     );
