@@ -37,7 +37,9 @@ class App extends Component {
           {/*  </UserProfile>   */}
         </header>
         <Hero />
-        <TitleList title="Search Results" movies={this.props.searchResults} />
+        <TitleList 
+          title="Search Results" 
+          movies={this.props.searchResults} />
         <TitleList 
           title="My Movies" 
           movies={this.props.myMovieList} />
