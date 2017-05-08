@@ -89,8 +89,11 @@
 * mapDisptachToProps for `saveMyMovie` and `removeMyMovie`
 * Change Item.js to use ListToggleContainer instead of ListToggle
 
-#### App.js
+### Item.js
+* Switch out use of ListToggle for use of ListToggleContainer
+
+### App.js
 * Switch out use of SearchBox for use of SearchBoxContainer
 
-#### index.js
+### index.js
 * Switch out use of App for AppContainer
