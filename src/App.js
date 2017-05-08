@@ -7,11 +7,6 @@ import Hero from "./components/Hero";
 import SearchBox from "./components/SearchBox";
 
 class App extends Component {
-  componentDidMount() {
-    if (this.props.loadMyMovieList) {
-      this.props.loadMyMovieList();
-    }
-  }
   render() {
     return (
       <div>
