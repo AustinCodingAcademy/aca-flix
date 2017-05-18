@@ -28,7 +28,7 @@ class App extends Component {
           {/*  <UserProfile>   */}
           <div className="UserProfile">
             <div className="User">
-              <div className="name">Jack Oliver</div>
+              <div className="name">Jon</div>
               <div className="image">
                 <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/profile/profile-512_1.jpg" alt="profile" />
               </div>
@@ -37,11 +37,11 @@ class App extends Component {
           {/*  </UserProfile>   */}
         </header>
         <Hero />
-        <TitleList 
-          title="Search Results" 
+        <TitleList
+          title="Search Results"
           movies={this.props.searchResults} />
-        <TitleList 
-          title="My Movies" 
+        <TitleList
+          title="My Movies"
           movies={this.props.myMovieList} />
       </div>
     );

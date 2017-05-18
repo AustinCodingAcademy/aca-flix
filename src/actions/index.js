@@ -33,3 +33,27 @@ export function myMovieListLoaded(movies) {
     value: movies
   };
 }
+
+function loadSearchFetch(searchTerm, dispatch) {
+  dispatch({
+    type: "LOAD_SEARCH"
+  });
+
+  fetch("https://api.themoviedb.org/3/movie/550?api_key=ed8a34bb0283710553888bb7ef276675"
+ ).then((response) => {
+   return response.json();
+ }).then((movies) => {
+   dispatch(searchLoaded(movies));
+ });
+}
+
+export function loadSearch() {
+  return loadSearchFetch;
+}
+
+export function searchLoaded(movies) {
+  return {
+    type: "SEARCH_RESULTS_LOADED",
+    value: movies.results
+  };
+}
