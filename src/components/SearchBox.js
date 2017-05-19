@@ -7,20 +7,21 @@ class SearchBox extends Component {
   render() {
     return (
       <div id="search" className="Search">
-        <input 
+        <input
           onKeyUp={
             (e) => {
-              /* this is so th search will only be done on enter key */
-              if (this.props.loadSearch && e.key === "Enter" && this.state.searchTerm) {
-                this.props.loadSearch(this.state.searchTerm);
+              /* this is so the search will only be done on enter key */
+              if (this.props.loadSearch && e.key ===  "Enter" && this.props.searchTerm) {
+                this.props.loadSearch(this.props.searchTerm);
+              } else {
+                this.props.updateSearch(e.target.value)
               }
             }
-          } 
-          type="search" 
+          }
+          type="search"
           placeholder="Search for a title..." />
       </div>
     );
   }
 }
 export default SearchBox;
-
