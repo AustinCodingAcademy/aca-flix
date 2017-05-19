@@ -45,6 +45,7 @@
 * import store and assign to store prop
 
 ### Actions
+* remember to export your actions
 * loadMyMovieList()
     * type = “LOAD_MY_MOVIE_LIST”
     * make fetch call to “/movies”
