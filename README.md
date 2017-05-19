@@ -107,3 +107,11 @@
 
 ### index.js
 * Switch out use of App for AppContainer
+
+### Points
+* Base - 25 
+* There are no runtime errors - 15
+* My Movie list shows all movies from your database - 15
+* Typing into the search text box and hitting enter shows a list of movies in the search results - 15
+* Click one of the search results adds that movie to My Movie list - 15
+* Click one of the movies in My Movie list removes it from the list - 15
