@@ -45,13 +45,15 @@ export function searchLoaded(movies) {
     value: movies
   }
 }
-export function saveMyMovie(movie) {
-  fetch("/movies", {
-    type: "POST",
-    body: movie
-  }).then((dispatch) => {
-    dispatch(loadMyMovieList());
-  });
+
+export function saveMyMovie(movies) {
+  return function (dispatch) {
+    fetch("/movies", {
+      method: "POST",
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify(movies)
+    }).then(() => dispatch(loadMyMovieList()));
+  };
 }
 
 export function removeMyMovie(id) {
