@@ -1,6 +1,5 @@
 import React from "react";
-import {connect} from 'react-redux'
-import ListToggleContainer from "../containers/ListToggleContainer";
+import ListToggleContainer from "./ListToggleContainer";
 
 function Item(props) {
   let name = "";
