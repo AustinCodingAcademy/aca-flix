@@ -5,6 +5,8 @@ import Logo from "./Logo.js";
 import TitleList from "./components/TitleList";
 import Hero from "./components/Hero";
 import SearchBox from "./components/SearchBox";
+import NavigationContainer from "./container/NavigationContainer";
+// import UserProfile from "./components/UserProfile";
 
 class App extends Component {
   render() {
@@ -12,6 +14,7 @@ class App extends Component {
       <div>
         <header className="Header">
           <Logo />
+          <NavigationContainer />
           {/*  <Navigation>   */}
           <div id="navigation" className="Navigation">
             <nav>
@@ -37,11 +40,11 @@ class App extends Component {
           {/*  </UserProfile>   */}
         </header>
         <Hero />
-        <TitleList 
-          title="Search Results" 
+        <TitleList
+          title="Search Results"
           movies={this.props.searchResults} />
-        <TitleList 
-          title="My Movies" 
+        <TitleList
+          title="My Movies"
           movies={this.props.myMovieList} />
       </div>
     );
