@@ -27,22 +27,22 @@
 * Combine reducers and export -->
 
 ### Create Reducers
-* myMovieList
+<!-- * myMovieList
     * Look for the action “MY_MOVIE_LIST_LOADED”
     * return the value
 * searchResults
     * Look for the action “SEARCH_RESULTS_LOADED”
-    * return the value
+    * return the value -->
 
 ### Store
-* Create our standard store.js file
+<!-- * Create our standard store.js file
 * Use redux-thunk middleware
 * Import reducers
-* create store and export
+* create store and export -->
 
 ### index.js
-* import Provider and wrap App
-* import store and assign to store prop
+<!-- * import Provider and wrap App
+* import store and assign to store prop -->
 
 ### Actions
 * remember to export your actions
