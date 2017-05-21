@@ -1,11 +1,11 @@
 /* Load movies with fetch call */
 
-function loadMovieListFetch(dispatch) {
-  dispatch({
-    type: "LOAD_MY_MOVIE_LIST"
-  });
-
-  fetch("./movies")
+export function loadMovieListFetch() {
+  return function (dispatch) {
+    dispatch({
+      type: "LOAD_MY_MOVIE_LIST"
+    });
+    fetch("./movies")
   .then((response) => {
     return response.json();
   }).then((movies) => {
@@ -13,6 +13,7 @@ function loadMovieListFetch(dispatch) {
   }).catch(() => {
     dispatch(movieLoadError());
   });
+  };
 }
 
 export const MOVIE_LIST_LOAD_ERROR = "MOVIE_LIST_LOAD_ERROR";
@@ -34,43 +35,54 @@ export function myMovieListLoaded(movies) {
   };
 }
 
-function loadSearchFetch(searchTerm, dispatch) {
-  dispatch({
-    type: "LOAD_SEARCH"
-  });
+export function loadSearchTermFetch(searchTerm) {
+  return function (dispatch) {
+    dispatch({
+      type: "LOAD_SEARCH"
+    });
 
-  fetch("https://api.themoviedb.org/3/movie/550?api_key=ed8a34bb0283710553888bb7ef276675"
- ).then((response) => {
+    fetch(`https://api.themoviedb.org/3/search/multi?query=${searchTerm}&api_key=ed8a34bb0283710553888bb7ef276675`)
+ .then((response) => {
    return response.json();
  }).then((movies) => {
    dispatch(searchLoaded(movies));
  });
+
+  };
+}
+
+export function updateSearchTerm(searchTerm) {
+  return {
+    type: "UPDATE_SEARCH_TERM",
+    value: searchTerm
+  };
 }
 
 export function loadSearch() {
-  return loadSearchFetch;
+  return loadSearchTermFetch;
 }
 
 export function searchLoaded(movies) {
   return {
     type: "SEARCH_RESULTS_LOADED",
-    value: movies.results
+    value: movies
   };
 }
 
-function saveMyMovieFetch(movie, dispatch) {
-  dispatch({
-    type: "POST_TO_MOVIE_LIST"
-  });
-
-  fetch("./movies")
-  .then((response) => {
-    return response.json();
-  }).then((movies) => {
-    dispatch(loadMovies(movies));
+export function saveMyMovie(movie) {
+  fetch("./movies", {
+    type: "POST",
+    body: movie
+  }).then((dispatch) => {
+    dispatch(loadMovies());
   });
 }
 
-export function saveMyMovie() {
-  return saveMyMovieFetch;
+
+export function removeMyMovie(id) {
+  fetch(`/movies/${id}`, {
+    type: "DELETE"
+  }).then((dispatch) => {
+    dispatch(loadMovies());
+  });
 }

@@ -3,6 +3,8 @@ import "./App.css";
 import {connect} from "react-redux";
 import {loadMovies} from "./actions";
 
+
+
 function mapDispatchToProps(dispatch) {
   return {
     loadMovies() {
@@ -13,5 +15,6 @@ function mapDispatchToProps(dispatch) {
 
 export default connect(
   null,
+
   mapDispatchToProps
 )(App);

@@ -14,9 +14,17 @@ function searchResults(state = [], action) {
   return state;
 }
 
+function searchTerm(state = "", action) {
+  if (action.type === "UPDATE_SEARCH_TERM") {
+    return action.value
+  }
+  return state;
+}
+
 const rootReducer = combineReducers({
   myMovieList,
-  searchResults
+  searchResults,
+  searchTerm
 });
 
 export default rootReducer;
