@@ -1,4 +1,4 @@
 export default {
   searchResults: [],
-  myMoiveList: [],
+  myMoiveList: []
 };

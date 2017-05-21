@@ -9,14 +9,14 @@ function myMovieList(state = [], action) {
 
 function searchResults(state = [], action) {
   if (action.type === "SEARCH_RESULTS_LOADED") {
-    return action.value;
+    return action.value.results;
   }
   return state;
 }
 
 function searchTerm(state = "", action) {
   if (action.type === "UPDATE_SEARCH_TERM") {
-    return action.value
+    return action.value;
   }
   return state;
 }

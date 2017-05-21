@@ -65,7 +65,7 @@ export function loadSearch() {
 export function searchLoaded(movies) {
   return {
     type: "SEARCH_RESULTS_LOADED",
-    value: movies
+    value: movies.results
   };
 }
 
