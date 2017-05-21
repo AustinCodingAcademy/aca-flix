@@ -57,3 +57,20 @@ export function searchLoaded(movies) {
     value: movies.results
   };
 }
+
+function saveMyMovieFetch(movie, dispatch) {
+  dispatch({
+    type: "POST_TO_MOVIE_LIST"
+  });
+
+  fetch("./movies")
+  .then((response) => {
+    return response.json();
+  }).then((movies) => {
+    dispatch(loadMovies(movies));
+  });
+}
+
+export function saveMyMovie() {
+  return saveMyMovieFetch;
+}
