@@ -51,12 +51,11 @@ export function searchLoaded(movies) {
 }
 
 export function saveMyMovie(movie) {
+  console.log(movie);
   return (dispatch) => {
     fetch("/movies", {
       method: "POST",
-      headers: {
-        "Content-Type": "application.json"
-      },
+      headers: {"Content-Type": "application/json"},
       body: JSON.stringify(movie)
     })
     .then(() => dispatch(loadMyMovieList()));
@@ -67,6 +66,7 @@ export function removeMyMovie(id) {
   return (dispatch) => {
     fetch("/movies/" + id, {
       method: "DELETE",
+      headers: {"Content-Type": "application/json"}
     })
     .then(() => dispatch(loadMyMovieList()));
   };

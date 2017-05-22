@@ -10,8 +10,8 @@ const mapDispatchToProps = dispatch => {
     saveMyMovie: (movie) => {
       dispatch(saveMyMovie(movie));
     },
-    removeMyMovie: (movie) => {
-      dispatch(removeMyMovie(movie));
+    removeMyMovie: (id) => {
+      dispatch(removeMyMovie(id));
     }
   };
 };
