@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import PropTypes from "prop-types";
 
 
 
@@ -6,7 +7,9 @@ class SearchBox extends Component {
 
   constructor() {
     super();
-    searchTerm: "";
+    this.state = {
+      searchTerm: ""
+    };
   }
 
   componentWillMount() {
@@ -16,15 +19,13 @@ class SearchBox extends Component {
   }
 
 
+
+
   render() {
     return (
       <div id="search" className="Search">
-        <input
-          onChange{
-            setState() => {
-              searchTerm = input.value
-            }
-          }
+        <input onChange={(input) => this.setState({ searchTerm: input.value })}
+
           onKeyUp={
             (e) => {
               /* this is so th search will only be done on enter key */
@@ -41,3 +42,9 @@ class SearchBox extends Component {
 
 }
 export default SearchBox;
+
+SearchBox.propTypes = {
+  loadSearch: PropTypes.array,
+  onMountSearchBox: PropTypes.array,
+
+};

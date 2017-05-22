@@ -49,5 +49,6 @@ export default App;
 
 App.propTypes = {
   searchResults: PropTypes.array,
-  myMovieList: PropTypes.array
+  myMovieList: PropTypes.array,
+  loadMyMovieList: PropTypes.array
 };
