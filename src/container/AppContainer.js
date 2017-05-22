@@ -1,23 +1,22 @@
 import { connect } from "react-redux";
-import Navigation from "../components/Navigation";
 import {loadMyMovieList} from "../actions";
-
-
+import App from "../App";
 
 
 function mapStateToProps(state) {
   return {
-    value: state
+    searchResults: state.searchResults,
+    myMovieList: state.myMovieList
   };
 }
 
 
 function mapDispatchToProps(dispatch) {
   return {
-    onMountNavigation: () => {
+    onMountApp: () => {
       dispatch(loadMyMovieList());
     }
   };
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Navigation);
+export default connect(mapStateToProps, mapDispatchToProps)(App);
