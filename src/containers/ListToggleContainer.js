@@ -7,8 +7,8 @@ import {
 
 function mapDispatchToProps(dispatch) {
   return {
-    removeMyMovie: (id) => {
-      dispatch(removeMyMovie(id));
+    removeMyMovie: (_id) => {
+      dispatch(removeMyMovie(_id));
     },
     saveMyMovie: (movie) => {
       dispatch(saveMyMovie(movie));
