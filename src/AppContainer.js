@@ -1,20 +1,29 @@
 import App from "./App";
 import "./App.css";
 import {connect} from "react-redux";
-import {loadMovies} from "./actions";
+import {loadMyMovieList} from "./actions";
 
 
-
-function mapDispatchToProps(dispatch) {
+const mapStateToProps = state => {
   return {
-    loadMovies() {
-      dispatch(loadMovies());
+    searchResults: state.searchResults,
+    myMovieList: state.myMovieList
+  };
+};
+
+
+const mapDispatchToProps = dispatch => {
+  return {
+    loadMovies: () => {
+      const action = loadMyMovieList();
+      dispatch(action);
     }
   };
-}
+};
 
-export default connect(
-  null,
-
+const AppContainer = connect(
+  mapStateToProps,
   mapDispatchToProps
 )(App);
+
+export default AppContainer;

@@ -36,7 +36,8 @@ class App extends Component {
 
 App.propTypes = {
   searchResults: PropTypes.array,
-  myMovieList: PropTypes.array
+  myMovieList: PropTypes.array,
+  loadMovies: PropTypes.func
 };
 
 export default App;

@@ -7,15 +7,20 @@ import {
 
 function mapDispatchToProps(dispatch) {
   return {
-    saveMyMovie: function (movie) {
-      dispatch(saveMyMovie(movie));
+    saveMyMovie: (movie) => {
+      const action = saveMyMovie(movie);
+      dispatch(action);
     },
-    removeMyMovie: function (id) {
-      dispatch(removeMyMovie(id));
+    removeMyMovie: (movie) => {
+      const action = removeMyMovie(movie);
+      dispatch(action);
     }
   };
 }
 
-export default connect(
+const ListToggleContainer = connect(
+  null,
   mapDispatchToProps
 )(ListToggle);
+
+export default ListToggleContainer;
