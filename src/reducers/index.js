@@ -6,14 +6,14 @@ import {
 } from "../actions";
 
 function searchResults (state = [], action) {
-  if ( action.type === MY_MOVIE_LIST_LOADED) {
+  if ( action.type === SEARCH_RESULTS_LOADED) {
     return action.value;
   }
   return state;
 }
 
 function myMovieList (state = [], action) {
-  if ( action.type === SEARCH_RESULTS_LOADED) {
+  if ( action.type === MY_MOVIE_LIST_LOADED) {
     return action.value;
   }
   return state;

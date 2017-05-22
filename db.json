@@ -1,5 +1,28 @@
 {
-  "movies":[],
+  "movies": [
+    {
+      "poster_path": "/vLkVpC2jf3phW2jBtuK63LaeOu6.jpg",
+      "popularity": 6.898845,
+      "id": 70968,
+      "overview": "Follow the day-to-day life of Nan as told by her increasingly lonely and philosophical dog, Martin. Just one session at obedience school makes them realize that even at their worst, they may be the best thing for each other. Based on a web series.",
+      "backdrop_path": "/rOQtqWanrwjDodJKw3lo1Bv3VgJ.jpg",
+      "vote_average": 0,
+      "media_type": "tv",
+      "first_air_date": "2017-05-17",
+      "origin_country": [
+        "US"
+      ],
+      "genre_ids": [
+        35,
+        18
+      ],
+      "original_language": "en",
+      "vote_count": 0,
+      "name": "Downward Dog",
+      "original_name": "Downward Dog",
+      "_id": 1
+    }
+  ],
   "posts": [
     {
       "id": 1,

@@ -1,6 +1,5 @@
 export default {
   searchResults: [],
-  myMovieList: [],
-  searchTerm: ""
+  myMovieList: []
 };
 

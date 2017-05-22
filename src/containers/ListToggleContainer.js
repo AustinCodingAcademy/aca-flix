@@ -16,6 +16,6 @@ function mapDispatchToProps(dispatch) {
   };
 }
 
-const ListToggleContainer = connect(mapDispatchToProps)(ListToggle);
+const ListToggleContainer = connect(null, mapDispatchToProps)(ListToggle);
 
 export default ListToggleContainer;

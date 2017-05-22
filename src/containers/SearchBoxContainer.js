@@ -12,12 +12,12 @@ import {
 
 function mapDispatchToProps(dispatch) {
   return {
-    searchTerm: (searchTerm) => {
+    loadSearch: (searchTerm) => {
       dispatch(loadSearch(searchTerm));
     }
   };
 }
 
-const SearchBoxContainer = connect(mapDispatchToProps)(SearchBox);
+const SearchBoxContainer = connect(null, mapDispatchToProps)(SearchBox);
 
 export default SearchBoxContainer;
