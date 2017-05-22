@@ -64,8 +64,7 @@ export function removeMyMovie(id) {
   return function (dispatch) {
     fetch("/movies/" + id, {
       method: "DELETE",
-      headers: {"Content-Type": "application/json"},
-      body: JSON.stringify(id)
+    
     }).then(() => dispatch(loadMyMovieList()));
   };
 }
