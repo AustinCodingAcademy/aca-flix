@@ -3,7 +3,7 @@ import "whatwg-fetch";
 export const LOAD_MY_MOVIE_LIST = "LOAD_MY_MOVIE_LIST";
 
 export function loadMyMovieList() {
-  return function (dispatch) {
+  return (dispatch) => {
     dispatch({
       type: LOAD_MY_MOVIE_LIST
     });
@@ -28,7 +28,7 @@ export function myMovieListLoaded(movies) {
 export const LOAD_SEARCH = "LOAD_SEARCH";
 
 export function loadSearch(searchTerm) {
-  return function (dispatch) {
+  return (dispatch) => {
     dispatch({
       type: LOAD_SEARCH
     });

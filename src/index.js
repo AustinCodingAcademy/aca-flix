@@ -7,8 +7,6 @@ import store from "./store";
 
 import "whatwg-fetch";
 
-console.log("Execution test");
-
 ReactDOM.render(
   <Provider store={store}>
     <AppContainer />
