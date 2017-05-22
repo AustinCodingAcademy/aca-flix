@@ -13,6 +13,13 @@ import {
 /* eslint-disable no-unused-vars */
 
 function searchResults(state = [], action) {
+  switch (action.type) {
+    case LOAD_SEARCH_TERM:
+      return [];
+    case SEARCH_RESULTS_LOADED:
+      console.log("Search Results Loaded reducer return", action);
+      return action.value;
+  }
   return state;
 }
 
