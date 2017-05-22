@@ -6,7 +6,7 @@ import {
 
 function searchResults(state = [], action) {
   switch (action.type) {
-    case MY_MOVIE_LIST_LOADED:
+    case SEARCH_RESULTS_LOADED:
       return action.value;
   }
   return state;
@@ -14,7 +14,7 @@ function searchResults(state = [], action) {
 
 function myMovieList(state = [], action) {
   switch (action.type) {
-    case SEARCH_RESULTS_LOADED:
+    case MY_MOVIE_LIST_LOADED:
       return action.value;
   }
   return state;
