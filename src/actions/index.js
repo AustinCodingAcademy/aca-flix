@@ -51,7 +51,7 @@ export function searchLoaded(movies) {
 }
 
 export function saveMyMovie(movie) {
-  return function (dispatch) {
+  return (dispatch) => {
     fetch("/movies", {
       method: "POST",
       headers: {"Content-Type": "application/json"},
@@ -61,10 +61,9 @@ export function saveMyMovie(movie) {
 }
 
 export function removeMyMovie(id) {
-  return function (dispatch) {
+  return (dispatch) => {
     fetch("/movies/" + id, {
       method: "DELETE",
-    
     }).then(() => dispatch(loadMyMovieList()));
   };
 }
