@@ -53,14 +53,14 @@
 * myMovieListLoaded(movies)
     * type = “MY_MOVIE_LIST_LOADED”
     * value = movies -->
-* loadSearch(searchTerm)
+<!-- * loadSearch(searchTerm)
     * type = “LOAD_SEARCH”
     * make fetch call to https://api.themoviedb.org/3/search/multi?query=searchTerm&api_key=yourkey
     * be sure to put your api key
-    * on complete, dispatch to searchLoaded(movies)
-* searchLoaded(movies)
+    * on complete, dispatch to searchLoaded(movies) -->
+<!-- * searchLoaded(movies)
     * type = “SEARCH_RESULTS_LOADED”
-    * value = make sure to assign the value of movies.results to get the array of movies from movie db
+    * value = make sure to assign the value of movies.results to get the array of movies from movie db -->
 * saveMyMovie(movie)
     * make fetch POST to “/movies”
     * on complete dispatch to loadMyMovieList()
@@ -76,10 +76,10 @@
 * connect and export
 
 ### SearchBoxContainer.js
-* import SearchBox
+<!-- * import SearchBox
 * import action `loadSearch`
 * mapDispatchToProps for this action
-* Determine which props to map to based on the props that are already coded into the SearchBox component
+* Determine which props to map to based on the props that are already coded into the SearchBox component -->
 
 ### AppContainer.js
 <!-- * import App
@@ -94,9 +94,9 @@
 * Change Item.js to use ListToggleContainer instead of ListToggle
 
 ### SearchBox.js
-* In the constructor assign a state property with an object with key “searchTerm”, set to blank string “”
+<!-- * In the constructor assign a state property with an object with key “searchTerm”, set to blank string “”
 * Add onChange to the input element
-* on change setState for searchTerm to the value from the input
+* on change setState for searchTerm to the value from the input -->
 
 ### Item.js
 * Switch out use of ListToggle for use of ListToggleContainer

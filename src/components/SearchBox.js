@@ -1,8 +1,8 @@
 import React, {Component} from "react";
 
 class SearchBox extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       searchTerm: ""
     }
@@ -20,8 +20,10 @@ class SearchBox extends Component {
             }
           }
           onChange={
-            (e) => {
-
+            () => {
+              this.setState({
+                searchTerm: this.props.searchTerm
+              })
             }
           }
           type="search"
