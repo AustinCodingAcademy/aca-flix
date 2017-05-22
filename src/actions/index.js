@@ -43,13 +43,14 @@ export function loadSearchTerm(searchTerm) {
   console.log(searchTerm);
   return function (dispatch) {
     dispatch({
-      type: "LOAD_SEARCH"
+      type: "LOAD_SEARCH_TERM"
     });
     fetch(`https://api.themoviedb.org/3/movie/550?api_key=13b8a64275811d244ae2869af10f60d7
 `)
     .then( (response) => {
       return response.json();
-    }).then((movies) => {
+    })
+    .then((movies) => {
       dispatch(searchLoaded(movies));
     });
 
@@ -82,7 +83,8 @@ export function saveMyMovie(movies) {
       method: "POST",
       headers: {"Content-Type": "application/json"},
       body: JSON.stringify(movies)
-    }).then(() => dispatch(loadMyMovieList()));
+    })
+    .then(() => dispatch(loadMyMovieList()));
   };
 }
 
@@ -91,7 +93,8 @@ export const REMOVE_MY_MOVIE = "REMOVE_MY_MOVIE";
 export function removeMyMovie(id) {
   fetch(`/movies/${id}`, {
     type: "DELETE"
-  }).then((dispatch) => {
+  })
+  .then((dispatch) => {
     dispatch(loadMyMovieList());
   });
 }

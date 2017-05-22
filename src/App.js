@@ -34,3 +34,8 @@ class App extends Component {
   }
 }
 export default App;
+
+App.propTypes = {
+  searchResults: PropTypes.func.isRequired,
+  myMovieList: PropTypes.func.isRequired,
+};
