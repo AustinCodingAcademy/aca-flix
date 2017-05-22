@@ -7,7 +7,8 @@ export function loadMyMovieList(movies) {
     });
 
     fetch("/movies")
-      .then(() => dispatch(myMovieListLoaded(movies)));
+      .then(() => dispatch(myMovieListLoaded(movies)))
+      .catch((err) => dispatch("Error:", err))
   };
 }
 
@@ -17,5 +18,28 @@ export function myMovieListLoaded(movies) {
   return {
     type: MY_MOVIE_LIST_LOADED,
     value: movies
+  };
+}
+
+export const LOAD_SEARCH = "LOAD_SEARCH";
+
+export function loadSearch(searchTerm) {
+  return (dispatch) => {
+    dispatch({
+      type: LOAD_SEARCH
+    });
+
+    fetch("https://api.themoviedb.org/3/search/multi?query=searchTerm&api_key=15ce3865f33d8d1036dbc1e5fdb56e4d")
+      .then(() => dispatch(searchLoaded(movies)))
+      .catch((err) => dispatch("Error:", err))
+  };
+}
+
+export const SEARCH_RESULTS_LOADED = "SEARCH_RESULTS_LOADED";
+
+export function searchLoaded(movies) {
+  return {
+    type: SEARCH_RESULTS_LOADED,
+    value: movies.results
   };
 }
