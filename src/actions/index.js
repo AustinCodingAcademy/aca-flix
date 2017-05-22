@@ -39,12 +39,12 @@ export function myMovieListError() {
 
 export const LOAD_SEARCH = "LOAD_SEARCH";
 
-export function loadSearch() {
+export function loadSearch(searchTerm) {
   return (dispatch) => {
     dispatch({
       type: LOAD_SEARCH
     });
-    fetch("https://api.themoviedb.org/3/search/multi?query=searchTerm&api_key=67933ec4527bee237e9e9a41aca9bd6d")
+    fetch("https://api.themoviedb.org/3/search/multi?query=" + searchTerm + "&api_key=67933ec4527bee237e9e9a41aca9bd6d")
     .then((response) => {
       return response.json();
     }).then((data) => {
@@ -87,7 +87,7 @@ export function removeMyMovie(id) {
   return (dispatch) => {
     fetch(`/movies/${id}`, {
       method: "DELETE",
-      headers: {"Content-Type": "application/json"},
-    }).then(() => dispatch(LOAD_MY_MOVIE_LIST()));
+      // headers: {"Content-Type": "application/json"},
+    }).then(() => dispatch(loadMyMovieList()));
   };
 }

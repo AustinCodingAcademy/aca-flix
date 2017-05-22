@@ -14,8 +14,8 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
   return {
-    onMountSearchBox: () => {
-      dispatch(loadSearch());
+    loadSearch: (searchTerm) => {
+      dispatch(loadSearch(searchTerm));
     }
   };
 }

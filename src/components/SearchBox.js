@@ -10,6 +10,7 @@ class SearchBox extends Component {
     this.state = {
       searchTerm: ""
     };
+
   }
 
   componentWillMount() {
@@ -24,7 +25,11 @@ class SearchBox extends Component {
   render() {
     return (
       <div id="search" className="Search">
-        <input onChange={(input) => this.setState({ searchTerm: input.value })}
+        <input onChange={(input) => {
+          this.setState({
+            searchTerm: input.target.value
+          });
+        }}
 
           onKeyUp={
             (e) => {
@@ -39,12 +44,11 @@ class SearchBox extends Component {
       </div>
     );
   }
-
 }
 export default SearchBox;
 
 SearchBox.propTypes = {
-  loadSearch: PropTypes.array,
+  loadSearch: PropTypes.func,
   onMountSearchBox: PropTypes.array,
 
 };

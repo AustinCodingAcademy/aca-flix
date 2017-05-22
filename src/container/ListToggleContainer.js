@@ -4,19 +4,17 @@ import {saveMyMovie,
 removeMyMovie
 } from "../actions";
 
-function mapStateToProps(state) {
-  return {
-    value: state
-  };
-}
 
 
 function mapDispatchToProps(dispatch) {
   return {
-    onMountListToggle: () => {
-      dispatch(saveMyMovie(), removeMyMovie());
+    removeMyMovie: (id) => {
+      dispatch(removeMyMovie(id));
+    },
+    saveMyMovie: (movie) => {
+      dispatch(saveMyMovie(movie));
     }
   };
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(ListToggle);
+export default connect(null, mapDispatchToProps)(ListToggle);
