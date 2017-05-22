@@ -61,12 +61,12 @@
 <!-- * searchLoaded(movies)
     * type = “SEARCH_RESULTS_LOADED”
     * value = make sure to assign the value of movies.results to get the array of movies from movie db -->
-* saveMyMovie(movie)
+<!-- * saveMyMovie(movie)
     * make fetch POST to “/movies”
     * on complete dispatch to loadMyMovieList()
 * removeMyMovie(id)
     * make a fetch DELETE to “/movies/” + id
-    * on complete dispatch to loadMyMovieList()
+    * on complete dispatch to loadMyMovieList() -->
 
 
 ### Create Containers
@@ -88,10 +88,10 @@
 * mapDispatchToProps for `loadMyMovieList` -->
 
 ### ListToggleContainer
-* import ListToggle
+<!-- * import ListToggle
 * import action `saveMyMovie` and `removeMyMovie`
 * mapDisptachToProps for `saveMyMovie` and `removeMyMovie`
-* Change Item.js to use ListToggleContainer instead of ListToggle
+* Change Item.js to use ListToggleContainer instead of ListToggle -->
 
 ### SearchBox.js
 <!-- * In the constructor assign a state property with an object with key “searchTerm”, set to blank string “”
@@ -99,7 +99,7 @@
 * on change setState for searchTerm to the value from the input -->
 
 ### Item.js
-* Switch out use of ListToggle for use of ListToggleContainer
+<!-- * Switch out use of ListToggle for use of ListToggleContainer -->
 
 ### App.js
 <!-- * Add componentDidMount method and call loadMyMovieList in here.
