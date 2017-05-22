@@ -45,14 +45,14 @@
 * import store and assign to store prop -->
 
 ### Actions
-* remember to export your actions
-* loadMyMovieList()
+<!-- * remember to export your actions -->
+<!-- * loadMyMovieList()
     * type = “LOAD_MY_MOVIE_LIST”
     * make fetch call to “/movies”
     * on complete, dispatch to myMovieListLoaded(movies)
 * myMovieListLoaded(movies)
     * type = “MY_MOVIE_LIST_LOADED”
-    * value = movies
+    * value = movies -->
 * loadSearch(searchTerm)
     * type = “LOAD_SEARCH”
     * make fetch call to https://api.themoviedb.org/3/search/multi?query=searchTerm&api_key=yourkey
@@ -85,7 +85,7 @@
 * import App
 * import action `loadMyMovieList`
 * mapStateToProps for props `searchResults` and `myMovieList` to state of the same name
-* mapDisptachToProps for `loadMyMovieList`
+* mapDispatchToProps for `loadMyMovieList`
 
 ### ListToggleContainer
 * import ListToggle
