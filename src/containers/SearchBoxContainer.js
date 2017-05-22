@@ -1,7 +1,8 @@
 import { connect } from "react-redux";
 import SearchBox from "../components/SearchBox";
 import {
-  loadSearchTerm
+  loadSearchTerm,
+  updateSearchTerm,
 } from "../actions";
 
 function mapStateToProps(state) {
@@ -11,8 +12,14 @@ function mapStateToProps(state) {
 }
 function mapDispatchToProps(dispatch) {
   return {
-    onMount: () => {
-      dispatch(loadSearchTerm());
+    onMount: term => {
+      dispatch(loadSearchTerm(term));
+    },
+    handleChange: event => {
+      dispatch(updateSearchTerm(event.target.value));
+    },
+    handleLoadSearch: term => {
+      dispatch(loadSearchTerm(term))
     }
   };
 }

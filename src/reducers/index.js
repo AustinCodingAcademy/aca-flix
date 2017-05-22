@@ -12,6 +12,16 @@ import {
 
 /* eslint-disable no-unused-vars */
 
+function searchTerm(state = "", action) {
+  switch (action.type) {
+    case UPDATE_SEARCH_TERM:
+      console.log(action.value)
+      return action.value;
+    default:
+    return state;
+  }
+}
+
 function searchResults(state = [], action) {
   switch (action.type) {
     case LOAD_SEARCH_TERM:
@@ -19,8 +29,9 @@ function searchResults(state = [], action) {
     case SEARCH_RESULTS_LOADED:
       console.log("Search Results Loaded reducer return", action);
       return action.value;
+    default:
+    return state;
   }
-  return state;
 }
 
 function myMovieList(state = [], action) {
@@ -32,12 +43,13 @@ function myMovieList(state = [], action) {
     case MY_MOVIE_LIST_LOADED:
       console.log("Movie List Loaded reducer return", action);
       return action.value;
+    default:
+    return state;
   }
-
-  return state;
 }
 
 export default combineReducers({
   searchResults,
-  myMovieList
+  myMovieList,
+  searchTerm
 });
