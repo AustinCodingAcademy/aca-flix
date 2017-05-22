@@ -2,18 +2,17 @@ import "whatwg-fetch";
 
 export const LOAD_MY_MOVIE_LIST = "LOAD_MY_MOVIE_LIST";
 
-export function loadMyMovieList(movies) {
-  return (dispatch) => {
+export function loadMyMovieList() {
+  return function (dispatch) {
     dispatch({
       type: LOAD_MY_MOVIE_LIST
     });
-
     fetch("/movies")
-    .then((response) => {
-      return response.json();
-    })
-    .then(() => dispatch(myMovieListLoaded(movies)))
-    .catch((err) => dispatch("Error:", err));
+   .then( (response) => {
+     return response.json();
+   }).then((movies) => {
+     dispatch(myMovieListLoaded(movies));
+   });
   };
 }
 
@@ -28,17 +27,17 @@ export function myMovieListLoaded(movies) {
 
 export const LOAD_SEARCH = "LOAD_SEARCH";
 
-export function loadSearch(searchTerm, movies) {
-  return (dispatch) => {
+export function loadSearch(searchTerm) {
+  return function (dispatch) {
     dispatch({
       type: LOAD_SEARCH
     });
-    fetch("https://api.themoviedb.org/3/search/multi?query= " + searchTerm + "&api_key=yourkey=ed8a34bb0283710553888bb7ef276675")
-    .then((response) => {
-      return response.json();
-    })
-    .then(() => dispatch(searchLoaded(movies)))
-    .catch((err) => dispatch("Error:", err));
+    fetch("https://api.themoviedb.org/3/search/multi?query=" + searchTerm + "&api_key=ed8a34bb0283710553888bb7ef276675")
+   .then( (response) => {
+     return response.json();
+   }).then((movies) => {
+     dispatch(searchLoaded(movies));
+   });
   };
 }
 
@@ -52,23 +51,21 @@ export function searchLoaded(movies) {
 }
 
 export function saveMyMovie(movie) {
-  return (dispatch) => {
+  return function (dispatch) {
     fetch("/movies", {
       method: "POST",
-      headers: {
-        "Content-Type": "application.json"
-      },
+      headers: {"Content-Type": "application/json"},
       body: JSON.stringify(movie)
-    })
-    .then(() => dispatch(loadMyMovieList()));
+    }).then(() => dispatch(loadMyMovieList()));
   };
 }
 
 export function removeMyMovie(id) {
-  return (dispatch) => {
+  return function (dispatch) {
     fetch("/movies/" + id, {
       method: "DELETE",
-    })
-    .then(() => dispatch(loadMyMovieList()));
+      headers: {"Content-Type": "application/json"},
+      body: JSON.stringify(id)
+    }).then(() => dispatch(loadMyMovieList()));
   };
 }

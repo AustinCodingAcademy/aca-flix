@@ -14,9 +14,8 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    loadMovies: () => {
-      const action = loadMyMovieList();
-      dispatch(action);
+    loadMyMovieList: () => {
+      dispatch(loadMyMovieList());
     }
   };
 };

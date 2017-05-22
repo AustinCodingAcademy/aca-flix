@@ -2,22 +2,17 @@ import { connect } from "react-redux";
 import { loadSearch } from "../actions";
 import SearchBox from "./SearchBox";
 
-const mapDispatchToProps = dispatch => {
+function mapDispatchToProps(dispatch) {
   return {
-    onKeyUp: (searchTerm) => {
-      const action = loadSearch(searchTerm);
-      dispatch(action);
-    },
-    onChange: (searchTerm) => {
-      const action = loadSearch(searchTerm);
-      dispatch(action);
+    loadSearch: (searchTerm) => {
+      dispatch(loadSearch(searchTerm));
     }
   };
-};
+}
 
 const SearchBoxContainer = connect(
   null,
   mapDispatchToProps
-)(SearchBox);
+  )(SearchBox);
 
 export default SearchBoxContainer;

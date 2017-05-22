@@ -10,7 +10,7 @@ import UserProfile from "./components/UserProfile";
 
 class App extends Component {
   componentDidMount() {
-    this.props.loadMovies();
+    this.props.loadMyMovieList();
   }
 
   render() {
@@ -37,7 +37,7 @@ class App extends Component {
 App.propTypes = {
   searchResults: PropTypes.array,
   myMovieList: PropTypes.array,
-  loadMovies: PropTypes.func
+  loadMyMovieList: PropTypes.func
 };
 
 export default App;

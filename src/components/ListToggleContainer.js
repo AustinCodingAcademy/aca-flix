@@ -7,13 +7,11 @@ import {
 
 function mapDispatchToProps(dispatch) {
   return {
-    saveMyMovie: (movie) => {
-      const action = saveMyMovie(movie);
-      dispatch(action);
+    removeMyMovie: (id) => {
+      dispatch(removeMyMovie(id));
     },
-    removeMyMovie: (movie) => {
-      const action = removeMyMovie(movie);
-      dispatch(action);
+    saveMyMovie: (movie) => {
+      dispatch(saveMyMovie(movie));
     }
   };
 }
