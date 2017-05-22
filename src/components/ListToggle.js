@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 
 class ListToggle extends Component {
   constructor(props) {
@@ -13,13 +14,13 @@ class ListToggle extends Component {
       this.setState({ toggled: false });
     } else {
       this.props.saveMyMovie(this.props.movie);
-      this.setState({ toggled: true }); 
+      this.setState({ toggled: true });
     }
   }
   render() {
     return (
-      <div onClick={this.handleClick} 
-        data-toggled={this.state.toggled} 
+      <div onClick={this.handleClick}
+        data-toggled={this.state.toggled}
         className="ListToggle">
         <div>
           <i className="fa fa-fw fa-plus" />
@@ -29,4 +30,11 @@ class ListToggle extends Component {
     );
   }
 }
+
+ListToggle.propTypes = {
+  movie: PropTypes.shape({
+    _id: PropTypes.number.isRequired,
+  }).isRequired
+};
+
 export default ListToggle;
