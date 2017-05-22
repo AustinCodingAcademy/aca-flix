@@ -1,62 +1,81 @@
 
 ### Setup
-* Get your api key from the themoviedb.org
-* Fork, Clone, yarn install, yarn start
+<!-- * Get your api key from the themoviedb.org -->
+
+*30cab9eeeac7e487871523e394c7ef39
+
+*eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIzMGNhYjllZWVhYzdlNDg3ODcxNTIzZTM5NGM3ZWYzOSIsInN1YiI6IjU5MjIyZDY1OTI1MTQxNGFkZDA1ZTAzOSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.tkGFhesYbT5Vquk2HZceZnUqkTw9LKqVRpQIm6DY_JA
+
+
+*Session ID
+398474cf854d3ffcbe98a1b08cad648da97ccfcc
+
+Token ID
+969df38dd3f78ff87f4263f82328a57801a6e7ff
+
+*example
+*https://api.themoviedb.org/3/movie/550?api_key=30cab9eeeac7e487871523e394c7ef39
+<!-- * Fork, Clone, yarn install, yarn start -->
+
+* Authentication - Create Request Token with your api_key
+* Validate your Request Token with api_key and token id
+* Create a session id with your api_key and token id
+* Create a list POST with your api_key and session id.
 
 ### Do
 
 ### Components
-* Create functional components as defined by comments such as  {/*  <Navigation>   */}
+* Create presentational components as defined by comments such as  {/*  <Navigation>   */}
 * Import and use components in App.js
 * Navigation.js
 * UserProfile.js
 
 ### State
-* In state.js file
+<!-- * In state.js file
 * Create our state object with properties
     * searchResults: []
-    * myMovieList: []
-* export state object
+    * myMovieList: [] -->
+<!-- * export state object -->
 
-### Reducers
+<!-- ### Reducers
 * In reducers/index.js
 * Create reducers functions for all state
 * Parameters - state, action
 * Remember default value
 * Import combineReducers from redux
-* Combine reducers and export
+* Combine reducers and export -->
 
-### Create Reducers
+<!-- ### Create Reducers
 * myMovieList
     * Look for the action “MY_MOVIE_LIST_LOADED”
     * return the value
 * searchResults
     * Look for the action “SEARCH_RESULTS_LOADED”
-    * return the value
+    * return the value -->
 
-### Store
+<!-- ### Store
 * Create our standard store.js file
 * Use redux-thunk middleware
 * Import reducers
-* create store and export
+* create store and export -->
 
-### index.js 
-* import Provider and wrap App 
-* import store and assign to store prop
+<!-- ### index.js
+* import Provider and wrap App
+* import store and assign to store prop -->
 
 ### Actions
-* remember to export your actions
+<!-- * remember to export your actions
 * loadMyMovieList()
     * type = “LOAD_MY_MOVIE_LIST”
     * make fetch call to “/movies”
-    * on complete, dispatch to myMovieListLoaded(movies)
+    * on complete, dispatch to myMovieListLoaded(movies) -->
 * myMovieListLoaded(movies)
     * type = “MY_MOVIE_LIST_LOADED”
-    * value = movies 
+    * value = movies
 * loadSearch(searchTerm)
     * type = “LOAD_SEARCH”
-    * make fetch call to https://api.themoviedb.org/3/search/multi?query=searchTerm&api_key=yourkey
-    * be sure to put your api key
+    * make fetch call to https://api.themoviedb.org/3/search/multi?query=searchTerm&api_key=30cab9eeeac7e487871523e394c7ef39
+    * be sure to put in your api key
     * on complete, dispatch to searchLoaded(movies)
 * searchLoaded(movies)
     * type = “SEARCH_RESULTS_LOADED”
@@ -110,7 +129,7 @@
 * Switch out use of App for AppContainer
 
 ### Points
-* Base - 25 
+* Base - 25
 * There are no runtime errors - 15
 * My Movie list shows all movies from your database - 15
 * Typing into the search text box and hitting enter shows a list of movies in the search results - 15
