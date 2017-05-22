@@ -4,14 +4,10 @@ import SearchBox from "./SearchBox";
 
 const mapDispatchToProps = dispatch => {
   return {
-    onKeyUp: (searchTerm) => {
+    loadSearch: (searchTerm) => {
       const action = loadSearch(searchTerm);
       dispatch(action);
     },
-    onChange: (searchTerm) => {
-      const action = loadSearch(searchTerm);
-      dispatch(action);
-    }
   };
 };
 

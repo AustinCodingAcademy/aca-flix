@@ -5,7 +5,7 @@ class SearchBox extends Component {
     super(props);
     this.state = {
       searchTerm: ""
-    }
+    };
   }
   render() {
     return (
@@ -20,10 +20,10 @@ class SearchBox extends Component {
             }
           }
           onChange={
-            () => {
+            (e) => {
               this.setState({
-                searchTerm: this.props.searchTerm
-              })
+                searchTerm: e.target.value
+              });
             }
           }
           type="search"

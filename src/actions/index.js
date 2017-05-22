@@ -1,6 +1,6 @@
 export const LOAD_MY_MOVIE_LIST = "LOAD_MY_MOVIE_LIST";
 
-export function loadMyMovieList(movies) {
+export function loadMyMovieList() {
   return (dispatch) => {
     dispatch({
       type: LOAD_MY_MOVIE_LIST
@@ -10,7 +10,7 @@ export function loadMyMovieList(movies) {
     .then((response) => {
       return response.json();
     })
-    .then(() => dispatch(myMovieListLoaded(movies)))
+    .then((movies) => dispatch(myMovieListLoaded(movies)))
     .catch((err) => dispatch("Error:", err));
   };
 }
@@ -26,7 +26,7 @@ export function myMovieListLoaded(movies) {
 
 export const LOAD_SEARCH = "LOAD_SEARCH";
 
-export function loadSearch(searchTerm, movies) {
+export function loadSearch(searchTerm) {
   return (dispatch) => {
     dispatch({
       type: LOAD_SEARCH
@@ -36,7 +36,7 @@ export function loadSearch(searchTerm, movies) {
     .then((response) => {
       return response.json();
     })
-    .then(() => dispatch(searchLoaded(movies)))
+    .then((movies) => dispatch(searchLoaded(movies)))
     .catch((err) => dispatch("Error:", err));
   };
 }
