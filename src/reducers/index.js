@@ -7,6 +7,7 @@ import {
 function searchResults(state = [], action) {
   switch (action.type) {
     case SEARCH_RESULTS_LOADED:
+      console.log(action.value);
       return action.value;
   }
   return state;

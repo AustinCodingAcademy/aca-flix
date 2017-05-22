@@ -1,5 +1,5 @@
 export const LOAD_MY_MOVIE_LIST = "LOAD_MY_MOVIE_LIST";
-export const MY_MOVIE_LIST = "MY_MOVIE_LIST_LOADED";
+export const MY_MOVIE_LIST_LOADED = "MY_MOVIE_LIST_LOADED";
 export const LOAD_SEARCH = "LOAD_SEARCH";
 export const SEARCH_RESULTS_LOADED = "SEARCH_RESULTS_LOADED";
 import "whatwg-fetch";
@@ -9,18 +9,21 @@ export function loadMyMovieList() {
     dispatch({
       type: LOAD_MY_MOVIE_LIST
     });
+    // fetch("https://api.themoviedb.org/3/search/multi?query=Paris&api_key=f6b2ddbf98050f5386802279758638f2")
     fetch("/movies")
     .then((response) => {
       return response.json();
     }).then((movies) => {
       dispatch(myMovieListLoaded(movies));
+    }).catch((err) => {
+      console.log(err);
     });
   };
 }
 
 export function myMovieListLoaded(movies) {
   return {
-    type: MY_MOVIE_LIST,
+    type: MY_MOVIE_LIST_LOADED,
     value: movies
   };
 }
@@ -34,7 +37,10 @@ export function loadSearch(searchTerm) {
     .then((response) => {
       return response.json();
     }).then((movies) => {
+      console.log(movies);
       dispatch(searchLoaded(movies));
+    }).catch((err) => {
+      console.log(err);
     });
   };
 }
