@@ -7,8 +7,11 @@ export function loadMyMovieList(movies) {
     });
 
     fetch("/movies")
-      .then(() => dispatch(myMovieListLoaded(movies)))
-      .catch((err) => dispatch("Error:", err));
+    .then((response) => {
+      return response.json();
+    })
+    .then(() => dispatch(myMovieListLoaded(movies)))
+    .catch((err) => dispatch("Error:", err));
   };
 }
 
@@ -30,8 +33,11 @@ export function loadSearch(searchTerm, movies) {
     });
 
     fetch("https://api.themoviedb.org/3/search/multi?query=searchTerm&api_key=15ce3865f33d8d1036dbc1e5fdb56e4d")
-      .then(() => dispatch(searchLoaded(movies)))
-      .catch((err) => dispatch("Error:", err));
+    .then((response) => {
+      return response.json();
+    })
+    .then(() => dispatch(searchLoaded(movies)))
+    .catch((err) => dispatch("Error:", err));
   };
 }
 
@@ -41,5 +47,27 @@ export function searchLoaded(movies) {
   return {
     type: SEARCH_RESULTS_LOADED,
     value: movies.results
+  };
+}
+
+export function saveMyMovie(movie) {
+  return (dispatch) => {
+    fetch("/movies", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application.json"
+      },
+      body: JSON.stringify(movie)
+    })
+    .then(() => dispatch(loadMyMovieList()));
+  };
+}
+
+export function removeMyMovie(id) {
+  return (dispatch) => {
+    fetch("/movies/" + id, {
+      method: "DELETE",
+    })
+    .then(() => dispatch(loadMyMovieList()));
   };
 }
