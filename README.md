@@ -82,10 +82,10 @@
 * Determine which props to map to based on the props that are already coded into the SearchBox component
 
 ### AppContainer.js
-* import App
+<!-- * import App
 * import action `loadMyMovieList`
 * mapStateToProps for props `searchResults` and `myMovieList` to state of the same name
-* mapDispatchToProps for `loadMyMovieList`
+* mapDispatchToProps for `loadMyMovieList` -->
 
 ### ListToggleContainer
 * import ListToggle
@@ -102,12 +102,12 @@
 * Switch out use of ListToggle for use of ListToggleContainer
 
 ### App.js
-* Add componentDidMount method and call loadMyMovieList in here.
+<!-- * Add componentDidMount method and call loadMyMovieList in here.
 * Switch out use of SearchBox for use of SearchBoxContainer
-* Add PropTypes for searchResults and myMovieList
+* Add PropTypes for searchResults and myMovieList -->
 
 ### index.js
-* Switch out use of App for AppContainer
+<!-- * Switch out use of App for AppContainer -->
 
 ### Points
 * Base - 25
