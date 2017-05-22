@@ -5,8 +5,7 @@ import SearchBox from "./SearchBox";
 const mapDispatchToProps = dispatch => {
   return {
     loadSearch: (searchTerm) => {
-      const action = loadSearch(searchTerm);
-      dispatch(action);
+      dispatch(loadSearch(searchTerm));
     },
   };
 };

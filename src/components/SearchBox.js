@@ -7,6 +7,13 @@ class SearchBox extends Component {
       searchTerm: ""
     };
   }
+
+  handleChange(event) {
+    this.setState({
+      searchTerm: event.target.value
+    });
+  }
+
   render() {
     return (
       <div id="search" className="Search">
@@ -19,13 +26,7 @@ class SearchBox extends Component {
               }
             }
           }
-          onChange={
-            (e) => {
-              this.setState({
-                searchTerm: e.target.value
-              });
-            }
-          }
+          onChange={this.handleChange.bind(this)}
           type="search"
           placeholder="Search for a title..." />
       </div>
