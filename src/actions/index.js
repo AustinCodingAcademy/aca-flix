@@ -52,14 +52,14 @@ export function saveMyMovie(movies) {
       method: "POST",
       headers: {"Content-Type": "application/json"},
       body: JSON.stringify(movies)
-    }).then(() => dispatch(myMovieListLoaded(movies)));
+    }).then(() => dispatch(loadMyMovieList()));
   };
 }
 
 export function removeMyMovie(id) {
-  fetch(`/movies/${id}`, {
-    type: "DELETE"
-  }).then((dispatch) => {
-    dispatch(loadMyMovieList());
-  });
+  return function (dispatch) {
+    fetch(`/movies/${id}`, {
+      method: "DELETE",
+    }).then(() => dispatch(loadMyMovieList()));
+  };
 }
