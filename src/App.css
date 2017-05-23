@@ -354,6 +354,13 @@ p {
   opacity: 0;
   position: relative;
   z-index: 4;
+  overflow-y: scroll;
+  margin-bottom: 75px;
+}
+
+.titles-wrapper {
+  position: relative;
+  height: 212px;
 }
 
 .TitleList .titles-wrapper {
