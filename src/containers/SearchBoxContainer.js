@@ -2,11 +2,6 @@ import {connect} from 'react-redux';
 import {loadSearchTerm, updateSearchTerm} from '../actions';
 import SearchBox from '../components/SearchBox';
 
-function mapStateToProps(state) {
-  return {
-    searchTerm: state.searchTerm
-  }
-}
 
 function mapDispatchToProps(dispatch) {
   return {
@@ -22,5 +17,5 @@ function mapDispatchToProps(dispatch) {
 }
 
 // using dispatch changes the data
-const SearchBoxContainer = connect(mapStateToProps, mapDispatchToProps)(SearchBox);
+const SearchBoxContainer = connect(null, mapDispatchToProps)(SearchBox);
 export default SearchBoxContainer;

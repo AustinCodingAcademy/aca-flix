@@ -7,6 +7,7 @@ import Hero from "./components/Hero";
 import SearchBoxContainer from "./containers/SearchBoxContainer";
 import Navigation from "./components/Navigation";
 import UserProfile from "./components/UserProfile";
+import ListToggleContainer from "./containers/ListToggleContainer";
 
 
 class App extends Component {

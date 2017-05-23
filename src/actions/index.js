@@ -52,7 +52,7 @@ export function saveMyMovie(movies) {
       method: "POST",
       headers: {"Content-Type": "application/json"},
       body: JSON.stringify(movies)
-    }).then(() => dispatch(loadMyMovieList()));
+    }).then(() => dispatch(myMovieListLoaded(movies)));
   };
 }
 

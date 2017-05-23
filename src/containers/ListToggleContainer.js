@@ -21,6 +21,6 @@ function mapDispatchToProps(dispatch) {
   }
 }
 
-// using dispatch changes the data
-const ListToggleContainer = connect(mapStateToProps, mapDispatchToProps)(ListToggleContainer);
+// using dispatch changes the data | connects to the compoment
+const ListToggleContainer = connect(mapStateToProps, mapDispatchToProps)(ListToggle);
 export default ListToggleContainer;
