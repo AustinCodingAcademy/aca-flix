@@ -8,7 +8,7 @@ class SearchBox extends Component {
     }
   }
   handleChange(event) {
-    this.setState({value: event.target.value});
+    this.setState({searchTerm: event.target.value});
   }
   render() {
     return (
@@ -23,7 +23,7 @@ class SearchBox extends Component {
         }
         type="search"
         placeholder="Search for a title..."
-        onChange={this.handleChange}/>
+        onChange={this.handleChange.bind(this)}/>
       </div>
     );
   }

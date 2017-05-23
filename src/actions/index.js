@@ -43,7 +43,10 @@ export function loadSearch(searchTerm) {
     dispatch({
       type: LOAD_SEARCH,
     });
-    fetch("https://api.themoviedb.org/3/search/multi?query=searchTerm&api_key=43fbef98c668a6779d17352889e340d5")
+    fetch("https://api.themoviedb.org/3/search/multi?query=" + searchTerm + "&api_key=43fbef98c668a6779d17352889e340d5")
+    .then((response) => {
+      return response.json();
+    })
     .then((movies) => {
       dispatch(searchLoaded(movies));
     })
