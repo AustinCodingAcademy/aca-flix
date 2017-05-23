@@ -4,9 +4,18 @@ import "./App.css";
 import Logo from "./Logo.js";
 import TitleList from "./components/TitleList";
 import Hero from "./components/Hero";
-import SearchBox from "./components/SearchBox";
+import SearchBoxContainer from "./containers/SearchBoxContainer";
+import Navigation from "./components/Navigation";
+import UserProfile from "./components/UserProfile";
+
+
 
 class App extends Component {
+// Tells when the component mounts to Load My Movie List
+  componentDidMount() {
+    this.props.loadMyMovieList();
+  }
+
   render() {
     return (
       <div>
@@ -24,7 +33,7 @@ class App extends Component {
             </nav>
           </div>
           {/*  </Navigation>   */}
-          <SearchBox />
+          <SearchBoxContainer />
           {/*  <UserProfile>   */}
           <div className="UserProfile">
             <div className="User">
@@ -37,14 +46,20 @@ class App extends Component {
           {/*  </UserProfile>   */}
         </header>
         <Hero />
-        <TitleList 
-          title="Search Results" 
+        <TitleList
+          title="Search Results"
           movies={this.props.searchResults} />
-        <TitleList 
-          title="My Movies" 
+        <TitleList
+          title="My Movies"
           movies={this.props.myMovieList} />
       </div>
     );
   }
 }
+
+App.propTypes = {
+  searchResults: PropTypes.array.isRequired,
+  myMovieList: PropTypes.array.isRequired
+};
+
 export default App;
