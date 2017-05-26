@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React from "react";
 import PropTypes from "prop-types";
 
 
@@ -22,7 +22,7 @@ function SearchBox(props) {
 }
 
 SearchBox.propTypes = {
-  loadSearchTerm: PropTypes.func.isRequired,
+  handleLoadSearch: PropTypes.func.isRequired,
   handleChange: PropTypes.func.isRequired,
   searchTerm: PropTypes.string.isRequired,
 };

@@ -15,10 +15,10 @@ import {
 function searchTerm(state = "", action) {
   switch (action.type) {
     case UPDATE_SEARCH_TERM:
-      console.log(action.value)
+      console.log(action.value);
       return action.value;
     default:
-    return state;
+      return state;
   }
 }
 
@@ -30,7 +30,7 @@ function searchResults(state = [], action) {
       console.log("Search Results Loaded reducer return", action);
       return action.value;
     default:
-    return state;
+      return state;
   }
 }
 
@@ -44,7 +44,7 @@ function myMovieList(state = [], action) {
       console.log("Movie List Loaded reducer return", action);
       return action.value;
     default:
-    return state;
+      return state;
   }
 }
 

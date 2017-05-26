@@ -19,7 +19,7 @@ function mapDispatchToProps(dispatch) {
       dispatch(updateSearchTerm(event.target.value));
     },
     handleLoadSearch: term => {
-      dispatch(loadSearchTerm(term))
+      dispatch(loadSearchTerm(term));
     }
   };
 }
