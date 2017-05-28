@@ -9,6 +9,10 @@ import TitleList from "./components/TitleList";
 import UserProfile from "./components/UserProfile";
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
     return (
       <div>
@@ -29,4 +33,10 @@ class App extends Component {
     );
   }
 }
+
+App.propTypes = {
+  searchResults: PropTypes.array.isRequired,
+  myMovieList: PropTypes.array.isRequired
+};
+
 export default App;
