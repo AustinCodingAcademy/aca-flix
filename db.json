@@ -1,5 +1,50 @@
 {
-  "movies":[],
+  "movies": [
+    {
+      "poster_path": "/kHXEpyfl6zqn8a6YuozZUujufXf.jpg",
+      "adult": false,
+      "overview": "84 years later, a 101-year-old woman named Rose DeWitt Bukater tells the story to her granddaughter Lizzy Calvert, Brock Lovett, Lewis Bodine, Bobby Buell and Anatoly Mikailavich on the Keldysh about her life set in April 10th 1912, on a ship called Titanic when young Rose boards the departing ship with the upper-class passengers and her mother, Ruth DeWitt Bukater, and her fiancé, Caledon Hockley. Meanwhile, a drifter and artist named Jack Dawson and his best friend Fabrizio De Rossi win third-class tickets to the ship in a game. And she explains the whole story from departure until the death of Titanic on its first and last voyage April 15th, 1912 at 2:20 in the morning.",
+      "release_date": "1997-11-18",
+      "genre_ids": [
+        18,
+        10749,
+        53
+      ],
+      "id": 597,
+      "original_title": "Titanic",
+      "original_language": "en",
+      "title": "Titanic",
+      "backdrop_path": "/fVcZErSWa7gyENuj8IWp8eAfCnL.jpg",
+      "popularity": 7.940237,
+      "vote_count": 6134,
+      "video": false,
+      "vote_average": 7.4,
+      "isMyMovie": false,
+      "_id": 1
+    },
+    {
+      "poster_path": "/8DMS4zPRF3uH4BZ8OC4GtZ8ewD9.jpg",
+      "adult": false,
+      "overview": "Unhappily married, Julia Sturges decides to go to America with her two children on the unsinkable Titanic. Her husband, Richard also arranges passage on the luxury liner so as to have custody of their two children. All this fades to insignificance once the ship hits an iceberg.",
+      "release_date": "1953-04-11",
+      "genre_ids": [
+        18,
+        28,
+        10749
+      ],
+      "id": 16535,
+      "original_title": "Titanic",
+      "original_language": "en",
+      "title": "Titanic",
+      "backdrop_path": "/4MlLN6nPOZ6RDFhPcfj4OM1meyY.jpg",
+      "popularity": 1.258183,
+      "vote_count": 25,
+      "video": false,
+      "vote_average": 6.2,
+      "isMyMovie": false,
+      "_id": 2
+    }
+  ],
   "posts": [
     {
       "id": 1,

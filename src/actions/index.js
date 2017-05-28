@@ -1,4 +1,3 @@
-
 export const LOAD_MY_MOVIE_LIST = "LOAD_MY_MOVIE_LIST";
 
 export function loadMyMovieList() {
@@ -8,11 +7,8 @@ export function loadMyMovieList() {
       type: LOAD_MY_MOVIE_LIST,
     });
     fetch("/movies")
-    .then((response) => response.json())
-    .then((data) => {
-      dispatch(myMovieListLoaded(data));
-    })
-    .catch(myMovieListError());
+    .then(res => dispatch(myMovieListLoaded(res.json())))
+    .catch(err => myMovieListError(err));
   };
 }
 
@@ -21,16 +17,17 @@ export const MY_MOVIE_LIST_LOADED = "MY_MOVIE_LIST_LOADED";
 export function myMovieListLoaded(movies) {
   return {
     type: MY_MOVIE_LIST_LOADED,
-    value: movies
+    payload: movies
   };
 }
 
 export const MY_MOVIE_LIST_ERROR = "MY_MOVIE_LIST_ERROR";
 
-export function myMovieListError() {
+export function myMovieListError(err) {
   return (dispatch) => {
     dispatch({
-      type: MY_MOVIE_LIST_ERROR
+      type: MY_MOVIE_LIST_ERROR,
+      error: err
     });
   };
 }
@@ -66,7 +63,7 @@ export function updateSearchTerm(searchTerm) {
 export const SEARCH_RESULTS_LOADED = "SEARCH_RESULTS_LOADED";
 
 export function searchLoaded(movies) {
-  const myMovies = movies.results.map((movie, i) => {
+  const myMovies = movies.results.map(movie => {
     return { ...movie, isMyMovie: false };
   });
   return {
@@ -77,14 +74,24 @@ export function searchLoaded(movies) {
 
 export const SAVE_MY_MOVIE = "SAVE_MY_MOVIE";
 
-export function saveMyMovie(movies) {
+export function saveMyMovie(movie) {
   return function (dispatch) {
+    toggleMyMovie(movie);
     fetch("/movies", {
       method: "POST",
       headers: {"Content-Type": "application/json"},
-      body: JSON.stringify(movies)
+      body: JSON.stringify(movie)
     })
     .then(() => dispatch(loadMyMovieList()));
+  };
+}
+
+export const TOGGLE_MY_MOVIE = "TOGGLE_MY_MOVIE";
+
+export function toggleMyMovie(movie) {
+  return {
+    type: TOGGLE_MY_MOVIE,
+    movie
   };
 }
 

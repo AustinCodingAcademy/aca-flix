@@ -12,7 +12,7 @@ function Item(props) {
   }
 
   return (
-    <div className="Item" style={{backgroundImage: 'url(' + backDrop + ')'}} >
+    <div className="Item" style={{backgroundImage: `url(${backDrop})`}} >
       <div className="overlay">
         <div className="title">{name}</div>
         <div className="rating">{props.movie.vote_average} / 10</div>

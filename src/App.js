@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import PropTypes from "prop-types";
 import "./App.css";
 import Logo from "./Logo.js";
-import TitleListContainer from "./containers/TitleListContainer";
+import TitleList from "./components/TitleList";
 import Hero from "./components/Hero";
 
 import SearchBoxContainer from "./containers/SearchBoxContainer";
@@ -28,12 +28,12 @@ class App extends Component {
           {/*  </UserProfile>   */}
         </header>
         <Hero />
-        <TitleListContainer
+        <TitleList
           title="Search Results"
           movies={this.props.searchResults} />
-        <TitleListContainer
+        <TitleList
           title="My Movies"
-          movies={this.props.myMovieList} />
+          movies={this.props.searchResults.filter(movie => movie.isMyMovie)} />
       </div>
     );
   }

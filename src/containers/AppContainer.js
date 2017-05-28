@@ -7,7 +7,6 @@ import {
 function mapStateToProps(state) {
   return {
     searchResults: state.searchResults,
-    myMovieList: state.myMovieList
   };
 }
 
