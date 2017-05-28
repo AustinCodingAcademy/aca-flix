@@ -88,6 +88,17 @@ export function loadSearch() {
   };
 }
 
+export const UPDATE_SEARCH_TERM = "UPDATE_SEARCH_TERM";
+
+export function updateSearchTerm(searchTerm) {
+  return {
+    type: "UPDATE_SEARCH_TERM",
+    value: searchTerm
+  };
+}
+
+
+
 /* ################## */
 export const SEARCH_RESULTS_LOADED = "SEARCH_RESULTS_LOADED";
 function searchLoaded(movies) {
@@ -119,4 +130,22 @@ export function removeMyMovie(id) {
   .then((dispatch) => {
     dispatch(loadMyMovieList());
   });
+}
+
+export const LOAD_MY_MOVIE_ERROR = "LOAD_MY_MOVIE_ERROR";
+export function LoadMyMovieError() {
+  return (dispatch) => {
+    dispatch({
+      type: LOAD_MY_MOVIE_ERROR
+    });
+  };
+}
+
+export const SEARCH_LOADED_ERROR = "SEARCH_LOADED_ERROR";
+export function searchLoadedError() {
+  return (dispatch) => {
+    dispatch({
+      type: SEARCH_LOADED_ERROR
+    });
+  };
 }

@@ -8,26 +8,28 @@
 
 import {connect} from "react-redux";
 import SearchBox from "../components/SearchBox";
-import { loadSearchTerm,
+import { loadSearch,
          updateSearchTerm
 } from "../actions";
 
 function mapStateToProps(state) {
   return {
-    searchTerm: state.searchTerm
+    searchTerm: state.searchTerm  // comes from component
   };
 }
 
 function mapDispatchToProps(dispatch) {
   return {
-    onMount: value => {
-      console.log("SearchBox mounted here ");
-      dispatch(loadSearchTerm(value));
+    onMount: term => {
+      dispatch(loadSearch(term));
+    },
+    handleChange: event => {
+      dispatch(updateSearchTerm(event.target.value));
+    },
+    handleLoadSearch: term => {
+      dispatch(loadSearch(term));
     }
   };
 }
-
-
-
 
 export default connect(mapStateToProps, mapDispatchToProps)(SearchBox);

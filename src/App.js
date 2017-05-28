@@ -7,8 +7,18 @@ import Hero from "./components/Hero";
 import SearchBox from "./components/SearchBox";
 import Navigation from "./components/Navigation";
 import UserProfile from "./components/UserProfile";
+import SearchBoxContainer from "./containers/SearchBoxContainer";
 
 class App extends Component {
+
+  componentDidMount() {
+    if (this.props.loadMyMovieList) {
+      this.props.loadMyMovieList();
+    }
+  }
+
+
+
   render() {
     return (
       <div>
