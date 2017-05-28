@@ -29,6 +29,15 @@ import {
   REMOVE_MY_MOVIE
  } from "../actions";
 
+function myMovieList(state = [], action) {
+  switch (action.type) {
+    case MY_MOVIE_LIST_LOADED:
+      console.log("found movies", action);
+      return action.value;
+  }
+  return state;
+}
+
 function searchResults(state = [], action) {
   switch (action.type) {
 
@@ -39,14 +48,7 @@ function searchResults(state = [], action) {
   return state;
 }
 
-function myMovieList(state = [], action) {
-  switch (action.type) {
-    case MY_MOVIE_LIST_LOADED:
-      console.log("found movies", action);
-      return action.value;
-  }
-  return state;
-}
+
 
 const rootReducer = combineReducers({
   searchResults,

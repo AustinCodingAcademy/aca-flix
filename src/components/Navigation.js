@@ -1,7 +1,7 @@
 import React from "react";
 
 function Navigation() {
-  return(
+  return (
     <div id="navigation" className="Navigation">
       <nav>
         <ul>

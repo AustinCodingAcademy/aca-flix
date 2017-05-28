@@ -1,4 +1,6 @@
 /* ### Actions
+https://onsen.io/blog/react-state-management-redux-store/
+
 * remember to export your actions
 * loadMyMovieList()
     * type = “LOAD_MY_MOVIE_LIST”
@@ -36,9 +38,9 @@ export function loadMyMovieList() {
        console.log("movie api fetched", response);
        return response.json();
      })
-     .then((movies) => {
-       console.log("json recieved", movies)
-       dispatch(myMovieListLoaded(movies));
+     .then((data) => {
+       console.log("json recieved", data)
+       // dispatch(myMovieListLoaded(movies));
      })
      .catch((err) => {
        dispatch(LoadMyMovieError());
@@ -50,22 +52,16 @@ export function loadMyMovieList() {
 export const MY_MOVIE_LIST_LOADED = "MY_MOVIE_LIST_LOADED";
 export function myMovieListLoaded(movies) {
   return {
+
     type: MY_MOVIE_LIST_LOADED,
     value: movies
+
   };
 }
-export const MY_MOVIE_LIST_ERROR = "MY_MOVIE_LIST_ERROR";
-export function myMovieListError() {
-  return (dispatch) => {
-    dispatch({
-      type: MY_MOVIE_LIST_ERROR
-    });
-  };
-}
-export const LOAD_SEARCH = "LOAD_SEARCH";
 
 /* ########################## */
-export function loadSearch() {
+export const LOAD_SEARCH = "LOAD_SEARCH";
+export function loadSearch(searchTerm) {
   return (dispatch) => {
     dispatch({
       type: LOAD_SEARCH
@@ -88,17 +84,6 @@ export function loadSearch() {
   };
 }
 
-export const UPDATE_SEARCH_TERM = "UPDATE_SEARCH_TERM";
-
-export function updateSearchTerm(searchTerm) {
-  return {
-    type: "UPDATE_SEARCH_TERM",
-    value: searchTerm
-  };
-}
-
-
-
 /* ################## */
 export const SEARCH_RESULTS_LOADED = "SEARCH_RESULTS_LOADED";
 function searchLoaded(movies) {
@@ -108,8 +93,8 @@ function searchLoaded(movies) {
   };
 }
 
+/* ################## */
 export const SAVE_MY_MOVIE = "SAVE_MY_MOVIE";
-
 export function saveMyMovie(movies) {
   return function (dispatch) {
     fetch("/movies", {
@@ -121,8 +106,8 @@ export function saveMyMovie(movies) {
   };
 }
 
+/* ############################# */
 export const REMOVE_MY_MOVIE = "REMOVE_MY_MOVIE";
-
 export function removeMyMovie(id) {
   fetch(`/movies/${id}`, {
     type: "DELETE"
@@ -132,6 +117,31 @@ export function removeMyMovie(id) {
   });
 }
 
+/* ############################# */
+export const UPDATE_SEARCH_TERM = "UPDATE_SEARCH_TERM";
+export function updateSearchTerm(searchTerm) {
+  return {
+    type: "UPDATE_SEARCH_TERM",
+    value: searchTerm
+  };
+}
+
+/* ############################# */
+/* ############################# */
+/* ###### ERRORS  ########### */
+/* ############################# */
+/* ############################# */
+export const MY_MOVIE_LIST_ERROR = "MY_MOVIE_LIST_ERROR";
+export function myMovieListError() {
+  return (dispatch) => {
+    dispatch({
+      type: MY_MOVIE_LIST_ERROR
+    });
+  };
+}
+
+
+
 export const LOAD_MY_MOVIE_ERROR = "LOAD_MY_MOVIE_ERROR";
 export function LoadMyMovieError() {
   return (dispatch) => {
@@ -140,6 +150,8 @@ export function LoadMyMovieError() {
     });
   };
 }
+
+
 
 export const SEARCH_LOADED_ERROR = "SEARCH_LOADED_ERROR";
 export function searchLoadedError() {

@@ -26,8 +26,8 @@ class App extends Component {
           <Logo />
           {/* NAV */}
           <Navigation />
-          <SearchBox />
-          {/*User Prof */}
+          <SearchBoxContainer />
+          {/* User Prof */}
           <UserProfile />
         </header>
         <Hero />
@@ -42,3 +42,10 @@ class App extends Component {
   }
 }
 export default App;
+
+App.propTypes = {
+  searchResults: PropTypes.array,
+  myMovieList: PropTypes.array,
+  loadMyMovieList: PropTypes.array
+
+};

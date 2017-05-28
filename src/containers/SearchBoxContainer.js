@@ -12,24 +12,41 @@ import { loadSearch,
          updateSearchTerm
 } from "../actions";
 
-function mapStateToProps(state) {
-  return {
-    searchTerm: state.searchTerm  // comes from component
-  };
-}
+// function mapStateToProps(state) {
+//   return {
+//     searchTerm: state.searchTerm  // comes from component
+//   };
+// }
+//
+// function mapDispatchToProps(dispatch) {
+//   return {
+//     onMount: term => {
+//       dispatch(loadSearch(term));
+//     },
+//     handleChange: event => {
+//       dispatch(updateSearchTerm(event.target.value));
+//     },
+//     handleLoadSearch: term => {
+//       dispatch(loadSearch(term));
+//     }
+//   };
+// }
+
+//
+//
+// function mapStateToProps(state) {
+//   return {
+//     value: state
+//   };
+// }
+
 
 function mapDispatchToProps(dispatch) {
   return {
-    onMount: term => {
-      dispatch(loadSearch(term));
-    },
-    handleChange: event => {
-      dispatch(updateSearchTerm(event.target.value));
-    },
-    handleLoadSearch: term => {
-      dispatch(loadSearch(term));
+    loadSearch: (searchTerm) => {
+      dispatch(loadSearch(searchTerm));
     }
   };
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(SearchBox);
+export default connect(null, mapDispatchToProps)(SearchBox);

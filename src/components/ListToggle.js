@@ -13,13 +13,13 @@ class ListToggle extends Component {
       this.setState({ toggled: false });
     } else {
       this.props.saveMyMovie(this.props.movie);
-      this.setState({ toggled: true }); 
+      this.setState({ toggled: true });
     }
   }
   render() {
     return (
-      <div onClick={this.handleClick} 
-        data-toggled={this.state.toggled} 
+      <div onClick={this.handleClick}
+        data-toggled={this.state.toggled}
         className="ListToggle">
         <div>
           <i className="fa fa-fw fa-plus" />

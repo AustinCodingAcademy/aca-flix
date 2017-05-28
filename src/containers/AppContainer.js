@@ -8,20 +8,20 @@ mapDisptachToProps for loadMyMovieList
 
 import {connect} from "react-redux";
 import App from "../App";
-import { loadMyMovieList
-} from "../actions";
+import { loadMyMovieList} from "../actions";
 
 function mapStateToProps(state) {
+  // console.log("appC what is the sate: ", state)
   return {
-    searchResult: state.searchResult,
+    searchResults: state.searchResults,
     myMovieList: state.myMovieList
   };
 }
 
 function mapDispatchToProps(dispatch) {
   return {
-    onMount: () => {
-      console.log("APP Container mounted here ");
+    loadMyMovieList: () => {
+//      console.log("APP Container mounted here ");
       dispatch(loadMyMovieList());
     }
   };

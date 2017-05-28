@@ -25,4 +25,4 @@ function mapStateToProps(dispatch) {
 }
 
 
-export default connect(mapStateToProps)(ListToggle);
+export default connect(null, mapStateToProps)(ListToggle);
