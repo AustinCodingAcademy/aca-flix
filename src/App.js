@@ -4,14 +4,14 @@ import "./App.css";
 import Hero from "./components/Hero";
 import Logo from "./Logo.js";
 import Navigation from "./components/Navigation";
-import SearchBox from "./components/SearchBox";
+import SearchBoxContainer from "./containers/SearchBoxContainer";
 import TitleList from "./components/TitleList";
 import UserProfile from "./components/UserProfile";
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-  }
+  // constructor(props) {
+  //   super(props);
+  // }
 
   render() {
     return (
@@ -19,7 +19,7 @@ class App extends Component {
         <header className="Header">
           <Logo />
           <Navigation />
-          <SearchBox />
+          <SearchBoxContainer />
           <UserProfile />
         </header>
         <Hero />
