@@ -1,4 +1,4 @@
-import { combineReducers } from "redux";
+import {combineReducers} from "redux";
 
 // Must always return state
 /* eslint-disable no-unused-vars*/
@@ -6,7 +6,6 @@ import { combineReducers } from "redux";
 import {
   SEARCH_RESULTS_LOADED,
   MY_MOVIE_LIST_LOADED
-
 } from "../actions";
 
 // function searchResults(state = [], action) {

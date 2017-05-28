@@ -80,7 +80,9 @@ Token ID
 * searchLoaded(movies)
     * type = “SEARCH_RESULTS_LOADED”
     * value = make sure to assign the value of movies.results to get the array of movies from movie db
-* saveMyMovie(movie)
+
+***
+*** saveMyMovie(movie)
     * make fetch POST to “/movies”
     * on complete dispatch to loadMyMovieList()
 * removeMyMovie(id)
@@ -93,8 +95,8 @@ Token ID
 * mapStateToProps
 * mapDispatchToProps
 * connect and export
-
-### SearchBoxContainer.js
+<!--
+### SearchBoxContainer.js -->
 * import SearchBox
 * import action `loadSearch`
 * mapDispatchToProps for this action
