@@ -25,13 +25,16 @@ export function myMovieListLoaded(movies) {
   };
 }
 
-export function loadSearch(searchTerm, movies) {
+export function loadSearch(searchTerm) {
   return (dispatch) => {
     dispatch({
       type: LOAD_SEARCH
     });
-    fetch("https://api.themoviedb.org/3/search/multi?query=searchTerm&api_key=30cab9eeeac7e487871523e394c7ef39")
-    .then(() => dispatch(searchLoaded(movies)))
+    fetch("https://api.themoviedb.org/3/search/multi?query=" + searchTerm + "&api_key=30cab9eeeac7e487871523e394c7ef39")
+    .then((response) => {
+      return response.json();
+    })
+    .then((movies) => dispatch(searchLoaded(movies)))
     .catch((err) => dispatch("Error :", err));
   };
 }

@@ -8,13 +8,9 @@ import {loadSearch} from "../actions";
 
 const mapDispatchToProps = dispatch => {
   return {
-    onKeyUp: (searchTerm) => {
+    loadSearch: (searchTerm) => {
       dispatch(loadSearch(searchTerm));
     },
-    onChange: (searchTerm) => {
-      console.log("from Container", searchTerm);
-      dispatch(loadSearch(searchTerm));
-    }
   };
 };
 
