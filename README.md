@@ -24,11 +24,11 @@ Token ID
 
 ### Do
 
-### Components
+<!-- ### Components
 * Create presentational components as defined by comments such as  {/*  <Navigation>   */}
 * Import and use components in App.js
 * Navigation.js
-* UserProfile.js
+* UserProfile.js -->
 
 ### State
 <!-- * In state.js file

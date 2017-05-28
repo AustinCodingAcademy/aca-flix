@@ -12,6 +12,7 @@ const mapDispatchToProps = dispatch => {
       dispatch(loadSearch(searchTerm));
     },
     onChange: (searchTerm) => {
+      console.log("from Container", searchTerm);
       dispatch(loadSearch(searchTerm));
     }
   };
