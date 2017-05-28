@@ -3,6 +3,7 @@ export const LOAD_MY_MOVIE_LIST = "LOAD_MY_MOVIE_LIST";
 
 export function loadMyMovieList() {
   return (dispatch) => {
+    console.log("pre-dispatch");
     dispatch({
       type: LOAD_MY_MOVIE_LIST,
     });
@@ -65,9 +66,12 @@ export function updateSearchTerm(searchTerm) {
 export const SEARCH_RESULTS_LOADED = "SEARCH_RESULTS_LOADED";
 
 export function searchLoaded(movies) {
+  const myMovies = movies.results.map((movie, i) => {
+    return { ...movie, isMyMovie: false };
+  });
   return {
     type: "SEARCH_RESULTS_LOADED",
-    value: movies
+    value: myMovies
   };
 }
 
