@@ -66,8 +66,8 @@ export function loadSearch(searchTerm) {
     dispatch({
       type: LOAD_SEARCH
     });
-
-  fetch("https://api.themoviedb.org/3/movie/550?api_key=22ca1401294bb58aee9c072202b1f70e")
+console.log("search term: ", searchTerm)
+  fetch("https://api.themoviedb.org/3/search/multi?query=" + searchTerm + "&api_key=22ca1401294bb58aee9c072202b1f70e")
   //  fetch("/movies")
      .then((response) => {
        console.log("search movie api fetched", response);

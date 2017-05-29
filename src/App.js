@@ -20,6 +20,8 @@ class App extends Component {
 
 
   render() {
+console.log("search results in APP.js:  ", this.props.searchResults.original_title)
+
     return (
       <div>
         <header className="Header">
@@ -33,6 +35,7 @@ class App extends Component {
         <Hero />
         <TitleList
           title="Search Results"
+
           movies={this.props.searchResults} />
         <TitleList
           title="My Movies"
