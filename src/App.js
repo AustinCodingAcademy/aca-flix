@@ -33,7 +33,7 @@ class App extends Component {
           movies={this.props.searchResults} />
         <TitleList
           title="My Movies"
-          movies={this.props.searchResults.filter(movie => movie.isMyMovie)} />
+          movies={this.props.favoriteMovies} />
       </div>
     );
   }
