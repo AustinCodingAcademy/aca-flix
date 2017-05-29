@@ -7,10 +7,10 @@ function mapStateToProps(state) {
   };
 }
 
-function mapDispatchToProps(dispatch) {
-  return {
-
-  };
-}
+// function mapDispatchToProps(dispatch) {
+//   return {
+//
+//   };
+// }
 
 export default connect(mapStateToProps)(TitleList);

@@ -7,17 +7,17 @@ export function loadMyMovieList() {
       type: LOAD_MY_MOVIE_LIST,
     });
     fetch("/movies")
-    .then(res => dispatch(myMovieListLoaded(res.json())))
+    .then(res => dispatch(myMovieListLoaded(res.body.json())))
     .catch(err => myMovieListError(err));
   };
 }
 
 export const MY_MOVIE_LIST_LOADED = "MY_MOVIE_LIST_LOADED";
 
-export function myMovieListLoaded(movies) {
+export function myMovieListLoaded(res) {
   return {
     type: MY_MOVIE_LIST_LOADED,
-    payload: movies
+    payload: res
   };
 }
 
@@ -72,11 +72,10 @@ export function searchLoaded(movies) {
   };
 }
 
-export const SAVE_MY_MOVIE = "SAVE_MY_MOVIE";
+export const SAVE_FAVORITE_MOVIE = "SAVE_FAVORITE_MOVIE";
 
-export function saveMyMovie(movie) {
+export function saveFavoriteMovie(movie) {
   return function (dispatch) {
-    toggleMyMovie(movie);
     fetch("/movies", {
       method: "POST",
       headers: {"Content-Type": "application/json"},
@@ -86,18 +85,18 @@ export function saveMyMovie(movie) {
   };
 }
 
-export const TOGGLE_MY_MOVIE = "TOGGLE_MY_MOVIE";
+export const TOGGLE_FAVORITE_MOVIE = "TOGGLE_FAVORITE_MOVIE";
 
-export function toggleMyMovie(movie) {
+export function toggleFavoriteMovie(movie) {
   return {
-    type: TOGGLE_MY_MOVIE,
+    type: TOGGLE_FAVORITE_MOVIE,
     movie
   };
 }
 
-export const REMOVE_MY_MOVIE = "REMOVE_MY_MOVIE";
+export const REMOVE_FAVORITE_MOVIE = "REMOVE_FAVORITE_MOVIE";
 
-export function removeMyMovie(id) {
+export function removeFavoriteMovie(id) {
   fetch(`/movies/${id}`, {
     type: "DELETE"
   })
