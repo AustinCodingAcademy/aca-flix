@@ -1,9 +1,9 @@
 import { connect } from "react-redux";
-import TitleList from "../components/TitleList";
+import TitleListGroup from "../components/TitleListGroup";
 
 function mapStateToProps(state) {
   return {
-    searchResults: state.searchResults.results,
+    searchResults: state.searchResults,
     savedMovies: state.favoriteMovies,
   };
 }
@@ -14,4 +14,4 @@ function mapStateToProps(state) {
 //   };
 // }
 
-export default connect(mapStateToProps)(TitleList);
+export default connect(mapStateToProps)(TitleListGroup);

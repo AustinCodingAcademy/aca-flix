@@ -39,7 +39,7 @@ export function loadSearchTerm(searchTerm) {
       type: "LOAD_SEARCH_TERM"
     });
     fetch(`https://api.themoviedb.org/3/search/movie?api_key=13b8a64275811d244ae2869af10f60d7&query=${searchTerm}`)
-    .then( (response) => {
+    .then((response) => {
       return response.json();
     })
     .then((movies) => {

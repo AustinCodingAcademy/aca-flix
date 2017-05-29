@@ -19,9 +19,7 @@ function searchResults(state = [], action) {
       return [];
     case T.SEARCH_RESULTS_LOADED:
       console.log("Search Results Loaded reducer return", action);
-      return action.value;
-
-
+      return action.value.results;
     default:
       return state;
   }
