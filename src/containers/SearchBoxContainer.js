@@ -8,8 +8,8 @@
 
 import {connect} from "react-redux";
 import SearchBox from "../components/SearchBox";
-import { loadSearch,
-         updateSearchTerm
+import { loadSearch
+//         updateSearchTerm
 } from "../actions";
 
 // function mapStateToProps(state) {

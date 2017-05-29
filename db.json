@@ -1,5 +1,156 @@
 {
-  "movies":[],
+  "movies": [
+    {
+      "poster_path": null,
+      "popularity": 1.462713,
+      "id": 68925,
+      "overview": "",
+      "backdrop_path": null,
+      "vote_average": 2,
+      "media_type": "tv",
+      "first_air_date": "2016-12-01",
+      "origin_country": [],
+      "genre_ids": [],
+      "original_language": "fr",
+      "vote_count": 1,
+      "name": "Opérations Narcos",
+      "original_name": "Opérations Narcos",
+      "_id": 1
+    },
+    {
+      "poster_path": "/4LYKIdVJQkHZz3Grpcix4AD7zJt.jpg",
+      "popularity": 8.385984,
+      "id": 63351,
+      "overview": "The true story of Colombia's infamously violent and powerful drug cartels.",
+      "backdrop_path": "/baMG7mRtR52eLHz4b1OZchr1Jwb.jpg",
+      "vote_average": 7.91,
+      "media_type": "tv",
+      "first_air_date": "2015-08-28",
+      "origin_country": [
+        "US"
+      ],
+      "genre_ids": [
+        80,
+        18
+      ],
+      "original_language": "en",
+      "vote_count": 298,
+      "name": "Narcos",
+      "original_name": "Narcos",
+      "_id": 2
+    },
+    {
+      "poster_path": "/oteRbxyoAkEiyfxEO9fWhzG5o2S.jpg",
+      "adult": false,
+      "overview": "",
+      "release_date": "1992-05-21",
+      "original_title": "Narcos",
+      "genre_ids": [
+        18
+      ],
+      "id": 341087,
+      "media_type": "movie",
+      "original_language": "it",
+      "title": "Narcos",
+      "backdrop_path": null,
+      "popularity": 1.0225,
+      "vote_count": 2,
+      "video": false,
+      "vote_average": 8,
+      "_id": 3
+    },
+    {
+      "profile_path": null,
+      "adult": false,
+      "id": 1450706,
+      "media_type": "person",
+      "known_for": [
+        {
+          "poster_path": "/whjgrLmBFnlQcmPPAqSpN1gqXH4.jpg",
+          "adult": false,
+          "overview": "",
+          "release_date": "2015-04-06",
+          "original_title": "Ganja Fiction",
+          "genre_ids": [
+            28,
+            35,
+            80
+          ],
+          "id": 334658,
+          "media_type": "movie",
+          "original_language": "it",
+          "title": "Ganja Fiction",
+          "backdrop_path": null,
+          "popularity": 1.015404,
+          "vote_count": 1,
+          "video": false,
+          "vote_average": 6
+        }
+      ],
+      "name": "Noyz Narcos",
+      "popularity": 1.14175,
+      "_id": 4
+    },
+    {
+      "poster_path": null,
+      "popularity": 1.198811,
+      "id": 46554,
+      "overview": "",
+      "backdrop_path": null,
+      "vote_average": 0,
+      "media_type": "tv",
+      "first_air_date": "2008-10-24",
+      "origin_country": [],
+      "genre_ids": [
+        10759
+      ],
+      "original_language": "en",
+      "vote_count": 0,
+      "name": "Fight",
+      "original_name": "Fight",
+      "_id": 5
+    },
+    {
+      "poster_path": "/adw6Lq9FiC9zjYEpOqfq03ituwp.jpg",
+      "adult": false,
+      "overview": "A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy. Their concept catches on, with underground \"fight clubs\" forming in every town, until an eccentric gets in the way and ignites an out-of-control spiral toward oblivion.",
+      "release_date": "1999-10-15",
+      "original_title": "Fight Club",
+      "genre_ids": [
+        18
+      ],
+      "id": 550,
+      "media_type": "movie",
+      "original_language": "en",
+      "title": "Fight Club",
+      "backdrop_path": "/87hTDiay2N2qWyX4Ds7ybXi9h8I.jpg",
+      "popularity": 9.03794,
+      "vote_count": 7778,
+      "video": false,
+      "vote_average": 8.2,
+      "_id": 6
+    },
+    {
+      "poster_path": "/yONLyCSO0zyDvmVJO2i1U4yrNHE.jpg",
+      "adult": false,
+      "overview": "When one school teacher gets the other fired, he is challenged to an after-school fight.",
+      "release_date": "2017-02-16",
+      "original_title": "Fist Fight",
+      "genre_ids": [
+        35
+      ],
+      "id": 345922,
+      "media_type": "movie",
+      "original_language": "en",
+      "title": "Fist Fight",
+      "backdrop_path": "/yzAo91sIwQrbYSh9bQrbQ12wZnI.jpg",
+      "popularity": 8.655177,
+      "vote_count": 128,
+      "video": false,
+      "vote_average": 5.9,
+      "_id": 7
+    }
+  ],
   "posts": [
     {
       "id": 1,

@@ -11,17 +11,18 @@ import App from "../App";
 import { loadMyMovieList} from "../actions";
 
 function mapStateToProps(state) {
-  console.log("appC what is the sate: ", state.searchResults)
+  console.log("appC what is the state: ", state.searchResults);
   return {
     searchResults: state.searchResults,
-    myMovieList: state.myMovieList
+    myMovieList: state.myMovieList,
+    // movie1: state.searchResults.results
   };
 }
 
 function mapDispatchToProps(dispatch) {
   return {
     loadMyMovieList: () => {
-   console.log("APP Container mounted here ", dispatch);
+//   console.log("APP Container mounted here ", dispatch);
       dispatch(loadMyMovieList());
     }
   };

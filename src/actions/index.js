@@ -16,7 +16,8 @@ https://onsen.io/blog/react-state-management-redux-store/
     * on complete, dispatch to searchLoaded(movies)
 * searchLoaded(movies)
     * type = “SEARCH_RESULTS_LOADED”
-    * value = make sure to assign the value of movies.results to get the array of movies from movie db
+    * value = make sure to assign the value of movies.
+      results to get the array of movies from movie db
 * saveMyMovie(movie)
     * make fetch POST to “/movies”
     * on complete dispatch to loadMyMovieList()
@@ -39,12 +40,12 @@ export function loadMyMovieList() {
        return response.json();
      })
      .then((data) => {
-       console.log("json recieved", data)
-       // dispatch(myMovieListLoaded(movies));
+      // console.log("json recieved", data)
+        dispatch(myMovieListLoaded(data));
      })
      .catch((err) => {
-       dispatch(LoadMyMovieError());
-       console.log("oop, load error");
+       LoadMyMovieError();
+       console.log("oop, load error LM");
      });
   };
 }
@@ -73,13 +74,13 @@ console.log("search term: ", searchTerm)
        console.log("search movie api fetched", response);
        return response.json();
      })
-     .then((movies) => {
-       console.log("search json recieved", movies)
-       dispatch(searchLoaded(movies));
+     .then((data) => {
+       console.log("search json recieved", data);
+       dispatch(searchLoaded(data.results));
      })
      .catch((err) => {
        dispatch(searchLoadedError());
-       console.log("oop, search error");
+       console.log("oop, search error LS ", err);
      });
   };
 }
