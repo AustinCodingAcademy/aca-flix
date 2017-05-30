@@ -149,6 +149,26 @@
       "video": false,
       "vote_average": 5.9,
       "_id": 7
+    },
+    {
+      "poster_path": "/cbQ2iwp0Tg0VsB9uclYEkVp9sUC.jpg",
+      "adult": false,
+      "overview": "ABC of a Strike captures the 1979 metal workers strikes outside of São Paulo. The footage sat untouched until after the death of highly regarded director Leon Hirszman in 1987, by which time the material had a new relevance. The gripping film captures the negotiations between the labor unions and the factory bosses and shows the birth of the region’s Worker’s Party, as well as the emergence of its charismatic leader, Luiz Inácio Lula da Silva (known as “Lula”). Rising from extreme poverty, Lula gained national prominence as a union activist during the late 70s and early 80s. After being jailed during his time as a union leader, he eventually become Brazil’s president from 2003 to 2010.  -Description via Wexner Center Film/Video",
+      "release_date": "1990-02-15",
+      "original_title": "ABC da Greve",
+      "genre_ids": [
+        99
+      ],
+      "id": 252291,
+      "media_type": "movie",
+      "original_language": "en",
+      "title": "ABC of a Strike",
+      "backdrop_path": null,
+      "popularity": 1.000009,
+      "vote_count": 4,
+      "video": false,
+      "vote_average": 8.3,
+      "_id": 8
     }
   ],
   "posts": [
