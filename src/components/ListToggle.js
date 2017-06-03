@@ -32,6 +32,8 @@ class ListToggle extends Component {
 }
 
 ListToggle.propTypes = {
+  removeMyMovie: PropTypes.func.isRequired,
+  saveMyMovie: PropTypes.func.isRequired,
   movie: PropTypes.shape({
     _id: PropTypes.number.isRequired,
   }).isRequired

@@ -1,12 +1,11 @@
 import React, {Component} from "react";
 import PropTypes from "prop-types";
 import "./App.css";
-import Logo from "./Logo.js";
-import TitleList from "./components/TitleList";
 import Hero from "./components/Hero";
-// import SearchBox from "./components/SearchBox";
-import SearchBoxContainer from "./containers/SearchBoxContainer";
+import Logo from "./Logo.js";
 import Navigation from "./components/Navigation";
+import SearchBoxContainer from "./containers/SearchBoxContainer";
+import TitleList from "./components/TitleList";
 import UserProfile from "./components/UserProfile";
 import {loadMyMovieList} from "./actions";
 
@@ -34,12 +33,10 @@ class App extends Component {
     );
   }
 }
-/*
+
 App.propTypes = {
-  TitleList.movies: PropTypes.shape({
-    searchResults: PropTypes.array.isRequired,
-    myMovieList: PropTypes.array.isRequired
-  }).isRequired
+  searchResults: PropTypes.array.isRequired,
+  myMovieList: PropTypes.array.isRequired,
 };
-*/
+
 export default App;

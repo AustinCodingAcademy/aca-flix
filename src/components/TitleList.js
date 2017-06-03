@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import Item from "./Item";
 import PropTypes from "prop-types";
 
@@ -30,9 +30,10 @@ function TitleList(props) {
 }
 
 TitleList.propTypes = {
+  title: PropTypes.string.isRequired,
   movies: PropTypes.shape({
-    length: PropTypes.array.isRequired,
-    map: PropTypes.array.isRequired,
+    length: PropTypes.number.isRequired,
+    map: PropTypes.func.isRequired,
   }).isRequired
 };
 
