@@ -1,5 +1,3 @@
-import "whatwg-fetch";
-
 export const LOAD_MY_MOVIE_LIST = "LOAD_MY_MOVIE_LIST";
 
 export function loadMyMovieList() {
@@ -58,19 +56,16 @@ export function searchLoaded(movies) {
   };
 }
 
-export function saveMyMovie() {
+export function saveMyMovie(movie) {
   return (dispatch) => {
     fetch("/movies", {
       method: "POST",
       headers: {"Content-Type": "application/json"},
-      body: JSON.stringify()
+      body: JSON.stringify(movie)
     })
     .then(() => {
       dispatch(loadMyMovieList());
-    })
-    .catch((err) =>
-      dispatch("Error :", err)
-    );
+    });
   };
 }
 
@@ -78,12 +73,10 @@ export function removeMyMovie(id) {
   return (dispatch) => {
     fetch("/movies/" + id, {
       method: "DELETE",
+      headers: {"Content-Type": "application/json"}
     })
     .then(() => {
       dispatch(loadMyMovieList());
-    })
-    .catch((err) =>
-      dispatch("Error :", err)
-    );
+    });
   };
 }

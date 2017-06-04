@@ -4,7 +4,7 @@ import {
   SEARCH_RESULTS_LOADED
 } from "../actions";
 
-function myMovieListLoaded(state = [], action) {
+function myMovieList(state = [], action) {
   switch (action.type) {
     case MY_MOVIE_LIST_LOADED:
       return action.value;
@@ -13,7 +13,7 @@ function myMovieListLoaded(state = [], action) {
   }
 }
 
-function searchResultsLoaded(state = [], action) {
+function searchResults(state = [], action) {
   switch (action.type) {
     case SEARCH_RESULTS_LOADED:
       return action.value;
@@ -23,6 +23,6 @@ function searchResultsLoaded(state = [], action) {
 }
 
 export default combineReducers({
-  myMovieListLoaded,
-  searchResultsLoaded
+  myMovieList,
+  searchResults
 });
