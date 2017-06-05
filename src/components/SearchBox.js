@@ -2,8 +2,8 @@ import React, {Component} from "react";
 import PropTypes from "prop-types";
 
 class SearchBox extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       searchTerm: ""
     };
@@ -25,7 +25,7 @@ class SearchBox extends Component {
               this.props.loadSearch(this.state.searchTerm);
             }
           }
-        }
+          }
           type="search"
           placeholder="Search for a title..." />
       </div>

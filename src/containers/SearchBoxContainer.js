@@ -11,8 +11,8 @@ function mapStateToProps(state) {
 }
 function mapDispatchToProps(dispatch) {
   return {
-    loadSearch: () => {
-      dispatch(loadSearch());
+    loadSearch: (searchTerm) => {
+      dispatch(loadSearch(searchTerm));
     }
   };
 }

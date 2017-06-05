@@ -1,5 +1,93 @@
 {
-  "movies":[],
+  "movies": [
+    {
+      "poster_path": "/uWFjfsN1cLGP0fJvUUUNBTwoeOR.jpg",
+      "popularity": 2.953349,
+      "id": 68780,
+      "overview": "Star is a tough-as-nails young woman who came up in the foster care system and decides one day to take control of her destiny. She tracks down her sister, Simone, and her Instagram bestie, Alexandra, and together, the trio journeys to Atlanta with the hope of becoming music superstars.",
+      "backdrop_path": "/2wJbPyJYjDNjYeVauEDmn4ZYaZa.jpg",
+      "vote_average": 7.8,
+      "media_type": "tv",
+      "first_air_date": "2016-12-14",
+      "origin_country": [
+        "US"
+      ],
+      "genre_ids": [
+        18
+      ],
+      "original_language": "en",
+      "vote_count": 23,
+      "name": "Star",
+      "original_name": "Star",
+      "_id": 1
+    },
+    {
+      "poster_path": "/msYAJySH9GlwFva4rI32i600I2Y.jpg",
+      "popularity": 8.653214,
+      "id": 1855,
+      "overview": "Pulled to the far side of the galaxy, where the Federation is 75 years away at maximum warp speed, a Starfleet ship must cooperate with Maquis rebels to find a way home.",
+      "backdrop_path": "/yRsjaKfBHXtxbAWRLH7P7cWh68.jpg",
+      "vote_average": 7.59,
+      "media_type": "tv",
+      "first_air_date": "1995-01-16",
+      "origin_country": [
+        "US"
+      ],
+      "genre_ids": [
+        10765,
+        18,
+        10759
+      ],
+      "original_language": "en",
+      "vote_count": 185,
+      "name": "Star Trek: Voyager",
+      "original_name": "Star Trek: Voyager",
+      "_id": 2
+    },
+    {
+      "poster_path": "/x40NhjIPoDoTbT0z2utFgIedtwh.jpg",
+      "popularity": 9.829341,
+      "id": 4556,
+      "overview": "In the unreal world of Sacred Heart Hospital, John \"J.D\" Dorian learns the ways of medicine, friendship and life.",
+      "backdrop_path": "/gn18IaampxKKRgxSrCJORhWi84J.jpg",
+      "vote_average": 7.61,
+      "media_type": "tv",
+      "first_air_date": "2001-10-02",
+      "origin_country": [
+        "US"
+      ],
+      "genre_ids": [
+        18,
+        35
+      ],
+      "original_language": "en",
+      "vote_count": 272,
+      "name": "Scrubs",
+      "original_name": "Scrubs",
+      "_id": 3
+    },
+    {
+      "poster_path": "/uWFjfsN1cLGP0fJvUUUNBTwoeOR.jpg",
+      "popularity": 2.953349,
+      "id": 68780,
+      "overview": "Star is a tough-as-nails young woman who came up in the foster care system and decides one day to take control of her destiny. She tracks down her sister, Simone, and her Instagram bestie, Alexandra, and together, the trio journeys to Atlanta with the hope of becoming music superstars.",
+      "backdrop_path": "/2wJbPyJYjDNjYeVauEDmn4ZYaZa.jpg",
+      "vote_average": 7.8,
+      "media_type": "tv",
+      "first_air_date": "2016-12-14",
+      "origin_country": [
+        "US"
+      ],
+      "genre_ids": [
+        18
+      ],
+      "original_language": "en",
+      "vote_count": 23,
+      "name": "Star",
+      "original_name": "Star",
+      "_id": 4
+    }
+  ],
   "posts": [
     {
       "id": 1,

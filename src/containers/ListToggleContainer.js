@@ -12,9 +12,11 @@ function mapStateToProps(state) {
 }
 function mapDispatchToProps(dispatch) {
   return {
-    onMount: () => {
-      dispatch(saveMyMovie());
-      dispatch(removeMyMovie());
+    saveMyMovie: (movie) => {
+      dispatch(saveMyMovie(movie));
+    },
+    removeMyMovie: (id) => {
+      dispatch(removeMyMovie(id));
     }
   };
 }
