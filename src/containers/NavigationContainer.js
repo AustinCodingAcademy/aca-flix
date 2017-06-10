@@ -1,7 +1,7 @@
 import { connect } from "react-redux";
 import Navigation from "../components/Navigation";
 import {
-  loadSearch
+  loadMyMovieList
 } from "../actions";
 
 function mapStateToProps(state) {
@@ -12,7 +12,7 @@ function mapStateToProps(state) {
 function mapDispatchToProps(dispatch) {
   return {
     onLoadNavigation: () => {
-      dispatch(loadSearch());
+      dispatch(loadMyMovieList());
     }
   };
 }

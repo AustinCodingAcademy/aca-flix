@@ -12,7 +12,7 @@ function mapStateToProps(state) {
 }
 function mapDispatchToProps(dispatch) {
   return {
-    onMount: () => {
+    loadMyMovieList: () => {
       dispatch(loadMyMovieList());
     }
   };

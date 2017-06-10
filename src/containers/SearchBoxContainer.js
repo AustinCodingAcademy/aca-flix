@@ -6,7 +6,8 @@ import {
 
 function mapStateToProps(state) {
   return {
-    searchTerm: state.searchTerm
+    searchTerm: state.searchTerm,
+    state
   };
 }
 function mapDispatchToProps(dispatch) {

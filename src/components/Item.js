@@ -6,7 +6,7 @@ function Item(props) {
   let name = "";
   const backDrop = "http://image.tmdb.org/t/p/original" + props.movie.backdrop_path;
   if (!props.movie.name) {
-    name = props.movie.originalTitle;
+    name = props.movie.original_name;
   } else {
     name = props.movie.name;
   }
@@ -24,10 +24,10 @@ function Item(props) {
 
 Item.propTypes = {
   movie: PropTypes.shape({
-    voteAverage: PropTypes.number.isRequired,
+    vote_average: PropTypes.number.isRequired,
     overview: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
-    originalTitle: PropTypes.string.isRequired,
+    original_name: PropTypes.string.isRequired,
     backdrop_path: PropTypes.string.isRequired
   }).isRequired
 };

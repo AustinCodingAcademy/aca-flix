@@ -86,6 +86,219 @@
       "name": "Star",
       "original_name": "Star",
       "_id": 4
+    },
+    {
+      "original_name": "Scrubs",
+      "id": 4556,
+      "media_type": "tv",
+      "name": "Scrubs",
+      "vote_count": 276,
+      "vote_average": 7.6,
+      "poster_path": "/x40NhjIPoDoTbT0z2utFgIedtwh.jpg",
+      "first_air_date": "2001-10-02",
+      "popularity": 10.016201,
+      "genre_ids": [
+        18,
+        35
+      ],
+      "original_language": "en",
+      "backdrop_path": "/gn18IaampxKKRgxSrCJORhWi84J.jpg",
+      "overview": "In the unreal world of Sacred Heart Hospital, John \"J.D\" Dorian learns the ways of medicine, friendship and life.",
+      "origin_country": [
+        "US"
+      ],
+      "_id": 5
+    },
+    {
+      "original_name": "Star",
+      "id": 68780,
+      "media_type": "tv",
+      "name": "Star",
+      "vote_count": 23,
+      "vote_average": 7.8,
+      "poster_path": "/uWFjfsN1cLGP0fJvUUUNBTwoeOR.jpg",
+      "first_air_date": "2016-12-14",
+      "popularity": 2.475641,
+      "genre_ids": [
+        18
+      ],
+      "original_language": "en",
+      "backdrop_path": "/2wJbPyJYjDNjYeVauEDmn4ZYaZa.jpg",
+      "overview": "Star is a tough-as-nails young woman who came up in the foster care system and decides one day to take control of her destiny. She tracks down her sister, Simone, and her Instagram bestie, Alexandra, and together, the trio journeys to Atlanta with the hope of becoming music superstars.",
+      "origin_country": [
+        "US"
+      ],
+      "_id": 6
+    },
+    {
+      "original_name": "Star",
+      "id": 68780,
+      "media_type": "tv",
+      "name": "Star",
+      "vote_count": 23,
+      "vote_average": 7.8,
+      "poster_path": "/uWFjfsN1cLGP0fJvUUUNBTwoeOR.jpg",
+      "first_air_date": "2016-12-14",
+      "popularity": 2.475641,
+      "genre_ids": [
+        18
+      ],
+      "original_language": "en",
+      "backdrop_path": "/2wJbPyJYjDNjYeVauEDmn4ZYaZa.jpg",
+      "overview": "Star is a tough-as-nails young woman who came up in the foster care system and decides one day to take control of her destiny. She tracks down her sister, Simone, and her Instagram bestie, Alexandra, and together, the trio journeys to Atlanta with the hope of becoming music superstars.",
+      "origin_country": [
+        "US"
+      ],
+      "_id": 7
+    },
+    {
+      "original_name": "Star",
+      "id": 68780,
+      "media_type": "tv",
+      "name": "Star",
+      "vote_count": 23,
+      "vote_average": 7.8,
+      "poster_path": "/uWFjfsN1cLGP0fJvUUUNBTwoeOR.jpg",
+      "first_air_date": "2016-12-14",
+      "popularity": 2.475641,
+      "genre_ids": [
+        18
+      ],
+      "original_language": "en",
+      "backdrop_path": "/2wJbPyJYjDNjYeVauEDmn4ZYaZa.jpg",
+      "overview": "Star is a tough-as-nails young woman who came up in the foster care system and decides one day to take control of her destiny. She tracks down her sister, Simone, and her Instagram bestie, Alexandra, and together, the trio journeys to Atlanta with the hope of becoming music superstars.",
+      "origin_country": [
+        "US"
+      ],
+      "_id": 8
+    },
+    {
+      "vote_average": 8,
+      "vote_count": 5765,
+      "id": 11,
+      "video": false,
+      "media_type": "movie",
+      "title": "Star Wars",
+      "popularity": 9.030482,
+      "poster_path": "/tvSlBzAdRE29bZe5yYWrJ2ds137.jpg",
+      "original_language": "en",
+      "original_title": "Star Wars",
+      "genre_ids": [
+        12,
+        28,
+        878
+      ],
+      "backdrop_path": "/4iJfYYoQzZcONB9hNzg0J0wWyPH.jpg",
+      "adult": false,
+      "overview": "Princess Leia is captured and held hostage by the evil Imperial forces in their effort to take over the galactic Empire. Venturesome Luke Skywalker and dashing captain Han Solo team together with the loveable robot duo R2-D2 and C-3PO to rescue the beautiful princess and restore peace and justice in the Empire.",
+      "release_date": "1977-05-25",
+      "_id": 9
+    },
+    {
+      "vote_average": 8,
+      "vote_count": 5765,
+      "id": 11,
+      "video": false,
+      "media_type": "movie",
+      "title": "Star Wars",
+      "popularity": 9.030482,
+      "poster_path": "/tvSlBzAdRE29bZe5yYWrJ2ds137.jpg",
+      "original_language": "en",
+      "original_title": "Star Wars",
+      "genre_ids": [
+        12,
+        28,
+        878
+      ],
+      "backdrop_path": "/4iJfYYoQzZcONB9hNzg0J0wWyPH.jpg",
+      "adult": false,
+      "overview": "Princess Leia is captured and held hostage by the evil Imperial forces in their effort to take over the galactic Empire. Venturesome Luke Skywalker and dashing captain Han Solo team together with the loveable robot duo R2-D2 and C-3PO to rescue the beautiful princess and restore peace and justice in the Empire.",
+      "release_date": "1977-05-25",
+      "_id": 10
+    },
+    {
+      "original_name": "Star",
+      "id": 68780,
+      "media_type": "tv",
+      "name": "Star",
+      "vote_count": 23,
+      "vote_average": 7.8,
+      "poster_path": "/uWFjfsN1cLGP0fJvUUUNBTwoeOR.jpg",
+      "first_air_date": "2016-12-14",
+      "popularity": 2.475641,
+      "genre_ids": [
+        18
+      ],
+      "original_language": "en",
+      "backdrop_path": "/2wJbPyJYjDNjYeVauEDmn4ZYaZa.jpg",
+      "overview": "Star is a tough-as-nails young woman who came up in the foster care system and decides one day to take control of her destiny. She tracks down her sister, Simone, and her Instagram bestie, Alexandra, and together, the trio journeys to Atlanta with the hope of becoming music superstars.",
+      "origin_country": [
+        "US"
+      ],
+      "_id": 11
+    },
+    {
+      "original_name": "Star",
+      "id": 68780,
+      "media_type": "tv",
+      "name": "Star",
+      "vote_count": 23,
+      "vote_average": 7.8,
+      "poster_path": "/uWFjfsN1cLGP0fJvUUUNBTwoeOR.jpg",
+      "first_air_date": "2016-12-14",
+      "popularity": 2.475641,
+      "genre_ids": [
+        18
+      ],
+      "original_language": "en",
+      "backdrop_path": "/2wJbPyJYjDNjYeVauEDmn4ZYaZa.jpg",
+      "overview": "Star is a tough-as-nails young woman who came up in the foster care system and decides one day to take control of her destiny. She tracks down her sister, Simone, and her Instagram bestie, Alexandra, and together, the trio journeys to Atlanta with the hope of becoming music superstars.",
+      "origin_country": [
+        "US"
+      ],
+      "_id": 12
+    },
+    {
+      "original_name": "Star",
+      "id": 68780,
+      "media_type": "tv",
+      "name": "Star",
+      "vote_count": 23,
+      "vote_average": 7.8,
+      "poster_path": "/uWFjfsN1cLGP0fJvUUUNBTwoeOR.jpg",
+      "first_air_date": "2016-12-14",
+      "popularity": 2.475641,
+      "genre_ids": [
+        18
+      ],
+      "original_language": "en",
+      "backdrop_path": "/2wJbPyJYjDNjYeVauEDmn4ZYaZa.jpg",
+      "overview": "Star is a tough-as-nails young woman who came up in the foster care system and decides one day to take control of her destiny. She tracks down her sister, Simone, and her Instagram bestie, Alexandra, and together, the trio journeys to Atlanta with the hope of becoming music superstars.",
+      "origin_country": [
+        "US"
+      ],
+      "_id": 13
+    },
+    {
+      "original_name": "Star",
+      "id": 68780,
+      "media_type": "tv",
+      "name": "Star",
+      "vote_count": 23,
+      "vote_average": 7.8,
+      "poster_path": "/uWFjfsN1cLGP0fJvUUUNBTwoeOR.jpg",
+      "first_air_date": "2016-12-14",
+      "popularity": 2.133529,
+      "genre_ids": [
+        18
+      ],
+      "original_language": "en",
+      "backdrop_path": "/2wJbPyJYjDNjYeVauEDmn4ZYaZa.jpg",
+      "overview": "Star is a tough-as-nails young woman who came up in the foster care system and decides one day to take control of her destiny. She tracks down her sister, Simone, and her Instagram bestie, Alexandra, and together, the trio journeys to Atlanta with the hope of becoming music superstars.",
+      "origin_country": [
+        "US"
+      ],
+      "_id": 14
     }
   ],
   "posts": [

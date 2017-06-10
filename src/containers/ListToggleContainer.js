@@ -5,11 +5,6 @@ import {
   removeMyMovie
 } from "../actions";
 
-function mapStateToProps(state) {
-  return {
-    toggle: state.toggled
-  };
-}
 function mapDispatchToProps(dispatch) {
   return {
     saveMyMovie: (movie) => {
@@ -20,4 +15,4 @@ function mapDispatchToProps(dispatch) {
     }
   };
 }
-export default connect(mapStateToProps, mapDispatchToProps)(ListToggle);
+export default connect(null, mapDispatchToProps)(ListToggle);

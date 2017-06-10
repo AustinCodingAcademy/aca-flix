@@ -7,11 +7,10 @@ import Navigation from "./components/Navigation";
 import SearchBoxContainer from "./containers/SearchBoxContainer";
 import TitleList from "./components/TitleList";
 import UserProfile from "./components/UserProfile";
-import {loadMyMovieList} from "./actions";
 
 class App extends Component {
   componentDidMount() {
-    loadMyMovieList();
+    this.props.loadMyMovieList();
   }
   render() {
     return (
@@ -37,6 +36,7 @@ class App extends Component {
 App.propTypes = {
   searchResults: PropTypes.array.isRequired,
   myMovieList: PropTypes.array.isRequired,
+  loadMyMovieList: PropTypes.func.isRequired
 };
 
 export default App;

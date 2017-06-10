@@ -23,7 +23,7 @@ export const MY_MOVIE_LIST_LOADED = "MY_MOVIE_LIST_LOADED";
 export function myMovieListLoaded(movies) {
   return {
     type: MY_MOVIE_LIST_LOADED,
-    movies
+    value: movies
   };
 }
 
