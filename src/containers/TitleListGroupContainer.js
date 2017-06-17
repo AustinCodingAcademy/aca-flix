@@ -8,10 +8,10 @@ function mapStateToProps(state) {
   };
 }
 
-// function mapDispatchToProps(dispatch) {
-//   return {
-//
-//   };
-// }
+function mapDispatchToProps(dispatch) {
+  return {
+    searchResults: dispatch.searchResults
+  };
+}
 
-export default connect(mapStateToProps)(TitleListGroup);
+export default connect(mapStateToProps, mapDispatchToProps)(TitleListGroup);

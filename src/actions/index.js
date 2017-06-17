@@ -61,6 +61,10 @@ export function updateSearchTerm(searchTerm) {
 export const SEARCH_RESULTS_LOADED = "SEARCH_RESULTS_LOADED";
 
 export function searchLoaded(movies) {
+  // return function (dispatch) {
+  //   dispatch({
+  //     type: "SEARCH_RESULTS_LOADED"
+  //   });
   // const myMovies = movies.results.map(movie => {
   //   return { ...movie, isMyMovie: false };
   // });

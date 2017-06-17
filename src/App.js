@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import PropTypes from "prop-types";
 import "./App.css";
 import Logo from "./Logo.js";
+// import TitleListContainer from "./containers/TitleListContainer";
 import TitleListGroupContainer from "./containers/TitleListGroupContainer";
 import Hero from "./components/Hero";
 

@@ -22,5 +22,6 @@ function mapDispatchToProps(dispatch) {
       dispatch(loadSearchTerm(term));
     }
   };
+
 }
 export default connect(mapStateToProps, mapDispatchToProps)(SearchBox);
