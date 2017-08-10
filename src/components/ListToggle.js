@@ -1,28 +1,31 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React, { Component } from "react";
 
-function ListToggle(props) {
-  return (
-    <div
-      className="ListToggle">
-      {
-        props.movie.isMyMovie ? <div onClick={() => props.removeMovie(props.movie)}>
-          <i className="fa fa-fw fa-check" />
-          <i className="fa fa-fw fa-minus" />
-        </div> :
-        <div onClick={() => props.saveMovie(props.movie)}>
-          <i className="fa fa-fw fa-check" />
+class ListToggle extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { toggled: Boolean(props.movie._id)};
+    this.handleClick = this.handleClick.bind(this);
+  }
+  handleClick() {
+    if (this.state.toggled === true) {
+      this.props.removeMyMovie(this.props.movie._id);
+      this.setState({ toggled: false });
+    } else {
+      this.props.saveMyMovie(this.props.movie);
+      this.setState({ toggled: true });
+    }
+  }
+  render() {
+    return (
+      <div onClick={this.handleClick}
+        data-toggled={this.state.toggled}
+        className="ListToggle">
+        <div>
           <i className="fa fa-fw fa-plus" />
+          <i className="fa fa-fw fa-check" />
         </div>
-      }
-    </div>
-  );
+      </div>
+    );
+  }
 }
-
-ListToggle.propTypes = {
-  movie: PropTypes.object,
-  removeMovie: PropTypes.func,
-  saveMovie: PropTypes.func
-};
-
 export default ListToggle;

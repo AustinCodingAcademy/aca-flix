@@ -1,30 +1,42 @@
-import React from "react";
+import React, {Component} from "react";
 import PropTypes from "prop-types";
 
+class SearchBox extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      searchTerm: ""
+    };
+  }
 
-function SearchBox(props) {
-  return (
-    <div id="search" className="Search">
-      <input
-        onKeyUp={e => {
-          if (e.key === "Enter") {
-            console.log("hi", props.searchTerm);
-            props.handleLoadSearch(props.searchTerm);
+  handleChange(event) {
+    this.setState({
+      searchTerm: event.target.value
+    });
+  }
+
+  render() {
+    return (
+      <div id="search" className="Search">
+        <input
+          onKeyUp={
+            (e) => {
+              /* this is so th search will only be done on enter key */
+              if (this.props.loadSearch && e.key === "Enter" && this.state.searchTerm) {
+                this.props.loadSearch(this.state.searchTerm);
+              }
+            }
           }
-        }}
-        type="search"
-        value={props.searchTerm}
-        placeholder="Search for a title..."
-        onChange={props.handleChange}
-      />
-    </div>
-  );
+          onChange={this.handleChange.bind(this)}
+          type="search"
+          placeholder="Search for a title..." />
+      </div>
+    );
+  }
 }
 
 SearchBox.propTypes = {
-  handleLoadSearch: PropTypes.func.isRequired,
-  handleChange: PropTypes.func.isRequired,
-  searchTerm: PropTypes.string.isRequired,
+  loadSearch: PropTypes.func.isRequired
 };
 
 export default SearchBox;

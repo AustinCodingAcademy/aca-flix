@@ -10,7 +10,8 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
   return {
-    searchResults: dispatch.searchResults
+    searchResults: dispatch.searchResults,
+    savedMovies: dispatch.favoriteMovies,
   };
 }
 

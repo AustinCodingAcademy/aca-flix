@@ -2,17 +2,16 @@ import React, {Component} from "react";
 import PropTypes from "prop-types";
 import "./App.css";
 import Logo from "./Logo.js";
-// import TitleListContainer from "./containers/TitleListContainer";
-import TitleListGroupContainer from "./containers/TitleListGroupContainer";
+import TitleList from "./components/TitleList";
 import Hero from "./components/Hero";
-
-import SearchBoxContainer from "./containers/SearchBoxContainer";
+import SearchBoxContainer from "./components/SearchBoxContainer";
 import Navigation from "./components/Navigation";
 import UserProfile from "./components/UserProfile";
 
 class App extends Component {
-  componentWillMount() {
-    this.props.onMount();
+
+  componentDidMount() {
+    return this.props.loadMovies();
   }
 
   render() {
@@ -20,20 +19,17 @@ class App extends Component {
       <div>
         <header className="Header">
           <Logo />
-          {/*  <Navigation>   */}
           <Navigation />
-          {/*  </Navigation>   */}
           <SearchBoxContainer />
-          {/*  <UserProfile>   */}
           <UserProfile />
-          {/*  </UserProfile>   */}
         </header>
         <Hero />
-        <TitleListGroupContainer
+        <TitleList
           title="Search Results"
-          />
-        <TitleListGroupContainer
+          movies={this.props.searchResults} />
+        <TitleList
           title="My Movies"
+          movies={this.props.myMovieList}
           />
       </div>
     );
@@ -41,9 +37,9 @@ class App extends Component {
 }
 
 App.propTypes = {
-  searchResults: PropTypes.array,
+  searchResults: PropTypes.array.isRequired,
   myMovieList: PropTypes.array,
-  onMount: PropTypes.func
+  loadMovies: PropTypes.func,
 };
 
 export default App;

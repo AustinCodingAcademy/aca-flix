@@ -5,16 +5,20 @@ import {
 } from "../actions";
 
 function mapStateToProps(state) {
+  const {
+    searchResults,
+    myMovieList,
+  } = state;
   return {
-    searchResults: state.searchResults,
-    favoriteMovies: state.favoriteMovies
+    searchResults,
+    myMovieList,
   };
 }
 
 
 function mapDispatchToProps(dispatch) {
   return {
-    onMount: () => {
+    loadMovies: () => {
       dispatch(loadMyMovieList());
     }
   };

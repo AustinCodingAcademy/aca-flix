@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import TitleList from "../components/TitleList";
+import TitleList from "./TitleList";
 
 function mapStateToProps(state) {
   return {
