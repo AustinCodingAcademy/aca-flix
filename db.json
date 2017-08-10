@@ -1,221 +1,6 @@
 {
   "movies": [
     {
-      "poster_path": "/kHXEpyfl6zqn8a6YuozZUujufXf.jpg",
-      "adult": false,
-      "overview": "84 years later, a 101-year-old woman named Rose DeWitt Bukater tells the story to her granddaughter Lizzy Calvert, Brock Lovett, Lewis Bodine, Bobby Buell and Anatoly Mikailavich on the Keldysh about her life set in April 10th 1912, on a ship called Titanic when young Rose boards the departing ship with the upper-class passengers and her mother, Ruth DeWitt Bukater, and her fiancé, Caledon Hockley. Meanwhile, a drifter and artist named Jack Dawson and his best friend Fabrizio De Rossi win third-class tickets to the ship in a game. And she explains the whole story from departure until the death of Titanic on its first and last voyage April 15th, 1912 at 2:20 in the morning.",
-      "release_date": "1997-11-18",
-      "genre_ids": [
-        18,
-        10749,
-        53
-      ],
-      "id": 597,
-      "original_title": "Titanic",
-      "original_language": "en",
-      "title": "Titanic",
-      "backdrop_path": "/fVcZErSWa7gyENuj8IWp8eAfCnL.jpg",
-      "popularity": 8.842353,
-      "vote_count": 6134,
-      "video": false,
-      "vote_average": 7.4,
-      "isMyMovie": true,
-      "_id": 18
-    },
-    {
-      "vote_count": 6643,
-      "id": 597,
-      "video": false,
-      "vote_average": 7.4,
-      "title": "Titanic",
-      "popularity": 9.175323,
-      "poster_path": "/kHXEpyfl6zqn8a6YuozZUujufXf.jpg",
-      "original_language": "en",
-      "original_title": "Titanic",
-      "genre_ids": [
-        18,
-        10749,
-        53
-      ],
-      "backdrop_path": "/fVcZErSWa7gyENuj8IWp8eAfCnL.jpg",
-      "adult": false,
-      "overview": "84 years later, a 101-year-old woman named Rose DeWitt Bukater tells the story to her granddaughter Lizzy Calvert, Brock Lovett, Lewis Bodine, Bobby Buell and Anatoly Mikailavich on the Keldysh about her life set in April 10th 1912, on a ship called Titanic when young Rose boards the departing ship with the upper-class passengers and her mother, Ruth DeWitt Bukater, and her fiancé, Caledon Hockley. Meanwhile, a drifter and artist named Jack Dawson and his best friend Fabrizio De Rossi win third-class tickets to the ship in a game. And she explains the whole story from departure until the death of Titanic on its first and last voyage April 15th, 1912 at 2:20 in the morning.",
-      "release_date": "1997-11-18",
-      "_id": 23
-    },
-    {
-      "vote_count": 1,
-      "id": 239200,
-      "video": false,
-      "vote_average": 8,
-      "title": "Getting Made: The Making of 'GoodFellas'",
-      "popularity": 1.227618,
-      "poster_path": "/aTXDFrRb0VtNwDlWC6jIqO2bVrK.jpg",
-      "original_language": "en",
-      "original_title": "Getting Made: The Making of 'GoodFellas'",
-      "genre_ids": [
-        99
-      ],
-      "backdrop_path": null,
-      "adult": false,
-      "overview": "A documentary about the making of Martin Scorsese's gangster classic \"Goodfellas\".",
-      "release_date": "2004-11-19",
-      "_id": 26
-    },
-    {
-      "vote_count": 907,
-      "id": 2280,
-      "video": false,
-      "vote_average": 6.9,
-      "title": "Big",
-      "popularity": 2.333465,
-      "poster_path": "/me6uugsf6zWTkrcLBoNc9EElb5j.jpg",
-      "original_language": "en",
-      "original_title": "Big",
-      "genre_ids": [
-        14,
-        18,
-        35,
-        10749,
-        10751
-      ],
-      "backdrop_path": "/tVpkaXfP5xCS2Fd19JijUSDvpbg.jpg",
-      "adult": false,
-      "overview": "A young boy, Josh Baskin makes a wish at a carnival machine to be big. He wakes up the following morning to find that it has been granted and his body has grown older overnight. But he is still the same 13-year-old boy inside. Now he must learn how to cope with the unfamiliar world of grown-ups including getting a job and having his first romantic encounter with a woman. What will he find out about this strange world?",
-      "release_date": "1988-06-03",
-      "_id": 28
-    },
-    {
-      "vote_count": 6643,
-      "id": 597,
-      "video": false,
-      "vote_average": 7.4,
-      "title": "Titanic",
-      "popularity": 11.216934,
-      "poster_path": "/kHXEpyfl6zqn8a6YuozZUujufXf.jpg",
-      "original_language": "en",
-      "original_title": "Titanic",
-      "genre_ids": [
-        18,
-        10749,
-        53
-      ],
-      "backdrop_path": "/fVcZErSWa7gyENuj8IWp8eAfCnL.jpg",
-      "adult": false,
-      "overview": "84 years later, a 101-year-old woman named Rose DeWitt Bukater tells the story to her granddaughter Lizzy Calvert, Brock Lovett, Lewis Bodine, Bobby Buell and Anatoly Mikailavich on the Keldysh about her life set in April 10th 1912, on a ship called Titanic when young Rose boards the departing ship with the upper-class passengers and her mother, Ruth DeWitt Bukater, and her fiancé, Caledon Hockley. Meanwhile, a drifter and artist named Jack Dawson and his best friend Fabrizio De Rossi win third-class tickets to the ship in a game. And she explains the whole story from departure until the death of Titanic on its first and last voyage April 15th, 1912 at 2:20 in the morning.",
-      "release_date": "1997-11-18",
-      "_id": 30
-    },
-    {
-      "vote_count": 39,
-      "id": 2699,
-      "video": false,
-      "vote_average": 6.5,
-      "title": "Titanic",
-      "popularity": 1.614058,
-      "poster_path": "/AosgVsKPbLctVQ8hd8shEj7LJrZ.jpg",
-      "original_language": "en",
-      "original_title": "Titanic",
-      "genre_ids": [
-        28,
-        18,
-        10749
-      ],
-      "backdrop_path": "/udi11sz1GzpVLTX2XavAWuqB9MW.jpg",
-      "adult": false,
-      "overview": "A story of the romances of two couples upon the doomed ship. Isabella Paradine (Catherine Zeta Jones) is a wealthy woman mourning the loss of her aunt, who reignites a romance with old flame, Wynn Park (Peter Gallagher). Meanwhile, a charming ne'er do well named Jamie Perse (Mike Doyle) steals a ticket for the ship, and falls for a sweet innocent Irish girl on board. But their romance is threatened by the villainous Simon Doonan (Tim Curry), who has discovered about the ticket and makes Jamie his unwilling accomplice, as well as having sinister plans for the girl.",
-      "release_date": "1996-11-17",
-      "_id": 31
-    },
-    {
-      "vote_count": 6643,
-      "id": 597,
-      "video": false,
-      "vote_average": 7.4,
-      "title": "Titanic",
-      "popularity": 11.216934,
-      "poster_path": "/kHXEpyfl6zqn8a6YuozZUujufXf.jpg",
-      "original_language": "en",
-      "original_title": "Titanic",
-      "genre_ids": [
-        18,
-        10749,
-        53
-      ],
-      "backdrop_path": "/fVcZErSWa7gyENuj8IWp8eAfCnL.jpg",
-      "adult": false,
-      "overview": "84 years later, a 101-year-old woman named Rose DeWitt Bukater tells the story to her granddaughter Lizzy Calvert, Brock Lovett, Lewis Bodine, Bobby Buell and Anatoly Mikailavich on the Keldysh about her life set in April 10th 1912, on a ship called Titanic when young Rose boards the departing ship with the upper-class passengers and her mother, Ruth DeWitt Bukater, and her fiancé, Caledon Hockley. Meanwhile, a drifter and artist named Jack Dawson and his best friend Fabrizio De Rossi win third-class tickets to the ship in a game. And she explains the whole story from departure until the death of Titanic on its first and last voyage April 15th, 1912 at 2:20 in the morning.",
-      "release_date": "1997-11-18",
-      "_id": 32
-    },
-    {
-      "vote_count": 6643,
-      "id": 597,
-      "video": false,
-      "vote_average": 7.4,
-      "title": "Titanic",
-      "popularity": 11.216934,
-      "poster_path": "/kHXEpyfl6zqn8a6YuozZUujufXf.jpg",
-      "original_language": "en",
-      "original_title": "Titanic",
-      "genre_ids": [
-        18,
-        10749,
-        53
-      ],
-      "backdrop_path": "/fVcZErSWa7gyENuj8IWp8eAfCnL.jpg",
-      "adult": false,
-      "overview": "84 years later, a 101-year-old woman named Rose DeWitt Bukater tells the story to her granddaughter Lizzy Calvert, Brock Lovett, Lewis Bodine, Bobby Buell and Anatoly Mikailavich on the Keldysh about her life set in April 10th 1912, on a ship called Titanic when young Rose boards the departing ship with the upper-class passengers and her mother, Ruth DeWitt Bukater, and her fiancé, Caledon Hockley. Meanwhile, a drifter and artist named Jack Dawson and his best friend Fabrizio De Rossi win third-class tickets to the ship in a game. And she explains the whole story from departure until the death of Titanic on its first and last voyage April 15th, 1912 at 2:20 in the morning.",
-      "release_date": "1997-11-18",
-      "_id": 33
-    },
-    {
-      "vote_count": 921,
-      "id": 2280,
-      "video": false,
-      "vote_average": 6.9,
-      "title": "Big",
-      "popularity": 3.635381,
-      "poster_path": "/me6uugsf6zWTkrcLBoNc9EElb5j.jpg",
-      "original_language": "en",
-      "original_title": "Big",
-      "genre_ids": [
-        14,
-        18,
-        35,
-        10749,
-        10751
-      ],
-      "backdrop_path": "/tVpkaXfP5xCS2Fd19JijUSDvpbg.jpg",
-      "adult": false,
-      "overview": "A young boy, Josh Baskin makes a wish at a carnival machine to be big. He wakes up the following morning to find that it has been granted and his body has grown older overnight. But he is still the same 13-year-old boy inside. Now he must learn how to cope with the unfamiliar world of grown-ups including getting a job and having his first romantic encounter with a woman. What will he find out about this strange world?",
-      "release_date": "1988-06-03",
-      "_id": 34
-    },
-    {
-      "vote_count": 5651,
-      "id": 177572,
-      "video": false,
-      "vote_average": 7.8,
-      "title": "Big Hero 6",
-      "popularity": 14.107614,
-      "poster_path": "/3zQvuSAUdC3mrx9vnSEpkFX0968.jpg",
-      "original_language": "en",
-      "original_title": "Big Hero 6",
-      "genre_ids": [
-        12,
-        10751,
-        16,
-        28,
-        35
-      ],
-      "backdrop_path": "/2BXd0t9JdVqCp9sKf6kzMkr7QjB.jpg",
-      "adult": false,
-      "overview": "The special bond that develops between plus-sized inflatable robot Baymax, and prodigy Hiro Hamada, who team up with a group of friends to form a band of high-tech heroes.",
-      "release_date": "2014-10-24",
-      "_id": 35
-    },
-    {
       "vote_count": 2413,
       "id": 318846,
       "video": false,
@@ -234,96 +19,6 @@
       "overview": "The men who made millions from a global economic meltdown.",
       "release_date": "2015-12-11",
       "_id": 36
-    },
-    {
-      "vote_count": 932,
-      "id": 2280,
-      "video": false,
-      "vote_average": 6.9,
-      "title": "Big",
-      "popularity": 3.031731,
-      "poster_path": "/me6uugsf6zWTkrcLBoNc9EElb5j.jpg",
-      "original_language": "en",
-      "original_title": "Big",
-      "genre_ids": [
-        14,
-        18,
-        35,
-        10749,
-        10751
-      ],
-      "backdrop_path": "/tVpkaXfP5xCS2Fd19JijUSDvpbg.jpg",
-      "adult": false,
-      "overview": "A young boy, Josh Baskin makes a wish at a carnival machine to be big. He wakes up the following morning to find that it has been granted and his body has grown older overnight. But he is still the same 13-year-old boy inside. Now he must learn how to cope with the unfamiliar world of grown-ups including getting a job and having his first romantic encounter with a woman. What will he find out about this strange world?",
-      "release_date": "1988-06-03",
-      "_id": 37
-    },
-    {
-      "vote_count": 1789,
-      "id": 587,
-      "video": false,
-      "vote_average": 7.6,
-      "title": "Big Fish",
-      "popularity": 4.337607,
-      "poster_path": "/6DRFdlNZpAaEt7eejsbAlJGgaM7.jpg",
-      "original_language": "en",
-      "original_title": "Big Fish",
-      "genre_ids": [
-        12,
-        14,
-        18
-      ],
-      "backdrop_path": "/kK1rVmqk8pLTuK5ZE7eVdCSqqHL.jpg",
-      "adult": false,
-      "overview": "Throughout his life Edward Bloom has always been a man of big appetites, enormous passions and tall tales. In his later years, he remains a huge mystery to his son, William. Now, to get to know the real man, Will begins piecing together a true picture of his father from flashbacks of his amazing adventures.",
-      "release_date": "2003-12-25",
-      "_id": 38
-    },
-    {
-      "vote_count": 932,
-      "id": 2280,
-      "video": false,
-      "vote_average": 6.9,
-      "title": "Big",
-      "popularity": 3.031731,
-      "poster_path": "/me6uugsf6zWTkrcLBoNc9EElb5j.jpg",
-      "original_language": "en",
-      "original_title": "Big",
-      "genre_ids": [
-        14,
-        18,
-        35,
-        10749,
-        10751
-      ],
-      "backdrop_path": "/tVpkaXfP5xCS2Fd19JijUSDvpbg.jpg",
-      "adult": false,
-      "overview": "A young boy, Josh Baskin makes a wish at a carnival machine to be big. He wakes up the following morning to find that it has been granted and his body has grown older overnight. But he is still the same 13-year-old boy inside. Now he must learn how to cope with the unfamiliar world of grown-ups including getting a job and having his first romantic encounter with a woman. What will he find out about this strange world?",
-      "release_date": "1988-06-03",
-      "_id": 39
-    },
-    {
-      "vote_count": 5701,
-      "id": 177572,
-      "video": false,
-      "vote_average": 7.8,
-      "title": "Big Hero 6",
-      "popularity": 12.176157,
-      "poster_path": "/3zQvuSAUdC3mrx9vnSEpkFX0968.jpg",
-      "original_language": "en",
-      "original_title": "Big Hero 6",
-      "genre_ids": [
-        12,
-        10751,
-        16,
-        28,
-        35
-      ],
-      "backdrop_path": "/2BXd0t9JdVqCp9sKf6kzMkr7QjB.jpg",
-      "adult": false,
-      "overview": "The special bond that develops between plus-sized inflatable robot Baymax, and prodigy Hiro Hamada, who team up with a group of friends to form a band of high-tech heroes.",
-      "release_date": "2014-10-24",
-      "_id": 40
     },
     {
       "vote_count": 2905,
@@ -455,6 +150,101 @@
       "overview": "Throughout his life Edward Bloom has always been a man of big appetites, enormous passions and tall tales. In his later years, he remains a huge mystery to his son, William. Now, to get to know the real man, Will begins piecing together a true picture of his father from flashbacks of his amazing adventures.",
       "release_date": "2003-12-25",
       "_id": 46
+    },
+    {
+      "vote_count": 1636,
+      "id": 1366,
+      "video": false,
+      "vote_average": 7.4,
+      "title": "Rocky",
+      "popularity": 4.306719,
+      "poster_path": "/9TUR3s1PMJHwDRbpm7PWQ0S7IRy.jpg",
+      "original_language": "en",
+      "original_title": "Rocky",
+      "genre_ids": [
+        18
+      ],
+      "backdrop_path": "/2kkyt0FLROrXt41IgSdE7goCFNQ.jpg",
+      "adult": false,
+      "overview": "When world heavyweight boxing champion, Apollo Creed wants to give an unknown fighter a shot at the title as a publicity stunt, his handlers choose palooka Rocky Balboa, an uneducated collector for a Philadelphia loan shark. Rocky teams up with trainer  Mickey Goldmill to make the most of this once in a lifetime break.",
+      "release_date": "1976-11-21",
+      "_id": 47
+    },
+    {
+      "vote_count": 806,
+      "id": 1371,
+      "video": false,
+      "vote_average": 6.6,
+      "title": "Rocky III",
+      "popularity": 3.472322,
+      "poster_path": "/ns55NGqTDEEjcI9z2a9htA2cFtG.jpg",
+      "original_language": "en",
+      "original_title": "Rocky III",
+      "genre_ids": [
+        18
+      ],
+      "backdrop_path": "/6qYptQG2ynJANbyjjYOt4fpHfxF.jpg",
+      "adult": false,
+      "overview": "Now the world champion, Rocky Balboa is living in luxury and only fighting opponents who pose no threat to him in the ring. His lifestyle of wealth and idleness is shaken when a powerful young fighter known as Clubber Lang challenges him to a bout. After taking a pounding from Lang, the humbled champ turns to former bitter rival Apollo Creed to help him regain his form for a rematch with Lang.",
+      "release_date": "1982-05-28",
+      "_id": 48
+    },
+    {
+      "vote_count": 611,
+      "id": 1375,
+      "video": false,
+      "vote_average": 5.3,
+      "title": "Rocky V",
+      "popularity": 4.277772,
+      "poster_path": "/5P2RiuLt31mWyb6duww8qlAhs6G.jpg",
+      "original_language": "en",
+      "original_title": "Rocky V",
+      "genre_ids": [
+        18
+      ],
+      "backdrop_path": "/dr5pdEDOdCvelCQqP32UZubiSgE.jpg",
+      "adult": false,
+      "overview": "A lifetime of taking shots has ended Rocky's career, and a crooked accountant has left him broke. Inspired by the memory of his trainer, however, Rocky finds glory in training and takes on an up-and-coming boxer.",
+      "release_date": "1990-10-18",
+      "_id": 49
+    },
+    {
+      "vote_count": 1636,
+      "id": 1366,
+      "video": false,
+      "vote_average": 7.4,
+      "title": "Rocky",
+      "popularity": 4.306719,
+      "poster_path": "/9TUR3s1PMJHwDRbpm7PWQ0S7IRy.jpg",
+      "original_language": "en",
+      "original_title": "Rocky",
+      "genre_ids": [
+        18
+      ],
+      "backdrop_path": "/2kkyt0FLROrXt41IgSdE7goCFNQ.jpg",
+      "adult": false,
+      "overview": "When world heavyweight boxing champion, Apollo Creed wants to give an unknown fighter a shot at the title as a publicity stunt, his handlers choose palooka Rocky Balboa, an uneducated collector for a Philadelphia loan shark. Rocky teams up with trainer  Mickey Goldmill to make the most of this once in a lifetime break.",
+      "release_date": "1976-11-21",
+      "_id": 50
+    },
+    {
+      "vote_count": 849,
+      "id": 1367,
+      "video": false,
+      "vote_average": 6.9,
+      "title": "Rocky II",
+      "popularity": 3.360663,
+      "poster_path": "/fqJH7mI4dFANRay8qdJoGa7fK1k.jpg",
+      "original_language": "en",
+      "original_title": "Rocky II",
+      "genre_ids": [
+        18
+      ],
+      "backdrop_path": "/xx9DyVNmehDJPrYGsy9AJgYzAtd.jpg",
+      "adult": false,
+      "overview": "After Rocky goes the distance with champ Apollo Creed, both try to put the fight behind them and move on. Rocky settles down with Adrian but can't put his life together outside the ring, while Creed seeks a rematch to restore his reputation. Soon enough, the \"Master of Disaster\" and the \"Italian Stallion\" are set on a collision course for a climactic battle that is brutal and unforgettable.",
+      "release_date": "1979-06-15",
+      "_id": 51
     }
   ],
   "posts": [
