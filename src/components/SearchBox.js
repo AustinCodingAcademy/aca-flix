@@ -21,7 +21,7 @@ class SearchBox extends Component {
         <input
           onKeyUp={
             (e) => {
-              /* this is so th search will only be done on enter key */
+              /* this is so the search will only be performed when enter key is pressed */
               if (this.props.loadSearch && e.key === "Enter" && this.state.searchTerm) {
                 this.props.loadSearch(this.state.searchTerm);
               }

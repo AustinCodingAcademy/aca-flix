@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 
 class ListToggle extends Component {
   constructor(props) {
@@ -28,4 +29,11 @@ class ListToggle extends Component {
     );
   }
 }
+
+ListToggle.propTypes = {
+  movie: PropTypes.func.isRequired,
+  removeMyMovie: PropTypes.func.isRequired,
+  saveMyMovie: PropTypes.func.isRequired,
+};
+
 export default ListToggle;

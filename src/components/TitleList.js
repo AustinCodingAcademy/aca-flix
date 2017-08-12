@@ -5,6 +5,7 @@ import Item from "./Item";
 
 const renderTitles = (props) => {
   if (props.movies) {
+    // Using the take method from lodash library to reduce the array of titles to 5
     const firstFiveTitles = take(props.movies, 5);
     return firstFiveTitles.map((title, i) => {
       return <Item key={i} movie={title} />;
