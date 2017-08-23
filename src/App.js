@@ -4,9 +4,11 @@ import "./App.css";
 import Logo from "./Logo.js";
 import TitleList from "./components/TitleList";
 import Hero from "./components/Hero";
-import SearchBoxContainer from "./container/SearchBoxContainer";
+import SearchBoxContainer from "./containers/SearchBoxContainer";
 import Navigation from "./components/Navigation";
 import UserProfile from "./components/UserProfile";
+import {connect} from 'react-redux';
+import {loadMyMovieList} from "./actions";
 
 class App extends Component {
   componentDidMount() {
@@ -18,7 +20,7 @@ class App extends Component {
         <header className="Header">
           <Logo />
           <Navigation />
-          <SearchBox />
+          <SearchBoxContainer />
           <UserProfile />
         </header>
         <Hero />
@@ -38,5 +40,20 @@ App.propTypes = {
   myMovieList: PropTypes.array
 };
 
-export default App;
+function mapStateToProps(state) {
+  return {
+    searchResults: state.searchResults,
+    myMovieList: state.myMovieList
+  }
+}
+
+function mapDispatchToProps(dispatch) {
+  return {
+    loadMyMovieList: function () {
+      dispatch(loadMyMovieList()); 
+    }
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
 

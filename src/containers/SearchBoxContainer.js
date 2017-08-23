@@ -1,5 +1,5 @@
-import SearchBox from "./components/SearchBox";
-import {loadSearch} from "./actions";
+import SearchBox from "../components/SearchBox";
+import {loadSearch} from "../actions";
 import {connect} from 'react-redux';
 
 function mapDispatchToProps(dispatch) {

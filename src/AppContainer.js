@@ -1,6 +1,6 @@
-import App from "./App";
 import {connect} from 'react-redux';
 import {loadMyMovieList} from "./actions";
+import App from "./App";
 
 function mapStateToProps(state) {
   return {

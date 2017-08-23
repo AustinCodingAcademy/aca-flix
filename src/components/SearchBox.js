@@ -20,7 +20,6 @@ class SearchBox extends Component {
                 e.key === "Enter" &&
                 this.state.searchTerm
               ) {
-                console.log('Enter Pressed');
                 this.props.loadSearch(this.state.searchTerm);
               }
             }
