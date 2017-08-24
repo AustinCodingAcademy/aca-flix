@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Item from "./Item";
 
 function TitleList(props) {
+  
   let titles = "";
   if (props.movies) {
     titles = props.movies.map(function (title, i) {
