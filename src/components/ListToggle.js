@@ -4,10 +4,11 @@ class ListToggle extends Component {
   constructor(props) {
     super(props);
     // determine if there is a json server id which means it was saved
-    this.state = { toggled: Boolean(props.movie._id)};
+    this.state = { toggled: !props.movie ? false : Boolean(props.movie._id)};
     this.handleClick = this.handleClick.bind(this);
   }
   handleClick() {
+    console.log('props', this.props);
     if (this.state.toggled === true) {
       this.props.removeMyMovie(this.props.movie._id);
       this.setState({ toggled: false });

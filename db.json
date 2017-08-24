@@ -1,5 +1,4 @@
 {
-  "movies":[],
   "posts": [
     {
       "id": 1,
@@ -16,5 +15,16 @@
   ],
   "profile": {
     "name": "typicode"
-  }
+  },
+  "movies": [
+    {
+      "_id": 1
+    },
+    {
+      "_id": 2
+    },
+    {
+      "_id": 3
+    }
+  ]
 }

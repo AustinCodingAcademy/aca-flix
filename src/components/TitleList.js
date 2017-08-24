@@ -4,6 +4,7 @@ import Item from "./Item";
 function TitleList(props) {
   let titles = "";
   if (props.movies) {
+    console.log('props', props);
     titles = props.movies.map(function (title, i) {
       if (i < 5) {
         return (

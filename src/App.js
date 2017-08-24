@@ -12,11 +12,9 @@ import {loadMyMovieList, searchResults} from "./actions";
 
 class App extends Component {
   componentDidMount() {
-    console.log('didmount props:', this.props);
-    this.state.loadMyMovieList();
+    this.props.loadMyMovieList();
   }
   render() {
-    console.log('render props:', this.props);
     return (
       <div>
         <header className="Header">
@@ -43,7 +41,6 @@ App.propTypes = {
 };
 
 function mapStateToProps(state) {
-  console.log('MSTP state:',state);
   return {
     searchResults: state.searchResults,
     myMovieList: state.myMovieList

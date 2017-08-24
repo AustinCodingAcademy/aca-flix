@@ -22,7 +22,7 @@ export function loadSearch(searchTerm) {
   return (dispatch) => {
     dispatch({type:"LOAD_SEARCH"});
 
-    fetch('https://api.themoviedb.org/3/search/multi?query=' + searchTerm + '&api_key=' + apiKey)
+    fetch('http://api.themoviedb.org/3/search/multi?query=' + searchTerm + '&api_key=' + apiKey)
     .then(res => res.json())
     .then(json => dispatch(searchLoaded(json)))
     .catch(err => console.log(err));
@@ -30,7 +30,7 @@ export function loadSearch(searchTerm) {
 }
 
 export function searchLoaded(movies) {
-  console.log('movies:', movies.results);
+  console.log('searchLoaded:', movies);
   return {
     type: "SEARCH_RESULTS_LOADED",
     value: movies.results
@@ -38,6 +38,7 @@ export function searchLoaded(movies) {
 }
 
 export function saveMyMovie(movie) {
+  console.log('saved movie:', movie);
   return (dispatch) => {
     fetch('/movies', {
       method: 'POST',
@@ -50,8 +51,9 @@ export function saveMyMovie(movie) {
 }
 
 export function removeMyMovie(id) {
+  console.log('remove:', id);
   return (dispatch) => {
-    fetch(`/movies/${id}`, {method: 'DELETE'})
+    fetch('/movies/' + id, {method: 'DELETE'})
     .then(() => dispatch(loadMyMovieList()))
     .catch(err => console.log(err));
   }
