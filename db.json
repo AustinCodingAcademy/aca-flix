@@ -1,5 +1,133 @@
 {
-  "movies":[],
+  "movies": [
+    {
+      "poster_path": "/7nBmi7WFCeMk3ge7Smj0munYNV9.jpg",
+      "popularity": 1.366365,
+      "id": 36294,
+      "overview": "Lovers in Prague is a 2005 South Korean television drama series starring Jeon Do-yeon, Kim Joo-hyuk, Kim Min-joon and Yoon Se-ah. It aired on SBS from September 24 to November 20, 2005 on Saturdays and Sundays at 21:45 for 18 episodes.\n\nIt is the second of three TV series in the Lovers trilogy by writer Kim Eun-sook and director Shin Woo-chul. This was preceded by Lovers in Paris, and the third, simply titled Lovers, was not set in Europe like the first two.",
+      "backdrop_path": "/3ZgCEnNzNFWSkZ7WThoAbPXYl05.jpg",
+      "vote_average": 0,
+      "media_type": "tv",
+      "first_air_date": "2005-09-24",
+      "origin_country": [],
+      "genre_ids": [
+        18
+      ],
+      "original_language": "ko",
+      "vote_count": 0,
+      "name": "Lovers in Prague",
+      "original_name": "프라하의 연인",
+      "_id": 3
+    },
+    {
+      "poster_path": "/lgydVQAt4wFBc2hvf9uWgUXtsb3.jpg",
+      "adult": false,
+      "overview": "Set in Bertolucci's ancestral region of Emilia, the film chronicles the lives of two men during the political turmoils that took place in Italy in the first half on the 20th century.",
+      "release_date": "1976-09-03",
+      "original_title": "Novecento",
+      "genre_ids": [
+        18,
+        36,
+        10749
+      ],
+      "id": 3870,
+      "media_type": "movie",
+      "original_language": "it",
+      "title": "1900",
+      "backdrop_path": "/7yiI7Z3TSPSOWbEPeWIetZlSzEP.jpg",
+      "popularity": 1.342466,
+      "vote_count": 68,
+      "video": false,
+      "vote_average": 7.3,
+      "_id": 6
+    },
+    {
+      "poster_path": "/25Ob4PFvrdhlpMuN1QXOtWR6LKG.jpg",
+      "adult": false,
+      "overview": "With archive film clips and interviews, this brief look at a frequently overlooked historical period of filmmaking acts as an introduction rather than a complete record. It features interviews with some of the genre's biggest stars, like Fred Williamson, Pam Grier, and Richard Roundtree. Director Melvin Van Peebles discusses the historical importance of his landmark film Sweet Sweetback's Baadasssss Song. For a contemporary perspective, the excitable Quentin Tarantino offers his spirited commentary and author/critic bell hooks provides some scholarly social analysis.",
+      "release_date": "2002-01-01",
+      "original_title": "BaadAsssss Cinema",
+      "genre_ids": [
+        28,
+        99
+      ],
+      "id": 67083,
+      "media_type": "movie",
+      "original_language": "en",
+      "title": "BaadAsssss Cinema",
+      "backdrop_path": "/k13w3nTVjkJiOEPe98Mo2deTxwG.jpg",
+      "popularity": 2.663574,
+      "vote_count": 6,
+      "video": false,
+      "vote_average": 7.1,
+      "_id": 7
+    },
+    {
+      "poster_path": "/6ZWY5SdZP8XE9WemJYogg9hMsLN.jpg",
+      "popularity": 2.504062,
+      "id": 66886,
+      "overview": "Luisa Fernanda Pérez, a beautiful, 18-year-old student, has two passions: mastering the violin and gardening, a skill she learned from her father, Pedro, the former groundskeeper of the wealthy Altamirano family’s estate. A chance encounter with destiny alters her life after she is injured in a car accident caused by Luis (her biological father), a playboy lawyer and falls for his stepson, Carlos, an attractive, young doctor treating her at the local hospital.",
+      "backdrop_path": "/eNJrGOG3EM3k0IkdDnLbCi9cOmg.jpg",
+      "vote_average": 5.25,
+      "media_type": "tv",
+      "first_air_date": "2016-01-25",
+      "origin_country": [
+        "MX"
+      ],
+      "genre_ids": [
+        18,
+        10766
+      ],
+      "original_language": "es",
+      "vote_count": 2,
+      "name": "Road to Destiny",
+      "original_name": "Un Camino Hacia El Destino",
+      "_id": 8
+    },
+    {
+      "poster_path": "/kb3X943WMIJYVg4SOAyK0pmWL5D.jpg",
+      "adult": false,
+      "overview": "In the pre-Civil War United States, Solomon Northup, a free black man from upstate New York, is abducted and sold into slavery. Facing cruelty as well as unexpected kindnesses Solomon struggles not only to stay alive, but to retain his dignity. In the twelfth year of his unforgettable odyssey, Solomon’s chance meeting with a Canadian abolitionist will forever alter his life.",
+      "release_date": "2013-10-18",
+      "original_title": "12 Years a Slave",
+      "genre_ids": [
+        18,
+        36
+      ],
+      "id": 76203,
+      "media_type": "movie",
+      "original_language": "en",
+      "title": "12 Years a Slave",
+      "backdrop_path": "/xnRPoFI7wzOYviw3PmoG94X2Lnc.jpg",
+      "popularity": 6.617838,
+      "vote_count": 3040,
+      "video": false,
+      "vote_average": 7.9,
+      "_id": 9
+    },
+    {
+      "poster_path": "/45Y1G5FEgttPAwjTYic6czC9xCn.jpg",
+      "adult": false,
+      "overview": "In the near future, a weary Logan cares for an ailing Professor X in a hide out on the Mexican border. But Logan's attempts to hide from the world and his legacy are up-ended when a young mutant arrives, being pursued by dark forces.",
+      "release_date": "2017-02-28",
+      "original_title": "Logan",
+      "genre_ids": [
+        28,
+        18,
+        878
+      ],
+      "id": 263115,
+      "media_type": "movie",
+      "original_language": "en",
+      "title": "Logan",
+      "backdrop_path": "/5pAGnkFYSsFJ99ZxDIYnhQbQFXs.jpg",
+      "popularity": 60.472953,
+      "vote_count": 3223,
+      "video": false,
+      "vote_average": 7.5,
+      "_id": 10
+    }
+  ],
   "posts": [
     {
       "id": 1,
