@@ -8,6 +8,10 @@ import SearchBox from "./containers/SearchBoxContainer";
 import Navigation from "./components/Navigation";
 import UserProfile from "./components/UserProfile";
 
+function componentDidMount() {
+  
+}
+
 class App extends Component {
   render() {
     return (

@@ -100,17 +100,17 @@
 
 ### ListToggleContainer
 * ximport ListToggle
-* import action `saveMyMovie` and `removeMyMovie`
-* mapDisptachToProps for `saveMyMovie` and `removeMyMovie`
-* Change Item.js to use ListToggleContainer instead of ListToggle
+* ximport action `saveMyMovie` and `removeMyMovie`
+* xmapDisptachToProps for `saveMyMovie` and `removeMyMovie`
+* xChange Item.js to use ListToggleContainer instead of ListToggle
 
 ### SearchBox.js
-* In the constructor assign a state property with an object with key “searchTerm”, set to blank string “”
-* Add onChange to the input element
-* on change setState for searchTerm to the value from the input
+* xIn the constructor assign a state property with an object with key “searchTerm”, set to blank string “”
+* xAdd onChange to the input element
+* xon change setState for searchTerm to the value from the input
 
 ### Item.js
-* Switch out use of ListToggle for use of ListToggleContainer
+* xSwitch out use of ListToggle for use of ListToggleContainer
 
 ### App.js
 * Add componentDidMount method and call loadMyMovieList in here.
