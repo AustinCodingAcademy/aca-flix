@@ -1,5 +1,128 @@
 {
-  "movies":[],
+  "movies": [
+    {
+      "poster_path": "/vLkVpC2jf3phW2jBtuK63LaeOu6.jpg",
+      "popularity": 6.898845,
+      "id": 70968,
+      "overview": "Follow the day-to-day life of Nan as told by her increasingly lonely and philosophical dog, Martin. Just one session at obedience school makes them realize that even at their worst, they may be the best thing for each other. Based on a web series.",
+      "backdrop_path": "/rOQtqWanrwjDodJKw3lo1Bv3VgJ.jpg",
+      "vote_average": 0,
+      "media_type": "tv",
+      "first_air_date": "2017-05-17",
+      "origin_country": [
+        "US"
+      ],
+      "genre_ids": [
+        35,
+        18
+      ],
+      "original_language": "en",
+      "vote_count": 0,
+      "name": "Downward Dog",
+      "original_name": "Downward Dog",
+      "_id": 1
+    },
+    {
+      "poster_path": "/qjiskwlV1qQzRCjpV0cL9pEMF9a.jpg",
+      "adult": false,
+      "overview": "A rogue band of resistance fighters unite for a mission to steal the Death Star plans and bring a new hope to the galaxy.",
+      "release_date": "2016-12-14",
+      "original_title": "Rogue One: A Star Wars Story",
+      "genre_ids": [
+        878
+      ],
+      "id": 330459,
+      "media_type": "movie",
+      "original_language": "en",
+      "title": "Rogue One: A Star Wars Story",
+      "backdrop_path": "/tZjVVIYXACV4IIIhXeIM59ytqwS.jpg",
+      "popularity": 17.661214,
+      "vote_count": 3729,
+      "video": false,
+      "vote_average": 7.3,
+      "_id": 2
+    },
+    {
+      "poster_path": "/qjiskwlV1qQzRCjpV0cL9pEMF9a.jpg",
+      "adult": false,
+      "overview": "A rogue band of resistance fighters unite for a mission to steal the Death Star plans and bring a new hope to the galaxy.",
+      "release_date": "2016-12-14",
+      "original_title": "Rogue One: A Star Wars Story",
+      "genre_ids": [
+        878
+      ],
+      "id": 330459,
+      "media_type": "movie",
+      "original_language": "en",
+      "title": "Rogue One: A Star Wars Story",
+      "backdrop_path": "/tZjVVIYXACV4IIIhXeIM59ytqwS.jpg",
+      "popularity": 17.661214,
+      "vote_count": 3729,
+      "video": false,
+      "vote_average": 7.3,
+      "_id": 3
+    },
+    {
+      "poster_path": "/qjiskwlV1qQzRCjpV0cL9pEMF9a.jpg",
+      "adult": false,
+      "overview": "A rogue band of resistance fighters unite for a mission to steal the Death Star plans and bring a new hope to the galaxy.",
+      "release_date": "2016-12-14",
+      "original_title": "Rogue One: A Star Wars Story",
+      "genre_ids": [
+        878
+      ],
+      "id": 330459,
+      "media_type": "movie",
+      "original_language": "en",
+      "title": "Rogue One: A Star Wars Story",
+      "backdrop_path": "/tZjVVIYXACV4IIIhXeIM59ytqwS.jpg",
+      "popularity": 17.661214,
+      "vote_count": 3729,
+      "video": false,
+      "vote_average": 7.3,
+      "_id": 4
+    },
+    {
+      "poster_path": "/qjiskwlV1qQzRCjpV0cL9pEMF9a.jpg",
+      "adult": false,
+      "overview": "A rogue band of resistance fighters unite for a mission to steal the Death Star plans and bring a new hope to the galaxy.",
+      "release_date": "2016-12-14",
+      "original_title": "Rogue One: A Star Wars Story",
+      "genre_ids": [
+        878
+      ],
+      "id": 330459,
+      "media_type": "movie",
+      "original_language": "en",
+      "title": "Rogue One: A Star Wars Story",
+      "backdrop_path": "/tZjVVIYXACV4IIIhXeIM59ytqwS.jpg",
+      "popularity": 17.661214,
+      "vote_count": 3729,
+      "video": false,
+      "vote_average": 7.3,
+      "_id": 5
+    },
+    {
+      "poster_path": "/qjiskwlV1qQzRCjpV0cL9pEMF9a.jpg",
+      "adult": false,
+      "overview": "A rogue band of resistance fighters unite for a mission to steal the Death Star plans and bring a new hope to the galaxy.",
+      "release_date": "2016-12-14",
+      "original_title": "Rogue One: A Star Wars Story",
+      "genre_ids": [
+        878
+      ],
+      "id": 330459,
+      "media_type": "movie",
+      "original_language": "en",
+      "title": "Rogue One: A Star Wars Story",
+      "backdrop_path": "/tZjVVIYXACV4IIIhXeIM59ytqwS.jpg",
+      "popularity": 17.661214,
+      "vote_count": 3729,
+      "video": false,
+      "vote_average": 7.3,
+      "_id": 6
+    }
+  ],
   "posts": [
     {
       "id": 1,
