@@ -18,16 +18,16 @@
 
 ### Components
 * Create functional components as defined by comments such as  {/*  <Navigation>   */}
-* Import and use components in App.js
-* Navigation.js
-* UserProfile.js
+* xImport and use components in App.js
+* xNavigation.js
+* xUserProfile.js
 
 ### State
-* In state.js file
-* Create our state object with properties
+* xIn state.js file
+* xCreate our state object with properties
     * searchResults: []
     * myMovieList: []
-* export state object
+* xexport state object
 
 ### Reducers
 * In reducers/index.js
