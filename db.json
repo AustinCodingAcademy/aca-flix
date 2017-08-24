@@ -1,5 +1,50 @@
 {
-  "movies":[],
+  "movies": [
+    {
+      "poster_path": "/wBJks5PU8rqVn23S6trtLh8h3Eu.jpg",
+      "popularity": 1.754928,
+      "id": 1062,
+      "overview": "F Troop is a satirical American television sitcom that originally aired for two seasons on ABC-TV. It debuted in the United States on September 14, 1965 and concluded its run on April 6, 1967 with a total of 65 episodes. The first season of 34 episodes was filmed in black-and-white, but the show switched to color for its second season.",
+      "backdrop_path": "/h9JNcFSIg7Ca2ASJU7EXbt1NVaE.jpg",
+      "vote_average": 6,
+      "media_type": "tv",
+      "first_air_date": "1965-09-14",
+      "origin_country": [
+        "US"
+      ],
+      "genre_ids": [
+        37,
+        35
+      ],
+      "original_language": "en",
+      "vote_count": 7,
+      "name": "F Troop",
+      "original_name": "F Troop",
+      "_id": 12
+    },
+    {
+      "poster_path": "/wBJks5PU8rqVn23S6trtLh8h3Eu.jpg",
+      "popularity": 1.857078,
+      "id": 1062,
+      "overview": "F Troop is a satirical American television sitcom that originally aired for two seasons on ABC-TV. It debuted in the United States on September 14, 1965 and concluded its run on April 6, 1967 with a total of 65 episodes. The first season of 34 episodes was filmed in black-and-white, but the show switched to color for its second season.",
+      "backdrop_path": "/h9JNcFSIg7Ca2ASJU7EXbt1NVaE.jpg",
+      "vote_average": 6,
+      "media_type": "tv",
+      "first_air_date": "1965-09-14",
+      "origin_country": [
+        "US"
+      ],
+      "genre_ids": [
+        37,
+        35
+      ],
+      "original_language": "en",
+      "vote_count": 7,
+      "name": "F Troop",
+      "original_name": "F Troop",
+      "_id": 14
+    }
+  ],
   "posts": [
     {
       "id": 1,
