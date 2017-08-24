@@ -1,11 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 import Item from "./Item";
 
 function TitleList(props) {
   let titles = "";
   if (props.movies) {
-    console.log('props', props);
-    titles = props.movies.map(function (title, i) {
+    titles = props.movies.map((title, i) =>  {
       if (i < 5) {
         return (
           <Item key={title.id} movie={title} />

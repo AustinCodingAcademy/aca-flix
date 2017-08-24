@@ -16,7 +16,7 @@ function Item(props) {
         <div className="title">{name}</div>
         <div className="rating">{props.movie.vote_average} / 10</div>
         <div className="plot">{props.movie.overview}</div>
-        <ListToggleContainer />
+        <ListToggleContainer movie={props.movie}/>
       </div>
     </div>
   );

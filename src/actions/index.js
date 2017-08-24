@@ -30,7 +30,6 @@ export function loadSearch(searchTerm) {
 }
 
 export function searchLoaded(movies) {
-  console.log('searchLoaded:', movies);
   return {
     type: "SEARCH_RESULTS_LOADED",
     value: movies.results
@@ -38,7 +37,6 @@ export function searchLoaded(movies) {
 }
 
 export function saveMyMovie(movie) {
-  console.log('saved movie:', movie);
   return (dispatch) => {
     fetch('/movies', {
       method: 'POST',
@@ -51,7 +49,6 @@ export function saveMyMovie(movie) {
 }
 
 export function removeMyMovie(id) {
-  console.log('remove:', id);
   return (dispatch) => {
     fetch('/movies/' + id, {method: 'DELETE'})
     .then(() => dispatch(loadMyMovieList()))

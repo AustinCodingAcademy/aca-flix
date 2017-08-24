@@ -4,12 +4,11 @@ import {saveMyMovie, removeMyMovie} from "../actions";
 
 function mapDispatchToProps(dispatch) {
   return {
-    saveMyMovie: function(x) {
-      console.log('saved move:', x);
-      dispatch(saveMyMovie(x));
+    saveMyMovie: function(movie) {
+      dispatch(saveMyMovie(movie));
     },
-    removeMyMovie: function(x) {
-      dispatch(removeMyMovie(x));
+    removeMyMovie: function(id) {
+      dispatch(removeMyMovie(id));
     }
   }
 }

@@ -8,7 +8,6 @@ class ListToggle extends Component {
     this.handleClick = this.handleClick.bind(this);
   }
   handleClick() {
-    console.log('props', this.props);
     if (this.state.toggled === true) {
       this.props.removeMyMovie(this.props.movie._id);
       this.setState({ toggled: false });

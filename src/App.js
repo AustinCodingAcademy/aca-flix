@@ -8,7 +8,7 @@ import SearchBoxContainer from "./containers/SearchBoxContainer";
 import Navigation from "./components/Navigation";
 import UserProfile from "./components/UserProfile";
 import {connect} from 'react-redux';
-import {loadMyMovieList, searchResults} from "./actions";
+import {loadMyMovieList} from "./actions";
 
 class App extends Component {
   componentDidMount() {
