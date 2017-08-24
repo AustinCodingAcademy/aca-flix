@@ -1,10 +1,9 @@
-import {connect} from 'react-redux';
-
+import React from 'react';
 
 
 function Navigation() {
 
-  return {
+  return (
     <div id="navigation" className="Navigation">
       <nav>
         <ul>
@@ -15,7 +14,7 @@ function Navigation() {
         </ul>
       </nav>
     </div>
-  }
+  )
 }
 
 export default Navigation;

@@ -30,52 +30,52 @@
 * xexport state object
 
 ### Reducers
-* In reducers/index.js
-* Create reducers functions for all state
-* Parameters - state, action
-* Remember default value
-* Import combineReducers from redux
-* Combine reducers and export
+* xIn reducers/index.js
+* xCreate reducers functions for all state
+* xParameters - state, action
+* xRemember default value
+* xImport combineReducers from redux
+* xCombine reducers and export
 
 ### Create Reducers
-* myMovieList
+* xmyMovieList
     * Look for the action “MY_MOVIE_LIST_LOADED”
     * return the value
-* searchResults
+* xsearchResults
     * Look for the action “SEARCH_RESULTS_LOADED”
     * return the value
 
 ### Store
-* Create our standard store.js file
-* Use redux-thunk middleware
-* Import reducers
-* create store and export
+* xCreate our standard store.js file
+* xUse redux-thunk middleware
+* xImport reducers
+* xcreate store and export
 
 ### index.js
-* import Provider and wrap App
-* import store and assign to store prop
+* ximport Provider and wrap App
+* ximport store and assign to store prop
 
 ### Actions
-* remember to export your actions
-* loadMyMovieList()
+* xremember to export your actions
+* xloadMyMovieList()
     * type = “LOAD_MY_MOVIE_LIST”
     * make fetch call to “/movies”
     * on complete, dispatch to myMovieListLoaded(movies)
-* myMovieListLoaded(movies)
+* xmyMovieListLoaded(movies)
     * type = “MY_MOVIE_LIST_LOADED”
     * value = movies
-* loadSearch(searchTerm)
+* xloadSearch(searchTerm)
     * type = “LOAD_SEARCH”
     * make fetch call to https://api.themoviedb.org/3/search/multi?query=searchTerm&api_key=yourkey
     * be sure to put your api key
     * on complete, dispatch to searchLoaded(movies)
-* searchLoaded(movies)
+* xsearchLoaded(movies)
     * type = “SEARCH_RESULTS_LOADED”
     * value = make sure to assign the value of movies.results to get the array of movies from movie db
-* saveMyMovie(movie)
+* xsaveMyMovie(movie)
     * make fetch POST to “/movies”
     * on complete dispatch to loadMyMovieList()
-* removeMyMovie(id)
+* xremoveMyMovie(id)
     * make a fetch DELETE to “/movies/” + id
     * on complete dispatch to loadMyMovieList()
 
@@ -87,19 +87,19 @@
 * connect and export
 
 ### SearchBoxContainer.js
-* import SearchBox
-* import action `loadSearch`
-* mapDispatchToProps for this action
-* Determine which props to map to based on the props that are already coded into the SearchBox component
+* ximport SearchBox
+* ximport action `loadSearch`
+* xmapDispatchToProps for this action
+* xDetermine which props to map to based on the props that are already coded into the SearchBox component
 
 ### AppContainer.js
-* import App
-* import action `loadMyMovieList`
+* ximport App
+* ximport action `loadMyMovieList`
 * mapStateToProps for props `searchResults` and `myMovieList` to state of the same name
-* mapDisptachToProps for `loadMyMovieList`
+* xmapDisptachToProps for `loadMyMovieList`
 
 ### ListToggleContainer
-* import ListToggle
+* ximport ListToggle
 * import action `saveMyMovie` and `removeMyMovie`
 * mapDisptachToProps for `saveMyMovie` and `removeMyMovie`
 * Change Item.js to use ListToggleContainer instead of ListToggle

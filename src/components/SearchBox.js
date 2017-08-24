@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 
+
 class SearchBox extends Component {
   constructor() {
     super();
@@ -7,7 +8,7 @@ class SearchBox extends Component {
   render() {
     return (
       <div id="search" className="Search">
-        <input 
+        <input
           onKeyUp={
             (e) => {
               /* this is so th search will only be done on enter key */
@@ -15,12 +16,11 @@ class SearchBox extends Component {
                 this.props.loadSearch(this.state.searchTerm);
               }
             }
-          } 
-          type="search" 
+          }
+          type="search"
           placeholder="Search for a title..." />
       </div>
     );
   }
 }
 export default SearchBox;
-
