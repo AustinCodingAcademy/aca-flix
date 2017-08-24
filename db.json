@@ -1,5 +1,71 @@
 {
-  "movies":[],
+  "movies": [
+    {
+      "poster_path": "/lxSzRZ49NXwsiyHuvMsd19QxduC.jpg",
+      "popularity": 11.137314,
+      "id": 1408,
+      "overview": "Dr. Gregory House, a drug-addicted, unconventional, misanthropic medical genius, leads a team of diagnosticians at the fictional Princeton–Plainsboro Teaching Hospital in New Jersey.",
+      "backdrop_path": "/sXXz5lvB2dN2ZdymxDrmgTkJEEq.jpg",
+      "vote_average": 7.94,
+      "media_type": "tv",
+      "first_air_date": "2004-11-16",
+      "origin_country": [
+        "US"
+      ],
+      "genre_ids": [
+        18,
+        35,
+        9648
+      ],
+      "original_language": "en",
+      "vote_count": 448,
+      "name": "House",
+      "original_name": "House",
+      "_id": 1
+    },
+    {
+      "poster_path": "/bRCBfZ4zq1lSn2UZRdFhV6OrtX3.jpg",
+      "popularity": 1.742321,
+      "id": 13841,
+      "overview": "Noble House is an American television miniseries that was produced and broadcast by NBC in 1988. Based upon the novel Noble House by James Clavell, it features a large cast headlined by Pierce Brosnan as business tycoon Ian Dunross and was directed by Gary Nelson. However, due to time restrictions, several of the many subplots from the book were removed.\n\nThis is NBC's second miniseries adaptation of a Clavell novel, the first being 1980's Shōgun. Both take place in the same fictional universe with Noble House featuring connections to Shōgun and another Clavell work, Tai-Pan.\n\nFor the miniseries, the timeframe of the novel was changed; Clavell's original novel takes place in the early 1960s, but the miniseries was updated to the 1980s. The building prominently displayed and used as Struan's is Jardine House.",
+      "backdrop_path": "/yz3LAazDw1yqs8SJP53wdkxK2WV.jpg",
+      "vote_average": 8.75,
+      "media_type": "tv",
+      "first_air_date": "1988-02-21",
+      "origin_country": [
+        "US"
+      ],
+      "genre_ids": [
+        18
+      ],
+      "original_language": "en",
+      "vote_count": 2,
+      "name": "Noble House",
+      "original_name": "Noble House",
+      "_id": 4
+    },
+    {
+      "poster_path": "/6AquMx9MoJZTaZIR2AokSDATFCt.jpg",
+      "popularity": 7.995623,
+      "id": 1425,
+      "overview": "Set in present day Washington, D.C., House of Cards is the story of Frank Underwood, a ruthless and cunning politician, and his wife Claire who will stop at nothing to conquer everything. This wicked political drama penetrates the shadowy world of greed, sex and corruption in modern D.C. \n\nHouse of Cards is an adaptation of a previous BBC miniseries of the same name, which is based on the novel by Michael Dobbs.",
+      "backdrop_path": "/3RognQsjLyE50cy5VMo28auGe9q.jpg",
+      "vote_average": 8.11,
+      "media_type": "tv",
+      "first_air_date": "2013-02-01",
+      "origin_country": [
+        "US"
+      ],
+      "genre_ids": [
+        18
+      ],
+      "original_language": "en",
+      "vote_count": 495,
+      "name": "House of Cards",
+      "original_name": "House of Cards",
+      "_id": 5
+    }
+  ],
   "posts": [
     {
       "id": 1,
