@@ -8,13 +8,15 @@ import SearchBoxContainer from "./containers/SearchBoxContainer";
 import Navigation from "./components/Navigation";
 import UserProfile from "./components/UserProfile";
 import {connect} from 'react-redux';
-import {loadMyMovieList} from "./actions";
+import {loadMyMovieList, searchResults} from "./actions";
 
 class App extends Component {
   componentDidMount() {
+    console.log('didmount props:', this.props);
     this.state.loadMyMovieList();
   }
   render() {
+    console.log('render props:', this.props);
     return (
       <div>
         <header className="Header">
@@ -41,6 +43,7 @@ App.propTypes = {
 };
 
 function mapStateToProps(state) {
+  console.log('MSTP state:',state);
   return {
     searchResults: state.searchResults,
     myMovieList: state.myMovieList

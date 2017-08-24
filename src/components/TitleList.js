@@ -13,7 +13,6 @@ function TitleList(props) {
       return (<div key={title.id} />);
     }); 
   } 
-  
   return (
     <div 
       className="TitleList" 
