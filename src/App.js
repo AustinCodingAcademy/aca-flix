@@ -10,8 +10,12 @@ import UserProfile from "./components/UserProfile";
 
 class App extends Component {
 
+  constructor(props) {
+    super(props);
+  }
+
   componentDidMount() {
-    return this.props.loadMovies();
+    return this.props.loadMovies;
   }
 
   render() {
@@ -29,8 +33,7 @@ class App extends Component {
           movies={this.props.searchResults} />
         <TitleList
           title="My Movies"
-          movies={this.props.myMovieList}
-          />
+          movies={this.props.myMovieList} />
       </div>
     );
   }
@@ -38,8 +41,8 @@ class App extends Component {
 
 App.propTypes = {
   searchResults: PropTypes.array.isRequired,
-  myMovieList: PropTypes.array,
-  loadMovies: PropTypes.func,
+  myMovieList: PropTypes.array.isRequired,
+  loadMovies: PropTypes.func.isRequired
 };
 
 export default App;

@@ -1,31 +1,28 @@
 import React from "react";
-import PropTypes from "prop-types";
-import take from "lodash/take";
 import Item from "./Item";
-
-const renderTitles = (props) => {
-  if (props.movies) {
-    // Using the take method from lodash library to reduce the array of titles to 5
-    const firstFiveTitles = take(props.movies, 5);
-    return firstFiveTitles.map((title, i) => {
-      return <Item key={i} movie={title} />;
-    });
-  }
-};
+import PropTypes from "prop-types";
 
 function TitleList(props) {
+  let titles = "";
+  if (props.movies) {
+    titles = props.movies.map(function (title, i) {
+      if (i < 5) {
+        return (
+          <Item key={title.id} movie={title} />
+        );
+      }
+      return (<div key={title.id} />);
+    });
+  }
 
   return (
     <div
       className="TitleList"
-      style={{
-        opacity: (props.movies && props.movies.length > 0) && "1",
-      }}
-    >
+      data-loaded={props.movies && props.movies.length > 0}>
       <div className="Title">
         <h1>{props.title}</h1>
         <div className="titles-wrapper">
-          {renderTitles(props)}
+          {titles}
         </div>
       </div>
     </div>
@@ -33,8 +30,8 @@ function TitleList(props) {
 }
 
 TitleList.propTypes = {
-  title: PropTypes.string,
-  movies: PropTypes.array,
+  movies: PropTypes.array.isRequired,
+  title: PropTypes.string.isRequired,
 };
 
 export default TitleList;
