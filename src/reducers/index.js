@@ -13,4 +13,4 @@ function searchResults(state = [], action) {
 }
 
 const rootReducer = combineReducers({myMovieList, searchResults});
-export rootReducer;
+export default rootReducer;
