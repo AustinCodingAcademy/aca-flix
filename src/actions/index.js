@@ -34,7 +34,7 @@ export function loadSearch(searchTerm){
 export function searchLoaded(movies){
   return{
   type:"SEARCH_RESULTS_LOADED",
-  value:movies.results//not sure about this line 73 in readMe
+  value:movies.results
   }
 }
 
@@ -44,7 +44,7 @@ export function saveMyMovie(movie){
       type:"SAVE_MY_MOVIE"
     });
       fetch("/movies", {
-      method:"post",
+      method:"POST",
   })
       .then( (response) => {
         return response.json();
@@ -54,13 +54,13 @@ export function saveMyMovie(movie){
     }
   }
 
-export function removeMyMovie(movie){
+export function removeMyMovie(id){
   return function (dispatch){
     dispatch({
       type:"REMOVE_MY_MOVIE"
     });
-      fetch("/movies/id", {//not sure about adding id in this way
-        method:"delete",
+      fetch("/movies/" + id, {//not sure about adding id in this way
+        method:"DELETE",
       })
       .then( (response) => {
         return response.json();

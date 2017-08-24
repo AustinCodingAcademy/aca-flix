@@ -4,8 +4,8 @@ import {loadSearch} from "../actions";
 
 function mapDispatchToProps(dispatch){
   return {
-    loadSearch: function() {
-      let action = loadSearch();
+    loadSearch: function(searchTerm) {
+      let action = loadSearch(searchTerm);
       dispatch(action);
     }
   }

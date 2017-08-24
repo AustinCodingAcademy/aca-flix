@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-// import PropTypes from "react-redux";
+import PropTypes from "prop-types";
 import "./App.css";
 import Logo from "./Logo.js";
 import TitleList from "./components/TitleList";
@@ -8,11 +8,15 @@ import Hero from "./components/Hero";
 import Navigation from "./components/Navigation";
 import UserProfile from "./components/UserProfile";
 import SearchBoxContainer from "./containers/SearchBoxContainer";
-// import {loadMovieList} from "./actions/index";
+// import {loadMyMovieList} from "./actions/index";
 // import AppContainer from "./containers/AppContainer";
 
 
 class App extends Component {
+  componentDidMount(){
+    console.log("mounted",this.props.loadMyMovieList);
+     this.props.loadMyMovieList();
+   }
   render() {
     return (
       <div>
@@ -36,18 +40,10 @@ class App extends Component {
       </div>
     );
   }
- componentDidMount(){
-   console.log("mounted",this.props.loadMovieList);
-
-    // this.state.loadMovieList();
-  }
-  // PropTypes: {
-  //   searchResults: React.PropTypes.string,
-  //   myMovieList: React.PropTypes.array,
-  // }
 }
-
-
-
+  App.propTypes = {
+    searchResults: PropTypes.array.isRequired,
+    myMovieList: PropTypes.array.isRequired,
+  };
 
 export default App;
