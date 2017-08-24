@@ -2,9 +2,10 @@ import React, { Component } from "react";
 
 class ListToggle extends Component {
   constructor(props) {
+    
     super(props);
     // determine if there is a json server id which means it was saved
-    this.state = { toggled: Boolean(props.movie._id)};
+    this.state = { toggled: this.props.movie ? Boolean(props.movie._id) : false};
     this.handleClick = this.handleClick.bind(this);
   }
   handleClick() {
@@ -16,6 +17,7 @@ class ListToggle extends Component {
       this.setState({ toggled: true }); 
     }
   }
+  
   render() {
     return (
       <div onClick={this.handleClick} 
