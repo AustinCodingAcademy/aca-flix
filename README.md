@@ -18,6 +18,8 @@ eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxOGRhMDM5OTUxYjhkOWY2OWE0NmYwZDB
 example api request:
 https://api.themoviedb.org/3/movie/550?api_key=18da039951b8d9f69a46f0d0b6604c46
 
+or like this??(boilerplate method)
+fetch("https://api.themoviedb.org/3/search/multi?query=searchTerm&api_key=18da039951b8d9f69a46f0d0b6604c46")
 
 
 ### Do
@@ -50,6 +52,8 @@ https://api.themoviedb.org/3/movie/550?api_key=18da039951b8d9f69a46f0d0b6604c46
 * searchResults
     * Look for the action “SEARCH_RESULTS_LOADED”
     * return the value
+^^^done^^^^
+
 
 ### Store
 * Create our standard store.js file
@@ -82,17 +86,14 @@ https://api.themoviedb.org/3/movie/550?api_key=18da039951b8d9f69a46f0d0b6604c46
 ^^^^^^^pretty much done to here more or less^^^^^^
 
 
-
-
-
-
-leaving here not sure how to POST
 * saveMyMovie(movie)
     * make fetch POST to “/movies”
     * on complete dispatch to loadMyMovieList()
 * removeMyMovie(id)
     * make a fetch DELETE to “/movies/” + id
     * on complete dispatch to loadMyMovieList()
+^^^^where/how does id come into play^^^^
+
 
 ^^done to here with some questions^^^^^
 
@@ -112,7 +113,7 @@ leaving here not sure how to POST
 
 ^^^^^needs work^^^^^
 
-
+//check $`{searchTerm}` 
 
 ### AppContainer.js
 * import App
@@ -137,7 +138,7 @@ leaving here not sure how to POST
 
 * Add onChange to the input element
 * on change setState for searchTerm to the value from the input
-^^^^not done
+^^^^done but not working^^^
 
 
 
@@ -149,13 +150,19 @@ leaving here not sure how to POST
 
 ### App.js
 * Add componentDidMount method and call loadMyMovieList in here.
+^^^done^^^
+
+
 * Switch out use of SearchBox for use of SearchBoxContainer
+^^^needs done^^^
+
 * Add PropTypes for searchResults and myMovieList
-^^^^not sure where this goes
+^^^^need to add to src/App.js^^^^
 
 
 ### index.js
 * Switch out use of App for AppContainer
+^^^done^^^
 
 ### Points
 * Base - 25

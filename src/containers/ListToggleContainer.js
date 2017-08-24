@@ -4,10 +4,15 @@ import {saveMyMovie,removeMyMovie} from "../actions/index";
 
 function mapDispatchToProps(dispatch){
   return {
-    save: () => dispatch(saveMyMovie()),
-    remove: () => dispatch(removeMyMovie())
+    saveMyMovie: function() {
+      let action = saveMyMovie();
+      dispatch(action);
+    },
+    removeMyMovie: function() {
+      let action = removeMyMovie();
+      dispatch(action);
   }
+ }
 }
-
 
 export default connect(null, mapDispatchToProps)(ListToggle);

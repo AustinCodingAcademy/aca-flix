@@ -12,9 +12,11 @@ export function loadMyMovieList(){
   };
 }
 export function myMovieListLoaded(movies){
-      type:"MY_MOVIE_LIST_LOADED"
+  return{
+      type:"MY_MOVIE_LIST_LOADED",
       value:movies
   }
+}
 export function loadSearch(searchTerm){
   return function (dispatch){
   dispatch({
@@ -30,8 +32,10 @@ export function loadSearch(searchTerm){
 }
 
 export function searchLoaded(movies){
-  type:"SEARCH_RESULTS_LOADED"
+  return{
+  type:"SEARCH_RESULTS_LOADED",
   value:movies.results//not sure about this line 73 in readMe
+  }
 }
 
 export function saveMyMovie(movie){
@@ -50,14 +54,12 @@ export function saveMyMovie(movie){
     }
   }
 
-// ^^^^^not sure about above and where to add post to fetch action
-
 export function removeMyMovie(movie){
   return function (dispatch){
     dispatch({
       type:"REMOVE_MY_MOVIE"
     });
-      fetch("/movies", {
+      fetch("/movies/id", {//not sure about adding id in this way
         method:"delete",
       })
       .then( (response) => {

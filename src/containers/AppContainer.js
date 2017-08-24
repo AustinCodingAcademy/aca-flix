@@ -1,19 +1,22 @@
 import {connect} from "react-redux";
 import App from "../App";
-import loadMyMovieList from "../actions/index";
+import {loadMyMovieList} from "../actions/index";
 
 
 function mapStateToProps(state){
   return {
     movies: state.movies,
-    searchText: state.searchText
+    searchText: state.searchText,
+    searchResults: state.searchResults,
+    myMovieList: state.myMovieList,
   }
 }
 
 function mapDispatchToProps(dispatch){
   return {
-    setMovie:function(movies){
-      dispatch(loadMyMovieList(movies));
+    loadMyMovieList: function() {
+      let action = loadMyMovieList();
+      dispatch(action);
     }
   }
 }

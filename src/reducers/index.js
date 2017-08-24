@@ -16,6 +16,6 @@ return state;
 
 const rootReducer = combineReducers({
   searchResults,myMovieList
-})
+});
 
 export default rootReducer;
