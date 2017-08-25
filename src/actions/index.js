@@ -24,19 +24,19 @@ export function loadSearch(searchTerm) {
     dispatch({
       type: "LOAD_SEARCH"
     });
-    fetch('https://api.themoviedb.org/3/search/multi?query=searchTerm&api_key=8391285b3c480932dc96bf13283ec832')
+    fetch(`https://api.themoviedb.org/3/search/multi?query=${searchTerm}&api_key=8391285b3c480932dc96bf13283ec832`)
     .then((response) => {
-      response.json();
-    }).then((moviesSearched) => {
-      dispatch(searchLoaded(moviesSearched))
-    })
+      return response.json();
+    }).then((movies) => {
+      dispatch(searchLoaded(movies.results))
+    });
   }
 }
 
-export function searchLoaded(moviesSearched) {
+export function searchLoaded(movies) {
   return {
     type: "SEARCH_RESULTS_LOADED",
-    value: moviesSearched
+    value: movies
   }
 }
 
@@ -56,12 +56,11 @@ export function saveMyMovie(movie) {
 
 export function removeMyMovie(id) {
   return function(dispatch) {
-    fetch(`/movies[${id}]`, {
+    fetch("/movies/" + id, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json"
       },
-      body: JSON.stringify(id)
     }).then((movies) => {
       dispatch(loadMyMovieList(movies))
     })
