@@ -8,9 +8,9 @@ import Hero from "./components/Hero";
 import Navigation from "./components/Navigation";
 import UserProfile from "./components/UserProfile";
 import SearchBoxContainer from "./containers/SearchBoxContainer";
-// import {loadMyMovieList} from "./actions/index";
+import {loadMyMovieList} from "./actions/index";
 // import AppContainer from "./containers/AppContainer";
-
+import {connect} from "react-redux";
 
 class App extends Component {
   componentDidMount(){
@@ -45,5 +45,18 @@ class App extends Component {
     searchResults: PropTypes.array.isRequired,
     myMovieList: PropTypes.array.isRequired,
   };
+  function mapStateToProps(state) {
+     return {
+       searchResults: state.searchResults,
+       myMovieList: state.myMovieList
+     }
+   }
 
-export default App;
+   function mapDispatchToProps(dispatch) {
+     return {
+       loadMyMovieList: function () {
+         dispatch(loadMyMovieList());
+       }
+     }
+   }
+export default connect(mapStateToProps, mapDispatchToProps)(App);

@@ -22,7 +22,7 @@ export function loadSearch(searchTerm){
   dispatch({
     type:"LOAD_SEARCH"
   });
-  fetch("https://api.themoviedb.org/3/search/multi?query=searchTerm&api_key=18da039951b8d9f69a46f0d0b6604c46")
+  fetch(`https://api.themoviedb.org/3/search/multi?query=${searchTerm}&api_key=18da039951b8d9f69a46f0d0b6604c46`)
   .then( (response) => {
     return response.json();
   }).then ((movies) => {
@@ -59,7 +59,7 @@ export function removeMyMovie(id){
     dispatch({
       type:"REMOVE_MY_MOVIE"
     });
-      fetch("/movies/" + id, {//not sure about adding id in this way
+      fetch("/movies/" + id, {
         method:"DELETE",
       })
       .then( (response) => {
@@ -70,5 +70,3 @@ export function removeMyMovie(id){
       });
     }
   }
-
-// ^^^^^^^^^^agin here not sure where to add delete to the action
