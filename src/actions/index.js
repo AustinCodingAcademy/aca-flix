@@ -36,7 +36,7 @@ export function loadSearch(searchTerm) {
     dispatch({
       type: "LOAD_SEARCH"
     });
-    fetch("https://api.themoviedb.org/3/search/multi?query=searchTerm&api_key=3feb152dee8cdcf2c8fabece6498529a")
+    fetch("https://api.themoviedb.org/3/search/multi?query=" + searchTerm + "&api_key=3feb152dee8cdcf2c8fabece6498529a")
       .then( (response) => {
         return response.json();
       }).then((movies) => {
@@ -54,7 +54,10 @@ export function searchLoaded(movies) {
 
 export function saveMyMovie(movie) {
   return function (dispatch) {
-   
+    dispatch({
+      type: "SAVE_MY_MOVIE"
+    });
+
     fetch("/movies", {
       method: "POST",
       headers: {"Content-Type": "application/JSON"},
