@@ -17,5 +17,5 @@ function searchResults(state = [], action) {
 //     return state;
 //   }
 // }
-const rootReducer = combineReducers({myMovieList, searchResults, loadMyMovieList});
+const rootReducer = combineReducers({myMovieList, searchResults});
 export default rootReducer;
