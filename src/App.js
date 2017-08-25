@@ -7,11 +7,11 @@ import Hero from "./components/Hero";
 import SearchBox from "./containers/SearchBoxContainer";
 import Navigation from "./components/Navigation";
 import UserProfile from "./components/UserProfile";
-
+import {loadMyMovieList} from "./actions";
 
 class App extends Component {
   componentDidMount() {
-    this.loadMyMovieList();
+    loadMyMovieList();
   }
   render() {
     return (
