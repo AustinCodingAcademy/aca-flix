@@ -12,5 +12,10 @@ function searchResults(state = [], action) {
   }
 }
 
-const rootReducer = combineReducers({myMovieList, searchResults});
+// function loadMyMovieList(state = [], action) {
+//   if (action.type === "LOAD_MY_MOVIE_LIST") {
+//     return state;
+//   }
+// }
+const rootReducer = combineReducers({myMovieList, searchResults, loadMyMovieList});
 export default rootReducer;

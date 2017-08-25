@@ -1,4 +1,4 @@
-export function loadMyMoviesList() {
+export function loadMyMovieList() {
   return function (dispatch) {
     dispatch({
       type: "LOAD_MY_MOVIE_LIST"
@@ -12,18 +12,7 @@ export function loadMyMoviesList() {
       });
   };
 }
-// return function (dispatch) {
-//   dispatch({
-//     type: "LOAD_USERS"
-//   });
-//   fetch("/users")
-//   .then( (response) => {
-//     return response.json();
-//   }).then((users) => {
-//     dispatch(usersLoaded(users));
-//   });
-// };
-// }
+
 export function myMovieListLoaded(movies) {
   return {
     type: "MY_MOVIE_LIST_LOADED",
@@ -62,7 +51,7 @@ export function saveMyMovie(movie) {
       method: "POST",
       headers: {"Content-Type": "application/JSON"},
       body: JSON.stringify.movie
-    }).then(() => dispatch(loadMyMoviesList()));
+    }).then(() => dispatch(loadMyMovieList()));
   
   };
 }
@@ -72,7 +61,7 @@ export function removeMyMovie(id) {
     fetch("/movies/" + id, {
       method: "delete"
     }).then(response =>
-      response.json().then(() => dispatch(loadMyMoviesList)));
+      response.json().then(() => dispatch(loadMyMovieList)));
   };
     
 }

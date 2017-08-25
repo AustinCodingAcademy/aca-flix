@@ -11,7 +11,7 @@ class SearchBox extends Component {
   onChange(e) {
     this.setState = {
       searchTerm: e.target.value
-    }
+    };
   }
   render() {
     return (
