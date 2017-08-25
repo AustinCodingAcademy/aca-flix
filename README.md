@@ -113,12 +113,12 @@
 * xSwitch out use of ListToggle for use of ListToggleContainer
 
 ### App.js
-* Add componentDidMount method and call loadMyMovieList in here.
-* Switch out use of SearchBox for use of SearchBoxContainer
-* Add PropTypes for searchResults and myMovieList
+* xAdd componentDidMount method and call loadMyMovieList in here.
+* xSwitch out use of SearchBox for use of SearchBoxContainer
+* xAdd PropTypes for searchResults and myMovieList
 
 ### index.js
-* Switch out use of App for AppContainer
+* xSwitch out use of App for AppContainer
 
 ### Points
 * Base - 25

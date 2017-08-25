@@ -8,11 +8,14 @@ import SearchBox from "./containers/SearchBoxContainer";
 import Navigation from "./components/Navigation";
 import UserProfile from "./components/UserProfile";
 
-function componentDidMount() {
-  
-}
+
 
 class App extends Component {
+
+  componentDidMount() {
+    this.props.loadMyMovieList()
+  }
+
   render() {
     return (
       <div>
@@ -33,4 +36,12 @@ class App extends Component {
     );
   }
 }
+
+App.propTypes = {
+  searchResults: PropTypes.array.isRequired,
+  myMovieList: PropTypes.array.isRequired
+}
+
+
+
 export default App;
