@@ -5,7 +5,7 @@ import {loadMyMovieList} from "../actions";
 function mapStateToProps(state) {
   return {
     searchResults: state.searchResults,
-    movieList: state.movieList
+    myMovieList: state.myMovieList
   };
 }
 function mapDispatchToProps(dispatch) {
