@@ -5,7 +5,7 @@ function Item(props) {
   debugger;
   let name = "";
   let backDrop = "http://image.tmdb.org/t/p/original" + props.movie.backdrop_path;
-  if (!props.movie.name) {
+  if (props.movie.name) {
     name = props.movie.original_title;
   } else {
     name = props.movie.name;
