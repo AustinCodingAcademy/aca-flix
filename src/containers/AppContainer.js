@@ -5,8 +5,6 @@ import {loadMyMovieList} from "../actions/index";
 
 function mapStateToProps(state){
   return {
-    // movies: state.movies,
-    // searchText: state.searchText,
     searchResults: state.searchResults,
     myMovieList: state.myMovieList
   }

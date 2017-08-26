@@ -26,7 +26,7 @@ export function loadSearch(searchTerm){
   .then( (response) => {
     return response.json();
   }).then ((movies) => {
-    dispatch(searchLoaded(movies));
+    dispatch(searchLoaded(movies.results));
   });
  };
 }
@@ -34,7 +34,7 @@ export function loadSearch(searchTerm){
 export function searchLoaded(movies){
   return{
   type:"SEARCH_RESULTS_LOADED",
-  value:movies.results
+  value:movies
   }
 }
 
@@ -45,11 +45,12 @@ export function saveMyMovie(movie){
     });
       fetch("/movies", {
       method:"POST",
-  })
-      .then( (response) => {
-        return response.json();
-      }).then( (movies) => {
-        dispatch(loadMyMovieList());
+      headers: {
+         "Content-Type": "application/json"
+       },
+       body: JSON.stringify(movie)
+      }).then( (movie) => {
+        dispatch(loadMyMovieList(movie));
       });
     }
   }
@@ -66,7 +67,7 @@ export function removeMyMovie(id){
         return response.json();
       })
       .then ((movies) => {
-        dispatch(loadMyMovieList());
+        dispatch(loadMyMovieList(movies));
       });
     }
   }

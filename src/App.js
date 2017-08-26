@@ -9,7 +9,6 @@ import Navigation from "./components/Navigation";
 import UserProfile from "./components/UserProfile";
 import SearchBoxContainer from "./containers/SearchBoxContainer";
 import {loadMyMovieList} from "./actions/index";
-// import AppContainer from "./containers/AppContainer";
 import {connect} from "react-redux";
 
 class App extends Component {
@@ -23,12 +22,8 @@ class App extends Component {
         <header className="Header">
           <Logo />
            <Navigation />
-
-          {/*  </Navigation>   */}
            <SearchBoxContainer />
            <UserProfile />
-
-          {/*  </UserProfile>   */}
         </header>
         <Hero />
         <TitleList
