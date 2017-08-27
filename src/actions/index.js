@@ -63,15 +63,7 @@ export function removeMyMovie(id) {
     });
     fetch("/movies/" + id, {
       method: "delete"
-<<<<<<< HEAD
-    }).then(() => {
-      
-      dispatch(loadMyMovieList());
-    }
-    );
-=======
     }).then(() => dispatch(loadMyMovieList()));
->>>>>>> eeaa5efc6ed870b1d6dcecc99eff975ef71f9e5f
   };
       
 }  
