@@ -1,5 +1,176 @@
 {
-  "movies":[],
+  "movies": [
+    {
+      "original_name": "Shameless",
+      "id": 34307,
+      "media_type": "tv",
+      "name": "Shameless",
+      "vote_count": 402,
+      "vote_average": 7.77,
+      "poster_path": "/v7K2RUuqlb9bDthKqvBKI3F0biu.jpg",
+      "first_air_date": "2011-01-09",
+      "popularity": 7.081515,
+      "genre_ids": [
+        18,
+        35
+      ],
+      "original_language": "en",
+      "backdrop_path": "/wbPCtpinXTxdBR9DvXlKJG3FU0f.jpg",
+      "overview": "Chicagoan Frank Gallagher is the proud single dad of six smart, industrious, independent kids, who without him would be... perhaps better off. When Frank's not at the bar spending what little money they have, he's passed out on the floor. But the kids have found ways to grow up in spite of him. They may not be like any family you know, but they make no apologies for being exactly who they are.",
+      "origin_country": [
+        "US"
+      ],
+      "_id": 1
+    },
+    {
+      "original_name": "SpongeBob SquarePants",
+      "id": 387,
+      "media_type": "tv",
+      "name": "SpongeBob SquarePants",
+      "vote_count": 148,
+      "vote_average": 6.8,
+      "poster_path": "/dprzrmKPHP910hPwU0OAaYYJBIj.jpg",
+      "first_air_date": "1999-05-01",
+      "popularity": 7.533318,
+      "genre_ids": [
+        16,
+        35
+      ],
+      "original_language": "en",
+      "backdrop_path": "/4ZpNNAIYOSAz4dTf25Hmb2QNpDN.jpg",
+      "overview": "Deep down in the Pacific Ocean in the subterranean city of Bikini Bottom lives a square yellow sponge named SpongeBob SquarePants. SpongeBob lives in a pineapple with his pet snail, Gary, loves his job as a fry cook at the Krusty Krab, and has a knack for getting into all kinds of trouble without really trying. When he's not getting on the nerves of his cranky next door neighbor Squidward, SpongeBob can usually be found smack in the middle of all sorts of strange situations with his best buddy, the simple yet lovable starfish, Patrick, or his thrill-seeking surfer-girl squirrel pal, Sandy Cheeks.",
+      "origin_country": [
+        "US"
+      ],
+      "_id": 2
+    },
+    {
+      "original_name": "SpongeBob SquarePants",
+      "id": 387,
+      "media_type": "tv",
+      "name": "SpongeBob SquarePants",
+      "vote_count": 148,
+      "vote_average": 6.8,
+      "poster_path": "/dprzrmKPHP910hPwU0OAaYYJBIj.jpg",
+      "first_air_date": "1999-05-01",
+      "popularity": 7.533318,
+      "genre_ids": [
+        16,
+        35
+      ],
+      "original_language": "en",
+      "backdrop_path": "/4ZpNNAIYOSAz4dTf25Hmb2QNpDN.jpg",
+      "overview": "Deep down in the Pacific Ocean in the subterranean city of Bikini Bottom lives a square yellow sponge named SpongeBob SquarePants. SpongeBob lives in a pineapple with his pet snail, Gary, loves his job as a fry cook at the Krusty Krab, and has a knack for getting into all kinds of trouble without really trying. When he's not getting on the nerves of his cranky next door neighbor Squidward, SpongeBob can usually be found smack in the middle of all sorts of strange situations with his best buddy, the simple yet lovable starfish, Patrick, or his thrill-seeking surfer-girl squirrel pal, Sandy Cheeks.",
+      "origin_country": [
+        "US"
+      ],
+      "_id": 3
+    },
+    {
+      "original_name": "Bob",
+      "id": 13169,
+      "media_type": "tv",
+      "name": "Bob",
+      "vote_count": 2,
+      "vote_average": 7.5,
+      "poster_path": "/uEGXyYHpz5XDYfz5WYjHRFqHOTj.jpg",
+      "first_air_date": "1992-09-18",
+      "popularity": 1.181627,
+      "genre_ids": [
+        35
+      ],
+      "original_language": "en",
+      "backdrop_path": null,
+      "overview": "Bob is an American television situation comedy which ran on CBS from September 18, 1992 until December 27, 1993. It was the third sitcom starring vehicle for Bob Newhart, and proved to be far less successful than The Bob Newhart Show and Newhart, his previous outings with the network. Bill Steinkellner, Cheri Steinkellner and Phoef Sutton comprised the creative writing team behind the show. The series was produced by Paramount Television. All 33 episodes became available on DVD April 3, 2012.",
+      "origin_country": [
+        "US"
+      ],
+      "_id": 4
+    },
+    {
+      "vote_average": 0,
+      "vote_count": 0,
+      "id": 353026,
+      "video": false,
+      "media_type": "movie",
+      "title": "Bob",
+      "popularity": 1.00376,
+      "poster_path": "/l1R3ATerm8joOYXBl2QXx8ORzfw.jpg",
+      "original_language": "nl",
+      "original_title": "Bob",
+      "genre_ids": [
+        18
+      ],
+      "backdrop_path": null,
+      "adult": false,
+      "overview": "Film about an unemployed, socially handicapped bachelor who lives in a very small world. For his birthday, his mother gives him a young dog. The touching pup brings about a pleasant change in his lonely life. But the growing up of the small dog forces him to make a radical choice.",
+      "release_date": "2002-09-23",
+      "_id": 5
+    },
+    {
+      "vote_average": 0,
+      "vote_count": 0,
+      "id": 353026,
+      "video": false,
+      "media_type": "movie",
+      "title": "Bob",
+      "popularity": 1.00376,
+      "poster_path": "/l1R3ATerm8joOYXBl2QXx8ORzfw.jpg",
+      "original_language": "nl",
+      "original_title": "Bob",
+      "genre_ids": [
+        18
+      ],
+      "backdrop_path": null,
+      "adult": false,
+      "overview": "Film about an unemployed, socially handicapped bachelor who lives in a very small world. For his birthday, his mother gives him a young dog. The touching pup brings about a pleasant change in his lonely life. But the growing up of the small dog forces him to make a radical choice.",
+      "release_date": "2002-09-23",
+      "_id": 6
+    },
+    {
+      "original_name": "Bob the Builder",
+      "id": 10938,
+      "media_type": "tv",
+      "name": "Bob the Builder",
+      "vote_count": 14,
+      "vote_average": 5.39,
+      "poster_path": "/yTFeoH4Kh94jp8M9cG1TNuCo6oj.jpg",
+      "first_air_date": "1999-04-12",
+      "popularity": 2.328745,
+      "genre_ids": [
+        16
+      ],
+      "original_language": "en",
+      "backdrop_path": "/d0HoCPGhmZPB9KvAldv75TmxF5d.jpg",
+      "overview": "Bob the Builder is a British children's animated television show created by Keith Chapman. In the original series Bob appears as a building contractor specializing in masonry in a stop motion animated programme with his colleague Wendy, various neighbours and friends, and their gang of anthropomorphised work-vehicles and equipment. The show is broadcast in many countries, but originates from the United Kingdom where Bob is voiced by English actor Neil Morrissey. The show was later created using CGI animation starting with the spin-off series Ready, Steady, Build!.\n\nIn each episode, Bob and his group help with renovations, construction, and repairs and with other projects as needed. The show emphasizes conflict resolution, co-operation, socialization and various learning skills. Bob's catchphrase is \"Can we fix it?\", to which the other characters respond with \"Yes we can!\" This phrase is also the title of the show's theme song, which was a million-selling number one hit in the UK.",
+      "origin_country": [
+        "GB"
+      ],
+      "_id": 7
+    },
+    {
+      "original_name": "SpongeBob SquarePants",
+      "id": 387,
+      "media_type": "tv",
+      "name": "SpongeBob SquarePants",
+      "vote_count": 148,
+      "vote_average": 6.8,
+      "poster_path": "/dprzrmKPHP910hPwU0OAaYYJBIj.jpg",
+      "first_air_date": "1999-05-01",
+      "popularity": 7.533318,
+      "genre_ids": [
+        16,
+        35
+      ],
+      "original_language": "en",
+      "backdrop_path": "/4ZpNNAIYOSAz4dTf25Hmb2QNpDN.jpg",
+      "overview": "Deep down in the Pacific Ocean in the subterranean city of Bikini Bottom lives a square yellow sponge named SpongeBob SquarePants. SpongeBob lives in a pineapple with his pet snail, Gary, loves his job as a fry cook at the Krusty Krab, and has a knack for getting into all kinds of trouble without really trying. When he's not getting on the nerves of his cranky next door neighbor Squidward, SpongeBob can usually be found smack in the middle of all sorts of strange situations with his best buddy, the simple yet lovable starfish, Patrick, or his thrill-seeking surfer-girl squirrel pal, Sandy Cheeks.",
+      "origin_country": [
+        "US"
+      ],
+      "_id": 8
+    }
+  ],
   "posts": [
     {
       "id": 1,
