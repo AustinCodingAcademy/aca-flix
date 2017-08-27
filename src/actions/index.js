@@ -63,8 +63,7 @@ export function removeMyMovie(id) {
     })
     fetch("/movies/" + id, {
       method: "delete"
-    }).then(response =>
-      response.json().then(() => dispatch(loadMyMovieList)));
+    }).then(() => dispatch(loadMyMovieList()));
   };
     
 }
