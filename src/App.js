@@ -11,7 +11,7 @@ import {loadMyMovieList} from "./actions";
 
 class App extends Component {
   componentDidMount() {
-    loadMyMovieList();
+    this.props.loadMyMovieList();
   }
   render() {
     return (
