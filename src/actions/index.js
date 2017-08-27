@@ -58,6 +58,9 @@ export function saveMyMovie(movie) {
 
 export function removeMyMovie(id) {
   return function (dispatch) {
+    dispatch({
+      type: "REMOVE_MY_MOVIE"
+    })
     fetch("/movies/" + id, {
       method: "delete"
     }).then(response =>
