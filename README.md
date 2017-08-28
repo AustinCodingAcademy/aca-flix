@@ -5,18 +5,18 @@
 
 ### Do
 
-### Components
-* Create functional components as defined by comments such as  {/*  <Navigation>   */}
-* Import and use components in App.js
-* Navigation.js
-* UserProfile.js
+<!-- ### Components -->
+* Create functional components as defined by comments such as  {/*  <Navigation>   * /}
+ <!-- * Import and use components in App.js -->
+ <!-- * Navigation.js -->
+ <!-- * UserProfile.js -->
 
-### State
+<!-- ### State -->
 * In state.js file
 * Create our state object with properties
-    * searchResults: []
-    * myMovieList: []
-* export state object
+    <!-- * searchResults: [] -->
+    <!-- * myMovieList: [] -->
+<!-- * export state object -->
 
 ### Reducers
 * In reducers/index.js
@@ -26,7 +26,7 @@
 * Import combineReducers from redux
 * Combine reducers and export
 
-### Create Reducers
+<!-- ### Create Reducers -->
 * myMovieList
     * Look for the action “MY_MOVIE_LIST_LOADED”
     * return the value
@@ -34,31 +34,31 @@
     * Look for the action “SEARCH_RESULTS_LOADED”
     * return the value
 
-### Store
+<!-- ### Store -->
 * Create our standard store.js file
 * Use redux-thunk middleware
 * Import reducers
 * create store and export
 
-### index.js 
-* import Provider and wrap App 
-* import store and assign to store prop
+### index.js
+<!-- * import Provider and wrap App -->
+<!-- * import store and assign to store prop -->
 
 ### Actions
 * remember to export your actions
-* loadMyMovieList()
+<!-- * loadMyMovieList() -->
     * type = “LOAD_MY_MOVIE_LIST”
     * make fetch call to “/movies”
     * on complete, dispatch to myMovieListLoaded(movies)
-* myMovieListLoaded(movies)
+<!-- * myMovieListLoaded(movies) -->
     * type = “MY_MOVIE_LIST_LOADED”
-    * value = movies 
-* loadSearch(searchTerm)
+    * value = movies
+<!-- * loadSearch(searchTerm) -->
     * type = “LOAD_SEARCH”
     * make fetch call to https://api.themoviedb.org/3/search/multi?query=searchTerm&api_key=yourkey
     * be sure to put your api key
     * on complete, dispatch to searchLoaded(movies)
-* searchLoaded(movies)
+<!-- * searchLoaded(movies) -->
     * type = “SEARCH_RESULTS_LOADED”
     * value = make sure to assign the value of movies.results to get the array of movies from movie db
 * saveMyMovie(movie)
@@ -110,7 +110,7 @@
 * Switch out use of App for AppContainer
 
 ### Points
-* Base - 25 
+* Base - 25
 * There are no runtime errors - 15
 * My Movie list shows all movies from your database - 15
 * Typing into the search text box and hitting enter shows a list of movies in the search results - 15
