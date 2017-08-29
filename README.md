@@ -61,10 +61,10 @@
 <!-- * searchLoaded(movies) -->
     * type = “SEARCH_RESULTS_LOADED”
     * value = make sure to assign the value of movies.results to get the array of movies from movie db
-* saveMyMovie(movie)
+<!-- * saveMyMovie(movie) -->
     * make fetch POST to “/movies”
     * on complete dispatch to loadMyMovieList()
-* removeMyMovie(id)
+<!-- * removeMyMovie(id) -->
     * make a fetch DELETE to “/movies/” + id
     * on complete dispatch to loadMyMovieList()
 
@@ -75,36 +75,38 @@
 * mapDispatchToProps
 * connect and export
 
+<!-- I think I have done this one correctly -->
 ### SearchBoxContainer.js
 * import SearchBox
 * import action `loadSearch`
 * mapDispatchToProps for this action
 * Determine which props to map to based on the props that are already coded into the SearchBox component
 
+<!-- I believe this is done as well. -->
 ### AppContainer.js
 * import App
 * import action `loadMyMovieList`
 * mapStateToProps for props `searchResults` and `myMovieList` to state of the same name
 * mapDisptachToProps for `loadMyMovieList`
 
-### ListToggleContainer
+<!-- ### ListToggleContainer -->
 * import ListToggle
 * import action `saveMyMovie` and `removeMyMovie`
 * mapDisptachToProps for `saveMyMovie` and `removeMyMovie`
 * Change Item.js to use ListToggleContainer instead of ListToggle
 
-### SearchBox.js
+<!-- ### SearchBox.js -->
 * In the constructor assign a state property with an object with key “searchTerm”, set to blank string “”
 * Add onChange to the input element
 * on change setState for searchTerm to the value from the input
 
-### Item.js
+<!-- ### Item.js -->
 * Switch out use of ListToggle for use of ListToggleContainer
 
 ### App.js
-* Add componentDidMount method and call loadMyMovieList in here.
-* Switch out use of SearchBox for use of SearchBoxContainer
-* Add PropTypes for searchResults and myMovieList
+<!-- * Add componentDidMount method and call loadMyMovieList in here. -->
+<!-- * Switch out use of SearchBox for use of SearchBoxContainer -->
+<!-- * Add PropTypes for searchResults and myMovieList -->
 
 ### index.js
 * Switch out use of App for AppContainer
