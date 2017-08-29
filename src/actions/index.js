@@ -4,8 +4,9 @@ export function loadMyMovieList(){
       type: "LOAD_MY_MOVIE_LIST"
     });
     fetch('/movies')
-    .then(resp => resp.json())
-    .then(movies => {
+    .then((resp) => {
+      return resp.json();
+    }).then((movies) => {
       dispatch(myMovieListLoaded(movies));
     });
   };
@@ -23,9 +24,10 @@ export function loadSearch(searchTerm){
     dispatch({
       type:"LOAD_SEARCH"
     });
-    fetch('https://api.themoviedb.org/3/search/multi?query=searchTerm&api_key=00dc83b89624b9f1ba044128a26ce1ec')
-    .then(resp => resp.json())
-    .then(movies => {
+    fetch('https://api.themoviedb.org/3/search/multi?query=' + searchTerm + '&api_key=00dc83b89624b9f1ba044128a26ce1ec')
+    .then((resp) => {
+      return resp.json();
+    }).then((movies) => {
       dispatch(searchLoaded(movies));
     });
   };
