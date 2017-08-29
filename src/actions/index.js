@@ -42,6 +42,7 @@ export function saveMyMovie(movie) {
   return function(dispatch) {
     fetch("/movies", {
       method: "POST",
+      headers: {"Content-Type": "application/json"},
       body: JSON.stringify(movie)
     })
     .then(() => {

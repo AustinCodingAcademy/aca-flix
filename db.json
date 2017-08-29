@@ -1,5 +1,31 @@
 {
-  "movies":[],
+  "movies": [
+    {
+      "_id": 1
+    },
+    {
+      "vote_average": 6,
+      "vote_count": 701,
+      "id": 88794,
+      "video": false,
+      "media_type": "movie",
+      "title": "J. Edgar",
+      "popularity": 2.113154,
+      "poster_path": "/upACO9i21lb5lG7ovf51m3lIPcv.jpg",
+      "original_language": "en",
+      "original_title": "J. Edgar",
+      "genre_ids": [
+        18,
+        80,
+        36
+      ],
+      "backdrop_path": "/8VHxc79a8wZRM6jfw2yhXtZkn1.jpg",
+      "adult": false,
+      "overview": "As the face of law enforcement in America for almost 50 years, J. Edgar Hoover was feared and admired, reviled and revered. But behind closed doors, he held secrets that would have destroyed his image, his career and his life.",
+      "release_date": "2011-11-09",
+      "_id": 3
+    }
+  ],
   "posts": [
     {
       "id": 1,
