@@ -1,7 +1,7 @@
 export function loadMyMovieList() {
   return function (dispatch) {
     dispatch({
-      type: "MY_MOVIE_LIST_LOADED"
+      type: "LOAD_MY_MOVIE_LIST"
     });
     fetch("/movies")
    .then( (response) => {
@@ -44,6 +44,7 @@ export function saveMyMovie(movie) {
   return function (dispatch) {
     fetch("/movies", {
       method: "POST",
+      headers: {"Content-Type": "applicaton/json"},
       body: JSON.stringify(movie)
     })
     .then(() => {

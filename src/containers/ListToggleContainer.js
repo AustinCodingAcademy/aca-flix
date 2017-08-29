@@ -14,6 +14,6 @@ function mapDispatchToProps(dispatch) {
 }
 
 var otherFunction = connect(null, mapDispatchToProps);
-var ListToggleContainer = otherFunction(ListToggle)
+var ListToggleContainer = otherFunction(ListToggle);
 
 export default ListToggleContainer;

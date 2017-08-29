@@ -55,8 +55,8 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
   return {
-    loadMyMovieList: function () {
-      dispatch(loadMyMovieList());
+    loadMyMovieList: function (movies) {
+      dispatch(loadMyMovieList(movies));
     }
   };
 }
