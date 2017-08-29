@@ -1,5 +1,66 @@
 {
-  "movies":[],
+  "movies": [
+    {
+      "vote_average": 0,
+      "vote_count": 0,
+      "id": 386853,
+      "video": false,
+      "media_type": "movie",
+      "title": "HI",
+      "popularity": 1.127473,
+      "poster_path": "/k1SPp88JtsyJ7o9G1irezE1VtYN.jpg",
+      "original_language": "en",
+      "original_title": "HI",
+      "genre_ids": [],
+      "backdrop_path": null,
+      "adult": false,
+      "overview": "Lately, Dr Ghosh has been seeing things...",
+      "release_date": "2014-09-15",
+      "_id": 1
+    },
+    {
+      "original_name": "Hi-de-Hi!",
+      "id": 2695,
+      "media_type": "tv",
+      "name": "Hi-de-Hi!",
+      "vote_count": 3,
+      "vote_average": 7,
+      "poster_path": "/2iXAuv34Vs1nPrctm6tzbTsLabB.jpg",
+      "first_air_date": "1981-02-26",
+      "popularity": 1.47408,
+      "genre_ids": [
+        35
+      ],
+      "original_language": "en",
+      "backdrop_path": "/nQh46nN9wmjTN5h3WZBpa0GJaKn.jpg",
+      "overview": "Hi-de-Hi! is a British sitcom that aired on the BBC from 1980 to 1988.\n\nIt was set in Maplins, a fictional holiday camp, during 1959 and 1960 and was written by Jimmy Perry and David Croft, who also wrote Dad's Army and It Ain't Half Hot Mum amongst others.\n\nThe title was the phrase used to greet the campers and in early episodes was written Hi de Hi. The series revolved around the lives of the camp's management and entertainers, most of them struggling actors or has-beens.\n\nThe inspiration was the experience of writers Perry and Croft: after being demobilised from the Army, Perry was a Redcoat at Butlins, Pwllheli during the holiday season.\n\nThe series gained large audiences and won a BAFTA as Best Comedy Series in 1984. In 2004, it came 40th in Britain's Best Sitcom and in a 2008 poll on Channel 4, Hi-de-Hi! was voted the 35th most popular comedy catchphrase.",
+      "origin_country": [
+        "GB"
+      ],
+      "_id": 2
+    },
+    {
+      "original_name": "Far and Wide",
+      "id": 71473,
+      "media_type": "tv",
+      "name": "Far and Wide",
+      "vote_count": 0,
+      "vote_average": 0,
+      "poster_path": null,
+      "first_air_date": "2016-06-02",
+      "popularity": 1.18255,
+      "genre_ids": [
+        99
+      ],
+      "original_language": "en",
+      "backdrop_path": "/ybVyxX37qkJdbcN3BWMtEX7SwyG.jpg",
+      "overview": "From coast to coast to coast join MUCH as we go Far & Wide to expose the most unique and exciting things to do, try and see in Canada. Through inspiring videos, awesome stories and amazing influencers, find out some of the best kept secrets of Canada on Far & Wide.",
+      "origin_country": [
+        "CA"
+      ],
+      "_id": 3
+    }
+  ],
   "posts": [
     {
       "id": 1,
