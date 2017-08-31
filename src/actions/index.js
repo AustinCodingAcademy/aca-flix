@@ -19,19 +19,21 @@ export function myMovieListLoaded(movies){
   }
 }
 
-export function LoadSearch(searchTerm){
+export function loadSearch(searchTerm){
+  console.log("my test")
   return function (dispatch) {
     dispatch({
       type: "LOAD_SEARCH"
     });
     fetch('https://api.themoviedb.org/3/search/multi?query=' + searchTerm + '&api_key=' + '90f241e29f50e3463138e771c23003ff')
-    .then(res => res.json())
-    .then(json => dispatch(searchLoaded(json)))
-    .catch(err => console.log(err));
+    .then( (response) => {
+      return response.json();
+    }).then((movies) => {
+      console.log(movies);
+      dispatch(searchLoaded(movies));
+    });
   };
 }
-
-
 
 export function searchLoaded(movies){
   return{

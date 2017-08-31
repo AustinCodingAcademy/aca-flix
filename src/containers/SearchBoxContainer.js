@@ -7,12 +7,12 @@ function mapDispatchToProps(dispatch) {
     loadSearch: function(movies){
       let action = loadSearch(movies);
       dispatch(action);
-    },
-  }
+    }
+  };
 }
 
 //This is the shorter way to export.
-//export default connect(null,mapDispatchToProps)(SearchBox)
+//export default connect(null,mapDispatchToProps)(Search)
 
 let otherFunction = connect(null, mapDispatchToProps);
 let SearchBoxContainer = otherFunction(SearchBox)

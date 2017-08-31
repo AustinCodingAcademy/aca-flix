@@ -13,7 +13,7 @@ class SearchBox extends Component {
         <input
           onChange = {
             (e) => {
-              setState: e.target.value
+              this.setState({searchTerm: e.target.value})
             }
           }
           onKeyUp={
