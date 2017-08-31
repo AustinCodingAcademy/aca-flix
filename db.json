@@ -1,16 +1,26 @@
 {
   "movies": [
     {
-      "_id": 1
-    },
-    {
-      "_id": 2
-    },
-    {
-      "_id": 3
-    },
-    {
-      "_id": 4
+      "vote_average": 7.5,
+      "vote_count": 2451,
+      "id": 578,
+      "video": false,
+      "media_type": "movie",
+      "title": "Jaws",
+      "popularity": 6.909159,
+      "poster_path": "/l1yltvzILaZcx2jYvc5sEMkM7Eh.jpg",
+      "original_language": "en",
+      "original_title": "Jaws",
+      "genre_ids": [
+        27,
+        53,
+        12
+      ],
+      "backdrop_path": "/slkPgAt1IQgxZXNrazEcOzhAK8f.jpg",
+      "adult": false,
+      "overview": "An insatiable great white shark terrorizes the townspeople of Amity Island, The police chief, an oceanographer and a grizzled shark hunter seek to destroy the bloodthirsty beast.",
+      "release_date": "1975-06-18",
+      "_id": 27
     }
   ],
   "posts": [

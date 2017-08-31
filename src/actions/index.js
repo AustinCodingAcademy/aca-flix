@@ -41,10 +41,12 @@ export function searchLoaded(movies) {
 }
 
 export function saveMyMovie(movie) {
+
   return function (dispatch) {
+    console.log(movie);
     fetch("/movies", {
       method: "POST",
-      headers: {"Content-Type": "applicaton/json"},
+      headers: {"Content-Type": "application/json"},
       body: JSON.stringify(movie)
     })
     .then(() => {
