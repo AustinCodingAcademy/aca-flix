@@ -49,9 +49,8 @@ export function saveMyMovie(movie){
       },
       body: JSON.stringify(movie)
     })
-    .then(() => {
-      dispatch(loadMyMovieList());
-    });
+    .then(() =>
+      dispatch(loadMyMovieList()));
   };
 }
 
