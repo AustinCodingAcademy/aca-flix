@@ -41,7 +41,6 @@ export function searchLoaded(movies){
     value:movies.results
   }
 }
-
 export function saveMyMovie(movie){
   return function (dispatch) {
     fetch("/movies", {
@@ -54,10 +53,8 @@ export function saveMyMovie(movie){
 
 export function removeMyMovie(id){
   return function (dispatch) {
-    fetch("/movies", {
+    fetch("/movies/" + id, {
       method: "DELETE",
-      headers: {"Content-Type": "application/json"},
-      body: JSON.stringify(loadMyMovieList)
     }).then(() => dispatch(loadMyMovieList()));
   };
 }
