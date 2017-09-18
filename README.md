@@ -29,7 +29,6 @@ https://api.themoviedb.org/3/movie/550?api_key=d8d7a40b695fbf17b3b566dd0
     * searchResults: [] - DONE
     * myMovieList: [] - DONE
 * export state object - DONE
-<!-- Should API go here? -->
 
 ### Reducers
 * In reducers/index.js
@@ -39,19 +38,19 @@ https://api.themoviedb.org/3/movie/550?api_key=d8d7a40b695fbf17b3b566dd0
 * Import combineReducers from redux - DONE
 * Combine reducers and export - DONE
 
-### Create Reducers
-* myMovieList
+### Create Reducers - DONE
+* myMovieList - DONE
     * Look for the action “MY_MOVIE_LIST_LOADED”
     * return the value
-* searchResults
+* searchResults - DONE
     * Look for the action “SEARCH_RESULTS_LOADED”
     * return the value
 
 ### Store
-* Create our standard store.js file
+* Create our standard store.js file - DONE
 * Use redux-thunk middleware
-* Import reducers
-* create store and export
+* Import reducers - DONE
+* create store and export - DONE
 
 ### index.js 
 * import Provider and wrap App 
