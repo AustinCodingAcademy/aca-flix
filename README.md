@@ -1,7 +1,7 @@
 
 ### Setup
 * Get your api key from the themoviedb.org
-* Fork, Clone, yarn install, yarn start
+* Fork, Clone, yarn install, yarn start, yarn add redux, yarn add react-redux
 
 *API Key (v3 auth)*
 
@@ -17,26 +17,27 @@ https://api.themoviedb.org/3/movie/550?api_key=d8d7a40b695fbf17b3b566dd0
 
 ### Do
 
-### Components
-* Create functional components as defined by comments such as  {/*  <Navigation>   */}
-* Import and use components in App.js
-* Navigation.js
-* UserProfile.js
+### Components - DONE
+* Create functional components as defined by comments such as  {/*  <Navigation>   */} - DONE
+* Import and use components in App.js - DONE
+* Navigation.js - DONE
+* UserProfile.js - DONE
 
-### State
+### State - DONE
 * In state.js file
-* Create our state object with properties
-    * searchResults: []
-    * myMovieList: []
-* export state object
+* Create our state object with properties - DONE
+    * searchResults: [] - DONE
+    * myMovieList: [] - DONE
+* export state object - DONE
+<!-- Should API go here? -->
 
 ### Reducers
 * In reducers/index.js
-* Create reducers functions for all state
-* Parameters - state, action
-* Remember default value
-* Import combineReducers from redux
-* Combine reducers and export
+* Create reducers functions for all state - DONE
+* Parameters - state, action - DONE
+* Remember default value - DONE
+* Import combineReducers from redux - DONE
+* Combine reducers and export - DONE
 
 ### Create Reducers
 * myMovieList
