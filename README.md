@@ -3,6 +3,18 @@
 * Get your api key from the themoviedb.org
 * Fork, Clone, yarn install, yarn start
 
+*API Key (v3 auth)*
+
+d8d7a40b695fbf17b3b566dd016ffa2b
+
+*API Read Access Token (v4 auth)*
+
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkOGQ3YTQwYjY5NWZiZjE3YjNiNTY2ZGQwMTZmZmEyYiIsInN1YiI6IjU5YmYzM2MyYzNhMzY4MzAwZTAwYTcxYyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.8rsb-kCZ_Ck-aRenQ2_1JT2FrIflC-Zp55_d1tRJq2g
+
+*Example API Request*
+
+https://api.themoviedb.org/3/movie/550?api_key=d8d7a40b695fbf17b3b566dd0
+
 ### Do
 
 ### Components
