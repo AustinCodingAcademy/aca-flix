@@ -35,7 +35,7 @@ export function loadSearch(searchTerm) {
       type: "LOAD_SEARCH"
     });
 
-    fetch("https://api.themoviedb.org/3/search/multi?query=${searchTerm}&api_key=d8d7a40b695fbf17b3b566dd016ffa2b")
+    fetch(`https://api.themoviedb.org/3/search/multi?query=${searchTerm}&api_key=d8d7a40b695fbf17b3b566dd016ffa2b`)
     .then( (response) => {
       return response.json();
     }).then((movies) => {
