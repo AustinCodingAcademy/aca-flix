@@ -11,9 +11,17 @@ class SearchBox extends Component {
         <input 
           onChange={
             (e) => {
+              var searchTerm = e.target.value;
+              this.setState({
+                searchTerm: searchTerm
+              })
+            }
+          }
+          onKeyUp={
+          ( e) => {
               /* this is so th search will only be done on enter key */
               if (this.props.loadSearch && e.key === "Enter" && this.state.searchTerm) {
-                this.setState({searchTerm: e.target.value});
+                this.props.loadSearch(this.state.searchTerm);
               }
             }
           } 
@@ -24,4 +32,3 @@ class SearchBox extends Component {
   }
 }
 export default SearchBox;
-

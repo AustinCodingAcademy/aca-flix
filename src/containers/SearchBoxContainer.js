@@ -5,8 +5,8 @@ import {loadSearch} from "../actions";
 
 function mapDispatchToProps(dispatch){
     return {
-      searchTerm:function(mov){
-        dispatch(loadSearch(mov));
+      loadSearch:function(searchTerm){
+        dispatch(loadSearch(searchTerm));
       }
     }
   }

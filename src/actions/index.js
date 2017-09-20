@@ -8,7 +8,7 @@ export function myMovieListLoaded(movies){
 export function searchLoaded(movies){
   return {
       type: "SEARCH_RESULTS_LOADED",
-      value: movies.results
+      value: movies
   };
 }
 
@@ -21,8 +21,8 @@ export function loadMyMovieList() {
     fetch("/movies")
     .then( (response) => {
       return response.json();
-    }).then((users) => {
-      dispatch(myMovieListLoaded());
+    }).then((movies) => {
+      dispatch(myMovieListLoaded(movies));
     });
   };
 }
@@ -33,11 +33,11 @@ export function loadSearch(searchTerm) {
       type: "LOAD_SEARCH"
     });
 
-    fetch("https://api.themoviedb.org/3/search/multi?query=searchTerm&api_key=d8d7a40b695fbf17b3b566dd016ffa2b")
+    fetch("https://api.themoviedb.org/3/search/multi?query=${searchTerm}&api_key=d8d7a40b695fbf17b3b566dd016ffa2b")
     .then( (response) => {
       return response.json();
-    }).then((users) => {
-      dispatch(searchLoaded());
+    }).then((movies) => {
+      dispatch(searchLoaded(movies.results))
     });
   };
 }
@@ -49,23 +49,21 @@ export function saveMyMovie(movie) {
       method: "POST",
       headers: {"Content-Type": "application/json"},
       body: JSON.stringify(movie)
-    }).then((users) => {
-      dispatch(loadMyMovieList());
+    }).then((movie) => {
+      dispatch(loadMyMovieList(movie));
     });
   };
 }
 
-export function removeMyMovie(movie) {
+export function removeMyMovie(id) {
   return function (dispatch) {
 
-    fetch("“/movies/” + id", {
+    fetch("/movies/" + id, {
       method: "DELETE",
       headers: {"Content-Type": "application/json"},
-      body: JSON.stringify(movie)
-    }).then((users) => {
-      dispatch(loadMyMovieList());
+    }).then((movies) => {
+      dispatch(loadMyMovieList(movies));
     });
   };
 }
-
-// Should second then ref users, movies, or both?
+  
