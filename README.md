@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 ### Setup - Ericka Emery
 * !DONE * Get your api key from the themoviedb.org
 * !DONE * Fork, Clone, yarn install, yarn start
@@ -39,6 +40,60 @@
 * !DONE * Use redux-thunk middleware
 * !DONE * Import reducers
 * !DONE * create store and export
+=======
+### Setup
+* Get your api key from the themoviedb.org
+* Fork, Clone, yarn install, yarn start, yarn add redux, yarn add react-redux
+
+*API Key (v3 auth)*
+
+d8d7a40b695fbf17b3b566dd016ffa2b
+
+*API Read Access Token (v4 auth)*
+
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkOGQ3YTQwYjY5NWZiZjE3YjNiNTY2ZGQwMTZmZmEyYiIsInN1YiI6IjU5YmYzM2MyYzNhMzY4MzAwZTAwYTcxYyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.8rsb-kCZ_Ck-aRenQ2_1JT2FrIflC-Zp55_d1tRJq2g
+
+*Example API Request*
+
+https://api.themoviedb.org/3/movie/550?api_key=d8d7a40b695fbf17b3b566dd0
+
+### Do
+
+### Components - DONE
+* Create functional components as defined by comments such as  {/*  <Navigation>   */} - DONE
+* Import and use components in App.js - DONE
+* Navigation.js - DONE
+* UserProfile.js - DONE
+
+### State - DONE
+* In state.js file
+* Create our state object with properties - DONE
+    * searchResults: [] - DONE
+    * myMovieList: [] - DONE
+* export state object - DONE
+
+### Reducers
+* In reducers/index.js
+* Create reducers functions for all state - DONE
+* Parameters - state, action - DONE
+* Remember default value - DONE
+* Import combineReducers from redux - DONE
+* Combine reducers and export - DONE
+
+### Create Reducers - DONE
+* myMovieList - DONE
+    * Look for the action “MY_MOVIE_LIST_LOADED”
+    * return the value
+* searchResults - DONE
+    * Look for the action “SEARCH_RESULTS_LOADED”
+    * return the value
+
+### Store
+* Create our standard store.js file - DONE
+* Use redux-thunk middleware
+* Import reducers - DONE
+* create store and export - DONE
+>>>>>>> 81061af5c13c4008cf74aa7b76b3037ebb2a1f58
 
 ### index.js 
 * !DONE * import Provider and wrap App 
