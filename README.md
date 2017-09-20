@@ -41,8 +41,8 @@
 * !DONE * create store and export
 
 ### index.js 
-* import Provider and wrap App 
-* import store and assign to store prop
+* !DONE * import Provider and wrap App 
+* !DONE * import store and assign to store prop
 
 ### Actions
 * remember to export your actions
