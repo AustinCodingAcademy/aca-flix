@@ -46,25 +46,31 @@
 
 ### Actions
 * remember to export your actions
-* loadMyMovieList()
-    * type = “LOAD_MY_MOVIE_LIST”
-    * make fetch call to “/movies”
-    * on complete, dispatch to myMovieListLoaded(movies)
-* myMovieListLoaded(movies)
-    * type = “MY_MOVIE_LIST_LOADED”
-    * value = movies 
-* loadSearch(searchTerm)
-    * type = “LOAD_SEARCH”
-    * make fetch call to https://api.themoviedb.org/3/search/multi?query=searchTerm&api_key=yourkey
-    * be sure to put your api key
-    * on complete, dispatch to searchLoaded(movies)
-* searchLoaded(movies)
+* !DONE * loadMyMovieList()
+* !DONE    * type = “LOAD_MY_MOVIE_LIST”
+* !DONE    * on complete, dispatch to myMovieListLoaded(movies)
+
+* !DONE* myMovieListLoaded(movies)
+* !DONE    * type = “MY_MOVIE_LIST_LOADED”
+* !DONE    * value = movies 
+
+* !DONE* loadSearch(searchTerm)
+* !DONE    * type = “LOAD_SEARCH”
+* !DONE    * make fetch call to https://api.themoviedb.org/3/search/multi?query=searchTerm&api_key=yourkey
+* !DONE    * be sure to put your api key
+* !DONE   * on complete, dispatch to searchLoaded(movies)
+ <!-- What about searchTerm needs to change in api url?  -->
+
+
+* !DONE * searchLoaded(movies)
     * type = “SEARCH_RESULTS_LOADED”
     * value = make sure to assign the value of movies.results to get the array of movies from movie db
-* saveMyMovie(movie)
+    
+* !DONE * saveMyMovie(movie)
     * make fetch POST to “/movies”
     * on complete dispatch to loadMyMovieList()
-* removeMyMovie(id)
+
+* !DONE * removeMyMovie(id)
     * make a fetch DELETE to “/movies/” + id
     * on complete dispatch to loadMyMovieList()
 
@@ -75,19 +81,19 @@
 * mapDispatchToProps
 * connect and export
 
-### SearchBoxContainer.js
+### SearchBoxContainer.js **DONE**
 * import SearchBox
 * import action `loadSearch`
 * mapDispatchToProps for this action
 * Determine which props to map to based on the props that are already coded into the SearchBox component
 
-### AppContainer.js
+### AppContainer.js **DONE**
 * import App
 * import action `loadMyMovieList`
 * mapStateToProps for props `searchResults` and `myMovieList` to state of the same name
 * mapDisptachToProps for `loadMyMovieList`
 
-### ListToggleContainer
+### ListToggleContainer **DONE**
 * import ListToggle
 * import action `saveMyMovie` and `removeMyMovie`
 * mapDisptachToProps for `saveMyMovie` and `removeMyMovie`
@@ -97,12 +103,14 @@
 * In the constructor assign a state property with an object with key “searchTerm”, set to blank string “”
 * Add onChange to the input element
 * on change setState for searchTerm to the value from the input
+<!-- Save for the end -->
 
 ### Item.js
 * Switch out use of ListToggle for use of ListToggleContainer
 
 ### App.js
 * Add componentDidMount method and call loadMyMovieList in here.
+<!-- where does the action exist in app.js? remember it came in as mapdispatch to props, where do components get anything from? MDTP inline?????  -->
 * Switch out use of SearchBox for use of SearchBoxContainer
 * Add PropTypes for searchResults and myMovieList
 

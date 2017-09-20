@@ -7,7 +7,7 @@ import {combineReducers} from 'redux';
      return state;
  }
 
- function  myMovieList (state = [], action) {
+ function myMovieList (state = [], action) {
     if (action.type === "SEARCH_RESULTS_LOADED") {
         return action.value;
       }
@@ -15,6 +15,6 @@ import {combineReducers} from 'redux';
 }
 
 const rootReducer = combineReducers({
- users,searchText,currentUser
+ searchResults, myMovieList
 });
 export default rootReducer;
