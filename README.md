@@ -20,25 +20,25 @@
 
 ### Reducers
 * In reducers/index.js
-* Create reducers functions for all state
-* Parameters - state, action
-* Remember default value
-* Import combineReducers from redux
-* Combine reducers and export
+* !DONE * Create reducers functions for all state
+* !DONE * Parameters - state, action
+* !DONE * Remember default value
+* !DONE * Import combineReducers from redux
+* !DONE * Combine reducers and export
 
 ### Create Reducers
-* myMovieList
-    * Look for the action “MY_MOVIE_LIST_LOADED”
-    * return the value
-* searchResults
-    * Look for the action “SEARCH_RESULTS_LOADED”
-    * return the value
+* !DONE * myMovieList
+* !DONE     * Look for the action “MY_MOVIE_LIST_LOADED”
+* !DONE     * return the value
+* !DONE * searchResults
+* !DONE     * Look for the action “SEARCH_RESULTS_LOADED”
+* !DONE     * return the value
 
 ### Store
-* Create our standard store.js file
-* Use redux-thunk middleware
-* Import reducers
-* create store and export
+* !DONE * Create our standard store.js file
+* !DONE * Use redux-thunk middleware
+* !DONE * Import reducers
+* !DONE * create store and export
 
 ### index.js 
 * import Provider and wrap App 
