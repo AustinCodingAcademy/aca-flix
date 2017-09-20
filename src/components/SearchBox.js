@@ -6,7 +6,7 @@ class SearchBox extends Component {
     this.state = {searchTerm: ""};
   }
   render() {
-    // console.log(this.state.searchTerm);
+    console.log("Is my search doing anything",this.state.searchTerm);
     return (
       <div id="search" className="Search">
         <input 
