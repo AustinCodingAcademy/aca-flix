@@ -1,7 +1,7 @@
 
-### Setup
-* Get your api key from the themoviedb.org
-* Fork, Clone, yarn install, yarn start
+### Setup - Ericka Emery
+* !DONE * Get your api key from the themoviedb.org
+* !DONE * Fork, Clone, yarn install, yarn start
 
 ### Do
 
