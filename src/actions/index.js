@@ -6,6 +6,7 @@ export function myMovieListLoaded(movies){
 }
 
 export function searchLoaded(movies){
+  console.log(movies);
   return {
       type: "SEARCH_RESULTS_LOADED",
       value: movies
@@ -28,6 +29,7 @@ export function loadMyMovieList() {
 }
 
 export function loadSearch(searchTerm) {
+  console.log("this is from actions",searchTerm);
   return function (dispatch) {
     dispatch({
       type: "LOAD_SEARCH"
