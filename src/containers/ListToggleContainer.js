@@ -5,11 +5,11 @@ import {saveMyMovie,removeMyMovie} from "../actions";
 
 function mapDispatchToProps(dispatch){
     return {
-      saveMyMovie:function(mov){
-        dispatch(saveMyMovie(mov));
+      saveMyMovie:function(movie){
+        dispatch(saveMyMovie(movie));
       },
-      removeMyMovie:function(mov){
-        dispatch(removeMyMovie(mov));
+      removeMyMovie:function(movie){
+        dispatch(removeMyMovie(movie));
     }
   };
 } 

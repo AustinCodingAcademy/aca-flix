@@ -18,7 +18,7 @@ export function loadMyMovieList() {
       type: "LOAD_MY_MOVIE_LIST"
     });
 
-    fetch("/movies")
+    fetch("./movies")
     .then( (response) => {
       return response.json();
     }).then((movies) => {

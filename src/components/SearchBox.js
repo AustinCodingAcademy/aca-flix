@@ -6,12 +6,13 @@ class SearchBox extends Component {
     this.state = {searchTerm: ""};
   }
   render() {
+    // console.log(this.state.searchTerm);
     return (
       <div id="search" className="Search">
         <input 
           onChange={
             (e) => {
-              var searchTerm = e.target.value;
+              const searchTerm = e.target.value;
               this.setState({
                 searchTerm: searchTerm
               })
