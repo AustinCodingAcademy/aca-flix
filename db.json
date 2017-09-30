@@ -41,46 +41,6 @@
       "_id": 41
     },
     {
-      "vote_count": 1789,
-      "id": 587,
-      "video": false,
-      "vote_average": 7.6,
-      "title": "Big Fish",
-      "popularity": 4.337607,
-      "poster_path": "/6DRFdlNZpAaEt7eejsbAlJGgaM7.jpg",
-      "original_language": "en",
-      "original_title": "Big Fish",
-      "genre_ids": [
-        12,
-        14,
-        18
-      ],
-      "backdrop_path": "/kK1rVmqk8pLTuK5ZE7eVdCSqqHL.jpg",
-      "adult": false,
-      "overview": "Throughout his life Edward Bloom has always been a man of big appetites, enormous passions and tall tales. In his later years, he remains a huge mystery to his son, William. Now, to get to know the real man, Will begins piecing together a true picture of his father from flashbacks of his amazing adventures.",
-      "release_date": "2003-12-25",
-      "_id": 46
-    },
-    {
-      "vote_count": 1636,
-      "id": 1366,
-      "video": false,
-      "vote_average": 7.4,
-      "title": "Rocky",
-      "popularity": 4.306719,
-      "poster_path": "/9TUR3s1PMJHwDRbpm7PWQ0S7IRy.jpg",
-      "original_language": "en",
-      "original_title": "Rocky",
-      "genre_ids": [
-        18
-      ],
-      "backdrop_path": "/2kkyt0FLROrXt41IgSdE7goCFNQ.jpg",
-      "adult": false,
-      "overview": "When world heavyweight boxing champion, Apollo Creed wants to give an unknown fighter a shot at the title as a publicity stunt, his handlers choose palooka Rocky Balboa, an uneducated collector for a Philadelphia loan shark. Rocky teams up with trainer  Mickey Goldmill to make the most of this once in a lifetime break.",
-      "release_date": "1976-11-21",
-      "_id": 47
-    },
-    {
       "vote_count": 806,
       "id": 1371,
       "video": false,
@@ -178,6 +138,71 @@
       "overview": "A young boy, Josh Baskin makes a wish at a carnival machine to be big. He wakes up the following morning to find that it has been granted and his body has grown older overnight. But he is still the same 13-year-old boy inside. Now he must learn how to cope with the unfamiliar world of grown-ups including getting a job and having his first romantic encounter with a woman. What will he find out about this strange world?",
       "release_date": "1988-06-03",
       "_id": 52
+    },
+    {
+      "vote_count": 7303,
+      "id": 597,
+      "video": false,
+      "vote_average": 7.5,
+      "title": "Titanic",
+      "popularity": 28.090183,
+      "poster_path": "/kHXEpyfl6zqn8a6YuozZUujufXf.jpg",
+      "original_language": "en",
+      "original_title": "Titanic",
+      "genre_ids": [
+        18,
+        10749,
+        53
+      ],
+      "backdrop_path": "/fVcZErSWa7gyENuj8IWp8eAfCnL.jpg",
+      "adult": false,
+      "overview": "84 years later, a 101-year-old woman named Rose DeWitt Bukater tells the story to her granddaughter Lizzy Calvert, Brock Lovett, Lewis Bodine, Bobby Buell and Anatoly Mikailavich on the Keldysh about her life set in April 10th 1912, on a ship called Titanic when young Rose boards the departing ship with the upper-class passengers and her mother, Ruth DeWitt Bukater, and her fiancé, Caledon Hockley. Meanwhile, a drifter and artist named Jack Dawson and his best friend Fabrizio De Rossi win third-class tickets to the ship in a game. And she explains the whole story from departure until the death of Titanic on its first and last voyage April 15th, 1912 at 2:20 in the morning.",
+      "release_date": "1997-11-18",
+      "_id": 53
+    },
+    {
+      "vote_count": 970,
+      "id": 2280,
+      "video": false,
+      "vote_average": 6.9,
+      "title": "Big",
+      "popularity": 5.879209,
+      "poster_path": "/me6uugsf6zWTkrcLBoNc9EElb5j.jpg",
+      "original_language": "en",
+      "original_title": "Big",
+      "genre_ids": [
+        14,
+        18,
+        35,
+        10749,
+        10751
+      ],
+      "backdrop_path": "/tVpkaXfP5xCS2Fd19JijUSDvpbg.jpg",
+      "adult": false,
+      "overview": "A young boy, Josh Baskin makes a wish at a carnival machine to be big. He wakes up the following morning to find that it has been granted and his body has grown older overnight. But he is still the same 13-year-old boy inside. Now he must learn how to cope with the unfamiliar world of grown-ups including getting a job and having his first romantic encounter with a woman. What will he find out about this strange world?",
+      "release_date": "1988-06-03",
+      "_id": 54
+    },
+    {
+      "vote_count": 7567,
+      "id": 597,
+      "video": false,
+      "vote_average": 7.5,
+      "title": "Titanic",
+      "popularity": 108.093752,
+      "poster_path": "/kHXEpyfl6zqn8a6YuozZUujufXf.jpg",
+      "original_language": "en",
+      "original_title": "Titanic",
+      "genre_ids": [
+        18,
+        10749,
+        53
+      ],
+      "backdrop_path": "/fVcZErSWa7gyENuj8IWp8eAfCnL.jpg",
+      "adult": false,
+      "overview": "84 years later, a 101-year-old woman named Rose DeWitt Bukater tells the story to her granddaughter Lizzy Calvert, Brock Lovett, Lewis Bodine, Bobby Buell and Anatoly Mikailavich on the Keldysh about her life set in April 10th 1912, on a ship called Titanic when young Rose boards the departing ship with the upper-class passengers and her mother, Ruth DeWitt Bukater, and her fiancé, Caledon Hockley. Meanwhile, a drifter and artist named Jack Dawson and his best friend Fabrizio De Rossi win third-class tickets to the ship in a game. And she explains the whole story from departure until the death of Titanic on its first and last voyage April 15th, 1912 at 2:20 in the morning.",
+      "release_date": "1997-11-18",
+      "_id": 55
     }
   ],
   "posts": [

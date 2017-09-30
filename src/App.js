@@ -7,6 +7,17 @@ import Hero from "./components/Hero";
 import SearchBoxContainer from "./components/SearchBoxContainer";
 import Navigation from "./components/Navigation";
 import UserProfile from "./components/UserProfile";
+import firebase from "firebase";
+
+const config = {
+  apiKey: "AIzaSyBcAGEYePE2zv1JOWht8LE8jlCo9YG9Bpg",
+  authDomain: "movie-search-database.firebaseapp.com",
+  databaseURL: "https://movie-search-database.firebaseio.com",
+  projectId: "movie-search-database",
+  storageBucket: "",
+  messagingSenderId: "946011060545"
+};
+firebase.initializeApp(config);
 
 class App extends Component {
 
