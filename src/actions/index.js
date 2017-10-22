@@ -1,3 +1,11 @@
+
+
+import firebase from "./config";
+
+console.log(firebase.name);
+console.log(firebase.database());
+
+
 export const LOAD_MY_MOVIE_LIST = "LOAD_MY_MOVIE_LIST";
 
 export function loadMyMovieList() {
@@ -10,7 +18,13 @@ export function loadMyMovieList() {
     .then((response) => {
       return response.json();
     })
-    .then((movies) => dispatch(myMovieListLoaded(movies)))
+    .then((movies) => {
+        // save to db once
+      alert("saving to firebase");
+      firebase.ref("/movies").set({ movies });
+      dispatch(myMovieListLoaded(movies));
+
+    })
     .catch((err) => dispatch("Error:", err));
   };
 }

@@ -203,6 +203,105 @@
       "overview": "84 years later, a 101-year-old woman named Rose DeWitt Bukater tells the story to her granddaughter Lizzy Calvert, Brock Lovett, Lewis Bodine, Bobby Buell and Anatoly Mikailavich on the Keldysh about her life set in April 10th 1912, on a ship called Titanic when young Rose boards the departing ship with the upper-class passengers and her mother, Ruth DeWitt Bukater, and her fiancé, Caledon Hockley. Meanwhile, a drifter and artist named Jack Dawson and his best friend Fabrizio De Rossi win third-class tickets to the ship in a game. And she explains the whole story from departure until the death of Titanic on its first and last voyage April 15th, 1912 at 2:20 in the morning.",
       "release_date": "1997-11-18",
       "_id": 55
+    },
+    {
+      "vote_count": 7796,
+      "id": 597,
+      "video": false,
+      "vote_average": 7.5,
+      "title": "Titanic",
+      "popularity": 24.593304,
+      "poster_path": "/kHXEpyfl6zqn8a6YuozZUujufXf.jpg",
+      "original_language": "en",
+      "original_title": "Titanic",
+      "genre_ids": [
+        18,
+        10749,
+        53
+      ],
+      "backdrop_path": "/fVcZErSWa7gyENuj8IWp8eAfCnL.jpg",
+      "adult": false,
+      "overview": "84 years later, a 101-year-old woman named Rose DeWitt Bukater tells the story to her granddaughter Lizzy Calvert, Brock Lovett, Lewis Bodine, Bobby Buell and Anatoly Mikailavich on the Keldysh about her life set in April 10th 1912, on a ship called Titanic when young Rose boards the departing ship with the upper-class passengers and her mother, Ruth DeWitt Bukater, and her fiancé, Caledon Hockley. Meanwhile, a drifter and artist named Jack Dawson and his best friend Fabrizio De Rossi win third-class tickets to the ship in a game. And she explains the whole story from departure until the death of Titanic on its first and last voyage April 15th, 1912 at 2:20 in the morning.",
+      "release_date": "1997-11-18",
+      "_id": 56
+    },
+    {
+      "vote_count": 1,
+      "id": 394961,
+      "video": false,
+      "vote_average": 10,
+      "title": "Blaha und Blüten",
+      "popularity": 1.040008,
+      "poster_path": "/iyp0AuVsGGRfdDJz9SK7vXK8I3t.jpg",
+      "original_language": "de",
+      "original_title": "Blaha und Blüten",
+      "genre_ids": [
+        99
+      ],
+      "backdrop_path": "/uJnIrbUMSEfk84ur7fo6tZqJpid.jpg",
+      "adult": false,
+      "overview": "",
+      "release_date": "2008-05-15",
+      "_id": 57
+    },
+    {
+      "vote_count": 12,
+      "id": 19273,
+      "video": false,
+      "vote_average": 5.5,
+      "title": "Dr. Dolittle: Million Dollar Mutts",
+      "popularity": 3.381227,
+      "poster_path": "/iZz5ywVTaPlvp3Fkk4iC4Xj1KcR.jpg",
+      "original_language": "en",
+      "original_title": "Dr. Dolittle: Million Dollar Mutts",
+      "genre_ids": [
+        35,
+        10751,
+        14
+      ],
+      "backdrop_path": "/hYzV2aOmqzElwsi5KLRKRSDFTqN.jpg",
+      "adult": false,
+      "overview": "Maya Dolittle (Kyla Pratt) thinks she doesn't have to spend 7 years in college to be a vet because she can talk to animals. While taking a walk with Lucky, she helps a cat on a tree by talking to it. She gets discovered and Tiffany Monaco (Tegan Moss), a Hollywood star, brings her to L.A. to help her little puppy, who turns out to be a boy. Soon, Maya and Tiffany began creating their own show, The Animal Talkers. Maya also meets Brandon Turner (Brandon Jay McLaren) who is her love interest. Maya soon finds out the show isn't about helping animals and goes back home to study being a vet. She also finds out Brandon is at her school too. Meanwhile, Monkey is out in L.A. searching for his big break but quits because he wants to help Maya.",
+      "release_date": "2009-04-08",
+      "_id": 58
+    },
+    {
+      "vote_count": 0,
+      "id": 328020,
+      "video": false,
+      "vote_average": 0,
+      "title": "Blah Blah Blah",
+      "popularity": 1.003534,
+      "poster_path": "/gJ1SxX57b60OkKfb8hO8vFXbNsw.jpg",
+      "original_language": "en",
+      "original_title": "Blah Blah Blah",
+      "genre_ids": [],
+      "backdrop_path": null,
+      "adult": false,
+      "overview": "Visual poem based on a song by Iggy Pop.",
+      "release_date": "2006-01-01",
+      "_id": 59
+    },
+    {
+      "vote_count": 304,
+      "id": 49022,
+      "video": false,
+      "vote_average": 5.9,
+      "title": "Something Borrowed",
+      "popularity": 7.280372,
+      "poster_path": "/yQ7xDM7y0mIAuvkRoOFOuxhv0Zy.jpg",
+      "original_language": "en",
+      "original_title": "Something Borrowed",
+      "genre_ids": [
+        35,
+        18,
+        10749
+      ],
+      "backdrop_path": "/zsyu6szRiyS1BSEqWQcHegV9uSO.jpg",
+      "adult": false,
+      "overview": "Though Rachel (Ginnifer Goodwin) is a successful attorney and a loyal, generous friend, she is still single. After one drink too many at her 30th-birthday celebration, Rachel unexpectedly falls into bed with her longtime crush, Dex -- who happens to be engaged to her best friend, Darcy (Kate Hudson). Ramifications of the liaison threaten to destroy the women's lifelong friendship, while Ethan (John Krasinski), Rachel's confidant, harbors a potentially explosive secret of his own.",
+      "release_date": "2011-05-05",
+      "_id": 60
     }
   ],
   "posts": [
