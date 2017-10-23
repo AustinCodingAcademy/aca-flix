@@ -1,6 +1,6 @@
 
 
-import firebase from "./config";
+import firebase from "./firebase";
 
 console.log(firebase.name);
 console.log(firebase.database());
