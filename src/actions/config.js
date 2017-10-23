@@ -21,5 +21,6 @@ const config = {
 //   var database = firebase.database();
 // } catch (err) {}
 
-console.log(firebase.apps.length)
+console.log(firebase.apps.length);
+
 export default !firebase.apps.length ? firebase.initializeApp(config) : firebase.app();
