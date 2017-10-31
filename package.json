@@ -1,4 +1,4 @@
-{ "homepage": "stefanbemelmans.github.io/advanced-netflix-clone",
+{ "homepage": "https://stefanbemelmans.github.io/advanced-netflix-clone",
   "name": "advanced-netflix-clone",
   "version": "0.1.0",
   "private": true,
@@ -30,6 +30,6 @@
     "test": "npm run lint && react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "deploy": "npm run build&&gh-pages -d build"
-  }
-  // "proxy": "http://localhost:4000"
+  },
+  "proxy": "http://localhost:4000"
 }
