@@ -19,7 +19,7 @@ XX Create our state object with properties
 XX export state object
 
 ### Reducers
-* In reducers/index.js
+In reducers/index.js
 X Create reducers functions for all state
 XX Parameters - state, action
 XX Remember default value
@@ -48,29 +48,28 @@ XX import store and assign to store prop
 ### Actions
 X remember to export your actions
 X loadMyMovieList()
-    * type = “LOAD_MY_MOVIE_LIST”
-    * make fetch call to “/movies”
-
-    * on complete, dispatch to myMovieListLoaded(movies)
+    X type = “LOAD_MY_MOVIE_LIST”
+    X make fetch call to “/movies”
+    X on complete, dispatch to myMovieListLoaded(movies)
 
 X myMovieListLoaded(movies)
-    * type = “MY_MOVIE_LIST_LOADED”
+    X type = “MY_MOVIE_LIST_LOADED”
     * value = movies
 
 X loadSearch(searchTerm)
-    * type = “LOAD_SEARCH”
-    * make fetch call to https://api.themoviedb.org/3/search/multi?query=searchTerm&api_key=yourkey
-    * be sure to put your api key
-    * on complete, dispatch to searchLoaded(movies)
+    X type = “LOAD_SEARCH”
+    X make fetch call to https://api.themoviedb.org/3/search/multi?query=searchTerm&api_key=yourkey
+    X be sure to put your api key
+    X on complete, dispatch to searchLoaded(movies)
 
 X searchLoaded(movies)
-    * type = “SEARCH_RESULTS_LOADED”
-    * value = make sure to assign the value of movies.results to get the array of movies from movie db
+    X type = “SEARCH_RESULTS_LOADED”
+    X value = make sure to assign the value of movies.results to get the array of movies from movie db
 
 
 X saveMyMovie(movie)
-    * make fetch POST to “/movies”
-    * on complete dispatch to loadMyMovieList()    
+    X make fetch POST to “/movies”
+    X on complete dispatch to loadMyMovieList()    
 
 X removeMyMovie(id)
     X make a fetch DELETE to “/movies/” + id
@@ -90,14 +89,12 @@ AppContainer.js
 ListToggleContainer.js
 
 
-//////
-
 ### SearchBoxContainer.js
-X import SearchBox
-X import action `loadSearch`
-X mapDispatchToProps for this action
+XX import SearchBox
+XX import action `loadSearch`
+XX mapDispatchToProps for this action
 
-X Determine which props to map to based on the props that are already coded into the SearchBox component
+XX Determine which props to map to based on the props that are already coded into the SearchBox component
 
 ### AppContainer.js
 XX import App
@@ -111,8 +108,6 @@ XX import action `saveMyMovie` and `removeMyMovie`
 XX mapDisptachToProps for `saveMyMovie` and `removeMyMovie`
 XX Change Item.js to use ListToggleContainer instead of ListToggle
 
-//////////////
-
 ### SearchBox.js
 XX In the constructor assign a state property with an object with key “searchTerm”, set to blank string “”
 
@@ -122,8 +117,6 @@ XX on change setState for searchTerm to the value from the input
 
 ### Item.js
 XX Switch out use of ListToggle for use of ListToggleContainer
-
-//////
 
 ### App.js
 XX Add componentDidMount method and call loadMyMovieList in here.

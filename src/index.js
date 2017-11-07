@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-// import App from "./App";
 import AppContainer from "./containers/AppContainer";
 import "./index.css";
 import store from "./store";

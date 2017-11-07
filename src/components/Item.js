@@ -1,7 +1,5 @@
 import React from "react";
-// import ListToggle from "./ListToggle"; // ListToggleContainer
 import ListToggleContainer from "../containers/ListToggleContainer";
-
 
 function Item(props) {
   // debugger;

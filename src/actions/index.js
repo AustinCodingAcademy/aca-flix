@@ -1,20 +1,16 @@
 // ACTIONS TO RETRIEVE DATA
-// const MovieDB = require('moviedb')('92bd2e0acc02c7e9732aa12f3e685a95');
 
 const API_KEY = "92bd2e0acc02c7e9732aa12f3e685a95";
 
 export function loadMyMovieList() {
   return function (dispatch) {
     dispatch({
-      // signals that loading has begun
-      // we are loading, please stand by
       type: "LOAD_MY_MOVIE_LIST"
     });
-    fetch("/movies") // ???
+    fetch("/movies")
       .then((response) => {
         return response.json();
       }).then((movies) => {
-        // this.setState[{contacts}];
         dispatch(myMovieListLoaded(movies));
       });
   };
@@ -28,17 +24,13 @@ export function myMovieListLoaded(movies) {
 }
 
 export function loadSearch(searchTerm) {
-  console.log(searchTerm)
+  console.log(searchTerm);
   return function (dispatch) {
     dispatch({
       type: "LOAD_SEARCH"
     });
     // fetch(`https://api.themoviedb.org/3/search/multi?query=independence&api_key=92bd2e0acc02c7e9732aa12f3e685a95}
-    // fetch(`https://api.themoviedb.org/3/search/multi?query=searchTerm&api_key=${API_KEY}`)
-    // fetch(`https://api.themoviedb.org/3/search/multi?query=cats&api_key=${API_KEY}`)
-    // fetch(`https://api.themoviedb.org/3/search/multi?query=${{searchTerm}}&api_key=${API_KEY}`)
     fetch(`https://api.themoviedb.org/3/search/multi?query=${searchTerm}&api_key=${API_KEY}`)
-
       .then((response) => {
         return response.json();
       }).then((movies) => {
@@ -55,6 +47,7 @@ export function searchLoaded(movies) {
 }
 
 // ACTIONS TO CREATE DATA
+
 export function saveMyMovie(movie) {
   return function (dispatch) {
     fetch("/movies", {

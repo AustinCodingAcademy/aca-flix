@@ -8,14 +8,6 @@ class SearchBox extends Component {
     };
   }
   render() {
-/*
-    const handleChange = (e) => {
-      this.setState({
-        searchTerm: e.target.value
-      });
-      console.log(this.state.searchTerm);
-    };
-*/
 
     return (
       <div id="search" className="Search">
@@ -38,7 +30,6 @@ class SearchBox extends Component {
               console.log("onChange: " + this.state.searchTerm);
             }
         }
-          // onChange={this.handleChange}
         />
       </div>
     );
