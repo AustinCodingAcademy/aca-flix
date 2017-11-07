@@ -1,5 +1,94 @@
 {
-  "movies":[],
+  "movies": [
+    {
+      "vote_average": 5.8,
+      "vote_count": 177,
+      "id": 9988,
+      "video": false,
+      "media_type": "movie",
+      "title": "Beerfest",
+      "popularity": 10.44569,
+      "poster_path": "/2u4eGTXiY0yDhDahJEJ0DUb16hx.jpg",
+      "original_language": "en",
+      "original_title": "Beerfest",
+      "genre_ids": [
+        35
+      ],
+      "backdrop_path": "/63R6JXvtQtPw7NO0dmLor0brzow.jpg",
+      "adult": false,
+      "overview": "During a trip to Germany to scatter their grandfather's ashes, German-American brothers Todd and Jan discover Beerfest, the secret Olympics of downing stout, and want to enter the contest to defend their family's beer-guzzling honor. Their Old Country cousins sneer at the Yanks' chances, prompting the siblings to return to America to prepare for a showdown the following year.",
+      "release_date": "2006-08-25",
+      "_id": 1
+    },
+    {
+      "vote_average": 8.7,
+      "vote_count": 10,
+      "id": 412103,
+      "video": false,
+      "media_type": "movie",
+      "title": "Rick and Morty: State of Georgia Vs. Denver Fenton Allen",
+      "popularity": 2.46533,
+      "poster_path": "/8P6xZFSvSK2fxrVnhFdPYaNdihg.jpg",
+      "original_language": "en",
+      "original_title": "Rick and Morty: State of Georgia Vs. Denver Fenton Allen",
+      "genre_ids": [
+        35,
+        80
+      ],
+      "backdrop_path": null,
+      "adult": false,
+      "overview": "A faithful, word-for-word recreation of one colorful day in the American court system.",
+      "release_date": "2016-07-24",
+      "_id": 4
+    },
+    {
+      "original_name": "Rick and Morty",
+      "id": 60625,
+      "media_type": "tv",
+      "name": "Rick and Morty",
+      "vote_count": 519,
+      "vote_average": 8.53,
+      "poster_path": "/qJdfO3ahgAMf2rcmhoqngjBBZW1.jpg",
+      "first_air_date": "2013-12-02",
+      "popularity": 35.399366,
+      "genre_ids": [
+        10765,
+        10759,
+        16,
+        35
+      ],
+      "original_language": "en",
+      "backdrop_path": "/pfTlxypaLQ8KHecKrD7EFcAzEUs.jpg",
+      "overview": "Rick is a mentally-unbalanced but scientifically-gifted old man who has recently reconnected with his family. He spends most of his time involving his young grandson Morty in dangerous, outlandish adventures throughout space and alternate universes. Compounded with Morty's already unstable family life, these events cause Morty much distress at home and school.",
+      "origin_country": [
+        "US"
+      ],
+      "_id": 5
+    },
+    {
+      "original_name": "Game of Thrones",
+      "id": 1399,
+      "media_type": "tv",
+      "name": "Game of Thrones",
+      "vote_count": 3799,
+      "vote_average": 8.11,
+      "poster_path": "/gwPSoYUHAKmdyVywgLpKKA4BjRr.jpg",
+      "first_air_date": "2011-04-17",
+      "popularity": 77.245346,
+      "genre_ids": [
+        10765,
+        18,
+        10759
+      ],
+      "original_language": "en",
+      "backdrop_path": "/gX8SYlnL9ZznfZwEH4KJUePBFUM.jpg",
+      "overview": "Seven noble families fight for control of the mythical land of Westeros. Friction between the houses leads to full-scale war. All while a very ancient evil awakens in the farthest north. Amidst the war, a neglected military order of misfits, the Night's Watch, is all that stands between the realms of men and icy horrors beyond.",
+      "origin_country": [
+        "US"
+      ],
+      "_id": 6
+    }
+  ],
   "posts": [
     {
       "id": 1,
