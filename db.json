@@ -1,5 +1,71 @@
 {
-  "movies":[],
+  "movies": [
+    {
+      "original_name": "Northern Exposure",
+      "id": 4396,
+      "media_type": "tv",
+      "name": "Northern Exposure",
+      "vote_count": 41,
+      "vote_average": 8.05,
+      "poster_path": "/4yPQY1PcH7W2j3fTE77xQcoEgbZ.jpg",
+      "first_air_date": "1990-07-12",
+      "popularity": 10.246638,
+      "genre_ids": [
+        35,
+        18
+      ],
+      "original_language": "en",
+      "backdrop_path": "/nKACsusUkKeEe3NyvOM0CWFZmmo.jpg",
+      "overview": "After receiving a scholarship from the state, a recent Columbia University medical school graduate is required to set up his practice in an eccentric Alaskan town.",
+      "origin_country": [
+        "US"
+      ],
+      "_id": 3
+    },
+    {
+      "original_name": "Friday Night Lights",
+      "id": 4278,
+      "media_type": "tv",
+      "name": "Friday Night Lights",
+      "vote_count": 68,
+      "vote_average": 7.79,
+      "poster_path": "/Eu7MzZY1DldJ683z7vLkILHNRD.jpg",
+      "first_air_date": "2006-10-03",
+      "popularity": 10.483096,
+      "genre_ids": [
+        18
+      ],
+      "original_language": "en",
+      "backdrop_path": "/1maVcORgJbbbKj2FZ1xSXKqOWzs.jpg",
+      "overview": "Friday Night Lights is an American drama television series based around a high school football team situated in Texas. It was developed by Peter Berg, and executive produced by Brian Grazer, David Nevins, Sarah Aubrey, and Jason Katims, based on the book and film of the same name. The series takes place in the fictional town of Dillon: a small, close-knit community in rural Texas. Particular focus is given to team coach Eric Taylor and his family, Tammy and Julie. The show uses this small town backdrop to address many issues facing contemporary American culture, including family values, child development, life lessons, school funding, racism, drugs, abortion and lack of economic opportunities.\n\nProduced by NBCUniversal, Friday Night Lights premiered on October 3, 2006, airing for two seasons on the National Broadcasting Company. Although the show had garnered critical acclaim and passionate fans, the series suffered low ratings and was in danger of cancellation after the second season. To save the series, NBC struck a deal with DirecTV to co-produce three more seasons of the show with each subsequent season premiering on DirecTV's 101 Network after which NBC rebroadcast the series a few months later. The series ended its run on The 101 Network after five seasons on February 9, 2011.",
+      "origin_country": [
+        "US"
+      ],
+      "_id": 4
+    },
+    {
+      "vote_average": 7.3,
+      "vote_count": 432,
+      "id": 219,
+      "video": false,
+      "media_type": "movie",
+      "title": "Volver",
+      "popularity": 8.818753,
+      "poster_path": "/wjiEyTi7EnkdtC3MhH446esjCLF.jpg",
+      "original_language": "es",
+      "original_title": "Volver",
+      "genre_ids": [
+        35,
+        18,
+        10749
+      ],
+      "backdrop_path": "/2ZqUuollwvBiNvGHdxBVngiP0YG.jpg",
+      "adult": false,
+      "overview": "Raimunda (Penélope Cruz) works and lives Madrid with her husband Paco and daughter Paula. Her sister Sole (Lola Dueñas) lives nearby and they both miss their mother Irene (Carmen Maura), who died several years ago in a house fire along with their father. A former neighbor from their hometown reports that she has seen the ghost of Irene and both daughters do not believe her. After a murder and a family tragedy, Irene's spirit materializes around her daughters to help comfort them.",
+      "release_date": "2006-03-16",
+      "_id": 5
+    }
+  ],
   "posts": [
     {
       "id": 1,
