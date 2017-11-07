@@ -1,70 +1,76 @@
 
-### Setup
-* Get your api key from the themoviedb.org
-* Fork, Clone, yarn install, yarn start
+### Setup - Ericka Emery
+* !DONE * Get your api key from the themoviedb.org
+* !DONE * Fork, Clone, yarn install, yarn start
 
 ### Do
 
 ### Components
-* Create functional components as defined by comments such as  {/*  <Navigation>   */}
-* Import and use components in App.js
-* Navigation.js
-* UserProfile.js
+* !DONE * Create functional components as defined by comments such as  {/*  <Navigation>   */}
+* !DONE * Import and use components in App.js
+* !DONE * Navigation.js
+* !DONE * UserProfile.js
 
 ### State
-* In state.js file
-* Create our state object with properties
-    * searchResults: []
-    * myMovieList: []
-* export state object
+* !DONE * In state.js file
+* !DONE * Create our state object with properties
+* !DONE     * searchResults: []
+* !DONE     * myMovieList: []
+* !DONE * export state object
 
 ### Reducers
 * In reducers/index.js
-* Create reducers functions for all state
-* Parameters - state, action
-* Remember default value
-* Import combineReducers from redux
-* Combine reducers and export
+* !DONE * Create reducers functions for all state
+* !DONE * Parameters - state, action
+* !DONE * Remember default value
+* !DONE * Import combineReducers from redux
+* !DONE * Combine reducers and export
 
 ### Create Reducers
-* myMovieList
-    * Look for the action “MY_MOVIE_LIST_LOADED”
-    * return the value
-* searchResults
-    * Look for the action “SEARCH_RESULTS_LOADED”
-    * return the value
+* !DONE * myMovieList
+* !DONE     * Look for the action “MY_MOVIE_LIST_LOADED”
+* !DONE     * return the value
+* !DONE * searchResults
+* !DONE     * Look for the action “SEARCH_RESULTS_LOADED”
+* !DONE     * return the value
 
 ### Store
-* Create our standard store.js file
-* Use redux-thunk middleware
-* Import reducers
-* create store and export
+* !DONE * Create our standard store.js file
+* !DONE * Use redux-thunk middleware
+* !DONE * Import reducers
+* !DONE * create store and export
 
 ### index.js 
-* import Provider and wrap App 
-* import store and assign to store prop
+* !DONE * import Provider and wrap App 
+* !DONE * import store and assign to store prop
 
 ### Actions
 * remember to export your actions
-* loadMyMovieList()
-    * type = “LOAD_MY_MOVIE_LIST”
-    * make fetch call to “/movies”
-    * on complete, dispatch to myMovieListLoaded(movies)
-* myMovieListLoaded(movies)
-    * type = “MY_MOVIE_LIST_LOADED”
-    * value = movies 
-* loadSearch(searchTerm)
-    * type = “LOAD_SEARCH”
-    * make fetch call to https://api.themoviedb.org/3/search/multi?query=searchTerm&api_key=yourkey
-    * be sure to put your api key
-    * on complete, dispatch to searchLoaded(movies)
-* searchLoaded(movies)
+* !DONE * loadMyMovieList()
+* !DONE    * type = “LOAD_MY_MOVIE_LIST”
+* !DONE    * on complete, dispatch to myMovieListLoaded(movies)
+
+* !DONE* myMovieListLoaded(movies)
+* !DONE    * type = “MY_MOVIE_LIST_LOADED”
+* !DONE    * value = movies 
+
+* !DONE* loadSearch(searchTerm)
+* !DONE    * type = “LOAD_SEARCH”
+* !DONE    * make fetch call to https://api.themoviedb.org/3/search/multi?query=searchTerm&api_key=yourkey
+* !DONE    * be sure to put your api key
+* !DONE   * on complete, dispatch to searchLoaded(movies)
+ <!-- What about searchTerm needs to change in api url? JS it! -->
+
+
+* !DONE * searchLoaded(movies)
     * type = “SEARCH_RESULTS_LOADED”
     * value = make sure to assign the value of movies.results to get the array of movies from movie db
-* saveMyMovie(movie)
+    
+* !DONE * saveMyMovie(movie)
     * make fetch POST to “/movies”
     * on complete dispatch to loadMyMovieList()
-* removeMyMovie(id)
+
+* !DONE * removeMyMovie(id)
     * make a fetch DELETE to “/movies/” + id
     * on complete dispatch to loadMyMovieList()
 
@@ -75,19 +81,19 @@
 * mapDispatchToProps
 * connect and export
 
-### SearchBoxContainer.js
+### SearchBoxContainer.js **DONE**
 * import SearchBox
 * import action `loadSearch`
 * mapDispatchToProps for this action
 * Determine which props to map to based on the props that are already coded into the SearchBox component
 
-### AppContainer.js
+### AppContainer.js **DONE**
 * import App
 * import action `loadMyMovieList`
 * mapStateToProps for props `searchResults` and `myMovieList` to state of the same name
 * mapDisptachToProps for `loadMyMovieList`
 
-### ListToggleContainer
+### ListToggleContainer **DONE**
 * import ListToggle
 * import action `saveMyMovie` and `removeMyMovie`
 * mapDisptachToProps for `saveMyMovie` and `removeMyMovie`
@@ -97,16 +103,18 @@
 * In the constructor assign a state property with an object with key “searchTerm”, set to blank string “”
 * Add onChange to the input element
 * on change setState for searchTerm to the value from the input
+<!-- Save for the end -->
 
-### Item.js
+### Item.js **DONE**
 * Switch out use of ListToggle for use of ListToggleContainer
 
 ### App.js
 * Add componentDidMount method and call loadMyMovieList in here.
+<!-- where does the action exist in app.js? remember it came in as mapdispatch to props, where do components get anything from? MDTP inline?????  -->
 * Switch out use of SearchBox for use of SearchBoxContainer
 * Add PropTypes for searchResults and myMovieList
 
-### index.js
+### index.js **DONE**
 * Switch out use of App for AppContainer
 
 ### Points
