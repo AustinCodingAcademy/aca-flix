@@ -5,36 +5,27 @@ import Logo from "./Logo.js";
 import TitleList from "./components/TitleList";
 import Hero from "./components/Hero";
 import SearchBox from "./components/SearchBox";
+import Navigation from "./components/Navigation";
+import UserProfile from "./components/UserProfile";
+
 
 class App extends Component {
+
+  componentDidMount(){
+    fetch("https://api.themoviedb.org/3/movie/top_rated?api_key=d201dfe99583c2d7fea063e8fcf9b4dd&language=en-US&page=1")
+    .then(response => response.json())
+    .then(movies => console.log(movies))
+  }
+
+
   render() {
     return (
       <div>
         <header className="Header">
           <Logo />
-          {/*  <Navigation>   */}
-          <div id="navigation" className="Navigation">
-            <nav>
-              <ul>
-                <li>Browse</li>
-                <li>My list</li>
-                <li>Top picks</li>
-                <li>Recent</li>
-              </ul>
-            </nav>
-          </div>
-          {/*  </Navigation>   */}
+          <Navigation />
           <SearchBox />
-          {/*  <UserProfile>   */}
-          <div className="UserProfile">
-            <div className="User">
-              <div className="name">Jack Oliver</div>
-              <div className="image">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/profile/profile-512_1.jpg" alt="profile" />
-              </div>
-            </div>
-          </div>
-          {/*  </UserProfile>   */}
+          <UserProfile />
         </header>
         <Hero />
         <TitleList 
