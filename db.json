@@ -1,5 +1,96 @@
 {
-  "movies":[],
+  "movies": [
+    {
+      "original_name": "Rick and Morty",
+      "id": 60625,
+      "media_type": "tv",
+      "name": "Rick and Morty",
+      "vote_count": 539,
+      "vote_average": 8.51,
+      "poster_path": "/qJdfO3ahgAMf2rcmhoqngjBBZW1.jpg",
+      "first_air_date": "2013-12-02",
+      "popularity": 26.760164,
+      "genre_ids": [
+        10765,
+        10759,
+        16,
+        35
+      ],
+      "original_language": "en",
+      "backdrop_path": "/pfTlxypaLQ8KHecKrD7EFcAzEUs.jpg",
+      "overview": "Rick is a mentally-unbalanced but scientifically-gifted old man who has recently reconnected with his family. He spends most of his time involving his young grandson Morty in dangerous, outlandish adventures throughout space and alternate universes. Compounded with Morty's already unstable family life, these events cause Morty much distress at home and school.",
+      "origin_country": [
+        "US"
+      ],
+      "_id": 1
+    },
+    {
+      "vote_average": 5.8,
+      "vote_count": 11,
+      "id": 20239,
+      "video": false,
+      "media_type": "movie",
+      "title": "Fear of a Black Hat",
+      "popularity": 2.228484,
+      "poster_path": "/jrpkn4GuBDS1Kh0lyR1UcXgeMi9.jpg",
+      "original_language": "en",
+      "original_title": "Fear of a Black Hat",
+      "genre_ids": [
+        35
+      ],
+      "backdrop_path": "/hLZFX0MiMOzeVfa1w6VnVUxEco3.jpg",
+      "adult": false,
+      "overview": "Chronicling the controversial career of bad boys N.W.H. (Niggaz With Hats), this uproarious 'mockumentary' lampoons all of hardcore rap's hot-button issues. This underground laugh riot recounts the rise, fall and resurrection of a clueless bunch of would-be rappers, Ice Cold, Tone-Def &amp; Tasty Taste performing as N.W.H.",
+      "release_date": "1994-10-28",
+      "_id": 2
+    },
+    {
+      "vote_average": 6.7,
+      "vote_count": 149,
+      "id": 13820,
+      "video": false,
+      "media_type": "movie",
+      "title": "Repo Man",
+      "popularity": 6.166699,
+      "poster_path": "/e3I831drBvpHe6FFb93geZxqU5c.jpg",
+      "original_language": "en",
+      "original_title": "Repo Man",
+      "genre_ids": [
+        35,
+        80,
+        878,
+        53
+      ],
+      "backdrop_path": "/slmJpBDhIROf64YwNtXnuMT4ufB.jpg",
+      "adult": false,
+      "overview": "A down and out young punk gets a job working with a seasoned repo man, but what awaits him in his new career is a series of outlandish adventures revolving around aliens, the CIA, and a most wanted '64 Chevy.",
+      "release_date": "1984-02-20",
+      "_id": 3
+    },
+    {
+      "vote_average": 7.5,
+      "vote_count": 786,
+      "id": 319,
+      "video": false,
+      "media_type": "movie",
+      "title": "True Romance",
+      "popularity": 11.338966,
+      "poster_path": "/xBO8R3CZfrJ9rrwrZoJ68PgJyAR.jpg",
+      "original_language": "en",
+      "original_title": "True Romance",
+      "genre_ids": [
+        28,
+        53,
+        80,
+        10749
+      ],
+      "backdrop_path": "/f7EbIN1bMf8tOtoSmiqd6mO5p4P.jpg",
+      "adult": false,
+      "overview": "Clarence marries hooker Alabama, steals cocaine from her pimp, and tries to sell it in Hollywood, while the owners of the coke try to reclaim it.",
+      "release_date": "1993-09-09",
+      "_id": 4
+    }
+  ],
   "posts": [
     {
       "id": 1,
