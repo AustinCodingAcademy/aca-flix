@@ -1,5 +1,118 @@
 {
-  "movies":[],
+  "movies": [
+    {
+      "vote_average": 7.5,
+      "vote_count": 8003,
+      "id": 597,
+      "video": false,
+      "media_type": "movie",
+      "title": "Titanic",
+      "popularity": 29.812111,
+      "poster_path": "/kHXEpyfl6zqn8a6YuozZUujufXf.jpg",
+      "original_language": "en",
+      "original_title": "Titanic",
+      "genre_ids": [
+        18,
+        10749,
+        53
+      ],
+      "backdrop_path": "/fVcZErSWa7gyENuj8IWp8eAfCnL.jpg",
+      "adult": false,
+      "overview": "84 years later, a 101-year-old woman named Rose DeWitt Bukater tells the story to her granddaughter Lizzy Calvert, Brock Lovett, Lewis Bodine, Bobby Buell and Anatoly Mikailavich on the Keldysh about her life set in April 10th 1912, on a ship called Titanic when young Rose boards the departing ship with the upper-class passengers and her mother, Ruth DeWitt Bukater, and her fiancé, Caledon Hockley. Meanwhile, a drifter and artist named Jack Dawson and his best friend Fabrizio De Rossi win third-class tickets to the ship in a game. And she explains the whole story from departure until the death of Titanic on its first and last voyage April 15th, 1912 at 2:20 in the morning.",
+      "release_date": "1997-11-18",
+      "_id": 1
+    },
+    {
+      "vote_average": 8.2,
+      "vote_count": 8407,
+      "id": 13,
+      "video": false,
+      "media_type": "movie",
+      "title": "Forrest Gump",
+      "popularity": 25.109597,
+      "poster_path": "/yE5d3BUhE8hCnkMUJOo1QDoOGNz.jpg",
+      "original_language": "en",
+      "original_title": "Forrest Gump",
+      "genre_ids": [
+        35,
+        18,
+        10749
+      ],
+      "backdrop_path": "/ctOEhQiFIHWkiaYp7b0ibSTe5IL.jpg",
+      "adult": false,
+      "overview": "A man with a low IQ has accomplished great things in his life and been present during significant historic events - in each case, far exceeding what anyone imagined he could do. Yet, despite all the things he has attained, his one true love eludes him. 'Forrest Gump' is the story of a man who rose above his challenges, and who proved that determination, courage, and love are more important than ability.",
+      "release_date": "1994-07-06",
+      "_id": 6
+    },
+    {
+      "vote_average": 8.2,
+      "vote_count": 8407,
+      "id": 13,
+      "video": false,
+      "media_type": "movie",
+      "title": "Forrest Gump",
+      "popularity": 25.109597,
+      "poster_path": "/yE5d3BUhE8hCnkMUJOo1QDoOGNz.jpg",
+      "original_language": "en",
+      "original_title": "Forrest Gump",
+      "genre_ids": [
+        35,
+        18,
+        10749
+      ],
+      "backdrop_path": "/ctOEhQiFIHWkiaYp7b0ibSTe5IL.jpg",
+      "adult": false,
+      "overview": "A man with a low IQ has accomplished great things in his life and been present during significant historic events - in each case, far exceeding what anyone imagined he could do. Yet, despite all the things he has attained, his one true love eludes him. 'Forrest Gump' is the story of a man who rose above his challenges, and who proved that determination, courage, and love are more important than ability.",
+      "release_date": "1994-07-06",
+      "_id": 7
+    },
+    {
+      "vote_average": 6.6,
+      "vote_count": 4119,
+      "id": 920,
+      "video": false,
+      "media_type": "movie",
+      "title": "Cars",
+      "popularity": 20.979956,
+      "poster_path": "/5damnMcRFKSjhCirgX3CMa88MBj.jpg",
+      "original_language": "en",
+      "original_title": "Cars",
+      "genre_ids": [
+        16,
+        12,
+        35,
+        10751
+      ],
+      "backdrop_path": "/a1MlbLBk5Sy6YvMbSuKfwGlDVlb.jpg",
+      "adult": false,
+      "overview": "Lightning McQueen, a hotshot rookie race car driven to succeed, discovers that life is about the journey, not the finish line, when he finds himself unexpectedly detoured in the sleepy Route 66 town of Radiator Springs. On route across the country to the big Piston Cup Championship in California to compete against two seasoned pros, McQueen gets to know the town's offbeat characters.",
+      "release_date": "2006-06-08",
+      "_id": 8
+    },
+    {
+      "vote_average": 6.7,
+      "vote_count": 874,
+      "id": 260514,
+      "video": false,
+      "media_type": "movie",
+      "title": "Cars 3",
+      "popularity": 62.905266,
+      "poster_path": "/fyy1nDC8wm553FCiBDojkJmKLCs.jpg",
+      "original_language": "en",
+      "original_title": "Cars 3",
+      "genre_ids": [
+        10751,
+        35,
+        16,
+        12
+      ],
+      "backdrop_path": "/rND0GSv8X2Zzs7VhyFAs9BCEmYE.jpg",
+      "adult": false,
+      "overview": "Blindsided by a new generation of blazing-fast racers, the legendary Lightning McQueen is suddenly pushed out of the sport he loves. To get back in the game, he will need the help of an eager young race technician with her own plan to win, inspiration from the late Fabulous Hudson Hornet, and a few unexpected turns. Proving that #95 isn't through yet will test the heart of a champion on Piston Cup Racing’s biggest stage!",
+      "release_date": "2017-06-15",
+      "_id": 9
+    }
+  ],
   "posts": [
     {
       "id": 1,
