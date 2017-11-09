@@ -5,20 +5,20 @@
 
 ### Do
 
-### Components
+### Components - DONE
 * Create functional components as defined by comments such as  {/*  <Navigation>   */}
 * Import and use components in App.js
 * Navigation.js
 * UserProfile.js
 
-### State
+### State - DONE
 * In state.js file
 * Create our state object with properties
     * searchResults: []
     * myMovieList: []
 * export state object
 
-### Reducers
+### Reducers - DONE
 * In reducers/index.js
 * Create reducers functions for all state
 * Parameters - state, action
@@ -26,7 +26,7 @@
 * Import combineReducers from redux
 * Combine reducers and export
 
-### Create Reducers
+### Create Reducers - DONE
 * myMovieList
     * Look for the action “MY_MOVIE_LIST_LOADED”
     * return the value
@@ -34,19 +34,19 @@
     * Look for the action “SEARCH_RESULTS_LOADED”
     * return the value
 
-### Store
+### Store - DONE
 * Create our standard store.js file
 * Use redux-thunk middleware
 * Import reducers
 * create store and export
 
-### index.js 
+### index.js - DONE
 * import Provider and wrap App 
 * import store and assign to store prop
 
-### Actions
+### Actions - DONE
 * remember to export your actions
-* loadMyMovieList()
+* loadMyMovieList() - DONE
     * type = “LOAD_MY_MOVIE_LIST”
     * make fetch call to “/movies”
     * on complete, dispatch to myMovieListLoaded(movies)
@@ -75,30 +75,30 @@
 * mapDispatchToProps
 * connect and export
 
-### SearchBoxContainer.js
+### SearchBoxContainer.js - DONE
 * import SearchBox
 * import action `loadSearch`
 * mapDispatchToProps for this action
 * Determine which props to map to based on the props that are already coded into the SearchBox component
 
-### AppContainer.js
+### AppContainer.js - DONE
 * import App
 * import action `loadMyMovieList`
 * mapStateToProps for props `searchResults` and `myMovieList` to state of the same name
 * mapDisptachToProps for `loadMyMovieList`
 
-### ListToggleContainer
+### ListToggleContainer - DONE
 * import ListToggle
 * import action `saveMyMovie` and `removeMyMovie`
 * mapDisptachToProps for `saveMyMovie` and `removeMyMovie`
 * Change Item.js to use ListToggleContainer instead of ListToggle
 
-### SearchBox.js
+### SearchBox.js - DONE
 * In the constructor assign a state property with an object with key “searchTerm”, set to blank string “”
 * Add onChange to the input element
 * on change setState for searchTerm to the value from the input
 
-### Item.js
+### Item.js - DONE
 * Switch out use of ListToggle for use of ListToggleContainer
 
 ### App.js
@@ -106,7 +106,7 @@
 * Switch out use of SearchBox for use of SearchBoxContainer
 * Add PropTypes for searchResults and myMovieList
 
-### index.js
+### index.js - DONE
 * Switch out use of App for AppContainer
 
 ### Points
