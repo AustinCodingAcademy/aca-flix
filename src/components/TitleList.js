@@ -2,7 +2,9 @@ import React, { Component } from "react";
 import Item from "./Item";
 
 function TitleList(props) {
+  console.log("titeList props.movies: ", props.movies)
   let titles = "";
+  let moviesArray = props.movies.results;
   if (props.movies) {
     titles = props.movies.map(function (title, i) {
       if (i < 5) {

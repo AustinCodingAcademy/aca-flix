@@ -1,6 +1,6 @@
 export function loadMyMovieList() {
     return function(dispatch){
-        console.log("called loadMyMovieList action")
+     
         dispatch({
             type: "LOAD_MY_MOVIE_LIST"
         });
@@ -15,7 +15,7 @@ export function loadMyMovieList() {
 }
 
 export function myMovieListLoaded(movies){
-    console.log("called myMovieListLoaded action");
+
     return {
         type: "MY_MOVIE_LIST_LOADED",
         value: movies
@@ -25,7 +25,10 @@ export function myMovieListLoaded(movies){
 export function loadSearch(searchTerm) {
     return function(dispatch){
         let apiKey = 'd201dfe99583c2d7fea063e8fcf9b4dd';
-        let fetchURL = 'http://api.themoviedb.org/3/search/multi?query=' + searchTerm + '&api_key=' + apiKey
+        let fetchURL = 'http://api.themoviedb.org/3/search/movie?api_key=' + apiKey + '&language=en-US&query=' + searchTerm + '&page=1'
+        let workingApiCall = "https://api.themoviedb.org/3/search/movie?api_key=d201dfe99583c2d7fea063e8fcf9b4dd&language=en-US&query=the%20lion%20king&page=1&include_adult=false"
+        
+
         console.log("called loadSearch action with: ", searchTerm, "fetch URL: ", fetchURL);
         dispatch({
             type: "LOAD_SEARCH"
@@ -36,21 +39,22 @@ export function loadSearch(searchTerm) {
         })
         .then((movies) => {
             dispatch(searchLoaded(movies))
+            console.log(movies);
         });
     }
 }
 
 export function searchLoaded(movies){
-    console.log("called searchLoaded action")
+
 
     return {
         type: "SEARCH_RESULTS_LOADED",
-        value: movies
+        value: movies.results
     }
 }
 
 export function saveMyMovie(movie){
-    console.log("called saveMyMovie action")
+
     return function(dispatch){
         fetch("/movies",{
             method: "POST",
@@ -61,7 +65,7 @@ export function saveMyMovie(movie){
 }
 
 export function removeMyMovie(id){
-    console.log("called removeMyMovie action")
+
     return function(dispatch){
         fetch("/movies/" + id, {
             method: "DELETE"

@@ -1,5 +1,111 @@
 {
-  "movies":[],
+  "movies": [
+    {
+      "vote_count": 2473,
+      "id": 254,
+      "video": false,
+      "vote_average": 6.6,
+      "title": "King Kong",
+      "popularity": 15.833186,
+      "poster_path": "/iQYMVoI9QE2wQCOSrxhiBYd4v0w.jpg",
+      "original_language": "en",
+      "original_title": "King Kong",
+      "genre_ids": [
+        12,
+        18,
+        28
+      ],
+      "backdrop_path": "/7FIh52gySnFC11HluVcaPkBjPit.jpg",
+      "adult": false,
+      "overview": "In 1933 New York, an overly ambitious movie producer coerces his cast and hired ship crew to travel to mysterious Skull Island, where they encounter Kong, a giant ape who is immediately smitten with the leading lady.",
+      "release_date": "2005-12-14",
+      "_id": 2
+    },
+    {
+      "vote_count": 5622,
+      "id": 862,
+      "video": false,
+      "vote_average": 7.7,
+      "title": "Toy Story",
+      "popularity": 16.577297,
+      "poster_path": "/rhIRbceoE9lR4veEXuwCC2wARtG.jpg",
+      "original_language": "en",
+      "original_title": "Toy Story",
+      "genre_ids": [
+        16,
+        35,
+        10751
+      ],
+      "backdrop_path": "/dji4Fm0gCDVb9DQQMRvAI8YNnTz.jpg",
+      "adult": false,
+      "overview": "Led by Woody, Andy's toys live happily in his room until Andy's birthday brings Buzz Lightyear onto the scene. Afraid of losing his place in Andy's heart, Woody plots against Buzz. But when circumstances separate Buzz and Woody from their owner, the duo eventually learns to put aside their differences.",
+      "release_date": "1995-10-30",
+      "_id": 4
+    },
+    {
+      "vote_count": 2627,
+      "id": 641,
+      "video": false,
+      "vote_average": 7.9,
+      "title": "Requiem for a Dream",
+      "popularity": 5.532674,
+      "poster_path": "/muym4jTjdLx7E6as09d1wlC3sOB.jpg",
+      "original_language": "en",
+      "original_title": "Requiem for a Dream",
+      "genre_ids": [
+        80,
+        18
+      ],
+      "backdrop_path": "/4xwwVbTyEqzFdiX2kop1rSTX9dR.jpg",
+      "adult": false,
+      "overview": "The hopes and dreams of four ambitious people are shattered when their drug addictions begin spiraling out of control. A look into addiction and how it overcomes the mind and body.",
+      "release_date": "2000-10-27",
+      "_id": 5
+    },
+    {
+      "vote_count": 1685,
+      "id": 31011,
+      "video": false,
+      "vote_average": 7.9,
+      "title": "Mr. Nobody",
+      "popularity": 10.9694,
+      "poster_path": "/jxd2XSsnUHHUbo50nzVnVnHRPVJ.jpg",
+      "original_language": "en",
+      "original_title": "Mr. Nobody",
+      "genre_ids": [
+        878,
+        18,
+        10749,
+        14
+      ],
+      "backdrop_path": "/r9jAdQDK1tYq2wlFPBJBH9UX5TX.jpg",
+      "adult": false,
+      "overview": "Nemo Nobody leads an ordinary existence with his wife and 3 children; one day, he wakes up as a mortal centenarian in the year 2092.",
+      "release_date": "2010-01-13",
+      "_id": 6
+    },
+    {
+      "vote_count": 1265,
+      "id": 7443,
+      "video": false,
+      "vote_average": 6.5,
+      "title": "Chicken Run",
+      "popularity": 8.995157,
+      "poster_path": "/z0MafJgUnVyVbczicYMkPKKHkBi.jpg",
+      "original_language": "en",
+      "original_title": "Chicken Run",
+      "genre_ids": [
+        16,
+        35,
+        10751
+      ],
+      "backdrop_path": "/yNF5xB9JY7UE5t4DuYntqdNqezc.jpg",
+      "adult": false,
+      "overview": "Having been hopelessly repressed and facing eventual certain death at the British chicken farm where they are held, Rocky the american rooster and Ginger the chicken decide to rebel against the evil Mr. and Mrs. Tweedy, the farm's owners. Rocky and Ginger lead their fellow chickens in a great escape from the murderous farmers and their farm of doom.",
+      "release_date": "2000-06-21",
+      "_id": 7
+    }
+  ],
   "posts": [
     {
       "id": 1,
