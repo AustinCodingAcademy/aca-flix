@@ -1,5 +1,72 @@
 {
-  "movies":[],
+  "movies": [
+    {
+      "vote_average": 8.1,
+      "vote_count": 9149,
+      "id": 120,
+      "video": false,
+      "media_type": "movie",
+      "title": "The Lord of the Rings: The Fellowship of the Ring",
+      "popularity": 35.84559,
+      "poster_path": "/bxVxZb5O9OxCO0oRUNdCnpy9NST.jpg",
+      "original_language": "en",
+      "original_title": "The Lord of the Rings: The Fellowship of the Ring",
+      "genre_ids": [
+        12,
+        14,
+        28
+      ],
+      "backdrop_path": "/pIUvQ9Ed35wlWhY2oU6OmwEsmzG.jpg",
+      "adult": false,
+      "overview": "Young hobbit Frodo Baggins, after inheriting a mysterious ring from his uncle Bilbo, must leave his home in order to keep it from falling into the hands of its evil creator. Along the way, a fellowship is formed to protect the ringbearer and make sure that the ring arrives at its final destination: Mt. Doom, the only place where it can be destroyed.",
+      "release_date": "2001-12-18",
+      "_id": 1
+    },
+    {
+      "vote_average": 8,
+      "vote_count": 7883,
+      "id": 121,
+      "video": false,
+      "media_type": "movie",
+      "title": "The Lord of the Rings: The Two Towers",
+      "popularity": 22.738527,
+      "poster_path": "/wf3v0Pn09jnT5HSaYal7Ami3bdA.jpg",
+      "original_language": "en",
+      "original_title": "The Lord of the Rings: The Two Towers",
+      "genre_ids": [
+        12,
+        14,
+        28
+      ],
+      "backdrop_path": "/dG4BmM32XJmKiwopLDQmvXEhuHB.jpg",
+      "adult": false,
+      "overview": "Frodo and Sam are trekking to Mordor to destroy the One Ring of Power while Gimli, Legolas and Aragorn search for the orc-captured Merry and Pippin. All along, nefarious wizard Saruman awaits the Fellowship members at the Orthanc Tower in Isengard.",
+      "release_date": "2002-12-18",
+      "_id": 2
+    },
+    {
+      "vote_average": 8.2,
+      "vote_count": 8443,
+      "id": 122,
+      "video": false,
+      "media_type": "movie",
+      "title": "The Lord of the Rings: The Return of the King",
+      "popularity": 26.666421,
+      "poster_path": "/uexxR7Kw1qYbZk0RYaF9Rx5ykbj.jpg",
+      "original_language": "en",
+      "original_title": "The Lord of the Rings: The Return of the King",
+      "genre_ids": [
+        12,
+        14,
+        28
+      ],
+      "backdrop_path": "/8BPZO0Bf8TeAy8znF43z8soK3ys.jpg",
+      "adult": false,
+      "overview": "Aragorn is revealed as the heir to the ancient kings as he, Gandalf and the other members of the broken fellowship struggle to save Gondor from Sauron's forces. Meanwhile, Frodo and Sam bring the ring closer to the heart of Mordor, the dark lord's realm.",
+      "release_date": "2003-12-01",
+      "_id": 3
+    }
+  ],
   "posts": [
     {
       "id": 1,

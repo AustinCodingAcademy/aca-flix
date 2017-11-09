@@ -4,19 +4,24 @@ import "./App.css";
 import Logo from "./Logo.js";
 import TitleList from "./components/TitleList";
 import Hero from "./components/Hero";
-import SearchBox from "./components/SearchBox";
+import SearchBoxContainer from "./containers/SearchBoxContainer";
 // Importing Navigation and UserProfile components
 import Navigation from "./components/Navigation";
 import UserProfile from "./components/UserProfile";
 
 class App extends Component {
+
+  componentDidMount() {
+    this.props.LoadMyMovieList();
+  }
+
   render() {
     return (
       <div>
         <header className="Header">
           <Logo />
           <Navigation />
-          <SearchBox />
+          <SearchBoxContainer />
           <UserProfile />
         </header>
         <Hero />
@@ -31,3 +36,8 @@ class App extends Component {
   }
 }
 export default App;
+
+App.propTypes = {
+  searchResults: PropTypes.array.isRequired,
+  myMovieList: PropTypes.array.isRequired
+}
