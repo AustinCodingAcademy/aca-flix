@@ -5,6 +5,7 @@ import Logo from "./Logo.js";
 import TitleList from "./components/TitleList";
 import Hero from "./components/Hero";
 import SearchBox from "./components/SearchBox";
+// Importing Navigation and UserProfile components
 import Navigation from "./components/Navigation";
 import UserProfile from "./components/UserProfile";
 
@@ -17,7 +18,6 @@ class App extends Component {
           <Navigation />
           <SearchBox />
           <UserProfile />
-
         </header>
         <Hero />
         <TitleList

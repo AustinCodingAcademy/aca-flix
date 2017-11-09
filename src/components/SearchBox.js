@@ -15,12 +15,11 @@ class SearchBox extends Component {
                 this.props.loadSearch(this.state.searchTerm);
               }
             }
-          } 
-          type="search" 
+          }
+          type="search"
           placeholder="Search for a title..." />
       </div>
     );
   }
 }
 export default SearchBox;
-
