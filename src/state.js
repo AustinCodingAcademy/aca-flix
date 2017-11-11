@@ -1,3 +1,8 @@
 export default {
- 
+  searchResults: [
+
+  ],
+  myMovieList: [
+    
+  ]
 };
