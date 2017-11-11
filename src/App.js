@@ -13,6 +13,7 @@ class App extends Component {
   componentDidMount() {
     this.props.loadMyMovieList();
   }
+
   render() {
     return (
       <div>

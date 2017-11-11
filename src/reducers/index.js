@@ -1,15 +1,17 @@
 import { combineReducers } from 'redux';
 
-function searchResults(state = [], action){
+function myMovieList(state = [], action){
   if(action.type === "MY_MOVIE_LIST_LOADED"){
+    console.log("MyMovieList", action.value)
     return action.value;
   } else {
     return state;
   }
 }
 
-function myMovieList(state = [], action) {
+function searchResults(state = [], action) {
   if(action.type === "SEARCH_RESULTS_LOADED"){
+    console.log("Search Results", action.value)
     return action.value;
   } else {
     return state;

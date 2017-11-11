@@ -3,9 +3,7 @@ import React, {Component} from "react";
 class SearchBox extends Component {
   constructor() {
     super();
-    this.state = {
-      searchTerm: ""
-    }
+    this.state = { searchTerm: "" };
   }
   render() {
     return (
@@ -19,7 +17,9 @@ class SearchBox extends Component {
               }
             }
           }
-          onChange={ e => this.setState({searchTerm: e.target.value})}
+          onChange = {
+            e => this.setState({ searchTerm:e.target.value })
+          }
           type="search"
           placeholder="Search for a title..." />
       </div>
