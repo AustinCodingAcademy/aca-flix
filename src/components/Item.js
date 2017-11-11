@@ -1,8 +1,8 @@
 import React from "react";
-import ListToggle from "./ListToggle";
+import ListToggleContainer from "../containers/ListToggleContainer.js";
 
 function Item(props) {
-  
+
   let name = "";
   let backDrop = "http://image.tmdb.org/t/p/original" + props.movie.backdrop_path;
   if(!props.movie.name) {
@@ -17,7 +17,7 @@ function Item(props) {
         <div className="title">{name}</div>
         <div className="rating">{props.movie.vote_average} / 10</div>
         <div className="plot">{props.movie.overview}</div>
-        <ListToggle movie={props.movie}/>
+        <ListToggleContainer movie={props.movie}/>
       </div>
     </div>
   );
