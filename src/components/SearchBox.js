@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 
 class SearchBox extends Component {
   constructor() {
@@ -19,7 +19,7 @@ class SearchBox extends Component {
               }
             }
           }
-          onChange = {
+          onChange={
             e => this.setState({ searchTerm:e.target.value })
           }
           type="search"
