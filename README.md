@@ -1,23 +1,4 @@
 
-### Setup
-* Get your api key from the themoviedb.org
-* Fork, Clone, yarn install, yarn start
-
-### Do
-
-### Components
-* Create functional components as defined by comments such as  {/*  <Navigation>   */}
-* Import and use components in App.js
-* Navigation.js
-* UserProfile.js
-
-### State
-* In state.js file
-* Create our state object with properties
-    * searchResults: []
-    * myMovieList: []
-* export state object
-
 ### Reducers
 * In reducers/index.js
 * Create reducers functions for all state
@@ -98,16 +79,11 @@
 * Add onChange to the input element
 * on change setState for searchTerm to the value from the input
 
-### Item.js
-* Switch out use of ListToggle for use of ListToggleContainer
-
 ### App.js
 * Add componentDidMount method and call loadMyMovieList in here.
 * Switch out use of SearchBox for use of SearchBoxContainer
 * Add PropTypes for searchResults and myMovieList
 
-### index.js
-* Switch out use of App for AppContainer
 
 ### Points
 * Base - 25 
