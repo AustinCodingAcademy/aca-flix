@@ -1,5 +1,90 @@
 {
-  "movies":[],
+  "movies": [
+    {
+      "vote_average": 6.6,
+      "vote_count": 4119,
+      "id": 920,
+      "video": false,
+      "media_type": "movie",
+      "title": "Cars",
+      "popularity": 20.979956,
+      "poster_path": "/5damnMcRFKSjhCirgX3CMa88MBj.jpg",
+      "original_language": "en",
+      "original_title": "Cars",
+      "genre_ids": [
+        16,
+        12,
+        35,
+        10751
+      ],
+      "backdrop_path": "/a1MlbLBk5Sy6YvMbSuKfwGlDVlb.jpg",
+      "adult": false,
+      "overview": "Lightning McQueen, a hotshot rookie race car driven to succeed, discovers that life is about the journey, not the finish line, when he finds himself unexpectedly detoured in the sleepy Route 66 town of Radiator Springs. On route across the country to the big Piston Cup Championship in California to compete against two seasoned pros, McQueen gets to know the town's offbeat characters.",
+      "release_date": "2006-06-08",
+      "_id": 8
+    },
+    {
+      "original_name": "Counting Cars",
+      "id": 45669,
+      "media_type": "tv",
+      "name": "Counting Cars",
+      "vote_count": 15,
+      "vote_average": 6.23,
+      "poster_path": "/2P45J3WXwHFwsazYzr6ZuUK8Rvy.jpg",
+      "first_air_date": "2012-08-13",
+      "popularity": 6.138112,
+      "genre_ids": [
+        10764
+      ],
+      "original_language": "en",
+      "backdrop_path": "/ezRQYocaRclEbPW72nnCw4wDvCC.jpg",
+      "overview": "When Rick Harrison and the rest of the Pawn Stars gang need to restore a vehicle they're buying, they turn to Danny \"The Count\" Koker, who runs Las Vegas auto shop Count's Kustoms. The Count now gets his own half-hour show that showcases his ability to restore and customize classic rides. When he sees a vehicle he wants, whether it's at an auto auction or at a roadside diner, Koker does all he can to acquire it. When successful, he and his team then work to restore and modify the cars and motorcycles in order to quickly flip them for a profit. From classic cars like Thunderbirds and Corvettes to sidecar motorcycles and everything in between, if it has wheels the Count's Kustoms team can make it look spectacular.",
+      "origin_country": [
+        "US"
+      ],
+      "_id": 10
+    },
+    {
+      "original_name": "Fast N' Loud",
+      "id": 46874,
+      "media_type": "tv",
+      "name": "Fast N' Loud",
+      "vote_count": 17,
+      "vote_average": 6.09,
+      "poster_path": "/enndV29xTyQDmv3vm7O1CoxS9N3.jpg",
+      "first_air_date": "2012-06-06",
+      "popularity": 19.367222,
+      "genre_ids": [
+        10764
+      ],
+      "original_language": "en",
+      "backdrop_path": "/raZeMv9VBq2eYN8hRudIa5HCLOa.jpg",
+      "overview": "Motor mastermind Richard Rawlings and mechanical prodigy Aaron Kaufman search for forgotten and neglected vintage cars. They need big projects and big profits to keep the doors open at Gas Monkey Garage in Dallas, TX.",
+      "origin_country": [
+        "US"
+      ],
+      "_id": 12
+    },
+    {
+      "original_name": "Man v. Food",
+      "id": 8519,
+      "media_type": "tv",
+      "name": "Man v. Food",
+      "vote_count": 18,
+      "vote_average": 6.61,
+      "poster_path": "/qdDcNvLWuYiQ7H4fbyhq00XpEhG.jpg",
+      "first_air_date": "2008-12-03",
+      "popularity": 2.738598,
+      "genre_ids": [],
+      "original_language": "en",
+      "backdrop_path": "/wTUrpmMIq2nERFnSnvwhCj9WXFP.jpg",
+      "overview": "Man v. Food is an American food reality television series. It premiered on December 3, 2008 on the Travel Channel. The program is hosted by actor and food enthusiast Adam Richman. In each episode, Richman explores the \"big food\" offerings of a different American city before facing off against a pre-existing eating challenge at a local restaurant. The program airs in syndication at various times during the week.",
+      "origin_country": [
+        "US"
+      ],
+      "_id": 13
+    }
+  ],
   "posts": [
     {
       "id": 1,
