@@ -7,16 +7,21 @@ import Hero from "./components/Hero";
 import SearchBox from "./components/SearchBox";
 import Navigation from "./components/Navigation";
 import UserProfile from "./components/UserProfile";
+import SearchBoxContainer from "./containers/SearchBoxContainer";
 
 
 class App extends Component {
+  componentDidMount() {
+      this.props.LoadMyMovieList();
+    }
+
   render() {
     return (
       <div>
         <header className="Header">
           <Logo />
           <Navigation />
-          <SearchBox />
+        <SearchBoxContainer />
           <UserProfile />
         </header>
         <Hero />
@@ -31,3 +36,8 @@ class App extends Component {
   }
 }
 export default App;
+
+App.propTypes = {
+  searchResults: PropTypes.array.isRequired,
+  myMovieList: PropTypes.array.isRequired
+};

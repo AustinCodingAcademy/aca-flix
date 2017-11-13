@@ -35,7 +35,6 @@ export function loadSearch(searchTerm){
   };
 }
 
-
 export function searchLoaded(movies){
   return {
     type:"SEARCH_RESULTS_LOADED"
