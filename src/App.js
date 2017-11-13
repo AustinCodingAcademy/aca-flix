@@ -19,7 +19,7 @@ class App extends Component {
           <Logo />
           <Navigation />
           <SearchBox />
-          <UserProfile/>
+          <UserProfile />
   
         </header>
         <Hero />

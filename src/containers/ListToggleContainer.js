@@ -9,8 +9,8 @@ function mapDispatchToProps(dispatch) {
     },
      removeMyMovie: function (id) {
              dispatch(removeMyMovie(id));
-    }
-}
+    },
+};
 }
 
 export default connect(null, mapDispatchToProps)(ListToggle); 

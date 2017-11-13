@@ -55,7 +55,7 @@ export function myMovieListLoaded(movies) {
 
         export function removeMyMovie(id) {
             return function (dispatch) {
-                fetch("/movies" + id, {
+                fetch("/movies/" + id, {
                     method: "DELETE",
                 }).then(() => dispatch(loadMyMovieList()));
             }
