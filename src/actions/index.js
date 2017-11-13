@@ -7,8 +7,8 @@ export function loadMyMovieList(){
     fetch("/movies")
     .then((response) => {
       return response.json();
-    }).then(movies) => {
-      dispatch(myMovieListLoaded));
+    }).then((movies) => {
+      dispatch(myMovieListLoaded(movies));
     });
   };
 }
@@ -29,7 +29,7 @@ export function loadSearch(searchTerm){
     fetch(`https://api.themoviedb.org/3/search/multi?query=${searchTerm}&api_key=4e4793ef4c137d68e5e4e4fcbbb0eaf4`)
     .then((response) => {
       return response.json();
-    }).then(movies) => {
+    }).then((movies) => {
       dispatch(searchLoaded(movies));
     });
   };
@@ -37,8 +37,8 @@ export function loadSearch(searchTerm){
 
 export function searchLoaded(movies){
   return {
-    type:"SEARCH_RESULTS_LOADED"
-    value: movies.results;
+    type:"SEARCH_RESULTS_LOADED",
+    value:movies.results
   }
 }
 
@@ -50,7 +50,7 @@ export function saveMyMovie(movie){
            "Content-Type": "application/json"
          },
          body: JSON.stringify(movie)
-       }).then(response) => {
+       }).then((response) => {
          dispatch(loadMyMovieList());
        });
      };
@@ -60,7 +60,7 @@ export function removeMyMovie(id){
   return function (dispatch){
     fetch(`/movies/${id}`, {
          method: "DELETE"
-  }).then(response) => {
+  }).then((response) => {
     dispatch(loadMyMovieList());
 });
 };

@@ -6,14 +6,12 @@ function searchResults(state=[], action){
   }
   return state;
   }
-}
 
 function myMovieList(state =[], action){
   if(action.type === "SEARCH_RESULTS_LOADED"){
     return action.value;
   }
   return state;
-}
 }
 
 const rootReducer = combineReducers({
