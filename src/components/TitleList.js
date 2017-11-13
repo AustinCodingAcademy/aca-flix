@@ -5,7 +5,7 @@ function TitleList(props) {
   let titles = "";
   if (props.movies) {
     titles = props.movies.map(function (title, i) {
-      if (i < 40) {
+      if (i < 5) {
         return (
           <Item key={title.id} movie={title} />
         );  
