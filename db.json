@@ -1,5 +1,351 @@
 {
-  "movies":[],
+  "movies": [
+    {
+      "vote_average": 0,
+      "vote_count": 0,
+      "id": 72337,
+      "video": false,
+      "media_type": "movie",
+      "title": "sd",
+      "popularity": 1,
+      "poster_path": null,
+      "original_language": "fr",
+      "original_title": "sd",
+      "genre_ids": [],
+      "backdrop_path": null,
+      "adult": false,
+      "overview": "",
+      "release_date": "",
+      "_id": 1
+    },
+    {
+      "vote_average": 7.4,
+      "vote_count": 4338,
+      "id": 218,
+      "video": false,
+      "media_type": "movie",
+      "title": "The Terminator",
+      "popularity": 26.740863,
+      "poster_path": "/q8ffBuxQlYOHrvPniLgCbmKK4Lv.jpg",
+      "original_language": "en",
+      "original_title": "The Terminator",
+      "genre_ids": [
+        28,
+        53,
+        878
+      ],
+      "backdrop_path": "/6yFoLNQgFdVbA8TZMdfgVpszOla.jpg",
+      "adult": false,
+      "overview": "In the post-apocalyptic future, reigning tyrannical supercomputers teleport a cyborg assassin known as the \"Terminator\" back to 1984 to kill Sarah Connor, whose unborn son is destined to lead insurgents against 21st century mechanical hegemony. Meanwhile, the human-resistance movement dispatches a lone warrior to safeguard Sarah. Can he stop the virtually indestructible killing machine?",
+      "release_date": "1984-10-26",
+      "_id": 2
+    },
+    {
+      "vote_average": 5.9,
+      "vote_count": 2567,
+      "id": 534,
+      "video": false,
+      "media_type": "movie",
+      "title": "Terminator Salvation",
+      "popularity": 24.032864,
+      "poster_path": "/gw6JhlekZgtKUFlDTezq3j5JEPK.jpg",
+      "original_language": "en",
+      "original_title": "Terminator Salvation",
+      "genre_ids": [
+        28,
+        878,
+        53
+      ],
+      "backdrop_path": "/u1B48m74vm4UR4iLOI1Hz4NK8Im.jpg",
+      "adult": false,
+      "overview": "All grown up in post-apocalyptic 2018, John Connor must lead the resistance of humans against the increasingly dominating militaristic robots. But when Marcus Wright appears, his existence confuses the mission as Connor tries to determine whether Wright has come from the future or the past -- and whether he's friend or foe.",
+      "release_date": "2009-05-20",
+      "_id": 3
+    },
+    {
+      "vote_average": 7.5,
+      "vote_count": 8003,
+      "id": 597,
+      "video": false,
+      "media_type": "movie",
+      "title": "Titanic",
+      "popularity": 31.380913,
+      "poster_path": "/kHXEpyfl6zqn8a6YuozZUujufXf.jpg",
+      "original_language": "en",
+      "original_title": "Titanic",
+      "genre_ids": [
+        18,
+        10749,
+        53
+      ],
+      "backdrop_path": "/fVcZErSWa7gyENuj8IWp8eAfCnL.jpg",
+      "adult": false,
+      "overview": "84 years later, a 101-year-old woman named Rose DeWitt Bukater tells the story to her granddaughter Lizzy Calvert, Brock Lovett, Lewis Bodine, Bobby Buell and Anatoly Mikailavich on the Keldysh about her life set in April 10th 1912, on a ship called Titanic when young Rose boards the departing ship with the upper-class passengers and her mother, Ruth DeWitt Bukater, and her fiancé, Caledon Hockley. Meanwhile, a drifter and artist named Jack Dawson and his best friend Fabrizio De Rossi win third-class tickets to the ship in a game. And she explains the whole story from departure until the death of Titanic on its first and last voyage April 15th, 1912 at 2:20 in the morning.",
+      "release_date": "1997-11-18",
+      "_id": 4
+    },
+    {
+      "vote_average": 7.4,
+      "vote_count": 4338,
+      "id": 218,
+      "video": false,
+      "media_type": "movie",
+      "title": "The Terminator",
+      "popularity": 26.740863,
+      "poster_path": "/q8ffBuxQlYOHrvPniLgCbmKK4Lv.jpg",
+      "original_language": "en",
+      "original_title": "The Terminator",
+      "genre_ids": [
+        28,
+        53,
+        878
+      ],
+      "backdrop_path": "/6yFoLNQgFdVbA8TZMdfgVpszOla.jpg",
+      "adult": false,
+      "overview": "In the post-apocalyptic future, reigning tyrannical supercomputers teleport a cyborg assassin known as the \"Terminator\" back to 1984 to kill Sarah Connor, whose unborn son is destined to lead insurgents against 21st century mechanical hegemony. Meanwhile, the human-resistance movement dispatches a lone warrior to safeguard Sarah. Can he stop the virtually indestructible killing machine?",
+      "release_date": "1984-10-26",
+      "_id": 5
+    },
+    {
+      "vote_average": 6.1,
+      "vote_count": 9,
+      "id": 66664,
+      "video": false,
+      "media_type": "movie",
+      "title": "Shocking Dark",
+      "popularity": 1.81824,
+      "poster_path": "/oLUHYgC2jHZJ8ap9FMrLacyrYaG.jpg",
+      "original_language": "it",
+      "original_title": "Shocking Dark",
+      "genre_ids": [
+        28,
+        878
+      ],
+      "backdrop_path": "/n9zt7jS3VZgOiGFHbxYKWdsqDnD.jpg",
+      "adult": false,
+      "overview": "In a polluted future Venice researchers work to improve the situation. One day, unknown forces start killing them. A team of soldiers and a couple of civilians is sent to investigate. Soon, they encounter strange murderous creatures.",
+      "release_date": "1990-08-22",
+      "_id": 6
+    },
+    {
+      "vote_average": 1,
+      "vote_count": 1,
+      "id": 390375,
+      "video": false,
+      "media_type": "movie",
+      "title": "Batman vs. Terminator",
+      "popularity": 1.072329,
+      "poster_path": "/wRu8bpVkWuVvZVU9MVbZd6ZTXGs.jpg",
+      "original_language": "en",
+      "original_title": "Batman vs. Terminator",
+      "genre_ids": [],
+      "backdrop_path": null,
+      "adult": false,
+      "overview": "Batman fights Terminator. In Stop-motion.",
+      "release_date": "2016-03-22",
+      "_id": 7
+    },
+    {
+      "original_name": "Terminator Salvation: The Machinima Series",
+      "id": 56150,
+      "media_type": "tv",
+      "name": "Terminator Salvation: The Machinima Series",
+      "vote_count": 1,
+      "vote_average": 10,
+      "poster_path": "/pUDwo7lemZwAbFOAxnjgXwBo5Wa.jpg",
+      "first_air_date": "2009-05-18",
+      "popularity": 1.614542,
+      "genre_ids": [
+        10759,
+        16
+      ],
+      "original_language": "en",
+      "backdrop_path": "/y5NIJbhx63YH7Ea4VrvT3yOEh7T.jpg",
+      "overview": "\"My name is Blair Williams.  I fight for the Resistance.\"\n\nIn the year 2016, Resistance fighter Blair Williams embarks on  a deadly mission to search for a threat that is weakening humanity's defense against the self-aware artificial intelligence called Skynet and its lethal Terminators.  Moon Bloodgood reprises her Terminator Salvation role in this original machinima series, providing the voice of Williams as she takes on T-600's, MotoTerminators, Aerostats and Hunter Killers.  Machinima delivers action and style in a big way through a form of animation created using video-game engines and graphics. ",
+      "origin_country": [],
+      "_id": 8
+    },
+    {
+      "original_name": "Mysterious Incredible Terminator",
+      "id": 7148,
+      "media_type": "tv",
+      "name": "Mysterious Incredible Terminator",
+      "vote_count": 1,
+      "vote_average": 4,
+      "poster_path": null,
+      "first_air_date": "2008-11-08",
+      "popularity": 1.218359,
+      "genre_ids": [
+        9648,
+        10765,
+        18,
+        35
+      ],
+      "original_language": "en",
+      "backdrop_path": null,
+      "overview": "Mysterious Incredible Terminator is a Taiwanese drama starring Aaron Yan, Gui Gui, Alien Huang and Christine Fan. It was produced by Three Giant Productions.\n\nIt was boardcasted on cable TV Gala Television Variety Show/CH 28 from 8 November 2008 to 21 February 2009, every Saturdays at 22:30 to 00:00 and free-to-air Formosa TV from 7 November 2008 to 20 February 2009, every Fridays at 22:10 - 23:40.",
+      "origin_country": [
+        "TW"
+      ],
+      "_id": 9
+    },
+    {
+      "vote_average": 6.1,
+      "vote_count": 9,
+      "id": 66664,
+      "video": false,
+      "media_type": "movie",
+      "title": "Shocking Dark",
+      "popularity": 1.81824,
+      "poster_path": "/oLUHYgC2jHZJ8ap9FMrLacyrYaG.jpg",
+      "original_language": "it",
+      "original_title": "Shocking Dark",
+      "genre_ids": [
+        28,
+        878
+      ],
+      "backdrop_path": "/n9zt7jS3VZgOiGFHbxYKWdsqDnD.jpg",
+      "adult": false,
+      "overview": "In a polluted future Venice researchers work to improve the situation. One day, unknown forces start killing them. A team of soldiers and a couple of civilians is sent to investigate. Soon, they encounter strange murderous creatures.",
+      "release_date": "1990-08-22",
+      "_id": 10
+    },
+    {
+      "vote_average": 3.5,
+      "vote_count": 4,
+      "id": 55459,
+      "video": false,
+      "media_type": "movie",
+      "title": "Terminator Woman",
+      "popularity": 1.228592,
+      "poster_path": "/eGAxBO3RuDgkbxv9ul03SSjkiOO.jpg",
+      "original_language": "en",
+      "original_title": "Terminator Woman",
+      "genre_ids": [
+        28,
+        53
+      ],
+      "backdrop_path": "/1XUlcxkhD9kEJqeloQgZ6dgCwaM.jpg",
+      "adult": false,
+      "overview": "Two LA cops, Julie and Jay, must return Marsalas to Africa to stand trial as the chief state witness against international villain Alex Gatelee. Gatelee, into everything from gold smuggling to female slave trade, hijacks the party. In a vicious shoot out Julie and Jay overcome Gatelee's men. Gatelee then has Julie kidnapped from one of his nightclubs. He tries to use Julie as bait to get Jay to hand over Marsalas in exchange for Julie...",
+      "release_date": "1993-06-30",
+      "_id": 11
+    },
+    {
+      "vote_average": 10,
+      "vote_count": 1,
+      "id": 434559,
+      "video": false,
+      "media_type": "movie",
+      "title": "Kamen Rider SD: Strange?! Kumo Otoko",
+      "popularity": 1.036198,
+      "poster_path": "/qhW8dwIAL7JMoJrOn2Ok6ZdiilZ.jpg",
+      "original_language": "ja",
+      "original_title": "仮面ライダーSD 怪奇!?クモ男",
+      "genre_ids": [
+        16,
+        35,
+        878
+      ],
+      "backdrop_path": "/fVTfbIhYaH40cB6skUx6D7HaSfI.jpg",
+      "adult": false,
+      "overview": "\"Kamen Rider SD: Strange!? Kumo Otoko\" is an animated OVA based on the gag manga Kamen Rider SD: Hurricane Legend. This cute and comedic short movie features chibi versions of the Showa Era Kamen Riders, as they team up against the evil GranShocker organization , while Kamen Rider Black RX tries to confess his love to female sports instructor Michiru.",
+      "release_date": "1993-01-24",
+      "_id": 12
+    },
+    {
+      "popularity": 1.000088,
+      "media_type": "person",
+      "id": 1124357,
+      "profile_path": null,
+      "name": "SD. Gunasekaran",
+      "known_for": [
+        {
+          "vote_average": 0,
+          "vote_count": 0,
+          "id": 261346,
+          "video": false,
+          "media_type": "movie",
+          "title": "Sangili",
+          "popularity": 1.000234,
+          "poster_path": null,
+          "original_language": "en",
+          "original_title": "Sangili",
+          "genre_ids": [
+            18
+          ],
+          "backdrop_path": null,
+          "adult": false,
+          "overview": "",
+          "release_date": "1982-04-13"
+        },
+        {
+          "vote_average": 0,
+          "vote_count": 0,
+          "id": 427608,
+          "video": false,
+          "media_type": "movie",
+          "title": "The Adulterers",
+          "popularity": 1.088921,
+          "poster_path": "/vDKcPpEAQFmLSspBuxyAM7koFxw.jpg",
+          "original_language": "ko",
+          "original_title": "The Adulterers",
+          "genre_ids": [
+            18,
+            10749
+          ],
+          "backdrop_path": null,
+          "adult": false,
+          "overview": "",
+          "release_date": "2015-11-25"
+        }
+      ],
+      "adult": false,
+      "_id": 13
+    },
+    {
+      "vote_average": 10,
+      "vote_count": 1,
+      "id": 434559,
+      "video": false,
+      "media_type": "movie",
+      "title": "Kamen Rider SD: Strange?! Kumo Otoko",
+      "popularity": 1.036198,
+      "poster_path": "/qhW8dwIAL7JMoJrOn2Ok6ZdiilZ.jpg",
+      "original_language": "ja",
+      "original_title": "仮面ライダーSD 怪奇!?クモ男",
+      "genre_ids": [
+        16,
+        35,
+        878
+      ],
+      "backdrop_path": "/fVTfbIhYaH40cB6skUx6D7HaSfI.jpg",
+      "adult": false,
+      "overview": "\"Kamen Rider SD: Strange!? Kumo Otoko\" is an animated OVA based on the gag manga Kamen Rider SD: Hurricane Legend. This cute and comedic short movie features chibi versions of the Showa Era Kamen Riders, as they team up against the evil GranShocker organization , while Kamen Rider Black RX tries to confess his love to female sports instructor Michiru.",
+      "release_date": "1993-01-24",
+      "_id": 14
+    },
+    {
+      "vote_average": 4.5,
+      "vote_count": 8,
+      "id": 240000,
+      "video": false,
+      "media_type": "movie",
+      "title": "Lady Gaga and the Muppets Holiday Spectacular",
+      "popularity": 1.7164,
+      "poster_path": "/ptxpQD2WNWrFcxYPQ5xWdgjuTYG.jpg",
+      "original_language": "en",
+      "original_title": "Lady Gaga and the Muppets Holiday Spectacular",
+      "genre_ids": [
+        10402
+      ],
+      "backdrop_path": "/cqn6WmwnFwEs3WRVUgsc6kB2fRI.jpg",
+      "adult": false,
+      "overview": "Thanksgiving special starring Lady Gaga performing songs from Artpop and Muppet sketches.",
+      "release_date": "2013-11-29",
+      "_id": 15
+    }
+  ],
   "posts": [
     {
       "id": 1,
