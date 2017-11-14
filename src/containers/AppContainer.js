@@ -6,13 +6,13 @@ import App from "../App";
 function mapStateToProps(state) {
   return {
     searchResults: state.searchResults,
-    myMovieList: state.myMovieList,
+    myMovieList: state.myMovieList
   };
 }
 
 function mapDispatchToProps(dispatch) {
   return {
-    loadMyMovieList() {
+    loadMyMovieList: function () {
       dispatch(loadMyMovieList());
     }
   };

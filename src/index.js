@@ -8,6 +8,6 @@ import AppContainer from "./containers/AppContainer";
 
 
 ReactDOM.render(
-  <Provider store={store}><App /></Provider>,
+  <Provider store={store}><AppContainer /></Provider>,
   document.getElementById("root")
 );

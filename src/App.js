@@ -12,7 +12,7 @@ import SearchBoxContainer from "./containers/SearchBoxContainer";
 
 class App extends Component {
   componentDidMount() {
-      this.props.LoadMyMovieList();
+      this.props.loadMyMovieList();
     }
 
   render() {
