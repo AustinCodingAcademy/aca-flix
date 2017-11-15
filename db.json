@@ -1,5 +1,109 @@
 {
-  "movies":[],
+  "movies": [
+    {
+      "vote_average": 6.6,
+      "vote_count": 226,
+      "id": 9900,
+      "video": false,
+      "media_type": "movie",
+      "title": "Grandma's Boy",
+      "popularity": 7.615448,
+      "poster_path": "/9Z0Q9uIH4il75dfPVqFhVKljfY.jpg",
+      "original_language": "en",
+      "original_title": "Grandma's Boy",
+      "genre_ids": [
+        35
+      ],
+      "backdrop_path": "/mQDsTjzdyxTfJSe1I4MGTG45JsL.jpg",
+      "adult": false,
+      "overview": "Even though he's 35, Alex acts more like he's 13, spending his days as the world's oldest video game tester and his evenings developing the next big Xbox game. But he gets kicked out of his apartment and is forced to move in with his grandmother.",
+      "release_date": "2006-01-06",
+      "_id": 6
+    },
+    {
+      "vote_average": 5.8,
+      "vote_count": 74,
+      "id": 14236,
+      "video": false,
+      "media_type": "movie",
+      "title": "Super High Me",
+      "popularity": 5.005824,
+      "poster_path": "/3Fq6cKVN4NKjIQNb3ChzzySMa3j.jpg",
+      "original_language": "en",
+      "original_title": "Super High Me",
+      "genre_ids": [
+        35,
+        99
+      ],
+      "backdrop_path": "/2deWXn831L7VnE03kQxgTIVLCu4.jpg",
+      "adult": false,
+      "overview": "Determined to find out the true effects of marijuana on the human body, stand-up comedian and former Stoner of the Year Doug Benson documents his experience avoiding pot for 30 days and then consuming massive amounts of the drug for 30 days. More than just an amusing story of one man's quest to get superhigh, this documentary also examines the hotly contested debate over medical marijuana use.",
+      "release_date": "2007-10-13",
+      "_id": 7
+    },
+    {
+      "vote_average": 5.3,
+      "vote_count": 5,
+      "id": 133758,
+      "video": false,
+      "media_type": "movie",
+      "title": "The Greatest Movie Ever Rolled",
+      "popularity": 1.679141,
+      "poster_path": "/dEqR3cLkJGyif7jAzmbJDFdJBb6.jpg",
+      "original_language": "en",
+      "original_title": "The Greatest Movie Ever Rolled",
+      "genre_ids": [
+        99
+      ],
+      "backdrop_path": "/hx5uHKCXqKspjmfTdkvwYz4m2Fj.jpg",
+      "adult": false,
+      "overview": "Comedian Doug Benson, the subject of Super High Me, is back to answer one question: What is the subject of that cult hit pot-umentary up to now? He’s got three popular podcasts, 400,000 plus Twitter followers, a series on Comedy Central, and a new comedy doc: The Greatest Movie Ever Rolled. It’s a fast paced look at life on the road for a comic with a rabid following, as he travels with his buddy - clean-livin’, wound-up karate enthusiast, Graham Elwood - on a tour to raise money to make a movie about going on tour to raise money to make a movie. Yeah, so very Spurlock of him. Doug finds fun everywhere he goes, and he’d like to share it with you.",
+      "release_date": "2013-03-12",
+      "_id": 8
+    },
+    {
+      "original_name": "The Office",
+      "id": 2316,
+      "media_type": "tv",
+      "name": "The Office",
+      "vote_count": 315,
+      "vote_average": 7.87,
+      "poster_path": "/iP0uuzWOR5uornNpkkZiemVonMi.jpg",
+      "first_air_date": "2005-03-24",
+      "popularity": 17.387651,
+      "genre_ids": [
+        35
+      ],
+      "original_language": "en",
+      "backdrop_path": "/eLiqATmcigKP8K2BhjLdELmEqsy.jpg",
+      "overview": "The everyday lives of office employees in the Scranton, Pennsylvania branch of the fictional Dunder Mifflin Paper Company.",
+      "origin_country": [
+        "US"
+      ],
+      "_id": 9
+    },
+    {
+      "original_name": "Breaking Bad",
+      "id": 1396,
+      "media_type": "tv",
+      "name": "Breaking Bad",
+      "vote_count": 2027,
+      "vote_average": 8.22,
+      "poster_path": "/1yeVJox3rjo2jBKrrihIMj7uoS9.jpg",
+      "first_air_date": "2008-01-19",
+      "popularity": 36.069879,
+      "genre_ids": [
+        18
+      ],
+      "original_language": "en",
+      "backdrop_path": "/bzoZjhbpriBT2N5kwgK0weUfVOX.jpg",
+      "overview": "Breaking Bad is an American crime drama television series created and produced by Vince Gilligan. Set and produced in Albuquerque, New Mexico, Breaking Bad is the story of Walter White, a struggling high school chemistry teacher who is diagnosed with inoperable lung cancer at the beginning of the series. He turns to a life of crime, producing and selling methamphetamine, in order to secure his family's financial future before he dies, teaming with his former student, Jesse Pinkman. Heavily serialized, the series is known for positioning its characters in seemingly inextricable corners and has been labeled a contemporary western by its creator.",
+      "origin_country": [
+        "US"
+      ],
+      "_id": 10
+    }
+  ],
   "posts": [
     {
       "id": 1,
