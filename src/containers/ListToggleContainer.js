@@ -5,12 +5,12 @@ import ListToggle from "../components/ListToggle";
 
 function mapDispatchToProps(dispatch) {
   return {
-    saveMyMovie(movie) {
+    saveMyMovie: function (movie) {
       dispatch(saveMyMovie(movie));
     },
-    removeMyMovie(movie) {
-      dispatch(removeMyMovie(movie));
-    },
+    removeMyMovie: function (id) {
+      dispatch(removeMyMovie(id));
+    }
   };
 }
 

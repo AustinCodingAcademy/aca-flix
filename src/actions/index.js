@@ -39,7 +39,7 @@ export function searchLoaded(movies){
   return {
     type:"SEARCH_RESULTS_LOADED",
     value:movies.results
-  }
+  };
 }
 
 export function saveMyMovie(movie){
@@ -50,7 +50,8 @@ export function saveMyMovie(movie){
            "Content-Type": "application/json"
          },
          body: JSON.stringify(movie)
-       }).then((response) => {
+       })
+       .then((response) => {
          dispatch(loadMyMovieList());
        });
      };
@@ -60,7 +61,8 @@ export function removeMyMovie(id){
   return function (dispatch){
     fetch(`/movies/${id}`, {
          method: "DELETE"
-  }).then((response) => {
+  })
+  .then((response) => {
     dispatch(loadMyMovieList());
 });
 };
