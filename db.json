@@ -1,5 +1,51 @@
 {
-  "movies":[],
+  "movies": [
+    {
+      "original_name": "The Walking Dead",
+      "id": 1402,
+      "media_type": "tv",
+      "name": "The Walking Dead",
+      "vote_count": 2616,
+      "vote_average": 7.41,
+      "poster_path": "/vxuoMW6YBt6UsxvMfRNwRl9LtWS.jpg",
+      "first_air_date": "2010-10-31",
+      "popularity": 264.745041,
+      "genre_ids": [
+        10759,
+        18,
+        10765
+      ],
+      "original_language": "en",
+      "backdrop_path": "/xVzvD5BPAU4HpleFSo8QOdHkndo.jpg",
+      "overview": "Sheriff's deputy Rick Grimes awakens from a coma to find a post-apocalyptic world dominated by flesh-eating zombies. He sets out to find his family and encounters many other survivors along the way.",
+      "origin_country": [
+        "US"
+      ],
+      "_id": 3
+    },
+    {
+      "original_name": "Fear the Walking Dead",
+      "id": 62286,
+      "media_type": "tv",
+      "name": "Fear the Walking Dead",
+      "vote_count": 600,
+      "vote_average": 6.32,
+      "poster_path": "/yd8cDZG4XjNRk7jfEWy18KH07d2.jpg",
+      "first_air_date": "2015-08-23",
+      "popularity": 39.775219,
+      "genre_ids": [
+        18,
+        27
+      ],
+      "original_language": "en",
+      "backdrop_path": "/okhLwP26UXHJ4KYGVsERQqp3129.jpg",
+      "overview": "What did the world look like as it was transforming into the horrifying apocalypse depicted in \"The Walking Dead\"? This spin-off set in Los Angeles, following new characters as they face the beginning of the end of the world, will answer that question.",
+      "origin_country": [
+        "US"
+      ],
+      "_id": 4
+    }
+  ],
   "posts": [
     {
       "id": 1,
