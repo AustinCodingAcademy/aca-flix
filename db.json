@@ -1,5 +1,52 @@
 {
-  "movies":[],
+  "movies": [
+    {
+      "vote_average": 6.5,
+      "vote_count": 1659,
+      "id": 136400,
+      "video": false,
+      "media_type": "movie",
+      "title": "2 Guns",
+      "popularity": 11.546049,
+      "poster_path": "/30lM3Uvzs6HOG5l4hzhwxYTWgd3.jpg",
+      "original_language": "en",
+      "original_title": "2 Guns",
+      "genre_ids": [
+        28,
+        35,
+        80
+      ],
+      "backdrop_path": "/wZsX7160l5feO646shRx3liMutx.jpg",
+      "adult": false,
+      "overview": "A DEA agent and an undercover Naval Intelligence officer who have been tasked with investigating one another find they have been set up by the mob -- the very organization the two men believe they have been stealing money from.",
+      "release_date": "2013-08-02",
+      "_id": 1
+    },
+    {
+      "original_name": "Marvel's Iron Fist",
+      "id": 62127,
+      "media_type": "tv",
+      "name": "Marvel's Iron Fist",
+      "vote_count": 355,
+      "vote_average": 6.25,
+      "poster_path": "/nv4nLXbDhcISPP8C1mgaxKU50KO.jpg",
+      "first_air_date": "2017-03-17",
+      "popularity": 50.512004,
+      "genre_ids": [
+        10759,
+        80,
+        18,
+        10765
+      ],
+      "original_language": "en",
+      "backdrop_path": "/xHCfWGlxwbtMeeOnTvxUCZRGnkk.jpg",
+      "overview": "Danny Rand resurfaces 15 years after being presumed dead. Now, with the power of the Iron Fist, he seeks to reclaim his past and fulfill his destiny.",
+      "origin_country": [
+        "US"
+      ],
+      "_id": 2
+    }
+  ],
   "posts": [
     {
       "id": 1,
