@@ -101,7 +101,7 @@
 ### Item.js
 * Switch out use of ListToggle for use of ListToggleContainer
 
-!!### App.js
+**### App.js
 * Add componentDidMount method and call loadMyMovieList in here.
 * Switch out use of SearchBox for use of SearchBoxContainer
 * Add PropTypes for searchResults and myMovieList
