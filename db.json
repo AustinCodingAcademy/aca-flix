@@ -1,5 +1,29 @@
 {
-  "movies":[],
+  "movies": [
+    {
+      "vote_average": 6.6,
+      "vote_count": 4198,
+      "id": 920,
+      "video": false,
+      "media_type": "movie",
+      "title": "Cars",
+      "popularity": 20.072397,
+      "poster_path": "/5damnMcRFKSjhCirgX3CMa88MBj.jpg",
+      "original_language": "en",
+      "original_title": "Cars",
+      "genre_ids": [
+        16,
+        12,
+        35,
+        10751
+      ],
+      "backdrop_path": "/a1MlbLBk5Sy6YvMbSuKfwGlDVlb.jpg",
+      "adult": false,
+      "overview": "Lightning McQueen, a hotshot rookie race car driven to succeed, discovers that life is about the journey, not the finish line, when he finds himself unexpectedly detoured in the sleepy Route 66 town of Radiator Springs. On route across the country to the big Piston Cup Championship in California to compete against two seasoned pros, McQueen gets to know the town's offbeat characters.",
+      "release_date": "2006-06-08",
+      "_id": 1
+    }
+  ],
   "posts": [
     {
       "id": 1,
