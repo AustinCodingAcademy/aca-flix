@@ -1,7 +1,7 @@
 import {connect} from "react-redux";
 import App from "./App";
 import "./App.css";
-import {loadMovieList} from "./actions";
+import {loadMyMovieList} from "./actions";
 
 function mapStateToProps(state) {
     return {
@@ -12,8 +12,8 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
     return {
-        loadMyMovieList: function(movies) {
-            dispatch(loadMyMovieList(movies));
+        loadMyMovieList: function() {
+            dispatch(loadMyMovieList());
         }
     };
 }

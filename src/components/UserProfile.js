@@ -4,9 +4,9 @@ function UserProfile() {
     return (
         <div className="UserProfile">
             <div className="User">
-                <div className="name">Jack Oliver</div>
+                <div className="name">Cruz Mendez</div>
                 <div className="image">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/profile/profile-512_1.jpg" alt="profile" />
+                    <img src="https://res.cloudinary.com/teepublic/image/private/s--QTXVyCMN--/t_Preview/b_rgb:c62b29,c_limit,f_jpg,h_630,q_90,w_630/v1446242793/production/designs/289714_1.jpg" alt="profile" />
                 </div>
             </div>
         </div>

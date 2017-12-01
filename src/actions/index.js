@@ -27,7 +27,7 @@ export function loadSearch(searchTerm) {
         dispatch({
             type: "LOAD_SEARCH"
         });
-        fetch("MOVIEDBAPIKEYGOESHERE")
+        fetch("https://api.themoviedb.org/3/movie/550?api_key=71565e79761b6008eb199453b28d45b8")
         .then( (response) => {
             return response.json();
         }).then((movies) => { //<---DOUBLE CHECK PARAMETER HERE
@@ -51,7 +51,7 @@ export function saveMyMovie(movie) {
             headers: {
                 "Content-Type": "application/json"
             },
-            body: JSON.stringify(movies)
+            body: JSON.stringify(movie)
         })
         .then( (response) => {
             dispatch(loadMyMovieList());

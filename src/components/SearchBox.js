@@ -3,6 +3,7 @@ import React, {Component} from "react";
 class SearchBox extends Component {
   constructor() {
     super();
+    this.state = {searchTerm:""}; //ASSIGN STATE PROPERTY WITH OBJECT
   }
   render() {
     return (
@@ -16,6 +17,8 @@ class SearchBox extends Component {
               }
             }
           } 
+          onChange = { e => this.setState({searchTerm:e.target.value})
+          } //SET STATE OF SEARCH TERM TO VALUE FROM IMPUT
           type="search" 
           placeholder="Search for a title..." />
       </div>
