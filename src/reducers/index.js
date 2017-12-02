@@ -9,6 +9,7 @@ function myMovieList(state = [], action) {
 
 function searchResults(state = [], action) {
     if(action.type === "SEARCH_RESULTS_LOADED") {
+        console.log(action.value);
         return action.value;
     }
     return state;

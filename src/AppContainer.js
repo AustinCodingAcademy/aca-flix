@@ -2,6 +2,7 @@ import {connect} from "react-redux";
 import App from "./App";
 import "./App.css";
 import {loadMyMovieList} from "./actions";
+import PropTypes from "prop-types";
 
 function mapStateToProps(state) {
     return {
@@ -12,10 +13,15 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
     return {
-        loadMyMovieList: function() {
-            dispatch(loadMyMovieList());
+        loadMyMovieList: function(movies) {
+            dispatch(loadMyMovieList(movies));
         }
     };
+}
+
+App.PropTypes = {
+    searchResults: PropTypes.array.isRequired,
+    myMovieList: PropTypes.array.isRequired
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);

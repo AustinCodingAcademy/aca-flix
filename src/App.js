@@ -9,9 +9,13 @@ import Navigation from "./components/Navigation";
 import UserProfile from "./components/UserProfile";
 
 class App extends Component {
+
   componentDidMount() {
+
     this.props.loadMyMovieList();
+
   }
+  
   render() {
     return (
       <div>
@@ -36,6 +40,7 @@ class App extends Component {
     );
   }
 }
+
 export default App;
 
 App.propTypes = {

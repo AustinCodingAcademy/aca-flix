@@ -6,6 +6,7 @@ function mapDispatchToProps(dispatch) {
     return {
         loadSearch: function(searchTerm) {
             dispatch(loadSearch(searchTerm));
+            console.log(searchTerm); //SEARCH TERM -IS- LOGGING TO CONSOLE
         }
     };
 }
