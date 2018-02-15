@@ -6,7 +6,7 @@
 ### Do
 
 ### Components
-* Create functional components as defined by comments such as  {/*  <Navigation>   */}
+* Create functional components as defined by comments in the jsx in App.js,  such as  {/*  <Navigation>   */}
 * Import and use components in App.js
 * Navigation.js
 * UserProfile.js
