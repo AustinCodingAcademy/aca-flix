@@ -1,5 +1,90 @@
 {
-  "movies":[],
+  "movies": [
+    {
+      "vote_average": 8.3,
+      "vote_count": 11454,
+      "id": 550,
+      "video": false,
+      "media_type": "movie",
+      "title": "Fight Club",
+      "popularity": 51.577197,
+      "poster_path": "/adw6Lq9FiC9zjYEpOqfq03ituwp.jpg",
+      "original_language": "en",
+      "original_title": "Fight Club",
+      "genre_ids": [
+        18
+      ],
+      "backdrop_path": "/87hTDiay2N2qWyX4Ds7ybXi9h8I.jpg",
+      "adult": false,
+      "overview": "A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy. Their concept catches on, with underground \"fight clubs\" forming in every town, until an eccentric gets in the way and ignites an out-of-control spiral toward oblivion.",
+      "release_date": "1999-10-15",
+      "_id": 1
+    },
+    {
+      "vote_average": 8.1,
+      "vote_count": 10274,
+      "id": 120,
+      "video": false,
+      "media_type": "movie",
+      "title": "The Lord of the Rings: The Fellowship of the Ring",
+      "popularity": 53.332602,
+      "poster_path": "/bxVxZb5O9OxCO0oRUNdCnpy9NST.jpg",
+      "original_language": "en",
+      "original_title": "The Lord of the Rings: The Fellowship of the Ring",
+      "genre_ids": [
+        12,
+        14,
+        28
+      ],
+      "backdrop_path": "/pIUvQ9Ed35wlWhY2oU6OmwEsmzG.jpg",
+      "adult": false,
+      "overview": "Young hobbit Frodo Baggins, after inheriting a mysterious ring from his uncle Bilbo, must leave his home in order to keep it from falling into the hands of its evil creator. Along the way, a fellowship is formed to protect the ringbearer and make sure that the ring arrives at its final destination: Mt. Doom, the only place where it can be destroyed.",
+      "release_date": "2001-12-18",
+      "_id": 2
+    },
+    {
+      "vote_average": 7.1,
+      "vote_count": 2210,
+      "id": 114,
+      "video": false,
+      "media_type": "movie",
+      "title": "Pretty Woman",
+      "popularity": 25.863098,
+      "poster_path": "/fgmdaCMxXClZm2ePteLzCPySB1n.jpg",
+      "original_language": "en",
+      "original_title": "Pretty Woman",
+      "genre_ids": [
+        10749,
+        35
+      ],
+      "backdrop_path": "/fztlIPN1EAO2kFVdJhKaXjAgjhH.jpg",
+      "adult": false,
+      "overview": "When millionaire wheeler-dealer Edward Lewis enters a business contract with Hollywood hooker Vivian Ward, he loses his heart in the bargain in this charming romantic comedy. After Edward hires Vivian as his date for a week and gives her a Cinderella makeover, she returns the favor by mellowing the hardnosed tycoon's outlook. Can the poor prostitute and the rich capitalist live happily ever after?",
+      "release_date": "1990-03-23",
+      "_id": 3
+    },
+    {
+      "vote_average": 7.8,
+      "vote_count": 3666,
+      "id": 115,
+      "video": false,
+      "media_type": "movie",
+      "title": "The Big Lebowski",
+      "popularity": 29.046036,
+      "poster_path": "/qiE3ovg9TPylHReZjizQ40LsKZV.jpg",
+      "original_language": "en",
+      "original_title": "The Big Lebowski",
+      "genre_ids": [
+        35,
+        80
+      ],
+      "backdrop_path": "/uY93JtLsAXLnd38b19dIVRv5L1X.jpg",
+      "adult": false,
+      "overview": "Jeffrey \"The Dude\" Lebowski, a Los Angeles slacker who only wants to bowl and drink white Russians, is mistaken for another Jeffrey Lebowski, a wheelchair-bound millionaire, and finds himself dragged into a strange series of events involving nihilists, adult film producers, ferrets, errant toes, and large sums of money.",
+      "release_date": "1998-03-06",
+      "_id": 4
+    }
+  ],
   "posts": [
     {
       "id": 1,
