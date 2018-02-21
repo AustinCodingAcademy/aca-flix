@@ -1,4 +1,4 @@
-import ListToggle from "../comments/ListToggle";
+import ListToggle from "../components/ListToggle";
 import {saveMyMovie, removeMyMovie} from "../actions";
 import {connect} from "react-redux";
 
@@ -10,7 +10,7 @@ import {connect} from "react-redux";
 function mapDispatchToProps(dispatch) {
   return {
     saveMyMovie: function (movie) {
-      dispatch(saveMyMovie(movir));
+      dispatch(saveMyMovie(movie));
     },
     removeMyMovie: function (id) {
       dispatch(removeMyMovie(id))
