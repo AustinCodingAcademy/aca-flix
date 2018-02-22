@@ -7,6 +7,7 @@ import Hero from "./components/Hero";
 import SearchBox from "./components/SearchBox";
 import Navigation from "./components/Navigation";
 import UserProfile from "./components/UserProfile";
+import SearchBoxContainer from "./containers/SearchBoxContainer";
 
 class App extends Component {
   render() {
@@ -27,7 +28,9 @@ class App extends Component {
           </div> */}
           <Navigation />
           {/*  </Navigation>   */}
-          <SearchBox />
+          {/* <SearchBox /> */}
+          <SearchBoxContainer />
+
           <UserProfile />
           {/*  <UserProfile>   */}
           {/* <div className="UserProfile">
