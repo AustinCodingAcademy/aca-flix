@@ -3,9 +3,10 @@ import SearchBox from "../components/SearchBox";
 import {loadSearch} from "../actions";
 
 function mapDispatchToProps(dispatch) {
-  return {
+
+    return {
     loadSearch(searchTerm){
-        dispatch(loadSearch());
+        dispatch(loadSearch(searchTerm));
     }
   };
 }

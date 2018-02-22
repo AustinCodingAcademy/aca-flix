@@ -23,7 +23,7 @@ export function loadMyMovieList() {
       dispatch({
         type: "LOAD_SEARCH"
       });
-      fetch("https://api.themoviedb.org/3/search/multi?query=searchTerm&api_key=13e0c62bad1402001b0e92521fe8f413")
+      fetch("https://api.themoviedb.org/3/search/multi?query=" + searchTerm + "&api_key=13e0c62bad1402001b0e92521fe8f413")
       .then( (response) => {
         return response.json();
       }).then((movies) => {

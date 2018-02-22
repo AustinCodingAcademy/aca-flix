@@ -8,9 +8,21 @@ import SearchBox from "./components/SearchBox";
 import Navigation from "./components/Navigation";
 import UserProfile from "./components/UserProfile";
 import SearchBoxContainer from "./containers/SearchBoxContainer";
+import {loadMyMovieList} from "./actions/index";
+
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = { searchResults: [],
+      myMovieList: []};
+  }
+  componentDidMount() {
+    this.props.loadMyMovieList()
+  }
+
   render() {
+    console.log(this.props);
     return (
       <div>
         <header className="Header">
