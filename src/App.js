@@ -7,6 +7,8 @@ import Hero from "./components/Hero";
 import Navigation from "./components/Navigation";
 import UserProfile from "./components/UserProfile";
 import SearchBox from "./containers/SearchBoxContainer";
+// import  from "./containers/";
+// import  from "./containers/";
 
 class App extends Component {
 
@@ -36,8 +38,8 @@ componentDidMount() {
 }
 
 App.propTypes = {
-  searchResults: PropTypes.string.isRequired,
-  myMovieList: PropTypes.number.isRequired
+  searchResults: PropTypes.array.isRequired,
+  myMovieList: PropTypes.array.isRequired
 };
 
 export default App;
