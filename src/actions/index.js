@@ -1,19 +1,20 @@
 export function loadMyMovieList() {
     return function (dispatch) {
       dispatch({
-        type: "LOAD_MY_MOVIES"
+        type: "LOAD_MY_MOVIE_LIST"
       });
       fetch("/movies")
       .then( (response) => {
         return response.json();
       }).then((movies) => {
+        // console.log("moviesloaded");
         dispatch(myMovieListLoaded(movies));
       });
     };
    }
    export function myMovieListLoaded(movies) {
     return {
-      type: "MY_MOVIES_LOADED",
+      type: "MY_MOVIE_LIST_LOADED",
       value: movies
     };
    }
@@ -48,11 +49,12 @@ export function loadMyMovieList() {
     };
    }
    export function removeMyMovie(id) {
-    return function (dispatch) {
+    return (dispatch) => {
+      console.log(id);
       fetch("/movies/"+id, {
         method: "DELETE",
         headers: {"Content-Type": "application/json"},
-        body: JSON.stringify(id)
-      }).then(() => dispatch(loadMyMovieList()));
+        body: JSON.stringify()
+      }).then(() => dispatch(loadMyMovieList(2)));
     };
    }
