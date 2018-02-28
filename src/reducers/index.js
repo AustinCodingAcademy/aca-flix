@@ -1,9 +1,11 @@
 import {combineReducers} from "redux";
 
-function searchResults(state = [], action) {
-  if (action.type === "SEARCH_LOADED") {
-    return action.value;
+function searchResults(state = [], action) { //this hits
+  if (action.type === "SEARCH_RESULTS_LOADED") {
+    //debugger;
+    return action.value; //this hits
   }
+  //debugger;
   return state;
 }
 

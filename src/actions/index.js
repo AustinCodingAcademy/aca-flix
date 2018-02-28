@@ -26,19 +26,21 @@ export function loadSearch(searchTerm){
     });
     fetch(`https://api.themoviedb.org/3/search/multi?query=${searchTerm}&api_key=feb25d6350fd7f1d5591f5c8a1efbeb2`)
     .then( (response) => {
-      //console.log("API returned: ",response.json());
-      return response.json();
-    }).then((mov) => {
-      debugger;
-      dispatch(searchLoaded(mov));
+      let APIresults = response.json();
+      console.log("API returned: ",APIresults);
+      return APIresults;
+    }).then((movies) => {
+      //debugger;
+      dispatch(searchLoaded(movies)); //this hits
     });
   };
   }
 
 export function searchLoaded(movies){
+  //debugger;
   return {
     type:"SEARCH_RESULTS_LOADED",
-    value: movies.results
+    value: movies.results //this hits
   }
 }
 
