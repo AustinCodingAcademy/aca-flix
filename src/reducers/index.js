@@ -10,7 +10,7 @@ function searchResults(state = [], action) { //this hits
 }
 
 function myMovieList(state = [], action) {
-  if (action.type === "LOAD_MY_MOVIE_LIST") {
+  if (action.type === "MY_MOVIE_LIST_LOADED") {
     return action.value;
   }
   return state;

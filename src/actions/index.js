@@ -8,6 +8,7 @@ export function loadMyMovieList(){
       return response.json();
     }).then((mov) => {
       dispatch(myMovieListLoaded(mov));
+      console.log("mov within actions:",mov);
     });
   };
   }
@@ -45,13 +46,14 @@ export function searchLoaded(movies){
 }
 
 export function saveMyMovie(movie){
+  console.log("movie within saveMyMovie:",movie);
   return function (dispatch) {
     const webRequestPromise = fetch("/movies", {
      method: "POST",
      headers: {
        "Content-Type": "application/json"
      },
-     body: JSON.stringify(movie)
+     body: JSON.stringify(movie) //this is wrong
    }).then(() => {
      dispatch(loadMyMovieList());
    });

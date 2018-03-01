@@ -2,6 +2,12 @@ import { connect } from "react-redux";
 import ListToggle from "../components/ListToggle";
 import { saveMyMovie, removeMyMovie } from "../actions"
 
+/*function mapStateToProps(m){
+  return {
+    movie: m.movie
+  }
+}*/
+
 function mapDispatchToProps(dispatch) {
   return {
     saveMyMovie: function (mov) {

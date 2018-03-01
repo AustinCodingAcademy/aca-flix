@@ -27,10 +27,11 @@ class App extends Component {
         <TitleList
           title="Search Results"
           movies={this.props.searchResults} />
-          {/*this is not pulling anything*/}
+          {console.log("searchResults-TitleList:",this.props.searchResults)}
           <TitleList
           title="My Movies"
           movies={this.props.myMovieList} />
+          {console.log("myMovieList-TitleList:",this.props.myMovieList)}
       </div>
     );
   }

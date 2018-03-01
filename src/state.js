@@ -1,4 +1,4 @@
 export default {
- searchResults: [], //this updates in fetch-practice under same setup
+ searchResults: [],
  myMovieList: []
 };
