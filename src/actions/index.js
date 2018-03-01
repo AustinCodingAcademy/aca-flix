@@ -28,7 +28,7 @@ export function loadSearch(searchTerm){
     fetch(`https://api.themoviedb.org/3/search/multi?query=${searchTerm}&api_key=feb25d6350fd7f1d5591f5c8a1efbeb2`)
     .then( (response) => {
       let APIresults = response.json();
-      console.log("API returned: ",APIresults);
+      //console.log("API returned: ",APIresults);
       return APIresults;
     }).then((movies) => {
       //debugger;
@@ -53,7 +53,7 @@ export function saveMyMovie(movie){
      headers: {
        "Content-Type": "application/json"
      },
-     body: JSON.stringify(movie) //this is wrong
+     body: JSON.stringify(movie) //is this wrong?
    }).then(() => {
      dispatch(loadMyMovieList());
    });

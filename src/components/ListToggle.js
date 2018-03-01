@@ -14,6 +14,7 @@ class ListToggle extends Component {
       this.setState({ toggled: false });
     } else {
       this.props.saveMyMovie(this.props.movie);
+      console.log("ListToggle-this.props.movie:",this.props.movie);
       this.setState({ toggled: true });
     }
   }
