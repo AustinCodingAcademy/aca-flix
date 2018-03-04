@@ -62,14 +62,10 @@ export function saveMyMovie(movie){
 
 export function removeMyMovie(id){
   return function (dispatch) {
-    const webRequestPromise = fetch("/movies/", { //instructions say "make a fetch DELETE to “/movies/” + id"
+    const webRequestPromise = fetch("/movies/"+id, { //instructions say "make a fetch DELETE to “/movies/” + id"
      method: "DELETE",
-     headers: {
-       "Content-Type": "application/json"
-     },
      body: JSON.stringify(id) //is this where id should go?
    }).then(() => {
-     //state.myMovieList.splice(id, 1);
      dispatch(loadMyMovieList());
    });
   };

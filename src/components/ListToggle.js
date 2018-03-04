@@ -11,6 +11,7 @@ class ListToggle extends Component {
   handleClick() {
     if (this.state.toggled === true) {
       this.props.removeMyMovie(this.props.movie._id);
+      console.log("ListToggle-this.props.movie._id:",this.props.movie._id);
       this.setState({ toggled: false });
     } else {
       this.props.saveMyMovie(this.props.movie);
