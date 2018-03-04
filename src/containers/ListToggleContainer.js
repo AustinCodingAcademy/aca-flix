@@ -2,11 +2,11 @@ import { connect } from "react-redux";
 import ListToggle from "../components/ListToggle";
 import { saveMyMovie, removeMyMovie } from "../actions"
 
-function mapStateToProps(state) {
+/*function mapStateToProps(state) {
   return {
-    movie: state.myMovieList
+    movie: state.searchResults
   };
-}
+}*/
 
 function mapDispatchToProps(dispatch) {
   return {
@@ -19,4 +19,4 @@ function mapDispatchToProps(dispatch) {
   };
 }
 
-export default connect(mapStateToProps,mapDispatchToProps)(ListToggle);
+export default connect(null,mapDispatchToProps)(ListToggle);
