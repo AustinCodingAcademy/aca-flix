@@ -1,5 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 import Item from "./Item";
+/* eslint-disable */
 
 function TitleList(props) {
   let titles = "";

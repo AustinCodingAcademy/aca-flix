@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+/* eslint-disable */
 
 class ListToggle extends Component {
   constructor(props) {

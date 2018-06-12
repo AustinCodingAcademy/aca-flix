@@ -179,6 +179,7 @@ p {
   outline: none;
   border-radius: 37px;
   padding: 0 10px;
+  margin-left: 5%;
   pointer-events: all;
   -webkit-transition: border .25s ease, width .125s ease .125s;
   transition: border .25s ease, width .125s ease .125s;
@@ -186,6 +187,7 @@ p {
 .Search input:focus {
   border: 2px solid #e50914;
   width: 30%;
+  margin-left: 15%;
 }
 
 .UserProfile {
