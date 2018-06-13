@@ -1,5 +1,7 @@
 import React from "react";
 import ListToggle from "../containers/ListToggleContainer";
+import PropTypes from "prop-types";
+
 
 function Item(props) {
   
@@ -24,4 +26,8 @@ function Item(props) {
     </div>
   );
 }
+
+Item.propTypes = {
+  movie: PropTypes.object
+};
 export default Item;

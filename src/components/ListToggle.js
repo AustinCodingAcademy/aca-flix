@@ -1,8 +1,10 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
+
 
 class ListToggle extends Component {
   constructor(props) {
-    super(props);
+    super(props);    
     // determine if there is a json server id which means it was saved
     this.state = { toggled: props.movie ? Boolean(props.movie._id) : false};
     this.handleClick = this.handleClick.bind(this);
@@ -17,10 +19,7 @@ class ListToggle extends Component {
     }
   }
   
-  
   render() {
-   
-    
     return (
       <div onClick={this.handleClick} 
         data-toggled={this.state.toggled} 
@@ -33,4 +32,11 @@ class ListToggle extends Component {
     );
   }
 }
+
+ListToggle.propTypes = {
+  movie: PropTypes.object,
+  removeMyMovie: PropTypes.func,
+  saveMyMovie: PropTypes.func
+};
+
 export default ListToggle;

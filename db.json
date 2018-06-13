@@ -19,7 +19,7 @@
       "adult": false,
       "overview": "The true story of Henry Hill, a half-Irish, half-Sicilian Brooklyn kid who is adopted by neighbourhood gangsters at an early age and climbs the ranks of a Mafia family under the guidance of Jimmy Conway.",
       "release_date": "1990-09-12",
-      "_id": 1
+      "_id": 6
     },
     {
       "vote_average": 8.2,
@@ -39,28 +39,7 @@
       "adult": false,
       "overview": "While the Civil War rages between the Union and the Confederacy, three men – a quiet loner, a ruthless hit man and a Mexican bandit – comb the American Southwest in search of a strongbox containing $200,000 in stolen gold.",
       "release_date": "1966-12-23",
-      "_id": 2
-    },
-    {
-      "vote_average": 8.3,
-      "vote_count": 1606,
-      "id": 311,
-      "video": false,
-      "media_type": "movie",
-      "title": "Once Upon a Time in America",
-      "popularity": 15.706287,
-      "poster_path": "/fqP3Q7DWMFqW7mh11hWXbNwN9rz.jpg",
-      "original_language": "en",
-      "original_title": "Once Upon a Time in America",
-      "genre_ids": [
-        18,
-        80
-      ],
-      "backdrop_path": "/vnT6HzjLSDrAweHn9xWykb8Ii6T.jpg",
-      "adult": false,
-      "overview": "A former Prohibition-era Jewish gangster returns to the Lower East Side of Manhattan over thirty years later, where he once again must confront the ghosts and regrets of his old life.",
-      "release_date": "1984-05-23",
-      "_id": 3
+      "_id": 7
     }
   ],
   "posts": [

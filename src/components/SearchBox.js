@@ -1,18 +1,15 @@
 import React, {Component} from "react";
+import PropTypes from "prop-types";
 
 class SearchBox extends Component {
   constructor() {
     super();
-
     this.state = {
       searchTerm: ""
     };
   }
 
-
   render() {
-   
-    
     return (
       <div id="search" className="Search">
         <input
@@ -31,5 +28,10 @@ class SearchBox extends Component {
     );
   }
 }
+
+SearchBox.propTypes = {
+  loadSearch: PropTypes.func,
+};
+
 export default SearchBox;
 

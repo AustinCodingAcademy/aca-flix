@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-// import PropTypes from "prop-types";
+import PropTypes from "prop-types";
 import "./App.css";
 import Logo from "./Logo.js";
 import TitleList from "./components/TitleList";
@@ -10,12 +10,11 @@ import SearchBox from "./containers/SearchBoxContainer";
 
 class App extends Component {
 
-
   componentDidMount = () => {
     this.props.loadMyMovieList();
   }
 
-  render() {
+  render() {   
     return (
       <div>
         <header className="Header">
@@ -30,10 +29,17 @@ class App extends Component {
           movies={this.props.searchResults} />
         <TitleList 
           title="My Movies" 
-          movies={this.props.myMovieList} />
+          movies={this.props.myMovieList}
+          myMovies={this.props.myMovieList} />
       </div>
     );
   }
 }
+
+App.propTypes = {
+  searchResults: PropTypes.array,
+  myMovieList: PropTypes.array,
+  loadMyMovieList: PropTypes.func
+};
 
 export default App;
