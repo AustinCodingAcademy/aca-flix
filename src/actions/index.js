@@ -22,8 +22,6 @@ export function myMovieListLoaded(movies) {
 
 
 export function loadSearch(searchTerm) {
-  console.log(searchTerm);
-  
   return function (dispatch) {
     dispatch({
       type: "LOAD_SEARCH"
@@ -32,15 +30,12 @@ export function loadSearch(searchTerm) {
     .then( (response) => {
       return response.json();
     }).then((movies) => {
-      // console.log(movies);
-      
       dispatch(searchLoaded(movies));
     });
   };
 }
 
 export function searchLoaded(movies) {
-  // console.log(movies.results);
   return {
     type: "SEARCH_RESULTS_LOADED",
     value: movies.results

@@ -1,4 +1,5 @@
-import React, { Component } from "react";
+// import React, { Component } from "react";
+import React from "react";
 import Item from "./Item";
 
 function TitleList(props) {
