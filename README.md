@@ -35,35 +35,35 @@
     * return the value -->
 
 ### Store
-* Create our standard store.js file
-* Use redux-thunk middleware
-* Import reducers
-* create store and export
+<!-- * Create our standard store.js file -->
+<!-- * Use redux-thunk middleware -->
+<!-- * Import reducers -->
+<!-- * create store and export -->
 
 ### index.js 
-* import Provider and wrap App 
-* import store and assign to store prop
+<!-- * import Provider and wrap App  -->
+<!-- * import store and assign to store prop -->
 
 ### Actions
-* remember to export your actions
-* loadMyMovieList()
+<!-- * remember to export your actions -->
+<!-- * loadMyMovieList()
     * type = “LOAD_MY_MOVIE_LIST”
     * make fetch call to “/movies”
-    * on complete, dispatch to myMovieListLoaded(movies)
-* myMovieListLoaded(movies)
+    * on complete, dispatch to myMovieListLoaded(movies) -->
+<!-- * myMovieListLoaded(movies)
     * type = “MY_MOVIE_LIST_LOADED”
-    * value = movies 
-* loadSearch(searchTerm)
+    * value = movies  -->
+<!-- * loadSearch(searchTerm)
     * type = “LOAD_SEARCH”
     * make fetch call to https://api.themoviedb.org/3/search/multi?query=searchTerm&api_key=yourkey
     * be sure to put your api key
-    * on complete, dispatch to searchLoaded(movies)
-* searchLoaded(movies)
+    * on complete, dispatch to searchLoaded(movies) -->
+<!-- * searchLoaded(movies)
     * type = “SEARCH_RESULTS_LOADED”
-    * value = make sure to assign the value of movies.results to get the array of movies from movie db
-* saveMyMovie(movie)
+    * value = make sure to assign the value of movies.results to get the array of movies from movie db -->
+<!-- * saveMyMovie(movie)
     * make fetch POST to “/movies”
-    * on complete dispatch to loadMyMovieList()
+    * on complete dispatch to loadMyMovieList() -->
 * removeMyMovie(id)
     * make a fetch DELETE to “/movies/” + id
     * on complete dispatch to loadMyMovieList()
