@@ -1,15 +1,15 @@
 
 ### Setup
-* Get your api key from the themoviedb.org
-* Fork, Clone, yarn install, yarn start
+<!-- * Get your api key from the themoviedb.org -->
+<!-- * Fork, Clone, yarn install, yarn start -->
 
 ### Do
 
 ### Components
-* Create functional components as defined by comments in the jsx in App.js,  such as  {/*  <Navigation>   */}
-* Import and use components in App.js
-* Navigation.js
-* UserProfile.js
+<!-- * Create functional components as defined by comments in the jsx in App.js,  such as  {/*  <Navigation>   */} -->
+<!-- * Import and use components in App.js -->
+<!-- * Navigation.js -->
+<!-- * UserProfile.js -->
 
 ### State
 * In state.js file
