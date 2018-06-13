@@ -12,27 +12,27 @@
 <!-- * UserProfile.js -->
 
 ### State
-* In state.js file
-* Create our state object with properties
+<!-- * In state.js file -->
+<!-- * Create our state object with properties
     * searchResults: []
-    * myMovieList: []
-* export state object
+    * myMovieList: [] -->
+<!-- * export state object -->
 
 ### Reducers
-* In reducers/index.js
-* Create reducers functions for all state
-* Parameters - state, action
-* Remember default value
-* Import combineReducers from redux
-* Combine reducers and export
+<!-- * In reducers/index.js -->
+<!-- * Create reducers functions for all state -->
+<!-- * Parameters - state, action -->
+<!-- * Remember default value -->
+<!-- * Import combineReducers from redux -->
+<!-- * Combine reducers and export -->
 
 ### Create Reducers
-* myMovieList
+<!-- * myMovieList
     * Look for the action “MY_MOVIE_LIST_LOADED”
-    * return the value
-* searchResults
+    * return the value -->
+<!-- * searchResults
     * Look for the action “SEARCH_RESULTS_LOADED”
-    * return the value
+    * return the value -->
 
 ### Store
 * Create our standard store.js file
