@@ -1,11 +1,11 @@
 import React from "react";
-import ListToggle from "./ListToggle";
+import ListToggle from "../Containers/ListToggleContainer";
 
 function Item(props) {
   
   let name = "";
-  let backDrop = "http://image.tmdb.org/t/p/original" + props.movie.backdrop_path;
-  if(!props.movie.name) {
+  const backDrop = "http://image.tmdb.org/t/p/original" + props.movie.backdrop_path;
+  if (!props.movie.name) {
     name = props.movie.original_title;
   } else {
     name = props.movie.name;
