@@ -1,14 +1,20 @@
 import React, {Component} from "react";
-import PropTypes from "prop-types";
+import PropTypes, { array } from "prop-types";
 import "./App.css";
 import Logo from "./Logo.js";
 import TitleList from "./components/TitleList";
 import Hero from "./components/Hero";
-import SearchBox from "./components/SearchBox";
 import Navigation from "./components/Navigation";
 import UserProfile from "./components/UserProfile";
+import { loadMyMovieList } from "./actions";
+import SearchBoxContainer from "./containers/SearchBoxContainer";
 
 class App extends Component {
+  
+  componentDidMount(){
+    loadMyMovieList();
+  }
+
   render() {
     return (
       <div>
@@ -17,7 +23,7 @@ class App extends Component {
           {/*  <Navigation>   */}
           <Navigation />
           {/*  </Navigation>   */}
-          <SearchBox />
+          <SearchBoxContainer />
           {/*  <UserProfile>   */}
           <UserProfile />
           {/*  </UserProfile>   */}
@@ -33,4 +39,10 @@ class App extends Component {
     );
   }
 }
+
+App.PropTypes = {
+  searchResults: array,
+  myMovieList: array
+}
+
 export default App;

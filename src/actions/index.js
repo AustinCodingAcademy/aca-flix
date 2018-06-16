@@ -1,5 +1,3 @@
-import { combineReducers } from "redux";
-
 export function loadMyMovieList(){
     return function (dispatch) {
         dispatch({
@@ -10,12 +8,12 @@ export function loadMyMovieList(){
         .then( (response) => {
             return response.json();
         }).then((movies) => {
-            dispatch(myMoviesLoaded(movies));
+            dispatch(myMovieListLoaded(movies));
         });
     };
 };  
 
-export function loadMyMovieList(movies){
+export function myMovieListLoaded(movies){
     return {
         type: "MY_MOVIE_LIST_LOADED",
         movies: movies
@@ -54,10 +52,12 @@ export function saveMyMovie(movie){
   };
 }
 
-export function removeMyMovie(id){
-    fetch("/movies/${_id})", {
-        method: "DELETE"
-    }).then( (movies) => {
-        dispatch(loadMyMovieList(movies));
-    })
+export function removeMyMovie(_id) {
+    return function (dispatch) {
+      fetch(`/movies/${_id}`, {
+          method: "DELETE"
+        }).then(() => dispatch(loadMyMovieList()));
+    };
 }
+
+
