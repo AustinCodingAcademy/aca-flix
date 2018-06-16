@@ -23,6 +23,7 @@ class SearchBox extends Component {
             }
           }}
           onChange={(e) => {
+            console.log('onChange', e.target.value);
             this.setState({
               searchTerm: e.target.value,
             });

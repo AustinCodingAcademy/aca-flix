@@ -32,19 +32,21 @@ export function myMovieListLoaded(movies) {
 //     * make fetch call to https://api.themoviedb.org/3/search/multi?query=searchTerm&api_key=yourkey
 //     * be sure to put your api key
 //     * on complete, dispatch to searchLoaded(movies)
-export function loadSearch() {
+export function loadSearch(searchTerm) {
+  console.log('loadsearch', searchTerm);
   return function (dispatch) {
     dispatch({
       type: "LOAD_SEARCH",
     });
     fetch(
-      "https://api.themoviedb.org/3/search/multi?query=searchTerm&api_key=yourkey"
+    `https://api.themoviedb.org/3/search/multi?query=${searchTerm}&api_key=3e0b415cbac9c0c1dd359cfa7470ca88`
     )
       .then((response) => {
         return response.json();
       })
       .then((movies) => {
-        searchLoaded(movies);
+        console.log('loadSearch result', movies);
+        dispatch(searchLoaded(movies));
       });
   };
 }
@@ -54,6 +56,7 @@ export function loadSearch() {
 //     * value = make sure to assign the value of movies.results to get
 // the array of movies from movie db
 export function searchLoaded(movies) {
+  console.log('searchLoaded', movies.results);
   return {
     type: "SEARCH_RESULTS_LOADED",
     value: movies.results,

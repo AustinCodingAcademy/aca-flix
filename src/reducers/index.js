@@ -1,6 +1,7 @@
 import { combineReducers } from "redux";
 
 function searchResults(state = [], action) {
+  console.log('searchResults reducer', action);
   if (action.type === "SEARCH_RESULTS_LOADED") {
     return action.value;
   }
