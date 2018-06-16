@@ -33,7 +33,6 @@ export function myMovieListLoaded(movies) {
 //     * be sure to put your api key
 //     * on complete, dispatch to searchLoaded(movies)
 export function loadSearch(searchTerm) {
-  console.log('loadsearch', searchTerm);
   return function (dispatch) {
     dispatch({
       type: "LOAD_SEARCH",
@@ -45,7 +44,6 @@ export function loadSearch(searchTerm) {
         return response.json();
       })
       .then((movies) => {
-        console.log('loadSearch result', movies);
         dispatch(searchLoaded(movies));
       });
   };
@@ -56,7 +54,6 @@ export function loadSearch(searchTerm) {
 //     * value = make sure to assign the value of movies.results to get
 // the array of movies from movie db
 export function searchLoaded(movies) {
-  console.log('searchLoaded', movies.results);
   return {
     type: "SEARCH_RESULTS_LOADED",
     value: movies.results,
