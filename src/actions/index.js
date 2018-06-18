@@ -17,7 +17,7 @@ export function myMovieListLoaded(movies){
     return {
         type: "MY_MOVIE_LIST_LOADED",
         movies: movies
-    }t
+    }
 };
 
 export function loadSearch(searchTerm){
@@ -26,7 +26,7 @@ export function loadSearch(searchTerm){
             type: "LOAD_SEARCH"
         });
 
-        fetch("https://api.themoviedb.org/3/search/multi?query=searchTerm&api_key=0dc94f449f50d8c8598f3f801426f127")
+        fetch(`https://api.themoviedb.org/3/search/multi?query=${searchTerm}&api_key=0dc94f449f50d8c8598f3f801426f127`)
         .then( (response) => {
             return response.json();
         }).then( (movies) => {
