@@ -4,7 +4,7 @@ import { loadSearch } from "../actions";
 
 function mapDispatchToProps(dispatch) {
   return {
-    loadSearch: function (searchTerm) {
+    loadSearch: (searchTerm) => {
       dispatch(loadSearch(searchTerm));
     }
   };
