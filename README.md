@@ -70,22 +70,22 @@
 
 
 ### Create Containers
-* import connect from react-redux
-* mapStateToProps
-* mapDispatchToProps
-* connect and export
+<!-- * import connect from react-redux -->
+<!-- * mapStateToProps -->
+<!-- * mapDispatchToProps -->
+<!-- * connect and export -->
 
 ### SearchBoxContainer.js
 <!-- * import SearchBox -->
 <!-- * import action `loadSearch` -->
 <!-- * mapDispatchToProps for this action -->
-* Determine which props to map to based on the props that are already coded into the SearchBox component
+<!-- * Determine which props to map to based on the props that are already coded into the SearchBox component -->
 
 ### AppContainer.js
-* import App
-* import action `loadMyMovieList`
-* mapStateToProps for props `searchResults` and `myMovieList` to state of the same name
-* mapDisptachToProps for `loadMyMovieList`
+<!-- * import App -->
+<!-- * import action `loadMyMovieList` -->
+<!-- * mapStateToProps for props `searchResults` and `myMovieList` to state of the same name -->
+<!-- * mapDisptachToProps for `loadMyMovieList` -->
 
 ### ListToggleContainer
 <!-- * import ListToggle -->
@@ -94,20 +94,20 @@
 <!-- * Change Item.js to use ListToggleContainer instead of ListToggle -->
 
 ### SearchBox.js
-* In the constructor assign a state property with an object with key “searchTerm”, set to blank string “”
-* Add onChange to the input element
-* on change setState for searchTerm to the value from the input
+<!-- * In the constructor assign a state property with an object with key “searchTerm”, set to blank string “” -->
+<!-- * Add onChange to the input element -->
+<!-- * on change setState for searchTerm to the value from the input -->
 
 ### Item.js
 <!-- * Switch out use of ListToggle for use of ListToggleContainer -->
 
 ### App.js
-* Add componentDidMount method and call loadMyMovieList in here.
-* Switch out use of SearchBox for use of SearchBoxContainer
-* Add PropTypes for searchResults and myMovieList
+<!-- * Add componentDidMount method and call loadMyMovieList in here. -->
+<!-- * Switch out use of SearchBox for use of SearchBoxContainer -->
+<!-- * Add PropTypes for searchResults and myMovieList -->
 
 ### index.js
-* Switch out use of App for AppContainer
+<!-- * Switch out use of App for AppContainer -->
 
 ### Points
 * Base - 25 
