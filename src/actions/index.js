@@ -1,7 +1,7 @@
 export function loadMyMovieList(){
     return function (dispatch) {
         dispatch({
-            type: "LOAD_MOVIES"
+            type: "LOAD_MY_MOVIE_LIST"
         });
 
         fetch("/movies")
@@ -17,7 +17,7 @@ export function myMovieListLoaded(movies){
     return {
         type: "MY_MOVIE_LIST_LOADED",
         movies: movies
-    }
+    }t
 };
 
 export function loadSearch(searchTerm){

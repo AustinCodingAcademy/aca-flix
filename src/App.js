@@ -12,7 +12,7 @@ import SearchBoxContainer from "./containers/SearchBoxContainer";
 class App extends Component {
   
   componentDidMount(){
-    loadMyMovieList();
+    this.props.loadMyMovieList();
   }
 
   render() {
@@ -20,13 +20,9 @@ class App extends Component {
       <div>
         <header className="Header">
           <Logo />
-          {/*  <Navigation>   */}
           <Navigation />
-          {/*  </Navigation>   */}
           <SearchBoxContainer />
-          {/*  <UserProfile>   */}
           <UserProfile />
-          {/*  </UserProfile>   */}
         </header>
         <Hero />
         <TitleList 
@@ -41,8 +37,8 @@ class App extends Component {
 }
 
 App.PropTypes = {
-  searchResults: array,
-  myMovieList: array
+  searchResults: PropTypes.array.isRequired,
+  myMovieList: PropTypes.array.isRequired
 }
 
 export default App;

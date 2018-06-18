@@ -9,4 +9,12 @@ function mapStatetoProps(state){
     }
 }
 
+function mapDispatchToProps(dispatch){
+    return {
+        loadMyMovieList: (myMovieList) => {
+            dispatch(loadMyMovieList(myMovieList));
+        }
+    };
+}
+
 export default connect(mapStatetoProps)(App);

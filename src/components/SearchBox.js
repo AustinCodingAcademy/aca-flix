@@ -8,10 +8,14 @@ class SearchBox extends Component {
     }
   }
 
+  handleChange(e) {
+    this.setState({searchTerm: e.target.value});
+  } 
+
   render() {
     return (
       <div id="search" className="Search">
-        <input 
+        <input onChange={this.handleChange.bind(this)}
           onKeyUp={
             (e) => {
               /* this is so th search will only be done on enter key */
