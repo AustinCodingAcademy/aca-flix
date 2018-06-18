@@ -8,8 +8,8 @@ function mapDispatchToProps(dispatch) {
         let action = saveMyMovie(movie);
         dispatch(action);
       },
-      removeMyMovie:function(id) {
-        let action = removeMyMovie(id);
+      removeMyMovie:function(_id) {
+        let action = removeMyMovie(_id);
         dispatch(action);
       }
     };

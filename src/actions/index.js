@@ -59,9 +59,19 @@ export function loadSearch(searchTerm) {
     };
   }
     
-  export function removeMyMovie(id) {
-    return {
-      type: "MY_MOVIE_LIST_LOADED",
-      value: id
+  export function removeMyMovie(_id) {
+    return function (dispatch) {
+          
+      fetch(`http://localhost:4000/movies/${_id}`, {
+        method: "DELETE"
+      }
+   )
+          .then( (response) => {
+            return response.json();
+          }).then(() => {
+            dispatch(loadMyMovieList());
+          });
+    
     };
+  
   }
