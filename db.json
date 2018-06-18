@@ -1,5 +1,49 @@
 {
-  "movies":[],
+  "movies": [
+    {
+      "original_name": "HAPPY!",
+      "id": 72339,
+      "media_type": "tv",
+      "name": "HAPPY!",
+      "vote_count": 43,
+      "vote_average": 7.42,
+      "poster_path": "/m7EkgEgYxiHCgMJP5FJ6JPWUg7u.jpg",
+      "first_air_date": "2017-12-06",
+      "popularity": 10.896177,
+      "genre_ids": [
+        10765
+      ],
+      "original_language": "en",
+      "backdrop_path": "/1cQlnMOVF1E9GDYaAzchIsJ0NnV.jpg",
+      "overview": "Corrupt ex-cop turned hitman Nick Sax's life is changed forever by a relentlessly positive, imaginary blue winged horse named Happy.",
+      "origin_country": [
+        "US"
+      ],
+      "_id": 2
+    },
+    {
+      "original_name": "Happy Valley",
+      "id": 61244,
+      "media_type": "tv",
+      "name": "Happy Valley",
+      "vote_count": 77,
+      "vote_average": 7.75,
+      "poster_path": "/icOYQvsyM7m8cX515wOM0GPExYb.jpg",
+      "first_air_date": "2014-04-29",
+      "popularity": 6.885128,
+      "genre_ids": [
+        18,
+        80
+      ],
+      "original_language": "en",
+      "backdrop_path": "/mT800I3clbU1NYgk3fu41nL6wJh.jpg",
+      "overview": "Happy Valley is a dark, funny, multi-layered thriller revolving around the personal and professional life of Catherine, a dedicated, experienced, hard-working copper. She is also a bereaved mother who looks after her orphaned grandchild.",
+      "origin_country": [
+        "GB"
+      ],
+      "_id": 3
+    }
+  ],
   "posts": [
     {
       "id": 1,
