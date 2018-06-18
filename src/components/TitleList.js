@@ -4,20 +4,10 @@ import React from "react";
 import Item from "./Item";
 
 function TitleList(props) {
-  // console.log(props.title);
-  
   let titles = "";
-  // const myMovieIds = props.myMovies;
   if (props.movies) {
     titles = props.movies.map(function (title, i) {
       if (i < 5) {
-        // if (props.title === "Search Results") {
-        //   setTimeout(() => {
-        //     const findId = myMovieIds.find(mv => mv.id === title.id);
-        //     console.log(findId);
-        //   }, 100);
-        // }
-        
         return (
           <Item key={title.id} movie={title} />
         );  

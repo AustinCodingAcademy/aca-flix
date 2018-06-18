@@ -20,26 +20,6 @@
       "overview": "The true story of Henry Hill, a half-Irish, half-Sicilian Brooklyn kid who is adopted by neighbourhood gangsters at an early age and climbs the ranks of a Mafia family under the guidance of Jimmy Conway.",
       "release_date": "1990-09-12",
       "_id": 6
-    },
-    {
-      "vote_average": 8.2,
-      "vote_count": 3068,
-      "id": 429,
-      "video": false,
-      "media_type": "movie",
-      "title": "The Good, the Bad and the Ugly",
-      "popularity": 20.388932,
-      "poster_path": "/v6TUio0GgIsK9pbW7FfFArbyECb.jpg",
-      "original_language": "it",
-      "original_title": "Il buono, il brutto, il cattivo",
-      "genre_ids": [
-        37
-      ],
-      "backdrop_path": "/xGC2fY5KFmtuXnsuQwYQKFOLZFy.jpg",
-      "adult": false,
-      "overview": "While the Civil War rages between the Union and the Confederacy, three men – a quiet loner, a ruthless hit man and a Mexican bandit – comb the American Southwest in search of a strongbox containing $200,000 in stolen gold.",
-      "release_date": "1966-12-23",
-      "_id": 7
     }
   ],
   "posts": [
