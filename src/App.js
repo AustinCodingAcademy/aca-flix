@@ -9,6 +9,9 @@ import Navigation from "./components/Navigation";
 import UserProfile from "./components/UserProfile";
 
 class App extends Component {
+  componentDidMount() {
+    this.props.loadMyMovieList();
+  }
   render() {
     return (
       <div>
@@ -24,7 +27,9 @@ class App extends Component {
           movies={this.props.searchResults} />
         <TitleList 
           title="My Movies" 
-          movies={this.props.myMovieList} />
+          movies={this.props.myMovieList}
+          myMovies={this.props.myMovieList}
+          />
       </div>
     );
   }
@@ -33,5 +38,6 @@ export default App;
 
 App.propTypes = {
   searchResults: PropTypes.string,
-  myMovieList: PropTypes.string
+  myMovieList: PropTypes.string,
+  loadMyMovieList: PropTypes.string
 };

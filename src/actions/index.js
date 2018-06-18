@@ -28,7 +28,7 @@ export function loadSearch(searchTerm) {
     dispatch({
       type: "LOAD_SEARCH"
     });
-    fetch("https://api.themoviedb.org/3/search/multi?query=${searchTerm}&api_key=4e7e4ac8e31254eb6c0a9531f3093321")
+    fetch(`https://api.themoviedb.org/3/search/multi?query=${searchTerm}&api_key=4e7e4ac8e31254eb6c0a9531f3093321`)
     .then((response) => {
       return response.json();
     }).then((movies) => {
@@ -50,15 +50,15 @@ export function searchLoaded(movies) {
 export function saveMyMovie(movie) {
   return function (dispatch) {
     fetch("/movies", {
-      method: "", 
+      method: "post", 
       body: JSON.stringify(movie),
       headers: {
         "Content-Type": "application/json"
       }
     }).then(function (res) {
       return res.json();
-    }).then(function () {
-      dispatch(loadMyMovieList());
+    }).then(function (movies) {
+      dispatch(loadMyMovieList(movies));
     });
   };
 }
@@ -66,14 +66,11 @@ export function saveMyMovie(movie) {
 
 //  DELETEMOVIESDELETEMOVIESDELETEMOVIESDELETEMOVIESDELETEMOVIESDELETEMOVIESDELETEMOVIES
 //  not sure if this is right
-export function removeMyMovie(id) {
+export function removeMyMovie(_id) {
   return function (dispatch) {
-    fetch("/movies" + id, {
-      method: "DELETE", 
-    }).then(function (res) {
-      return res.json();
-    }).then(function () {
-      dispatch(loadMyMovieList());
-    });
+    fetch(`./movies/${_id}`,
+    {method: "DELETE"},
+  ).then(() => dispatch(loadMyMovieList()));
+    
   };
 }
