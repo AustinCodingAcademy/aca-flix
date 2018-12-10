@@ -1,3 +1,7 @@
+### Help
+* [Walkthrough](https://youtu.be/bMsq98aLHAA)
+* [Sign up for movie db](https://youtu.be/XSX2w8VPID0)
+
 
 ### Setup
 * Get your api key from the themoviedb.org
