@@ -5,7 +5,7 @@
 
 ### Setup
 * Get your api key from the themoviedb.org
-* Fork, Clone, yarn install, yarn start
+* Fork, Clone, npm install, npm start
 
 ### Do
 
