@@ -6,6 +6,7 @@
 ### Setup
 * Get your api key from the themoviedb.org
 * Fork, Clone, npm install, npm start
+* [Get your api key](https://www.themoviedb.org/settings/api)
 
 ### Do
 
