@@ -3,7 +3,15 @@ import React, {Component} from "react";
 class SearchBox extends Component {
   constructor() {
     super();
+    this.state = {
+      searchTerm: ''
+    }
   }
+
+  handleOnChange = (e) =>{
+    this.setState({searchTerm:e.target.value})
+  }
+
   render() {
     return (
       <div id="search" className="Search">
@@ -15,7 +23,8 @@ class SearchBox extends Component {
                 this.props.loadSearch(this.state.searchTerm);
               }
             }
-          } 
+          }
+          onChange={this.handleOnChange} 
           type="search" 
           placeholder="Search for a title..." />
       </div>
