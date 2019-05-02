@@ -5,6 +5,7 @@ import Logo from "./Logo.js";
 import TitleList from "./components/TitleList";
 import Hero from "./components/Hero";
 import SearchBox from "./components/SearchBox";
+import Navigation from "./components/Navigation";
 
 class App extends Component {
   render() {
@@ -12,18 +13,7 @@ class App extends Component {
       <div>
         <header className="Header">
           <Logo />
-          {/*  <Navigation>   */}
-          <div id="navigation" className="Navigation">
-            <nav>
-              <ul>
-                <li>Browse</li>
-                <li>My list</li>
-                <li>Top picks</li>
-                <li>Recent</li>
-              </ul>
-            </nav>
-          </div>
-          {/*  </Navigation>   */}
+          <Navigation />
           <SearchBox />
           {/*  <UserProfile>   */}
           <div className="UserProfile">
@@ -37,11 +27,11 @@ class App extends Component {
           {/*  </UserProfile>   */}
         </header>
         <Hero />
-        <TitleList 
-          title="Search Results" 
+        <TitleList
+          title="Search Results"
           movies={this.props.searchResults} />
-        <TitleList 
-          title="My Movies" 
+        <TitleList
+          title="My Movies"
           movies={this.props.myMovieList} />
       </div>
     );
