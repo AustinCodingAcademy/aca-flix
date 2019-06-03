@@ -1,5 +1,111 @@
 {
-  "movies":[],
+  "movies": [
+    {
+      "original_name": "The Oprah Winfrey Show",
+      "id": 724,
+      "media_type": "tv",
+      "name": "The Oprah Winfrey Show",
+      "vote_count": 16,
+      "vote_average": 3.94,
+      "poster_path": "/nGu8E9CnluPtOrhbOkcYA7lnAPC.jpg",
+      "first_air_date": "",
+      "popularity": 4.121,
+      "genre_ids": [
+        10767
+      ],
+      "original_language": "en",
+      "backdrop_path": "/1M3BLbZh9VqEt4N7yTog884u5na.jpg",
+      "overview": "The Oprah Winfrey Show, often referred to simply as Oprah, is an American syndicated talk show that aired nationally for 25 seasons from 1986 to 2011. Produced and hosted by its namesake, Oprah Winfrey, it remains the highest-rated talk show in American television history.\n\nThe show was highly influential, and many of its topics penetrated into the American pop-cultural consciousness. Winfrey used the show as a platform to teach and inspire, providing viewers with a positive, spiritually uplifting experience by featuring book clubs, compelling interviews, self-improvement segments, and philanthropic forays into world events. The show gained credibility by not trying to profit off the products it endorsed; it had no licensing agreement with retailers when products were promoted, nor did the show make any money from endorsing books for its book club.\n\nOprah is one of the longest-running daytime television talk shows in history. The show received 47 Daytime Emmy Awards before Winfrey decided to stop submitting it for consideration in 2000.",
+      "origin_country": [
+        "US"
+      ],
+      "_id": 1
+    },
+    {
+      "vote_average": 6,
+      "vote_count": 6,
+      "id": 585768,
+      "video": false,
+      "media_type": "movie",
+      "title": "Oprah Winfrey Presents: After Neverland",
+      "popularity": 1.787,
+      "poster_path": "/dGYJCTS0MV782zturlF8D0VqEYf.jpg",
+      "original_language": "en",
+      "original_title": "Oprah Winfrey Presents: After Neverland",
+      "genre_ids": [
+        99
+      ],
+      "backdrop_path": "/eynhc964JsYHMoOkil9bHPZheNi.jpg",
+      "adult": false,
+      "overview": "Oprah Winfrey hosts a conversation featuring Wade Robson and James Safechuck, alongside Leaving Neverland director Dan Reed, before an audience of survivors of sexual abuse and others whose lives have been impacted by it.",
+      "release_date": "2019-03-04",
+      "_id": 2
+    },
+    {
+      "vote_average": 3.7,
+      "vote_count": 3,
+      "id": 26132,
+      "video": false,
+      "media_type": "movie",
+      "title": "Mitch Albom's For One More Day",
+      "popularity": 0.747,
+      "poster_path": "/6Po4W6w3lWw79x8Xxn97Q4C4v4q.jpg",
+      "original_language": "en",
+      "original_title": "Mitch Albom's For One More Day",
+      "genre_ids": [
+        18,
+        10770
+      ],
+      "backdrop_path": "/9cL9I9Sp3MKxsp2KYd9qvAQbGLM.jpg",
+      "adult": false,
+      "overview": "While back in his hometown, a suicidal former baseball player encounters the spirit of his deceased mother, who takes him on a sentimental tour meant to restore his love of life.",
+      "release_date": "2007-12-09",
+      "_id": 3
+    },
+    {
+      "vote_average": 5.6,
+      "vote_count": 284,
+      "id": 2928,
+      "video": false,
+      "media_type": "movie",
+      "title": "Michael",
+      "popularity": 7.031,
+      "poster_path": "/xof1HmoI3NrSrmzHByjK6W7dU8E.jpg",
+      "original_language": "en",
+      "original_title": "Michael",
+      "genre_ids": [
+        35,
+        18,
+        14
+      ],
+      "backdrop_path": "/kvTwGW1bdu46pP5FmizId07CazQ.jpg",
+      "adult": false,
+      "overview": "Tabloid reporters are sent by their editor to investigate after the paper recieves a letter from a woman claiming an angel is living with her.",
+      "release_date": "1996-12-25",
+      "_id": 4
+    },
+    {
+      "vote_average": 6.7,
+      "vote_count": 818,
+      "id": 4566,
+      "video": false,
+      "media_type": "movie",
+      "title": "Michael Clayton",
+      "popularity": 11.225,
+      "poster_path": "/pteOsXsjy4JpPY5jXMYDIo1yZlk.jpg",
+      "original_language": "en",
+      "original_title": "Michael Clayton",
+      "genre_ids": [
+        18,
+        53
+      ],
+      "backdrop_path": "/u9XBmeqp9tYVj9B5U5uhwEQGMI4.jpg",
+      "adult": false,
+      "overview": "A law firm brings in its 'fixer' to remedy the situation after a lawyer has a breakdown while representing a chemical company that he knows is guilty in a multi-billion dollar class action suit.",
+      "release_date": "2007-09-28",
+      "_id": 5
+    }
+  ],
   "posts": [
     {
       "id": 1,
