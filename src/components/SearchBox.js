@@ -2,15 +2,15 @@ import React, {Component} from "react";
 
 class SearchBox extends Component {
   constructor() {
-    super();
+    super()
     this.setState({searchTerm: ""});
-    
+
   }
   
   render() {
     return (
       <div id="search" className="Search">
-        <input 
+        <input onChange= {(e)=>this.setState({searchTerm: e.target.value})}
           onKeyUp={
             (e) => {
               /* this is so the search will only be done on enter key */

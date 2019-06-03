@@ -9,17 +9,20 @@ import Navigation from "./components/Navigation";
 import UserProfile from "./components/UserProfile"
 
 class App extends Component {
+  componentDidMount(){
+    this.props.loadMyMovieList()
+  }
+  
   render() {
     return (
       <div>
         <header className="Header">
           <Logo />
-           <Navigation />  
-          
-          
+          <Navigation />  
           <SearchBoxContainer />
-           <UserProfile />  
+          <UserProfile />  
         </header>
+
         <Hero />
         <TitleList 
           title="Search Results" 
