@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 import "./App.css";
 import Logo from "./Logo.js";
 import TitleList from "./components/TitleList";
@@ -12,7 +12,7 @@ class App extends Component {
   componentDidMount(){
     this.props.loadMyMovieList()
   }
-  
+
   render() {
     return (
       <div>
