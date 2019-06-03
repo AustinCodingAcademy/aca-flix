@@ -2,8 +2,7 @@ import React, { Component } from "react";
 
 class SearchBox extends Component {
   constructor() {
-    super()
-    this.setState({searchTerm: ""});
+    this.setState({searchTerm: ''});
 
   }
   

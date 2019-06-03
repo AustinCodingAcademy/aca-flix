@@ -7,13 +7,13 @@ export const myMovieListLoaded = (movies) => {
 
 export const loadMyMovieList = () => dispatch => {
     return () => {
-        fetch("./movies")
+        fetch("/movies")
         .then((res) => {
             return res.json()
         })
         .then((movies) => {
             dispatch(myMovieListLoaded(movies))
-        })
+        });
     };
 }
 
@@ -51,7 +51,7 @@ export const saveMyMovie = (movies) => {
     }
 }
 
-export const removeMyMovie = (id) => dispatch => {
+export const removeMyMovie = (id) = dispatch => {
         fetch(`/movies/${id}`, {
             headers: {
                 'Content-Type': 'application/json'
