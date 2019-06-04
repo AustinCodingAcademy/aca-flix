@@ -4,11 +4,10 @@ import { saveMyMovie, removeMyMovie} from "../actions"
 
 const mapDispatchToProps = (dispatch) => {
     return{
-    saveMyMovie: (movies) => dispatch(saveMyMovie(movies)),
-    removieMyMovie: (id) => dispatch(removeMyMovie(id))
+    saveMyMovie: (movie) => dispatch(saveMyMovie(movie)),
+    removeMyMovie: (id) => dispatch(removeMyMovie(id))
     }
 }
 
 export default connect(null, mapDispatchToProps)(ListToggle)
-
 

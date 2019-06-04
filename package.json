@@ -10,7 +10,7 @@
     "react-scripts": "^0.9.5"
   },
   "dependencies": {
-    "foreman": "^2.0.0",
+    "foreman": "^3.0.1",
     "json-server": "^0.9.6",
     "prop-types": "^15.5.8",
     "react": "^15.5.4",
@@ -20,7 +20,7 @@
     "redux-thunk": "^2.3.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "nf start",
     "lint": "eslint src",
     "react-app": "react-scripts start",
     "api": "json-server --id _id --watch --port 4000 db.json",

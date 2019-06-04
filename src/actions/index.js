@@ -6,7 +6,6 @@ export const myMovieListLoaded = (movies) => {
 }
 
 export const loadMyMovieList = () => dispatch => {
-    return () => {
         fetch("/movies")
         .then((res) => {
             return res.json()
@@ -14,8 +13,8 @@ export const loadMyMovieList = () => dispatch => {
         .then((movies) => {
             dispatch(myMovieListLoaded(movies))
         });
-    };
-}
+    }
+
 
 export const searchLoaded = (movies) => {
     return {
@@ -36,31 +35,30 @@ export const loadSearch = (searchTerm) => {
     }   
 }
 
-export const saveMyMovie = (movies) => {
+export const saveMyMovie = (movie) => {
     return (dispatch) => {
         fetch("/movies", {
             headers: {
                 'Content-Type': 'application/json'
             },
             method: "POST",
-            body: JSON.stringify(movies)
+            body: JSON.stringify(movie)
         })
-        .then((movies) => {
-            dispatch(loadMyMovieList(movies))
+        .then((res) => {
+            console.log('RES:', res);
+            dispatch(loadMyMovieList(res))
         })
     }
 }
 
 export const removeMyMovie = (id) => dispatch => {
-
         fetch(`/movies/${id}`, {
             headers: {
                 'Content-Type': 'application/json'
             },
             method: "DELETE"
         })
-        .then((movies) => {
-            dispatch(loadMyMovieList(movies))
-        })
-    
+        .then((res) => {
+            dispatch(loadMyMovieList(res))
+        })   
 }

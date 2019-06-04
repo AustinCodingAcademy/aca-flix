@@ -10,7 +10,8 @@ import UserProfile from "./components/UserProfile"
 
 class App extends Component {
   componentDidMount(){
-    this.props.loadMyMovieList()
+    this.props.loadMyMovieList();
+    // console.log('results', this.props.myMovieList)
   }
 
   render() {

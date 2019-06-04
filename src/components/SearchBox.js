@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 class SearchBox extends Component {
   constructor() {
-    super()
+    super();
     this.state = { searchTerm: '' }
 
   }
@@ -10,9 +10,9 @@ class SearchBox extends Component {
   render() {
     return (
       <div id="search" className="Search">
-        <input onChange= {(e)=>this.setState({searchTerm: e.target.value})}
+        <input onChange={(e)=>this.setState({searchTerm: e.target.value})}
           onKeyUp={
-            (e) => {
+            (e)=> {
               /* this is so the search will only be done on enter key */
               if (this.props.loadSearch && e.key === "Enter" && this.state.searchTerm) {
                 this.props.loadSearch(this.state.searchTerm);
