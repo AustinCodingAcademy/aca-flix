@@ -1,5 +1,93 @@
 {
-  "movies":[],
+  "movies": [
+    {
+      "original_name": "The Magicians",
+      "id": 64432,
+      "media_type": "tv",
+      "name": "The Magicians",
+      "vote_count": 231,
+      "vote_average": 6.86,
+      "poster_path": "/d3Q4yFK3D3NOWzYRgJdsxYpZdH0.jpg",
+      "first_air_date": "2015-12-16",
+      "popularity": 80.690503,
+      "genre_ids": [
+        18,
+        14,
+        27
+      ],
+      "original_language": "en",
+      "backdrop_path": "/4uhqPMSBGmaaMhrD6ZA7K2DfhES.jpg",
+      "overview": "Brakebills University is a secret institution specializing in magic. There, amidst an unorthodox education of spellcasting, a group of twenty-something friends soon discover that a magical fantasy world they read about as children is all too real— and poses grave danger to humanity.",
+      "origin_country": [
+        "US"
+      ],
+      "_id": 1
+    },
+    {
+      "vote_average": 6.7,
+      "vote_count": 107,
+      "id": 13763,
+      "video": false,
+      "media_type": "movie",
+      "title": "Purple Rain",
+      "popularity": 12.626744,
+      "poster_path": "/epUyAfIgsrpIcY0qi6dhnay5rpl.jpg",
+      "original_language": "en",
+      "original_title": "Purple Rain",
+      "genre_ids": [
+        18,
+        10402,
+        10749
+      ],
+      "backdrop_path": "/7slVN3DYlBx8VCCp8i7mPk9xmJ6.jpg",
+      "adult": false,
+      "overview": "A young man with a talent for music meets an aspiring singer, Apollonia, and finds that talent alone isn't all that he needs.",
+      "release_date": "1984-07-27",
+      "_id": 4
+    },
+    {
+      "vote_average": 7.7,
+      "vote_count": 420,
+      "id": 873,
+      "video": false,
+      "media_type": "movie",
+      "title": "The Color Purple",
+      "popularity": 14.147395,
+      "poster_path": "/2a50LyRInWGLWq3u3DeGBQnvBHR.jpg",
+      "original_language": "en",
+      "original_title": "The Color Purple",
+      "genre_ids": [
+        18
+      ],
+      "backdrop_path": "/mGzHgeXhGSRVMfwq0oo7VAltiZH.jpg",
+      "adult": false,
+      "overview": "An epic tale spanning forty years in the life of Celie, an African-American woman living in the South who survives incredible abuse and bigotry.  After Celie's abusive father marries her off to the equally debasing \"Mister\" Albert Johnson, things go from bad to worse, leaving Celie to find companionship anywhere she can.  She perseveres, holding on to her dream of one day being reunited with her sister in Africa. Based on the novel by Alice Walker.",
+      "release_date": "1985-12-18",
+      "_id": 5
+    },
+    {
+      "original_name": "Blue Bloods",
+      "id": 32692,
+      "media_type": "tv",
+      "name": "Blue Bloods",
+      "vote_count": 155,
+      "vote_average": 6.65,
+      "poster_path": "/wpZ8w8HWVxLgCa8siz8bhrua6Qd.jpg",
+      "first_air_date": "2010-09-24",
+      "popularity": 25.62632,
+      "genre_ids": [
+        80,
+        18
+      ],
+      "original_language": "en",
+      "backdrop_path": "/5wTpnGSxhi2PeXjs36R810VGqEA.jpg",
+      "overview": "A drama about a multi-generational family of cops dedicated to New York City law enforcement. Frank Reagan is the New York Police Commissioner and heads both the police force and the Reagan brood. He runs his department as diplomatically as he runs his family, even when dealing with the politics that plagued his unapologetically bold father, Henry, during his stint as Chief.",
+      "origin_country": [
+        "US"
+      ],
+      "_id": 7
+    }
+  ],
   "posts": [
     {
       "id": 1,
