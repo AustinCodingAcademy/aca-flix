@@ -3,7 +3,11 @@ import React, {Component} from "react";
 class SearchBox extends Component {
   constructor() {
     super();
+    this.state = {
+      searchTerm: ""
+    }
   }
+
   render() {
     return (
       <div id="search" className="Search">
@@ -15,9 +19,15 @@ class SearchBox extends Component {
                 this.props.loadSearch(this.state.searchTerm);
               }
             }
-          } 
+          }
+          onChange={
+            () => {
+              this.setState({ searchTerm: document.getElementById("searchbox").value });
+            }
+          }
           type="search" 
-          placeholder="Search for a title..." />
+          placeholder="Search for a title..."
+          id="searchbox" />
       </div>
     );
   }
