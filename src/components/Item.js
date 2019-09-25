@@ -1,8 +1,8 @@
 import React from "react";
-import ListToggle from "./ListToggle";
+import ListToggle from "../containers/ListToggleContainer";
 
 function Item(props) {
-  
+
   let name = "";
   let backDrop = "http://image.tmdb.org/t/p/original" + props.movie.backdrop_path;
   if(!props.movie.name) {
