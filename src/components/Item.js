@@ -1,5 +1,5 @@
 import React from "react";
-import ListToggle from "./ListToggle";
+import ListToggleContainer from "../containers/ListToggleContainer";
 
 function Item(props) {
   
@@ -17,9 +17,9 @@ function Item(props) {
         <div className="title">{name}</div>
         <div className="rating">{props.movie.vote_average} / 10</div>
         <div className="plot">{props.movie.overview}</div>
-        <ListToggle movie={props.movie}/>
+        <ListToggleContainer movie={props.movie}/>
       </div>
     </div>
   );
-}
+}``
 export default Item;

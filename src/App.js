@@ -5,15 +5,30 @@ import Logo from "./Logo.js";
 import TitleList from "./components/TitleList";
 import Hero from "./components/Hero";
 import SearchBox from "./components/SearchBox";
+import Navigation from "./components/Navigation";
+import UserProfile from "./components/UserProfile";
+import SearchBoxContainer from "./containers/SearchBoxContainer";
+import {loadMyMovieList} from "./actions/index";
+
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = { searchResults: [],
+      myMovieList: []};
+  }
+  componentDidMount() {
+    this.props.loadMyMovieList()
+  }
+
   render() {
+    console.log(this.props);
     return (
       <div>
         <header className="Header">
           <Logo />
           {/*  <Navigation>   */}
-          <div id="navigation" className="Navigation">
+          {/* <div id="navigation" className="Navigation">
             <nav>
               <ul>
                 <li>Browse</li>
@@ -22,18 +37,22 @@ class App extends Component {
                 <li>Recent</li>
               </ul>
             </nav>
-          </div>
+          </div> */}
+          <Navigation />
           {/*  </Navigation>   */}
-          <SearchBox />
+          {/* <SearchBox /> */}
+          <SearchBoxContainer />
+
+          <UserProfile />
           {/*  <UserProfile>   */}
-          <div className="UserProfile">
+          {/* <div className="UserProfile">
             <div className="User">
               <div className="name">Jack Oliver</div>
               <div className="image">
                 <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/profile/profile-512_1.jpg" alt="profile" />
               </div>
             </div>
-          </div>
+          </div> */}
           {/*  </UserProfile>   */}
         </header>
         <Hero />
