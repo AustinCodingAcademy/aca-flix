@@ -93,6 +93,8 @@
 * mapStateToProps for props `searchResults` and `myMovieList` to state of the same name
 * mapDisptachToProps for `loadMyMovieList`
 
+--STOPPED HERE--
+
 ### ListToggleContainer
 * import ListToggle
 * import action `saveMyMovie` and `removeMyMovie`

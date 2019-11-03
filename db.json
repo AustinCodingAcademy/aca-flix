@@ -1,5 +1,108 @@
 {
-  "movies":[],
+  "movies": [
+    {
+      "original_name": "The Good Fight",
+      "id": 69158,
+      "media_type": "tv",
+      "name": "The Good Fight",
+      "vote_count": 32,
+      "vote_average": 8.09,
+      "poster_path": "/mqV3IMpkFlKbQMpTpmfPK0JgQmC.jpg",
+      "first_air_date": "2017-02-19",
+      "popularity": 9.045549,
+      "genre_ids": [
+        18
+      ],
+      "original_language": "en",
+      "backdrop_path": "/SFSxXB6EzV7p8wz17N33APCX95.jpg",
+      "overview": "Picking up one year after the events of the final broadcast episode of \"The Good Wife\", an enormous financial scam has destroyed the reputation of a young lawyer, Maia Rindell, while simultaneously wiping out her mentor and godmother Diane Lockhart’s savings. Forced out of her law firm, now called \"Lockhart, Deckler, Gussman, Lee, Lyman, Gilbert, Lurie, Kagan, Tannebaum &amp; Associates\", they join Lucca Quinn at one of Chicago’s preeminent law firms.",
+      "origin_country": [
+        "US"
+      ],
+      "_id": 1
+    },
+    {
+      "vote_average": 8.3,
+      "vote_count": 10326,
+      "id": 550,
+      "video": false,
+      "media_type": "movie",
+      "title": "Fight Club",
+      "popularity": 43.317792,
+      "poster_path": "/adw6Lq9FiC9zjYEpOqfq03ituwp.jpg",
+      "original_language": "en",
+      "original_title": "Fight Club",
+      "genre_ids": [
+        18
+      ],
+      "backdrop_path": "/8uO0gUM8aNqYLs1OsTBQiXu0fEv.jpg",
+      "adult": false,
+      "overview": "A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy. Their concept catches on, with underground \"fight clubs\" forming in every town, until an eccentric gets in the way and ignites an out-of-control spiral toward oblivion.",
+      "release_date": "1999-10-15",
+      "_id": 2
+    },
+    {
+      "vote_average": 6.2,
+      "vote_count": 361,
+      "id": 345922,
+      "video": false,
+      "media_type": "movie",
+      "title": "Fist Fight",
+      "popularity": 33.256116,
+      "poster_path": "/yONLyCSO0zyDvmVJO2i1U4yrNHE.jpg",
+      "original_language": "en",
+      "original_title": "Fist Fight",
+      "genre_ids": [
+        35
+      ],
+      "backdrop_path": "/yzAo91sIwQrbYSh9bQrbQ12wZnI.jpg",
+      "adult": false,
+      "overview": "When one school teacher gets the other fired, he is challenged to an after-school fight.",
+      "release_date": "2017-02-16",
+      "_id": 3
+    },
+    {
+      "original_name": "がんばれ!キッカーズ",
+      "id": 64049,
+      "media_type": "tv",
+      "name": "Fight! Kickers",
+      "vote_count": 2,
+      "vote_average": 7.5,
+      "poster_path": "/pnSQQ9PjkReWJ1hkGj1L6lYgDwD.jpg",
+      "first_air_date": "1986-10-15",
+      "popularity": 3.266534,
+      "genre_ids": [
+        16,
+        10762
+      ],
+      "original_language": "ja",
+      "backdrop_path": null,
+      "overview": "Kickers, a soccer club, is a weak team that hardly wins a game. It has recorded 22 consecutive losses up till now. Neither a star player nor a sign of a victory can be found in the team. That's why they begin to lose hopes. But the team quickly changes when Kakeru Daichi, a newcomer to Kitahara Primary School, joins the team! Kakeru loves soccer and his passion towards soccer is overwhelming. He used to be a member of a prestigious soccer team, yet he gives no hint about it. He practices more than anybody in the team. Kakeru's attitude brings back the passion for soccer that the team members have forgotten. The team members support and train each other, and start to win games. This sports animation showing growth of boys is based on soccer, one of the most popular sports in the world.",
+      "origin_country": [
+        "JP"
+      ],
+      "_id": 4
+    },
+    {
+      "original_name": "Family Food Fight",
+      "id": 74783,
+      "media_type": "tv",
+      "name": "Family Food Fight",
+      "vote_count": 0,
+      "vote_average": 0,
+      "poster_path": "/pWIH1vuzs9vW5tBEX3KpFv8mA6p.jpg",
+      "first_air_date": "2017-10-30",
+      "popularity": 6.581655,
+      "genre_ids": [
+        10764
+      ],
+      "original_language": "en",
+      "backdrop_path": "/gnvtmsvAsMtfmXz3SeXSl7ivBIs.jpg",
+      "overview": "Diverse and multi-generational Australian families go head-to-head in high-pressure cooking challenges inspired by real home cooking and family food traditions to win an ultimate prize of $100,000.",
+      "origin_country": [],
+      "_id": 5
+    }
+  ],
   "posts": [
     {
       "id": 1,
