@@ -1,4 +1,6 @@
-import React, { Component } from "react";
+// import React, { Component } from "react";
+import PropTypes from "prop-types";
+import React from "react";
 import Item from "./Item";
 
 function TitleList(props) {
@@ -27,4 +29,11 @@ function TitleList(props) {
     </div>
   );
 }
+
+TitleList.propTypes = {
+  movies: PropTypes.array,
+  title: PropTypes.string
+};
+
+
 export default TitleList;

@@ -1,5 +1,27 @@
 {
-  "movies":[],
+  "movies": [
+    {
+      "vote_average": 8.3,
+      "vote_count": 4219,
+      "id": 769,
+      "video": false,
+      "media_type": "movie",
+      "title": "GoodFellas",
+      "popularity": 16.552764,
+      "poster_path": "/hAPeXBdGDGmXRPj4OZZ0poH65Iu.jpg",
+      "original_language": "en",
+      "original_title": "GoodFellas",
+      "genre_ids": [
+        18,
+        80
+      ],
+      "backdrop_path": "/sw7mordbZxgITU877yTpZCud90M.jpg",
+      "adult": false,
+      "overview": "The true story of Henry Hill, a half-Irish, half-Sicilian Brooklyn kid who is adopted by neighbourhood gangsters at an early age and climbs the ranks of a Mafia family under the guidance of Jimmy Conway.",
+      "release_date": "1990-09-12",
+      "_id": 6
+    }
+  ],
   "posts": [
     {
       "id": 1,
