@@ -1,5 +1,26 @@
 {
-  "movies":[],
+  "movies": [
+    {
+      "vote_average": 6,
+      "vote_count": 294,
+      "id": 3604,
+      "video": false,
+      "media_type": "movie",
+      "title": "Flash Gordon",
+      "popularity": 10.523215,
+      "poster_path": "/9c5vKUX7MB1yixVp0ZFAUDRTaeE.jpg",
+      "original_language": "en",
+      "original_title": "Flash Gordon",
+      "genre_ids": [
+        878
+      ],
+      "backdrop_path": "/bOVyJyl19wX6crzZDCERXeweeZ8.jpg",
+      "adult": false,
+      "overview": "A football player and his friends travel to the planet Mongo and find themselves fighting the tyrant, Ming the Merciless, to save Earth.",
+      "release_date": "1980-09-01",
+      "_id": 2
+    }
+  ],
   "posts": [
     {
       "id": 1,
